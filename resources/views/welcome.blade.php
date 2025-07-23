@@ -10,37 +10,37 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Button</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-button>Défaut</x-button>
+                            <x-button>Défaut</x-form.button>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-button color="secondary">Secondaire</x-button>
+                            <x-button color="secondary">Secondaire</x-form.button>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-button color="danger">Danger</x-button>
+                            <x-button color="danger">Danger</x-form.button>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-button size="sm">Petit</x-button>
+                            <x-button size="sm">Petit</x-form.button>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-button size="lg">Grand</x-button>
+                            <x-button size="lg">Grand</x-form.button>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-button icon="<svg class='w-4 h-4' fill='none' stroke='currentColor' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7'></path></svg>">Avec icône</x-button>
+                            <x-button icon="<svg class='w-4 h-4' fill='none' stroke='currentColor' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M5 13l4 4L19 7'></path></svg>">Avec icône</x-form.button>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-button loading>Chargement</x-button>
+                            <x-button loading>Chargement</x-form.button>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-button disabled>Désactivé</x-button>
+                            <x-button disabled>Désactivé</x-form.button>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-button outline>Outline</x-button>
+                            <x-button outline>Outline</x-form.button>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-button block>Block</x-button>
+                            <x-button block>Block</x-form.button>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-button type="submit">Type submit</x-button>
+                            <x-button type="submit">Type submit</x-form.button>
                         </div>
                     </div>
                 </div>
@@ -80,43 +80,95 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Input</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-input placeholder="Votre email" />
+                            <x-form.input placeholder="Votre email" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-input type="password" label="Mot de passe" placeholder="••••••" />
+                            <x-form.input type="password" label="Mot de passe" placeholder="••••••" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-input label="Nom" value="Martin" />
+                            <x-form.input label="Nom" value="Martin" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-input label="Email" value="test@example.com" clearable helpText="Votre adresse email professionnelle" />
+                            <x-form.input label="Email" value="test@example.com" clearable helpText="Votre adresse email professionnelle" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-input label="Désactivé" disabled value="Disabled" />
+                            <x-form.input label="Désactivé" disabled value="Disabled" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-input label="Lecture seule" readonly value="Readonly" />
+                            <x-form.input label="Lecture seule" readonly value="Readonly" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-input label="Erreur" error="Champ obligatoire" />
+                            <x-form.input label="Erreur" error="Champ obligatoire" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-input label="Préfixe" prefix="@" placeholder="username" />
+                            <x-form.input label="Préfixe" prefix="@" placeholder="username" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-input label="Suffixe" suffix=".com" placeholder="domaine" />
+                            <x-form.input label="Suffixe" suffix=".com" placeholder="domaine" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-input label="Autofocus" autofocus />
+                            <x-form.input label="Autofocus" autofocus />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-input label="Maxlength" maxlength="8" value="Limité" />
+                            <x-form.input label="Maxlength" maxlength="8" value="Limité" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-input label="Minlength" minlength="4" />
+                            <x-form.input label="Minlength" minlength="4" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-input type="number" label="Step" step="2" min="0" max="10" value="4" />
+                            <x-form.input type="number" label="Step" step="2" min="0" max="10" value="4" />
+                        </div>
+                        <!-- Exemples avancés -->
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.input label="Adresse IP v4" placeholder="192.168.0.1" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.input label="Adresse IP v6" placeholder="2001:0db8:85a3:0000:0000:8a2e:0370:7334" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.input label="Carte bancaire" placeholder="1234 5678 9012 3456" maxlength="19" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.input label="CVV" placeholder="123" maxlength="4" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.input label="Téléphone" placeholder="+33 6 12 34 56 78" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.input label="Code postal" placeholder="75001" maxlength="10" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.input label="IBAN" placeholder="FR76 3000 6000 0112 3456 7890 189" maxlength="34" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.input label="SIRET" placeholder="123 456 789 00012" maxlength="14" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.input label="SIREN" placeholder="123 456 789" maxlength="9" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.input label="Date" type="date" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.input label="Code de vérification" placeholder="123456" maxlength="6" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-1">OTP (inputs splittés)</label>
+                            <div class="flex space-x-2">
+                                <x-form.input maxlength="1" class="w-10 text-center" />
+                                <x-form.input maxlength="1" class="w-10 text-center" />
+                                <x-form.input maxlength="1" class="w-10 text-center" />
+                                <x-form.input maxlength="1" class="w-10 text-center" />
+                                <x-form.input maxlength="1" class="w-10 text-center" />
+                                <x-form.input maxlength="1" class="w-10 text-center" />
+                            </div>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.input label="Montant" placeholder="0.00" prefix="€" type="number" step="0.01" />
+                        </div>
+                        <div class="flex space-x-2 items-end">
+                            <x-form.input label="Montant" placeholder="0.00" type="number" step="0.01" />
+                            <x-form.select :options="['EUR', 'USD', 'GBP']" />
                         </div>
                     </div>
                 </div>
@@ -134,7 +186,34 @@
 &lt;x-input label=&quot;Autofocus&quot; autofocus /&gt;
 &lt;x-input label=&quot;Maxlength&quot; maxlength=&quot;8&quot; value=&quot;Limité&quot; /&gt;
 &lt;x-input label=&quot;Minlength&quot; minlength=&quot;4&quot; /&gt;
-&lt;x-input type=&quot;number&quot; label=&quot;Step&quot; step=&quot;2&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;4&quot; /&gt;</code></pre>
+&lt;x-input type=&quot;number&quot; label=&quot;Step&quot; step=&quot;2&quot; min=&quot;0&quot; max=&quot;10&quot; value=&quot;4&quot; /&gt;
+&lt;x-input label="Adresse IP v4" placeholder="192.168.0.1" /&gt;
+&lt;x-input label="Adresse IP v6" placeholder="2001:0db8:85a3:0000:0000:8a2e:0370:7334" /&gt;
+&lt;x-input label="Carte bancaire" placeholder="1234 5678 9012 3456" maxlength="19" /&gt;
+&lt;x-input label="CVV" placeholder="123" maxlength="4" /&gt;
+&lt;x-input label="Téléphone" placeholder="+33 6 12 34 56 78" /&gt;
+&lt;x-input label="Code postal" placeholder="75001" maxlength="10" /&gt;
+&lt;x-input label="IBAN" placeholder="FR76 3000 6000 0112 3456 7890 189" maxlength="34" /&gt;
+&lt;x-input label="SIRET" placeholder="123 456 789 00012" maxlength="14" /&gt;
+&lt;x-input label="SIREN" placeholder="123 456 789" maxlength="9" /&gt;
+&lt;x-input label="Date" type="date" /&gt;
+&lt;x-input label="Code de vérification" placeholder="123456" maxlength="6" /&gt;
+&lt;div&gt;
+    &lt;label class="block text-sm font-medium text-gray-700 mb-1"&gt;OTP (inputs splittés)&lt;/label&gt;
+    &lt;div class="flex space-x-2"&gt;
+        &lt;x-input maxlength="1" class="w-10 text-center" /&gt;
+        &lt;x-input maxlength="1" class="w-10 text-center" /&gt;
+        &lt;x-input maxlength="1" class="w-10 text-center" /&gt;
+        &lt;x-input maxlength="1" class="w-10 text-center" /&gt;
+        &lt;x-input maxlength="1" class="w-10 text-center" /&gt;
+        &lt;x-input maxlength="1" class="w-10 text-center" /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;x-input label="Montant" placeholder="0.00" prefix="€" type="number" step="0.01" /&gt;
+&lt;div class="flex space-x-2 items-end"&gt;
+    &lt;x-input label="Montant" placeholder="0.00" type="number" step="0.01" /&gt;
+    &lt;x-select :options="['EUR', 'USD', 'GBP']" /&gt;
+&lt;/div&gt;</code></pre>
                     </div>
                     <div class="bg-gray-50 rounded p-3 text-xs">
                         <div class="font-semibold mb-1">Paramètres :</div>
@@ -166,71 +245,97 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Select</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-select>
+                            <x-form.select>
                                 <option value="">Sélectionner une option</option>
                                 <option value="option1">Option 1</option>
                                 <option value="option2">Option 2</option>
                             </x-select>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-select label="Pays">
+                            <x-form.select label="Pays">
                                 <option value="fr">France</option>
                                 <option value="be">Belgique</option>
                             </x-select>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-select label="Erreur" error="Champ requis">
+                            <x-form.select label="Erreur" error="Champ requis">
                                 <option value="">Choisir</option>
                             </x-select>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-select label="Aide" helpText="Sélectionnez une valeur">
+                            <x-form.select label="Aide" helpText="Sélectionnez une valeur">
                                 <option value="1">Un</option>
                                 <option value="2">Deux</option>
                             </x-select>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-select label="Désactivé" disabled>
+                            <x-form.select label="Désactivé" disabled>
                                 <option>Option</option>
                             </x-select>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-select label="Lecture seule" readonly>
+                            <x-form.select label="Lecture seule" readonly>
                                 <option>Option</option>
                             </x-select>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-select label="Multiple" multiple>
+                            <x-form.select label="Multiple" multiple>
                                 <option>Un</option>
                                 <option>Deux</option>
                                 <option>Trois</option>
                             </x-select>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-select label="Clearable" clearable>
+                            <x-form.select label="Clearable" clearable>
                                 <option>Un</option>
                                 <option>Deux</option>
                             </x-select>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-select label="Autofocus" autofocus>
+                            <x-form.select label="Autofocus" autofocus>
                                 <option>Un</option>
                                 <option>Deux</option>
                             </x-select>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-select label="Maxlength" maxlength="2">
+                            <x-form.select label="Maxlength" maxlength="2">
                                 <option>Un</option>
                                 <option>Deux</option>
                                 <option>Trois</option>
                             </x-select>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-select label="Minlength" minlength="2">
+                            <x-form.select label="Minlength" minlength="2">
                                 <option>Un</option>
                                 <option>Deux</option>
                                 <option>Trois</option>
                             </x-select>
+                        </div>
+                        <!-- Exemples avancés -->
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.select label="Pays (optgroup)" :options="[
+                                ['label' => 'Europe', 'options' => [
+                                    ['label' => 'France', 'value' => 'FR'],
+                                    ['label' => 'Allemagne', 'value' => 'DE'],
+                                ]],
+                                ['label' => 'Asie', 'options' => [
+                                    ['label' => 'Japon', 'value' => 'JP'],
+                                    ['label' => 'Chine', 'value' => 'CN'],
+                                ]],
+                            ]" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.select label="Ville (asynchrone)" :options="[]" loading="true" placeholder="Chargement..." />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            @php $produits = array_map(fn($i) => 'Produit '.$i, range(1, 1000)); @endphp
+                            <x-form.select label="Produit (virtual scroll)" :options="$produits" placeholder="Sélectionner un produit..." />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.select label="Technologies (recherche multi)" :options="['PHP', 'Laravel', 'Vue.js', 'React']" multiple="true" searchable="true" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form.select label="Tags (taggable)" :options="['Laravel', 'PHP', 'Livewire']" multiple="true" taggable="true" placeholder="Ajouter un tag..." />
                         </div>
                     </div>
                 </div>
@@ -246,7 +351,12 @@
 &lt;x-select label=&quot;Clearable&quot; clearable&gt;...&lt;/x-select&gt;
 &lt;x-select label=&quot;Autofocus&quot; autofocus&gt;...&lt;/x-select&gt;
 &lt;x-select label=&quot;Maxlength&quot; maxlength=&quot;2&quot;&gt;...&lt;/x-select&gt;
-&lt;x-select label=&quot;Minlength&quot; minlength=&quot;2&quot;&gt;...&lt;/x-select&gt;</code></pre>
+&lt;x-select label=&quot;Minlength&quot; minlength=&quot;2&quot;&gt;...&lt;/x-select&gt;
+&lt;x-select label=&quot;Pays (optgroup)&quot; :options="[['label' => 'Europe', 'options' => [['label' => 'France', 'value' => 'FR'], ['label' => 'Allemagne', 'value' => 'DE']]], ['label' => 'Asie', 'options' => [['label' => 'Japon', 'value' => 'JP'], ['label' => 'Chine', 'value' => 'CN']]]]" /&gt;
+&lt;x-select label=&quot;Ville (asynchrone)&quot; :options="[]" loading="true" placeholder="Chargement..." /&gt;
+&lt;x-select label=&quot;Produit (virtual scroll)&quot; :options="['Produit 1', 'Produit 2', 'Produit 3', 'Produit 4', 'Produit 5', 'Produit 6', 'Produit 7', 'Produit 8', 'Produit 9', 'Produit 10']" placeholder="Sélectionner un produit..." /&gt;
+&lt;x-select label=&quot;Technologies (recherche multi)&quot; :options="['PHP', 'Laravel', 'Vue.js', 'React']" multiple="true" searchable="true" /&gt;
+&lt;x-select label=&quot;Tags (taggable)&quot; :options="['Laravel', 'PHP', 'Livewire']" multiple="true" taggable="true" placeholder="Ajouter un tag..." /&gt;</code></pre>
                     </div>
                     <div class="bg-gray-50 rounded p-3 text-xs">
                         <div class="font-semibold mb-1">Paramètres :</div>
@@ -272,19 +382,19 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Checkbox</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-checkbox label="Accepter les conditions" checked />
+                            <x-form.checkbox label="Accepter les conditions" checked />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-checkbox label="Désactivé" disabled />
+                            <x-form.checkbox label="Désactivé" disabled />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-checkbox label="Lecture seule" readonly />
+                            <x-form.checkbox label="Lecture seule" readonly />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-checkbox label="Erreur" error="Message d'erreur" />
+                            <x-form.checkbox label="Erreur" error="Message d'erreur" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-checkbox label="Aide" helpText="Texte d'aide" />
+                            <x-form.checkbox label="Aide" helpText="Texte d'aide" />
                         </div>
                     </div>
                 </div>
@@ -314,12 +424,12 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Radio</h3>
                     <div class="space-y-4">
-                        <x-radio name="radio-demo" :options="[['label'=>'Option cochée','value'=>'1'],['label'=>'Option 2','value'=>'2']]" value="1" label="Choix simple" />
-                        <x-radio name="radio-demo2" :options="[['label'=>'Désactivé','value'=>'1']]" value="1" label="Désactivé" disabled />
-                        <x-radio name="radio-demo3" :options="[['label'=>'Lecture seule','value'=>'1']]" value="1" label="Lecture seule" readonly />
-                        <x-radio name="radio-demo4" :options="[['label'=>'Erreur','value'=>'1']]" value="1" label="Erreur" error="Message d'erreur" />
-                        <x-radio name="radio-demo5" :options="[['label'=>'Aide','value'=>'1']]" value="1" label="Aide" helpText="Texte d'aide" />
-                        <x-radio name="radio-demo6" :options="[['label'=>'Inline 1','value'=>'1'],['label'=>'Inline 2','value'=>'2']]" value="2" label="Inline" inline />
+                        <x-form.radio name="radio-demo" :options="[['label'=>'Option cochée','value'=>'1'],['label'=>'Option 2','value'=>'2']]" value="1" label="Choix simple" />
+                        <x-form.radio name="radio-demo2" :options="[['label'=>'Désactivé','value'=>'1']]" value="1" label="Désactivé" disabled />
+                        <x-form.radio name="radio-demo3" :options="[['label'=>'Lecture seule','value'=>'1']]" value="1" label="Lecture seule" readonly />
+                        <x-form.radio name="radio-demo4" :options="[['label'=>'Erreur','value'=>'1']]" value="1" label="Erreur" error="Message d'erreur" />
+                        <x-form.radio name="radio-demo5" :options="[['label'=>'Aide','value'=>'1']]" value="1" label="Aide" helpText="Texte d'aide" />
+                        <x-form.radio name="radio-demo6" :options="[['label'=>'Inline 1','value'=>'1'],['label'=>'Inline 2','value'=>'2']]" value="2" label="Inline" inline />
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -353,19 +463,19 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Switch</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-switch checked />
+                            <x-form.switch checked />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-switch disabled />
+                            <x-form.switch disabled />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-switch readonly />
+                            <x-form.switch readonly />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-switch error="Message d'erreur" />
+                            <x-form.switch error="Message d'erreur" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-switch helpText="Texte d'aide" />
+                            <x-form.switch helpText="Texte d'aide" />
                         </div>
                     </div>
                 </div>
@@ -395,34 +505,34 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Textarea</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-textarea rows="2">Texte ici...</x-textarea>
+                            <x-form.textarea rows="2">Texte ici...</x-form.textarea>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-textarea rows="4" placeholder="Placeholder">Texte avec placeholder</x-textarea>
+                            <x-form.textarea rows="4" placeholder="Placeholder">Texte avec placeholder</x-form.textarea>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-textarea rows="3" disabled>Désactivé</x-textarea>
+                            <x-form.textarea rows="3" disabled>Désactivé</x-textarea>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-textarea rows="3" readonly>Lecture seule</x-textarea>
+                            <x-form.textarea rows="3" readonly>Lecture seule</x-textarea>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-textarea rows="3" error="Message d'erreur">Avec erreur</x-textarea>
+                            <x-form.textarea rows="3" error="Message d'erreur">Avec erreur</x-textarea>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-textarea rows="3" helpText="Texte d'aide">Avec aide</x-textarea>
+                            <x-form.textarea rows="3" helpText="Texte d'aide">Avec aide</x-textarea>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-textarea rows="3" maxlength="100">Max 100 caractères</x-textarea>
+                            <x-form.textarea rows="3" maxlength="100">Max 100 caractères</x-textarea>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-textarea rows="3" minlength="10">Min 10 caractères</x-textarea>
+                            <x-form.textarea rows="3" minlength="10">Min 10 caractères</x-textarea>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-textarea rows="3" autofocus>Autofocus</x-textarea>
+                            <x-form.textarea rows="3" autofocus>Autofocus</x-textarea>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-textarea rows="3" required>Obligatoire</x-textarea>
+                            <x-form.textarea rows="3" required>Obligatoire</x-textarea>
                         </div>
                     </div>
                 </div>
@@ -469,19 +579,19 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Badge</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-badge>Badge</x-badge>
+                            <x-feedback.badge>Badge</x-badge>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-badge color="secondary">Secondaire</x-badge>
+                            <x-feedback.badge color="secondary">Secondaire</x-badge>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-badge color="danger">Danger</x-badge>
+                            <x-feedback.badge color="danger">Danger</x-badge>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-badge size="sm">Petit</x-badge>
+                            <x-feedback.badge size="sm">Petit</x-badge>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-badge size="lg">Grand</x-badge>
+                            <x-feedback.badge size="lg">Grand</x-badge>
                         </div>
                     </div>
                 </div>
@@ -508,13 +618,13 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Avatar</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-avatar>JD</x-avatar>
+                            <x-media.avatar>JD</x-avatar>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-avatar size="sm">SM</x-avatar>
+                            <x-media.avatar size="sm">SM</x-avatar>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-avatar size="lg">LG</x-avatar>
+                            <x-media.avatar size="lg">LG</x-avatar>
                         </div>
                     </div>
                 </div>
@@ -538,10 +648,10 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Breadcrumbs</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-breadcrumbs><li>Accueil</li><li>Section</li><li>Page</li></x-breadcrumbs>
+                            <x-navigation.breadcrumbs><li>Accueil</li><li>Section</li><li>Page</li></x-breadcrumbs>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-breadcrumbs separator=">"><li>Accueil</li><li>Section</li><li>Page</li></x-breadcrumbs>
+                            <x-navigation.breadcrumbs separator=">"><li>Accueil</li><li>Section</li><li>Page</li></x-breadcrumbs>
                         </div>
                     </div>
                 </div>
@@ -564,19 +674,19 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Progress</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-progress value="60" />
+                            <x-feedback.progress value="60" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-progress value="30" max="80" />
+                            <x-feedback.progress value="30" max="80" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-progress value="80" color="danger" />
+                            <x-feedback.progress value="80" color="danger" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-progress value="40" size="sm" />
+                            <x-feedback.progress value="40" size="sm" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-progress value="90" size="lg" />
+                            <x-feedback.progress value="90" size="lg" />
                         </div>
                     </div>
                 </div>
@@ -605,13 +715,13 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Spinner</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-spinner />
+                            <x-feedback.spinner />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-spinner size="sm" />
+                            <x-feedback.spinner size="sm" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-spinner size="lg" />
+                            <x-feedback.spinner size="lg" />
                         </div>
                     </div>
                 </div>
@@ -635,16 +745,16 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Collapse</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-collapse><div class="p-2">Contenu repliable</div></x-collapse>
+                            <x-layout.collapse><div class="p-2">Contenu repliable</div></x-collapse>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-collapse open><div class="p-2">Ouvert</div></x-collapse>
+                            <x-layout.collapse open><div class="p-2">Ouvert</div></x-collapse>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-collapse alwaysOpen><div class="p-2">Toujours ouvert</div></x-collapse>
+                            <x-layout.collapse alwaysOpen><div class="p-2">Toujours ouvert</div></x-collapse>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-collapse transition="height 0.5s"><div class="p-2">Transition personnalisée</div></x-collapse>
+                            <x-layout.collapse transition="height 0.5s"><div class="p-2">Transition personnalisée</div></x-collapse>
                         </div>
                     </div>
                 </div>
@@ -671,25 +781,25 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Pagination</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-pagination total="100" perPage="10" currentPage="2" />
+                            <x-data.pagination total="100" perPage="10" currentPage="2" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-pagination showNumbers="false" />
+                            <x-data.pagination showNumbers="false" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-pagination showFirstLast="false" />
+                            <x-data.pagination showFirstLast="false" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-pagination showPrevNext="false" />
+                            <x-data.pagination showPrevNext="false" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-pagination showEllipsis="false" />
+                            <x-data.pagination showEllipsis="false" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-pagination ellipsis="..." />
+                            <x-data.pagination ellipsis="..." />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-pagination prevText="Précédent" nextText="Suivant" firstText="Début" lastText="Fin" />
+                            <x-data.pagination prevText="Précédent" nextText="Suivant" firstText="Début" lastText="Fin" />
                         </div>
                     </div>
                 </div>
@@ -729,37 +839,37 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Tooltip</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-tooltip content="Astuce !"><x-button>Survolez-moi</x-button></x-tooltip>
+                            <x-layout.tooltip content="Astuce !"><x-button>Survolez-moi</x-button></x-tooltip>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-tooltip content="En bas" placement="bottom"><x-button>Placement bas</x-button></x-tooltip>
+                            <x-layout.tooltip content="En bas" placement="bottom"><x-button>Placement bas</x-button></x-tooltip>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-tooltip content="À gauche" placement="left"><x-button>Placement gauche</x-button></x-tooltip>
+                            <x-layout.tooltip content="À gauche" placement="left"><x-button>Placement gauche</x-button></x-tooltip>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-tooltip content="À droite" placement="right"><x-button>Placement droite</x-button></x-tooltip>
+                            <x-layout.tooltip content="À droite" placement="right"><x-button>Placement droite</x-button></x-tooltip>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-tooltip content="Au clic" trigger="click"><x-button>Trigger clic</x-button></x-tooltip>
+                            <x-layout.tooltip content="Au clic" trigger="click"><x-button>Trigger clic</x-button></x-tooltip>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-tooltip content="Au focus" trigger="focus"><x-button>Trigger focus</x-button></x-tooltip>
+                            <x-layout.tooltip content="Au focus" trigger="focus"><x-button>Trigger focus</x-button></x-tooltip>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-tooltip content="Délai 2s" delay="2000"><x-button>Délai 2s</x-button></x-tooltip>
+                            <x-layout.tooltip content="Délai 2s" delay="2000"><x-button>Délai 2s</x-button></x-tooltip>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-tooltip content="Décalage 20px" offset="20"><x-button>Décalage</x-button></x-tooltip>
+                            <x-layout.tooltip content="Décalage 20px" offset="20"><x-button>Décalage</x-button></x-tooltip>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-tooltip content="Sans flèche" arrow="false"><x-button>Sans flèche</x-button></x-tooltip>
+                            <x-layout.tooltip content="Sans flèche" arrow="false"><x-button>Sans flèche</x-button></x-tooltip>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-tooltip content="Non interactif" interactive="false"><x-button>Non interactif</x-button></x-tooltip>
+                            <x-layout.tooltip content="Non interactif" interactive="false"><x-button>Non interactif</x-button></x-tooltip>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-tooltip content="Bordure 10px" interactiveBorder="10"><x-button>Bordure interactive</x-button></x-tooltip>
+                            <x-layout.tooltip content="Bordure 10px" interactiveBorder="10"><x-button>Bordure interactive</x-button></x-tooltip>
                         </div>
                     </div>
                 </div>
@@ -804,34 +914,34 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Divider</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-divider />
+                            <x-layout.divider />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-divider orientation="vertical" />
+                            <x-layout.divider orientation="vertical" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-divider color="primary" />
+                            <x-layout.divider color="primary" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-divider color="secondary" />
+                            <x-layout.divider color="secondary" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-divider color="danger" />
+                            <x-layout.divider color="danger" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-divider size="sm" />
+                            <x-layout.divider size="sm" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-divider size="lg" />
+                            <x-layout.divider size="lg" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-divider dashed />
+                            <x-layout.divider dashed />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-divider dotted />
+                            <x-layout.divider dotted />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-divider text="Ou">Texte au centre</x-divider>
+                            <x-layout.divider text="Ou">Texte au centre</x-divider>
                         </div>
                     </div>
                 </div>
@@ -871,37 +981,37 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Popover</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-popover content="Contenu du popover"><x-button>Popover</x-button></x-popover>
+                            <x-layout.popover content="Contenu du popover"><x-button>Popover</x-button></x-popover>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-popover content="En bas" placement="bottom"><x-button>Placement bas</x-button></x-popover>
+                            <x-layout.popover content="En bas" placement="bottom"><x-button>Placement bas</x-button></x-popover>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-popover content="À gauche" placement="left"><x-button>Placement gauche</x-button></x-popover>
+                            <x-layout.popover content="À gauche" placement="left"><x-button>Placement gauche</x-button></x-popover>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-popover content="À droite" placement="right"><x-button>Placement droite</x-button></x-popover>
+                            <x-layout.popover content="À droite" placement="right"><x-button>Placement droite</x-button></x-popover>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-popover content="Au clic" trigger="click"><x-button>Trigger clic</x-button></x-popover>
+                            <x-layout.popover content="Au clic" trigger="click"><x-button>Trigger clic</x-button></x-popover>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-popover content="Au focus" trigger="focus"><x-button>Trigger focus</x-button></x-popover>
+                            <x-layout.popover content="Au focus" trigger="focus"><x-button>Trigger focus</x-button></x-popover>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-popover content="Délai 2s" delay="2000"><x-button>Délai 2s</x-button></x-popover>
+                            <x-layout.popover content="Délai 2s" delay="2000"><x-button>Délai 2s</x-button></x-popover>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-popover content="Décalage 20px" offset="20"><x-button>Décalage</x-button></x-popover>
+                            <x-layout.popover content="Décalage 20px" offset="20"><x-button>Décalage</x-button></x-popover>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-popover content="Sans flèche" arrow="false"><x-button>Sans flèche</x-button></x-popover>
+                            <x-layout.popover content="Sans flèche" arrow="false"><x-button>Sans flèche</x-button></x-popover>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-popover content="Non interactif" interactive="false"><x-button>Non interactif</x-button></x-popover>
+                            <x-layout.popover content="Non interactif" interactive="false"><x-button>Non interactif</x-button></x-popover>
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-popover content="Bordure 10px" interactiveBorder="10"><x-button>Bordure interactive</x-button></x-popover>
+                            <x-layout.popover content="Bordure 10px" interactiveBorder="10"><x-button>Bordure interactive</x-button></x-popover>
                         </div>
                     </div>
                 </div>
@@ -974,7 +1084,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Stepper</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-stepper><span>Étape 1</span><span>Étape 2</span></x-stepper>
+                        <x-data.stepper><span>Étape 1</span><span>Étape 2</span></x-stepper>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -997,37 +1107,37 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Slider</h3>
                     <div class="space-y-4">
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-slider value="50" />
+                            <x-form.slider value="50" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-slider value="25" min="0" max="100" />
+                            <x-form.slider value="25" min="0" max="100" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-slider value="75" step="5" />
+                            <x-form.slider value="75" step="5" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-slider value="30" disabled />
+                            <x-form.slider value="30" disabled />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-slider value="60" readonly />
+                            <x-form.slider value="60" readonly />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-slider value="40" error="Message d'erreur" />
+                            <x-form.slider value="40" error="Message d'erreur" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-slider value="80" helpText="Texte d'aide" />
+                            <x-form.slider value="80" helpText="Texte d'aide" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-slider value="45" prefix="Min:" suffix="Max" />
+                            <x-form.slider value="45" prefix="Min:" suffix="Max" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-slider value="90" color="danger" />
+                            <x-form.slider value="90" color="danger" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-slider value="35" size="sm" />
+                            <x-form.slider value="35" size="sm" />
                         </div>
                         <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-slider value="85" size="lg" />
+                            <x-form.slider value="85" size="lg" />
                         </div>
                     </div>
                 </div>
@@ -1162,7 +1272,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Timeline</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-timeline><li>Début</li><li>Milieu</li><li>Fin</li></x-timeline>
+                        <x-data.timeline><li>Début</li><li>Milieu</li><li>Fin</li></x-timeline>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -1184,7 +1294,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Statistic</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-statistic value="42">Utilisateurs</x-statistic>
+                        <x-data.statistic value="42">Utilisateurs</x-statistic>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -1209,7 +1319,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Empty</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-empty>Aucune donnée</x-empty>
+                        <x-feedback.empty>Aucune donnée</x-empty>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -1230,8 +1340,8 @@
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Form</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
                         <x-form>
-                            <x-formcontrol label="Nom">
-                                <x-input />
+                            <x-form.formcontrol label="Nom">
+                                <x-form.input />
                             </x-formcontrol>
                         </x-form>
                     </div>
@@ -1256,7 +1366,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Drawer</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-drawer><div>Contenu du drawer</div></x-drawer>
+                        <x-layout.drawer><div>Contenu du drawer</div></x-drawer>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -1279,7 +1389,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Upload</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-upload />
+                        <x-form.upload />
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -1304,7 +1414,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Image</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-image src="https://placehold.co/100x100" alt="Demo" />
+                        <x-media.image src="https://placehold.co/100x100" alt="Demo" />
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -1329,7 +1439,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Affix</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-affix><x-button>Affixé</x-button></x-affix>
+                        <x-navigation.affix><x-button>Affixé</x-button></x-affix>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -1351,7 +1461,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Anchor</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-anchor href="#">Lien ancre</x-anchor>
+                        <x-navigation.anchor href="#">Lien ancre</x-anchor>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -1375,7 +1485,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Descriptions</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-descriptions>
+                        <x-data.descriptions>
                             <div>
                                 <dt>Nom</dt>
                                 <dd>John Doe</dd>
@@ -1403,7 +1513,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Mentions</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-mentions>@john</x-mentions>
+                        <x-form.mentions>@john</x-mentions>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -1431,8 +1541,8 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">FormControl</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-formcontrol label="Bio">
-                            <x-texteditor rows="2">Votre bio...</x-texteditor>
+                        <x-form.formcontrol label="Bio">
+                            <x-form.texteditor rows="2">Votre bio...</x-texteditor>
                         </x-formcontrol>
                     </div>
                 </div>
@@ -1457,7 +1567,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">TextEditor</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-texteditor rows="2">Votre bio...</x-texteditor>
+                        <x-form.texteditor rows="2">Votre bio...</x-texteditor>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -1481,7 +1591,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Sidebar</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-sidebar><ul><li class="p-2">Menu 1</li></ul></x-sidebar>
+                        <x-navigation.sidebar><ul><li class="p-2">Menu 1</li></ul></x-sidebar>
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -1504,7 +1614,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Autocomplete</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-autocomplete placeholder="Chercher..." />
+                        <x-form.autocomplete placeholder="Chercher..." />
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -1576,7 +1686,7 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Combobox</h3>
                     <div class="py-8 px-6 bg-gray-50 rounded flex items-center justify-center min-h-[120px] max-w-full overflow-x-auto" style="min-width:0;">
-                        <x-combobox placeholder="Choisir..." />
+                        <x-form.combobox placeholder="Choisir..." />
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
@@ -1598,11 +1708,47 @@
                     </div>
                 </div>
             </div>
+            {{-- CARD --}}
+            <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
+                <div class="flex-1 mb-4 md:mb-0">
+                    <h3 class="font-semibold text-lg mb-3 text-gray-800">Card</h3>
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-layout.card>
+                                <div class="p-4">Carte simple</div>
+                            </x-card>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-layout.card>
+                                <div class="p-4">
+                                    <h4 class="font-bold mb-2">Titre de la carte</h4>
+                                    <p>Contenu de la carte avec un bouton :</p>
+                                    <x-button class="mt-2">Action</x-button>
+                                </div>
+                            </x-card>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
+                    <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-card&gt;
+    &lt;div class=&quot;p-4&quot;&gt;Carte simple&lt;/div&gt;
+&lt;/x-card&gt;
+&lt;x-card&gt;
+    &lt;div class=&quot;p-4&quot;&gt;
+        &lt;h4 class=&quot;font-bold mb-2&quot;&gt;Titre de la carte&lt;/h4&gt;
+        &lt;p&gt;Contenu de la carte avec un bouton :&lt;/p&gt;
+        &lt;x-button class=&quot;mt-2&quot;&gt;Action&lt;/x-button&gt;
+    &lt;/div&gt;
+&lt;/x-card&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="install" class="mb-16">
         <h2 class="text-2xl font-bold mb-6 text-blue-700">Installation</h2>
-        <x-card>
+        <x-layout.card>
             <ol class="list-decimal pl-6 space-y-2 text-sm">
                 <li>Installer le package (exemple) :<br>
                     <code class="bg-gray-100 px-2 py-1 rounded">composer require martin-lechene/larappeui</code>
