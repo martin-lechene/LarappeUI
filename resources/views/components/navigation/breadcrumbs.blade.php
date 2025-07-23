@@ -12,10 +12,10 @@
                     @else
                         <span class="text-gray-500">{{ $item['label'] ?? $item }}</span>
                     @endif
-                    @if($i < count($items) - 1)
-                        <span class="mx-2 text-gray-400">{{ $separator }}</span>
-                    @endif
                 </li>
+                @if($i < count($items) - 1)
+                    <li aria-hidden="true" class="mx-2 text-gray-400 font-bold text-lg select-none flex items-center">{{ $separator }}</li>
+                @endif
             @endforeach
         @else
             {{ $slot }}
