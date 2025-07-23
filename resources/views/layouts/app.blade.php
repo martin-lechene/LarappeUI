@@ -18,7 +18,7 @@
         <nav class="flex gap-6 text-sm">
             <a href="#components" class="hover:text-blue-600">Composants</a>
             <a href="#install" class="hover:text-blue-600">Installation</a>
-            <a href="https://github.com/martin-lechene/" target="_blank" class="hover:text-blue-600">Github</a>
+            <a href="https://github.com/martin-lechene/LarappeUI" target="_blank" class="hover:text-blue-600">Github</a>
         </nav>
         <div class="flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-lg px-3 py-1 shadow-sm ml-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 5.66l-.71-.71M4.05 4.93l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
@@ -59,7 +59,7 @@
     <!-- Footer -->
     <footer class="w-full bg-white border-t border-gray-200 py-6 mt-10 text-center text-sm text-gray-500">
         <div class="mb-2">
-            <a href="https://github.com/martin-lechene/" target="_blank" class="hover:text-blue-600 underline">Github</a> |
+            <a href="https://github.com/martin-lechene/LarappeUI" target="_blank" class="hover:text-blue-600 underline">Github</a> |
             <a href="https://linkedin.com/in/martin-lechene/" target="_blank" class="hover:text-blue-600 underline">LinkedIn</a>
         </div>
         <div>&copy; {{ date('Y') }} LarappeUI. Inspiré par <a href="https://ui.frappe.io/" class="underline hover:text-blue-600" target="_blank">FrappeUI</a>.</div>

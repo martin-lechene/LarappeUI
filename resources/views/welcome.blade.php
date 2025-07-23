@@ -2,7 +2,6 @@
 
 @section('content')
     <section id="components" class="mb-16">
-        <h2 class="text-2xl font-bold mb-8 text-blue-700">Composants</h2>
         <div class="space-y-10">
             {{-- BUTTON --}}
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
@@ -1101,6 +1100,38 @@
                     </div>
                 </div>
             </div>
+            {{-- STEPPER (exemples exhaustifs) --}}
+            <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
+                <div class="flex-1 mb-4 md:mb-0">
+                    <h3 class="font-semibold text-lg mb-3 text-gray-800">Stepper (toutes variantes)</h3>
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-data.stepper :steps="[['label'=>'Étape 1'],['label'=>'Étape 2'],['label'=>'Étape 3']]" current="1" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-data.stepper :steps="[['label'=>'A','icon'=>'<svg class=\'w-4 h-4\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\'><circle cx=\'12\' cy=\'12\' r=\'10\' /></svg>'],['label'=>'B'],['label'=>'C']]" current="2" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-data.stepper :steps="[['label'=>'Un'],['label'=>'Deux'],['label'=>'Trois'],['label'=>'Quatre']]" current="3" direction="vertical" />
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
+                    <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-data.stepper :steps="[['label'=&gt;'Étape 1'],['label'=&gt;'Étape 2'],['label'=&gt;'Étape 3']]" current="1" /&gt;
+&lt;x-data.stepper :steps="[['label'=&gt;'A','icon'=&gt;'<svg class=\'w-4 h-4\' fill=\'none\' stroke=\'currentColor\' viewBox=\'0 0 24 24\'><circle cx=\'12\' cy=\'12\' r=\'10\' /></svg>'],['label'=&gt;'B'],['label'=&gt;'C']]" current="2" /&gt;
+&lt;x-data.stepper :steps="[['label'=&gt;'Un'],['label'=&gt;'Deux'],['label'=&gt;'Trois'],['label'=&gt;'Quatre']]" current="3" direction="vertical" /&gt;</code></pre>
+                    </div>
+                    <div class="bg-gray-50 rounded p-3 text-xs">
+                        <div class="font-semibold mb-1">Paramètres :</div>
+                        <ul class="list-disc pl-4">
+                            <li><b>steps</b> (array) : Liste des étapes [{label, icon}]</li>
+                            <li><b>current</b> (int, défaut: 1) : Étape active</li>
+                            <li><b>direction</b> (string, défaut: 'horizontal') : Direction (horizontal, vertical)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             {{-- SLIDER --}}
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
@@ -1744,17 +1775,170 @@
                     </div>
                 </div>
             </div>
+            {{-- TIMELINE (exemples exhaustifs) --}}
+            <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
+                <div class="flex-1 mb-4 md:mb-0">
+                    <h3 class="font-semibold text-lg mb-3 text-gray-800">Timeline (toutes variantes)</h3>
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-data.timeline :items="[['label'=>'Début','content'=>'Création','color'=>'bg-blue-200'],['label'=>'Milieu','content'=>'En cours','color'=>'bg-yellow-200'],['label'=>'Fin','content'=>'Terminé','color'=>'bg-green-200']]" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-data.timeline :items="[['label'=>'A','content'=>'Étape A'],['label'=>'B','content'=>'Étape B','icon'=>'<svg class=\'w-3 h-3\' fill=\'currentColor\' viewBox=\'0 0 20 20\'><circle cx=\'10\' cy=\'10\' r=\'10\' /></svg>'],['label'=>'C','content'=>'Étape C']]" mode="alternate" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-data.timeline :items="[['label'=>'1'],['label'=>'2'],['label'=>'3']]" pending reverse />
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
+                    <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-data.timeline :items="[['label'=&gt;'Début','content'=&gt;'Création','color'=&gt;'bg-blue-200'],['label'=&gt;'Milieu','content'=&gt;'En cours','color'=&gt;'bg-yellow-200'],['label'=&gt;'Fin','content'=&gt;'Terminé','color'=&gt;'bg-green-200']]" /&gt;
+&lt;x-data.timeline :items="[['label'=&gt;'A','content'=&gt;'Étape A'],['label'=&gt;'B','content'=&gt;'Étape B','icon'=&gt;'<svg class=\'w-3 h-3\' fill=\'currentColor\' viewBox=\'0 0 20 20\'><circle cx=\'10\' cy=\'10\' r=\'10\' /></svg>'],['label'=&gt;'C','content'=&gt;'Étape C']]" mode="alternate" /&gt;
+&lt;x-data.timeline :items="[['label'=&gt;'1'],['label'=&gt;'2'],['label'=&gt;'3']]" pending reverse /&gt;</code></pre>
+                    </div>
+                    <div class="bg-gray-50 rounded p-3 text-xs">
+                        <div class="font-semibold mb-1">Paramètres :</div>
+                        <ul class="list-disc pl-4">
+                            <li><b>items</b> (array) : Liste des événements [{label, content, icon, color}]</li>
+                            <li><b>mode</b> (string, défaut: 'left') : Mode (left, right, alternate)</li>
+                            <li><b>pending</b> (bool, défaut: false) : Affiche "En attente"</li>
+                            <li><b>reverse</b> (bool, défaut: false) : Inverse l'ordre</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {{-- STATISTIC (exemples exhaustifs) --}}
+            <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
+                <div class="flex-1 mb-4 md:mb-0">
+                    <h3 class="font-semibold text-lg mb-3 text-gray-800">Statistic (toutes variantes)</h3>
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-data.statistic title="Utilisateurs" value="1234" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-data.statistic title="CA" value="45678.90" prefix="€" precision="2" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-data.statistic title="Taux" value="98.7" suffix="%" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-data.statistic title="Chargement" loading />
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
+                    <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-data.statistic title="Utilisateurs" value="1234" /&gt;
+&lt;x-data.statistic title="CA" value="45678.90" prefix="€" precision="2" /&gt;
+&lt;x-data.statistic title="Taux" value="98.7" suffix="%" /&gt;
+&lt;x-data.statistic title="Chargement" loading /&gt;</code></pre>
+                    </div>
+                    <div class="bg-gray-50 rounded p-3 text-xs">
+                        <div class="font-semibold mb-1">Paramètres :</div>
+                        <ul class="list-disc pl-4">
+                            <li><b>title</b> (string, optionnel) : Titre</li>
+                            <li><b>value</b> (string|int|float) : Valeur</li>
+                            <li><b>prefix</b> (string, optionnel) : Préfixe</li>
+                            <li><b>suffix</b> (string, optionnel) : Suffixe</li>
+                            <li><b>precision</b> (int, défaut: 0) : Précision décimale</li>
+                            <li><b>loading</b> (bool, défaut: false) : Affiche un spinner</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {{-- EMPTY (exemples exhaustifs) --}}
+            <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
+                <div class="flex-1 mb-4 md:mb-0">
+                    <h3 class="font-semibold text-lg mb-3 text-gray-800">Empty (toutes variantes)</h3>
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-feedback.empty description="Aucune donnée disponible" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-feedback.empty image="https://placehold.co/48x48" description="Aucun résultat" />
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-feedback.empty>Aucun élément trouvé</x-feedback.empty>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
+                    <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-feedback.empty description="Aucune donnée disponible" /&gt;
+&lt;x-feedback.empty image="https://placehold.co/48x48" description="Aucun résultat" /&gt;
+&lt;x-feedback.empty&gt;Aucun élément trouvé&lt;/x-feedback.empty&gt;</code></pre>
+                    </div>
+                    <div class="bg-gray-50 rounded p-3 text-xs">
+                        <div class="font-semibold mb-1">Paramètres :</div>
+                        <ul class="list-disc pl-4">
+                            <li><b>description</b> (string, optionnel) : Description</li>
+                            <li><b>image</b> (string, optionnel) : URL de l'image</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {{-- FORM (exemples exhaustifs) --}}
+            <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
+                <div class="flex-1 mb-4 md:mb-0">
+                    <h3 class="font-semibold text-lg mb-3 text-gray-800">Form (toutes variantes)</h3>
+                    <div class="space-y-4">
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form layout="vertical">
+                                <x-form.formcontrol label="Nom"><x-form.input /></x-form.formcontrol>
+                                <x-form.formcontrol label="Email"><x-form.input type="email" /></x-form.formcontrol>
+                            </x-form>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form layout="horizontal" columns="2">
+                                <x-form.formcontrol label="Adresse"><x-form.input /></x-form.formcontrol>
+                                <x-form.formcontrol label="Ville"><x-form.input /></x-form.formcontrol>
+                            </x-form>
+                        </div>
+                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
+                            <x-form layout="inline">
+                                <x-form.formcontrol label="Recherche"><x-form.input /></x-form.formcontrol>
+                                <x-form.formcontrol><x-button>Rechercher</x-button></x-form.formcontrol>
+                            </x-form>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
+                    <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-form layout="vertical"&gt;
+    &lt;x-form.formcontrol label="Nom"&gt;&lt;x-form.input /&gt;&lt;/x-form.formcontrol&gt;
+    &lt;x-form.formcontrol label="Email"&gt;&lt;x-form.input type="email" /&gt;&lt;/x-form.formcontrol&gt;
+&lt;/x-form&gt;
+&lt;x-form layout="horizontal" columns="2"&gt;
+    &lt;x-form.formcontrol label="Adresse"&gt;&lt;x-form.input /&gt;&lt;/x-form.formcontrol&gt;
+    &lt;x-form.formcontrol label="Ville"&gt;&lt;x-form.input /&gt;&lt;/x-form.formcontrol&gt;
+&lt;/x-form&gt;
+&lt;x-form layout="inline"&gt;
+    &lt;x-form.formcontrol label="Recherche"&gt;&lt;x-form.input /&gt;&lt;/x-form.formcontrol&gt;
+    &lt;x-form.formcontrol&gt;&lt;x-button&gt;Rechercher&lt;/x-button&gt;&lt;/x-form.formcontrol&gt;
+&lt;/x-form&gt;</code></pre>
+                    </div>
+                    <div class="bg-gray-50 rounded p-3 text-xs">
+                        <div class="font-semibold mb-1">Paramètres :</div>
+                        <ul class="list-disc pl-4">
+                            <li><b>layout</b> (string, défaut: 'vertical') : vertical, horizontal, inline</li>
+                            <li><b>columns</b> (int, optionnel) : Nombre de colonnes (horizontal)</li>
+                            <li><b>onSubmit</b> (function, optionnel) : Callback submit</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="install" class="mb-16">
         <h2 class="text-2xl font-bold mb-6 text-blue-700">Installation</h2>
         <x-layout.card>
             <ol class="list-decimal pl-6 space-y-2 text-sm">
-                <li>Installer le package (exemple) :<br>
-                    <code class="bg-gray-100 px-2 py-1 rounded">composer require martin-lechene/larappeui</code>
+                <li>Installer le projet (exemple) :<br>
+                    <code class="bg-gray-100 px-2 py-1 rounded">git clone https://github.com/martin-lechene/larappeui.git</code>
                 </li>
                 <li>Publier les composants Blade :<br>
-                    <code class="bg-gray-100 px-2 py-1 rounded">php artisan vendor:publish --tag=larappeui-components</code>
+                    <code class="bg-gray-100 px-2 py-1 rounded">php artisan vendor:publish --tag=larappeui-components</code> 
                 </li>
                 <li>Configurer TailwindCSS :<br>
                     <code class="bg-gray-100 px-2 py-1 rounded">@import 'tailwindcss/forms';<br>@import 'tailwindcss/typography';<br>@import 'tailwindcss/aspect-ratio';</code>
@@ -1765,65 +1949,6 @@
             </ol>
         </x-card>
     </section>
-    <!-- Début de la section Inputs & Selects avancés (issus de demo.blade.php) -->
-    <div class="bg-white rounded-lg shadow border border-blue-200 p-6 mt-16">
-        <h2 class="text-xl font-bold mb-6 text-blue-700">Démo des Inputs & Selects avancés</h2>
-
-        <h3 class="text-lg font-semibold mt-8 mb-4">Inputs avancés</h3>
-        <div class="space-y-4">
-            <x-form.input label="Adresse IP v4" placeholder="192.168.0.1" />
-            <x-form.input label="Adresse IP v6" placeholder="2001:0db8:85a3:0000:0000:8a2e:0370:7334" />
-            <x-form.input label="Carte bancaire" placeholder="1234 5678 9012 3456" maxlength="19" />
-            <x-form.input label="CVV" placeholder="123" maxlength="4" />
-            <x-form.input label="Téléphone" placeholder="+33 6 12 34 56 78" />
-            <x-form.input label="Code postal" placeholder="75001" maxlength="10" />
-            <x-form.input label="IBAN" placeholder="FR76 3000 6000 0112 3456 7890 189" maxlength="34" />
-            <x-form.input label="SIRET" placeholder="123 456 789 00012" maxlength="14" />
-            <x-form.input label="SIREN" placeholder="123 456 789" maxlength="9" />
-            <x-form.input label="Date" type="date" />
-            <x-form.input label="Code de vérification" placeholder="123456" maxlength="6" />
-            <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">OTP (inputs splittés)</label>
-                <div class="flex space-x-2">
-                    <x-form.input maxlength="1" class="w-10 text-center" />
-                    <x-form.input maxlength="1" class="w-10 text-center" />
-                    <x-form.input maxlength="1" class="w-10 text-center" />
-                    <x-form.input maxlength="1" class="w-10 text-center" />
-                    <x-form.input maxlength="1" class="w-10 text-center" />
-                    <x-form.input maxlength="1" class="w-10 text-center" />
-                </div>
-            </div>
-            <x-form.input label="Montant" placeholder="0.00" prefix="€" type="number" step="0.01" />
-            <div class="flex space-x-2 items-end">
-                <x-form.input label="Montant" placeholder="0.00" type="number" step="0.01" />
-                <x-form.select :options="['EUR', 'USD', 'GBP']" />
-            </div>
-        </div>
-
-        <h3 class="text-lg font-semibold mt-12 mb-4">Selects avancés</h3>
-        <div class="space-y-4">
-            <x-form.select label="Pays (optgroup)" :options="[
-                ['label' => 'Europe', 'options' => [
-                    ['label' => 'France', 'value' => 'FR'],
-                    ['label' => 'Allemagne', 'value' => 'DE'],
-                ]],
-                ['label' => 'Asie', 'options' => [
-                    ['label' => 'Japon', 'value' => 'JP'],
-                    ['label' => 'Chine', 'value' => 'CN'],
-                ]],
-            ]" />
-            <x-form.select label="Ville (asynchrone)" :options="[]" loading="true" placeholder="Chargement..." />
-            <x-form.select label="Réseau social (icônes)" :options="[
-                ['label' => 'Facebook', 'value' => 'fb', 'icon' => '<svg class=\'inline w-4 h-4 mr-1\' fill=\'currentColor\' viewBox=\'0 0 24 24\'><path d=\'M22 12c0-5.522-4.477-10-10-10S2 6.478 2 12c0 4.991 3.657 9.128 8.438 9.877v-6.987h-2.54v-2.89h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.632.771-1.632 1.562v1.875h2.773l-.443 2.89h-2.33v6.987C18.343 21.128 22 16.991 22 12z\'/></svg>'],
-                ['label' => 'Twitter', 'value' => 'tw', 'icon' => '<svg class=\'inline w-4 h-4 mr-1\' fill=\'currentColor\' viewBox=\'0 0 24 24\'><path d=\'M24 4.557a9.93 9.93 0 01-2.828.775 4.932 4.932 0 002.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 00-8.384 4.482C7.691 8.095 4.066 6.13 1.64 3.161c-.542.929-.855 2.01-.855 3.17 0 2.188 1.115 4.116 2.823 5.247a4.904 4.904 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 01-2.224.084c.627 1.956 2.444 3.377 4.6 3.417A9.867 9.867 0 010 21.543a13.94 13.94 0 007.548 2.209c9.058 0 14.009-7.513 14.009-14.009 0-.213-.005-.425-.014-.636z\'/></svg>'],
-            ]" />
-            @php $produits = array_map(fn($i) => 'Produit '.$i, range(1, 1000)); @endphp
-            <x-form.select label="Produit (virtual scroll)" :options="$produits" placeholder="Sélectionner un produit..." />
-            <x-form.select label="Technologies (recherche multi)" :options="['PHP', 'Laravel', 'Vue.js', 'React']" multiple="true" searchable="true" />
-            <x-form.select label="Tags (taggable)" :options="['Laravel', 'PHP', 'Livewire']" multiple="true" taggable="true" placeholder="Ajouter un tag..." />
-        </div>
-    </div>
-    <!-- Fin de la section Inputs & Selects avancés -->
 @endsection
 
 @section('scripts')
