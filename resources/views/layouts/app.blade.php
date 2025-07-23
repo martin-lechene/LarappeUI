@@ -48,6 +48,17 @@
                 <option value="sea">Sea</option>
                 <option value="summer">Summer</option>
                 <option value="2d">2D</option>
+                <option value="solarized-light">Solarized Light</option>
+                <option value="solarized-dark">Solarized Dark</option>
+                <option value="monokai">Monokai</option>
+                <option value="pastel">Pastel</option>
+                <option value="minimal">Minimal</option>
+                <option value="coffee">Coffee</option>
+                <option value="sakura">Sakura</option>
+                <option value="forest-night">Forest Night</option>
+                <option value="retro80s">Retro 80s</option>
+                <option value="space">Space</option>
+                <option value="vintage">Vintage</option>
             </select>
         </div>
     </header>
