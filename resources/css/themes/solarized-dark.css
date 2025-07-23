@@ -1,0 +1,478 @@
+/* Solarized Theme (Light & Dark)
+   https://ethanschoonover.com/solarized/
+   Utilise uniquement les vraies couleurs Solarized
+*/
+
+/* Styles de base pour HTML, body, main, etc. */
+html {
+  background-color: #002b36;
+  color: #839496;
+}
+
+body {
+  background-color: #002b36;
+  color: #839496;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  background-color: #002b36;
+  color: #839496;
+}
+
+/* Variables CSS pour le thème Solarized Dark */
+[theme="solarized-dark"] {
+  /* Couleurs de base Solarized */
+  --solarized-base03: #002b36;
+  --solarized-base02: #073642;
+  --solarized-base01: #586e75;
+  --solarized-base00: #657b83;
+  --solarized-base0: #839496;
+  --solarized-base1: #93a1a1;
+  --solarized-base2: #eee8d5;
+  --solarized-base3: #fdf6e3;
+  
+  /* Couleurs d'accent Solarized */
+  --solarized-yellow: #b58900;
+  --solarized-orange: #cb4b16;
+  --solarized-red: #dc322f;
+  --solarized-magenta: #d33682;
+  --solarized-violet: #6c71c4;
+  --solarized-blue: #268bd2;
+  --solarized-cyan: #2aa198;
+  --solarized-green: #859900;
+
+  /* Variables principales */
+  --background: #002b36;
+  --surface: #073642;
+  --surface-alt: #586e75;
+  --overlay: rgba(131, 148, 150, 0.08);
+  --input-bg: #073642;
+  --text: #839496;
+  --text-muted: #93a1a1;
+  --text-inverse: #002b36;
+  --text-placeholder: #586e75;
+  --border: #073642;
+  --border-strong: #586e75;
+  --input-border: #586e75;
+  --focus-ring: #268bd2;
+  
+  /* Couleurs sémantiques */
+  --primary: #268bd2;
+  --primary-foreground: #002b36;
+  --secondary: #2aa198;
+  --secondary-foreground: #002b36;
+  --accent: #b58900;
+  --accent-foreground: #002b36;
+  --success: #859900;
+  --success-foreground: #002b36;
+  --warning: #b58900;
+  --warning-foreground: #002b36;
+  --danger: #dc322f;
+  --danger-foreground: #002b36;
+  --info: #2aa198;
+  --info-foreground: #002b36;
+  
+  /* États interactifs */
+  --hover-bg: #073642;
+  --active-bg: #586e75;
+  --disabled-bg: #073642;
+  --disabled-text: #586e75;
+  --selected-bg: #073642;
+  --selected-text: #268bd2;
+  --focus-bg: #073642;
+  --focus-border: #268bd2;
+  
+  /* Badges */
+  --badge-bg-primary: #073642;
+  --badge-text-primary: #268bd2;
+  --badge-bg-secondary: #586e75;
+  --badge-text-secondary: #2aa198;
+  --badge-bg-danger: #073642;
+  --badge-text-danger: #dc322f;
+  --badge-bg-success: #073642;
+  --badge-text-success: #859900;
+  --badge-bg-warning: #073642;
+  --badge-text-warning: #b58900;
+  
+  /* Avatars */
+  --avatar-bg-blue: #268bd2;
+  --avatar-text-blue: #002b36;
+  --avatar-bg-cyan: #2aa198;
+  --avatar-text-cyan: #002b36;
+  --avatar-bg-green: #859900;
+  --avatar-text-green: #002b36;
+  --avatar-bg-yellow: #b58900;
+  --avatar-text-yellow: #002b36;
+  
+  /* Progress bars */
+  --progress-bg-blue: #268bd2;
+  --progress-bg-cyan: #2aa198;
+  --progress-bg-green: #859900;
+  --progress-bg-yellow: #b58900;
+  --progress-bg-red: #dc322f;
+  
+  /* Spinners */
+  --spinner-color-blue: #268bd2;
+  --spinner-color-cyan: #2aa198;
+  --spinner-color-green: #859900;
+  --spinner-color-yellow: #b58900;
+  --spinner-color-red: #dc322f;
+  
+  /* Composants de mise en page */
+  --divider: #073642;
+  --shadow: 0 1px 2px 0 rgba(131,148,150,0.08);
+  --card-bg: #073642;
+  --modal-bg: #073642;
+  --drawer-bg: #073642;
+  --sidebar-bg: #002b36;
+  --tooltip-bg: #268bd2;
+  --tooltip-text: #002b36;
+  --popover-bg: #073642;
+  --popover-text: #839496;
+  
+  /* Composants de navigation */
+  --stepper-active-bg: #268bd2;
+  --stepper-inactive-bg: #073642;
+  --timeline-dot-bg: #268bd2;
+  --timeline-dot-active-bg: #b58900;
+  
+  /* Utilitaires */
+  --muted: #073642;
+  --highlight: #b58900;
+  --scrollbar: #073642;
+  --selection-bg: #268bd2;
+  
+  /* Rayons de bordure */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+  
+  /* Palette de couleurs Solarized - Primary */
+  --color-primary-50: #002b36;
+  --color-primary-100: #073642;
+  --color-primary-200: #586e75;
+  --color-primary-300: #657b83;
+  --color-primary-400: #839496;
+  --color-primary-500: #93a1a1;
+  --color-primary-600: #eee8d5;
+  --color-primary-700: #fdf6e3;
+  --color-primary-800: #fdf6e3;
+  --color-primary-900: #fdf6e3;
+  
+  /* Palette de couleurs Solarized - Secondary */
+  --color-secondary-50: #002b36;
+  --color-secondary-100: #073642;
+  --color-secondary-200: #586e75;
+  --color-secondary-300: #657b83;
+  --color-secondary-400: #839496;
+  --color-secondary-500: #93a1a1;
+  --color-secondary-600: #eee8d5;
+  --color-secondary-700: #fdf6e3;
+  --color-secondary-800: #fdf6e3;
+  --color-secondary-900: #fdf6e3;
+  
+  /* Palette de couleurs Solarized - Success */
+  --color-success-50: #002b36;
+  --color-success-100: #073642;
+  --color-success-200: #586e75;
+  --color-success-300: #657b83;
+  --color-success-400: #839496;
+  --color-success-500: #859900;
+  --color-success-600: #859900;
+  --color-success-700: #859900;
+  --color-success-800: #859900;
+  --color-success-900: #859900;
+  
+  /* Palette de couleurs Solarized - Warning */
+  --color-warning-50: #002b36;
+  --color-warning-100: #073642;
+  --color-warning-200: #586e75;
+  --color-warning-300: #657b83;
+  --color-warning-400: #839496;
+  --color-warning-500: #b58900;
+  --color-warning-600: #b58900;
+  --color-warning-700: #b58900;
+  --color-warning-800: #b58900;
+  --color-warning-900: #b58900;
+  
+  /* Palette de couleurs Solarized - Danger */
+  --color-danger-50: #002b36;
+  --color-danger-100: #073642;
+  --color-danger-200: #586e75;
+  --color-danger-300: #657b83;
+  --color-danger-400: #839496;
+  --color-danger-500: #dc322f;
+  --color-danger-600: #dc322f;
+  --color-danger-700: #dc322f;
+  --color-danger-800: #dc322f;
+  --color-danger-900: #dc322f;
+  
+  /* Palette de couleurs Solarized - Info */
+  --color-info-50: #002b36;
+  --color-info-100: #073642;
+  --color-info-200: #586e75;
+  --color-info-300: #657b83;
+  --color-info-400: #839496;
+  --color-info-500: #2aa198;
+  --color-info-600: #2aa198;
+  --color-info-700: #2aa198;
+  --color-info-800: #2aa198;
+  --color-info-900: #2aa198;
+  
+  /* Palette de couleurs Solarized - Neutral */
+  --color-neutral-50: #002b36;
+  --color-neutral-100: #073642;
+  --color-neutral-200: #586e75;
+  --color-neutral-300: #657b83;
+  --color-neutral-400: #839496;
+  --color-neutral-500: #93a1a1;
+  --color-neutral-600: #eee8d5;
+  --color-neutral-700: #fdf6e3;
+  --color-neutral-800: #fdf6e3;
+  --color-neutral-900: #fdf6e3;
+  
+  /* Palette de couleurs Solarized - Red */
+  --color-red-50: #002b36;
+  --color-red-100: #073642;
+  --color-red-200: #586e75;
+  --color-red-300: #657b83;
+  --color-red-400: #839496;
+  --color-red-500: #dc322f;
+  --color-red-600: #dc322f;
+  --color-red-700: #dc322f;
+  --color-red-800: #dc322f;
+  --color-red-900: #dc322f;
+  
+  /* Palette de couleurs Solarized - Green */
+  --color-green-50: #002b36;
+  --color-green-100: #073642;
+  --color-green-200: #586e75;
+  --color-green-300: #657b83;
+  --color-green-400: #839496;
+  --color-green-500: #859900;
+  --color-green-600: #859900;
+  --color-green-700: #859900;
+  --color-green-800: #859900;
+  --color-green-900: #859900;
+  
+  /* Palette de couleurs Solarized - Blue */
+  --color-blue-50: #002b36;
+  --color-blue-100: #073642;
+  --color-blue-200: #586e75;
+  --color-blue-300: #657b83;
+  --color-blue-400: #839496;
+  --color-blue-500: #268bd2;
+  --color-blue-600: #268bd2;
+  --color-blue-700: #268bd2;
+  --color-blue-800: #268bd2;
+  --color-blue-900: #268bd2;
+  
+  /* Palette de couleurs Solarized - Yellow */
+  --color-yellow-50: #002b36;
+  --color-yellow-100: #073642;
+  --color-yellow-200: #586e75;
+  --color-yellow-300: #657b83;
+  --color-yellow-400: #839496;
+  --color-yellow-500: #b58900;
+  --color-yellow-600: #b58900;
+  --color-yellow-700: #b58900;
+  --color-yellow-800: #b58900;
+  --color-yellow-900: #b58900;
+  
+  /* Palette de couleurs Solarized - Orange */
+  --color-orange-50: #002b36;
+  --color-orange-100: #073642;
+  --color-orange-200: #586e75;
+  --color-orange-300: #657b83;
+  --color-orange-400: #839496;
+  --color-orange-500: #cb4b16;
+  --color-orange-600: #cb4b16;
+  --color-orange-700: #cb4b16;
+  --color-orange-800: #cb4b16;
+  --color-orange-900: #cb4b16;
+  
+  /* Palette de couleurs Solarized - Magenta */
+  --color-magenta-50: #002b36;
+  --color-magenta-100: #073642;
+  --color-magenta-200: #586e75;
+  --color-magenta-300: #657b83;
+  --color-magenta-400: #839496;
+  --color-magenta-500: #d33682;
+  --color-magenta-600: #d33682;
+  --color-magenta-700: #d33682;
+  --color-magenta-800: #d33682;
+  --color-magenta-900: #d33682;
+  
+  /* Palette de couleurs Solarized - Violet */
+  --color-violet-50: #002b36;
+  --color-violet-100: #073642;
+  --color-violet-200: #586e75;
+  --color-violet-300: #657b83;
+  --color-violet-400: #839496;
+  --color-violet-500: #6c71c4;
+  --color-violet-600: #6c71c4;
+  --color-violet-700: #6c71c4;
+  --color-violet-800: #6c71c4;
+  --color-violet-900: #6c71c4;
+  
+  /* Palette de couleurs Solarized - Cyan */
+  --color-cyan-50: #002b36;
+  --color-cyan-100: #073642;
+  --color-cyan-200: #586e75;
+  --color-cyan-300: #657b83;
+  --color-cyan-400: #839496;
+  --color-cyan-500: #2aa198;
+  --color-cyan-600: #2aa198;
+  --color-cyan-700: #2aa198;
+  --color-cyan-800: #2aa198;
+  --color-cyan-900: #2aa198;
+  
+  /* Palette de couleurs Solarized - Teal */
+  --color-teal-50: #002b36;
+  --color-teal-100: #073642;
+  --color-teal-200: #586e75;
+  --color-teal-300: #657b83;
+  --color-teal-400: #839496;
+  --color-teal-500: #2aa198;
+  --color-teal-600: #2aa198;
+  --color-teal-700: #2aa198;
+  --color-teal-800: #2aa198;
+  --color-teal-900: #2aa198;
+  
+  /* Palette de couleurs Solarized - Indigo */
+  --color-indigo-50: #002b36;
+  --color-indigo-100: #073642;
+  --color-indigo-200: #586e75;
+  --color-indigo-300: #657b83;
+  --color-indigo-400: #839496;
+  --color-indigo-500: #6c71c4;
+  --color-indigo-600: #6c71c4;
+  --color-indigo-700: #6c71c4;
+  --color-indigo-800: #6c71c4;
+  --color-indigo-900: #6c71c4;
+  
+  /* Palette de couleurs Solarized - Pink */
+  --color-pink-50: #002b36;
+  --color-pink-100: #073642;
+  --color-pink-200: #586e75;
+  --color-pink-300: #657b83;
+  --color-pink-400: #839496;
+  --color-pink-500: #d33682;
+  --color-pink-600: #d33682;
+  --color-pink-700: #d33682;
+  --color-pink-800: #d33682;
+  --color-pink-900: #d33682;
+  
+  /* Palette de couleurs Solarized - Purple */
+  --color-purple-50: #002b36;
+  --color-purple-100: #073642;
+  --color-purple-200: #586e75;
+  --color-purple-300: #657b83;
+  --color-purple-400: #839496;
+  --color-purple-500: #6c71c4;
+  --color-purple-600: #6c71c4;
+  --color-purple-700: #6c71c4;
+  --color-purple-800: #6c71c4;
+  --color-purple-900: #6c71c4;
+  
+  /* Palette de couleurs Solarized - Sky */
+  --color-sky-50: #002b36;
+  --color-sky-100: #073642;
+  --color-sky-200: #586e75;
+  --color-sky-300: #657b83;
+  --color-sky-400: #839496;
+  --color-sky-500: #268bd2;
+  --color-sky-600: #268bd2;
+  --color-sky-700: #268bd2;
+  --color-sky-800: #268bd2;
+  --color-sky-900: #268bd2;
+  
+  /* Palette de couleurs Solarized - Slate */
+  --color-slate-50: #002b36;
+  --color-slate-100: #073642;
+  --color-slate-200: #586e75;
+  --color-slate-300: #657b83;
+  --color-slate-400: #839496;
+  --color-slate-500: #93a1a1;
+  --color-slate-600: #eee8d5;
+  --color-slate-700: #fdf6e3;
+  --color-slate-800: #fdf6e3;
+  --color-slate-900: #fdf6e3;
+  
+  /* Palette de couleurs Solarized - Stone */
+  --color-stone-50: #002b36;
+  --color-stone-100: #073642;
+  --color-stone-200: #586e75;
+  --color-stone-300: #657b83;
+  --color-stone-400: #839496;
+  --color-stone-500: #93a1a1;
+  --color-stone-600: #eee8d5;
+  --color-stone-700: #fdf6e3;
+  --color-stone-800: #fdf6e3;
+  --color-stone-900: #fdf6e3;
+  
+  /* Palette de couleurs Solarized - Zinc */
+  --color-zinc-50: #002b36;
+  --color-zinc-100: #073642;
+  --color-zinc-200: #586e75;
+  --color-zinc-300: #657b83;
+  --color-zinc-400: #839496;
+  --color-zinc-500: #93a1a1;
+  --color-zinc-600: #eee8d5;
+  --color-zinc-700: #fdf6e3;
+  --color-zinc-800: #fdf6e3;
+  --color-zinc-900: #fdf6e3;
+  
+  /* Palette de couleurs Solarized - Lime */
+  --color-lime-50: #002b36;
+  --color-lime-100: #073642;
+  --color-lime-200: #586e75;
+  --color-lime-300: #657b83;
+  --color-lime-400: #839496;
+  --color-lime-500: #859900;
+  --color-lime-600: #859900;
+  --color-lime-700: #859900;
+  --color-lime-800: #859900;
+  --color-lime-900: #859900;
+  
+  /* Palette de couleurs Solarized - Amber */
+  --color-amber-50: #002b36;
+  --color-amber-100: #073642;
+  --color-amber-200: #586e75;
+  --color-amber-300: #657b83;
+  --color-amber-400: #839496;
+  --color-amber-500: #b58900;
+  --color-amber-600: #b58900;
+  --color-amber-700: #b58900;
+  --color-amber-800: #b58900;
+  --color-amber-900: #b58900;
+  
+  /* Palette de couleurs Solarized - Emerald */
+  --color-emerald-50: #002b36;
+  --color-emerald-100: #073642;
+  --color-emerald-200: #586e75;
+  --color-emerald-300: #657b83;
+  --color-emerald-400: #839496;
+  --color-emerald-500: #859900;
+  --color-emerald-600: #859900;
+  --color-emerald-700: #859900;
+  --color-emerald-800: #859900;
+  --color-emerald-900: #859900;
+  
+  /* Palette de couleurs Solarized - Fuchsia */
+  --color-fuchsia-50: #002b36;
+  --color-fuchsia-100: #073642;
+  --color-fuchsia-200: #586e75;
+  --color-fuchsia-300: #657b83;
+  --color-fuchsia-400: #839496;
+  --color-fuchsia-500: #d33682;
+  --color-fuchsia-600: #d33682;
+  --color-fuchsia-700: #d33682;
+  --color-fuchsia-800: #d33682;
+  --color-fuchsia-900: #d33682;
+}

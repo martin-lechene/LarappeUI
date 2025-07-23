@@ -19,7 +19,8 @@
 @import './themes/sea.css';
 @import './themes/summer.css';
 @import './themes/2d.css';
-@import './themes/solarized.css';
+@import './themes/solarized-light.css';
+@import './themes/solarized-dark.css';
 @import './themes/monokai.css';
 @import './themes/pastel.css';
 @import './themes/minimal.css';
@@ -41,7 +42,7 @@ html, body {
 .bg-white, .bg-gray-50, .bg-surface { background: var(--surface) !important; }
 .bg-gray-100 { background: var(--background) !important; }
 .text-gray-900, .text-gray-800, .text-black { color: var(--text) !important; }
-.text-gray-500, .text-gray-400, .text-muted { color: var(--muted) !important; }
+.text-gray-500, .text-gray-400, .text-muted { color: var(--text-muted) !important; }
 .border-gray-100, .border-gray-200, .border { border-color: var(--border) !important; }
 .bg-primary { background: var(--primary) !important; }
 .text-primary { color: var(--primary) !important; }
@@ -56,7 +57,7 @@ html, body {
 }
 
 /* === SCROLLBAR, SELECTION, ETC. === */
-::selection { background: var(--primary); color: #fff; }
+::selection { background: var(--selection-bg); color: var(--text-inverse); }
 ::-webkit-scrollbar-thumb { background: var(--primary); }
 
 /* Surcharges Tailwind blue pour theming immersif */
@@ -234,11 +235,136 @@ html, body {
 .disabled\:bg-blue-500:disabled { background: var(--color-blue-500) !important; }
 /* Répéter pour tous les utilitaires et toutes les couleurs */
 
-/* Classes fixes */
-.text-black { color: var(--color-black) !important; }
-.text-white { color: var(--color-white) !important; }
-.bg-black { background: var(--color-black) !important; }
-.border-black { border-color: var(--color-black) !important; }
-.border-white { border-color: var(--color-white) !important; }
-.text-transparent { color: var(--color-transparent) !important; }
-.bg-transparent { background: var(--color-transparent) !important; }
+/* Classes fixes - CORRIGÉES POUR ULTRA SOLAIRE */
+.text-black { color: var(--text) !important; }
+.text-white { color: var(--text) !important; }
+.bg-black { background: var(--background) !important; }
+.bg-white { background: var(--surface) !important; }
+.border-black { border-color: var(--border) !important; }
+.border-white { border-color: var(--border) !important; }
+.text-transparent { color: transparent !important; }
+.bg-transparent { background: transparent !important; }
+
+/* === ÉLÉMENTS HTML DE BASE === */
+html, body, main, header, footer, nav, aside, section, article {
+  background: var(--background) !important;
+  color: var(--text) !important;
+}
+
+/* === ÉLÉMENTS DE NAVIGATION === */
+nav a, nav button, nav span {
+  color: var(--text) !important;
+}
+
+nav a:hover, nav button:hover {
+  color: var(--accent) !important;
+  background: var(--hover-bg) !important;
+}
+
+/* === ÉLÉMENTS DE LISTE === */
+ul, ol, li {
+  color: var(--text) !important;
+}
+
+ul li::before, ol li::before {
+  color: var(--text-muted) !important;
+}
+
+/* === ÉLÉMENTS DE TEXTE === */
+p, span, div, h1, h2, h3, h4, h5, h6 {
+  color: var(--text) !important;
+}
+
+/* === ÉLÉMENTS DE FORMULAIRE === */
+input, textarea, select, button {
+  background: var(--input-bg) !important;
+  color: var(--text) !important;
+  border-color: var(--input-border) !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-placeholder) !important;
+}
+
+/* === ÉLÉMENTS DE TABLEAU === */
+table, th, td {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+
+/* === ÉLÉMENTS DE MODALE/POPUP === */
+.modal, .popup, .dialog {
+  background: var(--modal-bg) !important;
+  color: var(--text) !important;
+}
+
+/* === ÉLÉMENTS DE SIDEBAR === */
+.sidebar, .drawer {
+  background: var(--sidebar-bg) !important;
+  color: var(--text) !important;
+}
+
+/* === ÉLÉMENTS DE TOOLTIP === */
+.tooltip {
+  background: var(--tooltip-bg) !important;
+  color: var(--tooltip-text) !important;
+}
+
+/* === ÉLÉMENTS DE CARD === */
+.card, .surface {
+  background: var(--card-bg) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+
+/* === ÉLÉMENTS DE BADGE === */
+.badge {
+  background: var(--badge-bg-primary) !important;
+  color: var(--badge-text-primary) !important;
+}
+
+/* === ÉLÉMENTS DE PROGRESS === */
+.progress {
+  background: var(--progress-bg-green) !important;
+}
+
+/* === ÉLÉMENTS DE SPINNER === */
+.spinner {
+  color: var(--spinner-color-green) !important;
+}
+
+/* === ÉLÉMENTS DE DIVIDER === */
+.divider, hr {
+  background: var(--divider) !important;
+  border-color: var(--divider) !important;
+}
+
+/* === ÉLÉMENTS DE SHADOW === */
+.shadow {
+  box-shadow: var(--shadow) !important;
+}
+
+/* === ÉLÉMENTS DE FOCUS === */
+*:focus {
+  outline-color: var(--focus-ring) !important;
+}
+
+/* === ÉLÉMENTS DE SELECTION === */
+::selection {
+  background: var(--selection-bg) !important;
+  color: var(--text-inverse) !important;
+}
+
+/* === ÉLÉMENTS DE SCROLLBAR === */
+::-webkit-scrollbar-track {
+  background: var(--background) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent) !important;
+}
