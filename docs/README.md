@@ -29,7 +29,7 @@ Bienvenue dans la documentation complète de LarappeUI, la librairie de composan
 
 LarappeUI est une librairie de composants Blade réutilisables pour Laravel 12+, conçue pour accélérer le développement d'interfaces modernes et élégantes. Elle s'inspire de FrappeUI et exploite pleinement TailwindCSS. Idéal pour prototyper ou bâtir des applications Laravel robustes avec une expérience utilisateur soignée.
 
-Pour toute question, suggestion ou contribution, consultez la section [Contribution](contribution.md).
+Pour toute question, suggestion ou contribution, consultez la section [Contribution](docs/contribution.md).
 
 ---
 
