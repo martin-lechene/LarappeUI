@@ -86,15 +86,38 @@ LarappeUI est une librairie de composants Blade réutilisables pour Laravel 12+,
 
 Chaque composant est documenté et illustré dans la page d'accueil (`/`).
 
-**Exemple d'utilisation dans une vue Blade :**
-```blade
-<x-button color="primary">Valider</x-button>
-<x-form.input label="Email" placeholder="Votre email" />
-<x-form.select :options="['Option 1', 'Option 2']" />
-```
+### Tableau des composants par catégorie
 
-- Les paramètres, slots et variantes sont détaillés dans la page d'accueil.
-- Pour voir tous les composants et leurs options, lance le projet et visite `/`.
+#### Composants globaux
+
+| Composant         | Paramètres                                                                                                   | Détails/Description                                                                                 |
+|-------------------|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| `<x-button>`      | label (string, slot), color (string, 'primary'), size (string, 'md'), icon (HTML), loading (bool, false), disabled (bool, false), outline (bool, false), block (bool, false), type (string, 'button') | Bouton stylé, supporte icône, loading, outline, block, tailles sm/md/lg, couleurs primary/secondary/danger |
+| `<x-tag>`         | label (string, slot), color (string, 'gray'), closable (bool, false), icon (HTML), onClose (JS/callback)    | Tag/Badge coloré, option icône, closable, couleurs gray/blue/red/green/yellow                        |
+| `<x-dropdown>`    | options (array), trigger (string, 'click'), open (bool, false), position (string, 'bottom'), disabled (bool, false), slot | Dropdown custom, options [{label, value}], position top/right/bottom/left, trigger click/hover/focus |
+| `<x-calendar>`    | value, events (array), onChange (callback), onSelect (callback), disabledDates (array), minDate, maxDate, slot | Calendrier personnalisable, gestion d'événements, dates désactivées, callbacks                      |
+
+#### Formulaires (`form`)
+
+| Composant             | Paramètres                                                                                                                        | Détails/Description                                                                                 |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| `<x-form.input>`      | type (string, 'text'), label (string), placeholder (string), value, disabled (bool), readonly (bool), error (string/bool), helpText (string), prefix (HTML), suffix (HTML), clearable (bool), autofocus (bool), maxlength (int), minlength (int), step (int), min (int), max (int) | Champ de saisie polyvalent, supporte préfixe/suffixe, effaçable, erreurs, aide, tous types HTML      |
+| `<x-form.select>`     | label (string), placeholder (string), value, disabled (bool), error (string/bool), clearable (bool), searchable (bool), multiple (bool), loading (bool), optionLabel (string), optionValue (string), options (array), taggable (bool), slot | Select avancé, supporte optgroup, recherche, multi, tags, loading, icônes, effaçable                |
+| `<x-form.checkbox>`   | label (string), checked (bool), disabled (bool), error (string/bool), indeterminate (bool), value, name                           | Case à cocher, indéterminée, gestion d’erreur, label, nom, valeur                                   |
+| `<x-form.radio>`      | options (array), label (string), value, disabled (bool), error (string/bool), name (string), inline (bool), slot                 | Boutons radio, options [{label, value}], inline ou colonne, gestion d’erreur                        |
+| `<x-form.switch>`     | checked (bool), label (string), disabled (bool), value, name                                                                      | Switch on/off stylé, label, nom, valeur                                                             |
+| `<x-form.textarea>`   | label (string), value, placeholder (string), disabled (bool), readonly (bool), error (string/bool), prefix (HTML), suffix (HTML), clearable (bool), maxlength (int), minlength (int), rows (int, 3) | Zone de texte multi-lignes, préfixe/suffixe, effaçable, erreurs, nombre de lignes                   |
+
+#### Autres catégories (extrait, à compléter selon besoin)
+
+- **layout** : `<x-layout.card>`, `<x-layout.collapse>`, `<x-layout.divider>`, `<x-layout.drawer>`, `<x-layout.popover>`, `<x-layout.tooltip>`
+- **feedback** : `<x-feedback.badge>`, `<x-feedback.empty>`, `<x-feedback.progress>`, `<x-feedback.spinner>`
+- **data** : `<x-data.pagination>`, `<x-data.statistic>`, `<x-data.stepper>`, `<x-data.timeline>`, `<x-data.descriptions>`
+- **navigation** : `<x-navigation.breadcrumbs>`, `<x-navigation.sidebar>`, `<x-navigation.affix>`, `<x-navigation.anchor>`
+- **media** : `<x-media.avatar>`, `<x-media.image>`
+- **charts** : `<x-charts.charts>`
+
+> Pour chaque composant, consulte la page d’accueil (`/`) pour voir tous les paramètres, slots, variantes et exemples visuels.
 
 ---
 
