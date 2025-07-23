@@ -1,4 +1,3 @@
-# LarappeUI — Documentation
 
 Bienvenue dans la documentation complète de LarappeUI, la librairie de composants UI pour Laravel 12+ & TailwindCSS 4.
 
