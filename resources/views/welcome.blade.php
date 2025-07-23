@@ -314,37 +314,31 @@
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Radio</h3>
                     <div class="space-y-4">
-                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-radio name="radio-demo" label="Option cochée" checked />
-                        </div>
-                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-radio name="radio-demo" label="Désactivé" disabled />
-                        </div>
-                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-radio name="radio-demo" label="Lecture seule" readonly />
-                        </div>
-                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-radio name="radio-demo" label="Erreur" error="Message d'erreur" />
-                        </div>
-                        <div class="py-2 px-2 bg-gray-50 rounded flex items-center justify-center min-h-[48px]">
-                            <x-radio name="radio-demo" label="Aide" helpText="Texte d'aide" />
-                        </div>
+                        <x-radio name="radio-demo" :options="[['label'=>'Option cochée','value'=>'1'],['label'=>'Option 2','value'=>'2']]" value="1" label="Choix simple" />
+                        <x-radio name="radio-demo2" :options="[['label'=>'Désactivé','value'=>'1']]" value="1" label="Désactivé" disabled />
+                        <x-radio name="radio-demo3" :options="[['label'=>'Lecture seule','value'=>'1']]" value="1" label="Lecture seule" readonly />
+                        <x-radio name="radio-demo4" :options="[['label'=>'Erreur','value'=>'1']]" value="1" label="Erreur" error="Message d'erreur" />
+                        <x-radio name="radio-demo5" :options="[['label'=>'Aide','value'=>'1']]" value="1" label="Aide" helpText="Texte d'aide" />
+                        <x-radio name="radio-demo6" :options="[['label'=>'Inline 1','value'=>'1'],['label'=>'Inline 2','value'=>'2']]" value="2" label="Inline" inline />
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 mt-4 md:mt-0 flex flex-col gap-2">
                     <div class="bg-gray-900 text-gray-100 rounded p-4 text-xs font-mono overflow-x-auto mb-2">
-                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-radio name="radio-demo" label="Option cochée" checked /&gt;
-&lt;x-radio name="radio-demo" label="Désactivé" disabled /&gt;
-&lt;x-radio name="radio-demo" label="Lecture seule" readonly /&gt;
-&lt;x-radio name="radio-demo" label="Erreur" error="Message d'erreur" /&gt;
-&lt;x-radio name="radio-demo" label="Aide" helpText="Texte d'aide" /&gt;</code></pre>
+                        <pre class="whitespace-pre-wrap break-words"><code>&lt;x-radio name="radio-demo" :options="[['label'=&gt;'Option cochée','value'=&gt;'1'],['label'=&gt;'Option 2','value'=&gt;'2']]" value="1" label="Choix simple" /&gt;
+&lt;x-radio name="radio-demo2" :options="[['label'=&gt;'Désactivé','value'=&gt;'1']]" value="1" label="Désactivé" disabled /&gt;
+&lt;x-radio name="radio-demo3" :options="[['label'=&gt;'Lecture seule','value'=&gt;'1']]" value="1" label="Lecture seule" readonly /&gt;
+&lt;x-radio name="radio-demo4" :options="[['label'=&gt;'Erreur','value'=&gt;'1']]" value="1" label="Erreur" error="Message d'erreur" /&gt;
+&lt;x-radio name="radio-demo5" :options="[['label'=&gt;'Aide','value'=&gt;'1']]" value="1" label="Aide" helpText="Texte d'aide" /&gt;
+&lt;x-radio name="radio-demo6" :options="[['label'=&gt;'Inline 1','value'=&gt;'1'],['label'=&gt;'Inline 2','value'=&gt;'2']]" value="2" label="Inline" inline /&gt;</code></pre>
                     </div>
                     <div class="bg-gray-50 rounded p-3 text-xs">
                         <div class="font-semibold mb-1">Paramètres :</div>
                         <ul class="list-disc pl-4">
+                            <li><b>options</b> (array) : Liste des options [{label, value}]</li>
                             <li><b>name</b> (string) : Nom du groupe de radio</li>
                             <li><b>label</b> (string, optionnel) : Texte du label</li>
-                            <li><b>checked</b> (bool, défaut: false) : Indique si le radio est coché</li>
+                            <li><b>value</b> (string|int, optionnel) : Valeur sélectionnée</li>
+                            <li><b>inline</b> (bool, défaut: false) : Affichage en ligne</li>
                             <li><b>disabled</b> (bool, défaut: false) : Désactive le champ</li>
                             <li><b>readonly</b> (bool, défaut: false) : Lecture seule</li>
                             <li><b>error</b> (string|bool, optionnel) : Message ou état d'erreur</li>
