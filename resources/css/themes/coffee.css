@@ -1,0 +1,11 @@
+/* Coffee Theme */
+:root[data-theme='coffee'] {
+  --background: #f5f0eb;
+  --foreground: #4b3832;
+  --primary: #b08968;
+  --secondary: #a1744b;
+  --accent: #c97b63;
+  --muted: #d7ccc8;
+  --error: #a0522d;
+  --success: #8d8741;
+} 

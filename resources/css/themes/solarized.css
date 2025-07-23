@@ -1,0 +1,23 @@
+/* Solarized Theme (Light & Dark)
+   https://ethanschoonover.com/solarized/
+*/
+:root[data-theme='solarized-light'] {
+  --background: #fdf6e3;
+  --foreground: #657b83;
+  --primary: #268bd2;
+  --secondary: #2aa198;
+  --accent: #b58900;
+  --muted: #eee8d5;
+  --error: #dc322f;
+  --success: #859900;
+}
+:root[data-theme='solarized-dark'] {
+  --background: #002b36;
+  --foreground: #839496;
+  --primary: #268bd2;
+  --secondary: #2aa198;
+  --accent: #b58900;
+  --muted: #073642;
+  --error: #dc322f;
+  --success: #859900;
+} 

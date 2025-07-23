@@ -1,0 +1,11 @@
+/* Pastel Theme */
+:root[data-theme='pastel'] {
+  --background: #fdf6f0;
+  --foreground: #6d6875;
+  --primary: #b5ead7;
+  --secondary: #ffdac1;
+  --accent: #ffb7b2;
+  --muted: #e2e2e2;
+  --error: #ffb4a2;
+  --success: #b5ead7;
+} 

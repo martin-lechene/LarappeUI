@@ -1,0 +1,11 @@
+/* Forest Night Theme */
+:root[data-theme='forest-night'] {
+  --background: #232b22;
+  --foreground: #d9e5d6;
+  --primary: #4e944f;
+  --secondary: #6c7a89;
+  --accent: #a7c957;
+  --muted: #354f52;
+  --error: #bc4749;
+  --success: #4e944f;
+} 

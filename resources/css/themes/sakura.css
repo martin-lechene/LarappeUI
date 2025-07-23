@@ -1,0 +1,11 @@
+/* Sakura Theme */
+:root[data-theme='sakura'] {
+  --background: #fff1f8;
+  --foreground: #4a4a4a;
+  --primary: #ffb7c5;
+  --secondary: #ffe4ec;
+  --accent: #ff69b4;
+  --muted: #f8bbd0;
+  --error: #e57373;
+  --success: #81c784;
+} 

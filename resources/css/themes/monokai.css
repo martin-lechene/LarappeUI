@@ -1,0 +1,11 @@
+/* Monokai Theme */
+:root[data-theme='monokai'] {
+  --background: #272822;
+  --foreground: #f8f8f2;
+  --primary: #a6e22e;
+  --secondary: #66d9ef;
+  --accent: #fd971f;
+  --muted: #49483e;
+  --error: #f92672;
+  --success: #a6e22e;
+} 

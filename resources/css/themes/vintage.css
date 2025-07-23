@@ -1,0 +1,11 @@
+/* Vintage Theme */
+:root[data-theme='vintage'] {
+  --background: #f5e6b2;
+  --foreground: #5b4636;
+  --primary: #b5a642;
+  --secondary: #e97451;
+  --accent: #c9b29b;
+  --muted: #e1c699;
+  --error: #b7410e;
+  --success: #7b9f35;
+} 

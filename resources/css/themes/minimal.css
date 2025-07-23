@@ -1,0 +1,11 @@
+/* Minimal Theme */
+:root[data-theme='minimal'] {
+  --background: #ffffff;
+  --foreground: #222222;
+  --primary: #222222;
+  --secondary: #888888;
+  --accent: #f5f5f5;
+  --muted: #e0e0e0;
+  --error: #ff5252;
+  --success: #4caf50;
+} 

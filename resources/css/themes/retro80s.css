@@ -1,0 +1,11 @@
+/* Retro 80s Theme */
+:root[data-theme='retro80s'] {
+  --background: #2d0036;
+  --foreground: #f8f8f2;
+  --primary: #00fff7;
+  --secondary: #ff00c8;
+  --accent: #fffb00;
+  --muted: #6c3483;
+  --error: #ff0059;
+  --success: #00ff85;
+} 

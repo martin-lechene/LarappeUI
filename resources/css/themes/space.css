@@ -1,0 +1,11 @@
+/* Space Theme */
+:root[data-theme='space'] {
+  --background: #0b0c2a;
+  --foreground: #e0e7ff;
+  --primary: #6366f1;
+  --secondary: #a78bfa;
+  --accent: #f9fafb;
+  --muted: #312e81;
+  --error: #f43f5e;
+  --success: #22d3ee;
+} 
