@@ -28,6 +28,7 @@ Chaque thème applique des couleurs et styles différents à l’ensemble de l�
 - **Retro 80s** : Violet, turquoise, rose flashy, style années 80.
 - **Space** : Bleu nuit, violet, touches d’étoiles/blanc, ambiance cosmique.
 - **Vintage** : Jaune pâle, vert olive, orange doux, style rétro années 70.
+- **Dark** : Désormais full noir, toutes les surfaces, fonds, accents et éléments sont noirs ou gris très foncés, avec un texte blanc pour un contraste maximal.
 
 Pour utiliser un thème, sélectionnez-le dans le menu déroulant en haut à droite de l’interface. Chaque thème applique automatiquement sa palette de couleurs à l’ensemble de l’UI.
 
