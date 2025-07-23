@@ -601,3 +601,45 @@
   --color-zinc-800: #27272a;
   --color-zinc-900: #18181b;
 }
+
+[theme="glass"] .glass,
+[theme="glass"] .surface,
+[theme="glass"] .card,
+[theme="glass"] .modal,
+[theme="glass"] .drawer,
+[theme="glass"] .popover,
+[theme="glass"] .sidebar {
+  background: var(--surface, rgba(255,255,255,var(--glass-opacity,0.7)));
+  background-image: url('https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(var(--glass-blur,24px)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-blur,24px)) saturate(180%);
+  border: 1px solid var(--border, rgba(224,231,239,0.5));
+  box-shadow: 0 8px 32px 0 rgba(31,41,55,0.18);
+}
+
+[theme="glass"] .glass-strong {
+  background: var(--surface-alt, rgba(255,255,255,0.5));
+  background-image: url('https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(calc(var(--glass-blur,24px) * 1.5)) saturate(200%);
+  -webkit-backdrop-filter: blur(calc(var(--glass-blur,24px) * 1.5)) saturate(200%);
+  border: 1.5px solid var(--border-strong, rgba(203,213,225,0.7));
+  box-shadow: 0 12px 48px 0 rgba(31,41,55,0.22);
+}
+
+[theme="glass"] .glass-light {
+  background: var(--background, rgba(255,255,255,0.3));
+  background-image: url('https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&w=1200&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(calc(var(--glass-blur,24px) * 0.7)) saturate(120%);
+  -webkit-backdrop-filter: blur(calc(var(--glass-blur,24px) * 0.7)) saturate(120%);
+  border: 1px solid var(--border, rgba(224,231,239,0.3));
+  box-shadow: 0 2px 8px 0 rgba(31,41,55,0.10);
+}
