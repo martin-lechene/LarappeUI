@@ -1,31 +1,47 @@
 [theme="pastel"] {
+  /* Base HTML elements */
+  --html-bg: #fdf6f0;
+  --body-bg: #fdf6f0;
+  --main-bg: #fdf6f0;
+  
+  /* Core colors - all pastel shades */
   --background: #fdf6f0;
   --surface: #f7f3fa;
   --surface-alt: #e9f6fb;
   --overlay: rgba(255, 182, 193, 0.08);
   --input-bg: #f7f3fa;
-  --text: #6d6875;
+  
+  /* Text colors - soft pastel grays instead of pure black/white */
+  --text: #8b7d8a;
   --text-muted: #b8b5c6;
-  --text-inverse: #fff;
+  --text-inverse: #f7f3fa;
   --text-placeholder: #b8b5c6;
+  
+  /* Border colors - soft pastel borders */
   --border: #e9f6fb;
   --border-strong: #b8b5c6;
   --input-border: #b8b5c6;
   --focus-ring: #a3c4f3;
+  
+  /* Primary colors - soft pastel palette */
   --primary: #a3c4f3;
-  --primary-foreground: #6d6875;
+  --primary-foreground: #8b7d8a;
   --secondary: #f7b2ad;
-  --secondary-foreground: #6d6875;
+  --secondary-foreground: #8b7d8a;
   --accent: #b5ead7;
-  --accent-foreground: #6d6875;
+  --accent-foreground: #8b7d8a;
+  
+  /* Status colors - all pastel */
   --success: #b5ead7;
-  --success-foreground: #6d6875;
+  --success-foreground: #8b7d8a;
   --warning: #ffe066;
-  --warning-foreground: #6d6875;
+  --warning-foreground: #8b7d8a;
   --danger: #ffb4a2;
-  --danger-foreground: #6d6875;
+  --danger-foreground: #8b7d8a;
   --info: #b5ead7;
-  --info-foreground: #6d6875;
+  --info-foreground: #8b7d8a;
+  
+  /* Interactive states - soft pastel */
   --hover-bg: #e9f6fb;
   --active-bg: #f7b2ad;
   --disabled-bg: #f7f3fa;
@@ -34,6 +50,8 @@
   --selected-text: #a3c4f3;
   --focus-bg: #e9f6fb;
   --focus-border: #a3c4f3;
+  
+  /* Badge colors - pastel */
   --badge-bg-primary: #f7f3fa;
   --badge-text-primary: #a3c4f3;
   --badge-bg-secondary: #e9f6fb;
@@ -41,23 +59,31 @@
   --badge-bg-danger: #ffe066;
   --badge-text-danger: #ffb4a2;
   --badge-bg-success: #b5ead7;
-  --badge-text-success: #6d6875;
+  --badge-text-success: #8b7d8a;
   --badge-bg-warning: #ffe066;
-  --badge-text-warning: #6d6875;
+  --badge-text-warning: #8b7d8a;
+  
+  /* Avatar colors - soft pastel */
   --avatar-bg-pink: #f7b2ad;
-  --avatar-text-pink: #fff;
+  --avatar-text-pink: #f7f3fa;
   --avatar-bg-blue: #a3c4f3;
-  --avatar-text-blue: #fff;
+  --avatar-text-blue: #f7f3fa;
   --avatar-bg-green: #b5ead7;
-  --avatar-text-green: #fff;
+  --avatar-text-green: #f7f3fa;
+  
+  /* Progress colors - pastel */
   --progress-bg-blue: #a3c4f3;
   --progress-bg-pink: #f7b2ad;
   --progress-bg-green: #b5ead7;
   --progress-bg-yellow: #ffe066;
   --progress-bg-gray: #b8b5c6;
+  
+  /* Spinner colors - soft pastel */
   --spinner-color-blue: #a3c4f3;
   --spinner-color-pink: #f7b2ad;
   --spinner-color-green: #b5ead7;
+  
+  /* Layout elements - pastel */
   --divider: #e9f6fb;
   --shadow: 0 1px 2px 0 rgba(255,182,193,0.08);
   --card-bg: #f7f3fa;
@@ -65,9 +91,11 @@
   --drawer-bg: #f7f3fa;
   --sidebar-bg: #fdf6f0;
   --tooltip-bg: #a3c4f3;
-  --tooltip-text: #fff;
-  --popover-bg: #fff;
-  --popover-text: #6d6875;
+  --tooltip-text: #f7f3fa;
+  --popover-bg: #f7f3fa;
+  --popover-text: #8b7d8a;
+  
+  /* Component specific - pastel */
   --stepper-active-bg: #a3c4f3;
   --stepper-inactive-bg: #e9f6fb;
   --timeline-dot-bg: #a3c4f3;
@@ -76,12 +104,16 @@
   --highlight: #ffe066;
   --scrollbar: #e9f6fb;
   --selection-bg: #a3c4f3;
+  
+  /* Border radius */
   --radius-xs: 2px;
   --radius-sm: 4px;
   --radius-md: 6px;
   --radius-lg: 8px;
   --radius-xl: 12px;
   --radius-full: 9999px;
+  
+  /* Color palette - all pastel shades */
   --color-primary-50: #f7b2ad;
   --color-primary-100: #a3c4f3;
   --color-primary-200: #b5ead7;
@@ -92,6 +124,7 @@
   --color-primary-700: #b5ead7;
   --color-primary-800: #ffe066;
   --color-primary-900: #b8b5c6;
+  
   --color-secondary-50: #f7f3fa;
   --color-secondary-100: #e9f6fb;
   --color-secondary-200: #b8b5c6;
@@ -102,6 +135,7 @@
   --color-secondary-700: #f7b2ad;
   --color-secondary-800: #a3c4f3;
   --color-secondary-900: #b8b5c6;
+  
   --color-success-50: #b5ead7;
   --color-success-100: #f7b2ad;
   --color-success-200: #a3c4f3;
@@ -112,6 +146,7 @@
   --color-success-700: #f7b2ad;
   --color-success-800: #ffe066;
   --color-success-900: #b8b5c6;
+  
   --color-warning-50: #ffe066;
   --color-warning-100: #f7b2ad;
   --color-warning-200: #a3c4f3;
@@ -122,6 +157,7 @@
   --color-warning-700: #a3c4f3;
   --color-warning-800: #b5ead7;
   --color-warning-900: #b8b5c6;
+  
   --color-danger-50: #ffb4a2;
   --color-danger-100: #f7b2ad;
   --color-danger-200: #a3c4f3;
@@ -132,6 +168,7 @@
   --color-danger-700: #a3c4f3;
   --color-danger-800: #b5ead7;
   --color-danger-900: #b8b5c6;
+  
   --color-info-50: #b5ead7;
   --color-info-100: #a3c4f3;
   --color-info-200: #f7b2ad;
@@ -142,6 +179,7 @@
   --color-info-700: #f7b2ad;
   --color-info-800: #ffe066;
   --color-info-900: #b8b5c6;
+  
   --color-neutral-50: #f7f3fa;
   --color-neutral-100: #e9f6fb;
   --color-neutral-200: #b8b5c6;
@@ -152,6 +190,7 @@
   --color-neutral-700: #f7b2ad;
   --color-neutral-800: #a3c4f3;
   --color-neutral-900: #b8b5c6;
+  
   --color-red-50: #ffb4a2;
   --color-red-100: #f7b2ad;
   --color-red-200: #a3c4f3;
@@ -162,6 +201,7 @@
   --color-red-700: #a3c4f3;
   --color-red-800: #b5ead7;
   --color-red-900: #b8b5c6;
+  
   --color-green-50: #b5ead7;
   --color-green-100: #f7b2ad;
   --color-green-200: #a3c4f3;
@@ -172,6 +212,7 @@
   --color-green-700: #f7b2ad;
   --color-green-800: #ffe066;
   --color-green-900: #b8b5c6;
+  
   --color-blue-50: #a3c4f3;
   --color-blue-100: #f7b2ad;
   --color-blue-200: #b5ead7;
@@ -182,6 +223,7 @@
   --color-blue-700: #b5ead7;
   --color-blue-800: #ffe066;
   --color-blue-900: #b8b5c6;
+  
   --color-yellow-50: #ffe066;
   --color-yellow-100: #f7b2ad;
   --color-yellow-200: #a3c4f3;
@@ -192,6 +234,7 @@
   --color-yellow-700: #a3c4f3;
   --color-yellow-800: #b5ead7;
   --color-yellow-900: #b8b5c6;
+  
   --color-orange-50: #ffe066;
   --color-orange-100: #f7b2ad;
   --color-orange-200: #a3c4f3;
@@ -202,6 +245,7 @@
   --color-orange-700: #a3c4f3;
   --color-orange-800: #b5ead7;
   --color-orange-900: #b8b5c6;
+  
   --color-pink-50: #f7b2ad;
   --color-pink-100: #a3c4f3;
   --color-pink-200: #b5ead7;
@@ -212,6 +256,7 @@
   --color-pink-700: #b5ead7;
   --color-pink-800: #ffe066;
   --color-pink-900: #b8b5c6;
+  
   --color-purple-50: #a3c4f3;
   --color-purple-100: #f7b2ad;
   --color-purple-200: #b5ead7;
@@ -222,6 +267,7 @@
   --color-purple-700: #b5ead7;
   --color-purple-800: #ffe066;
   --color-purple-900: #b8b5c6;
+  
   --color-indigo-50: #a3c4f3;
   --color-indigo-100: #f7b2ad;
   --color-indigo-200: #b5ead7;
@@ -232,6 +278,7 @@
   --color-indigo-700: #b5ead7;
   --color-indigo-800: #ffe066;
   --color-indigo-900: #b8b5c6;
+  
   --color-teal-50: #b5ead7;
   --color-teal-100: #f7b2ad;
   --color-teal-200: #a3c4f3;
@@ -242,6 +289,7 @@
   --color-teal-700: #f7b2ad;
   --color-teal-800: #ffe066;
   --color-teal-900: #b8b5c6;
+  
   --color-cyan-50: #b5ead7;
   --color-cyan-100: #a3c4f3;
   --color-cyan-200: #f7b2ad;
@@ -252,6 +300,7 @@
   --color-cyan-700: #f7b2ad;
   --color-cyan-800: #ffe066;
   --color-cyan-900: #b8b5c6;
+  
   --color-lime-50: #b5ead7;
   --color-lime-100: #f7b2ad;
   --color-lime-200: #a3c4f3;
@@ -262,6 +311,7 @@
   --color-lime-700: #f7b2ad;
   --color-lime-800: #ffe066;
   --color-lime-900: #b8b5c6;
+  
   --color-amber-50: #ffe066;
   --color-amber-100: #f7b2ad;
   --color-amber-200: #a3c4f3;
@@ -272,6 +322,7 @@
   --color-amber-700: #a3c4f3;
   --color-amber-800: #b5ead7;
   --color-amber-900: #b8b5c6;
+  
   --color-emerald-50: #b5ead7;
   --color-emerald-100: #f7b2ad;
   --color-emerald-200: #a3c4f3;
@@ -282,6 +333,7 @@
   --color-emerald-700: #f7b2ad;
   --color-emerald-800: #ffe066;
   --color-emerald-900: #b8b5c6;
+  
   --color-fuchsia-50: #f7b2ad;
   --color-fuchsia-100: #a3c4f3;
   --color-fuchsia-200: #b5ead7;
@@ -292,6 +344,7 @@
   --color-fuchsia-700: #b5ead7;
   --color-fuchsia-800: #ffe066;
   --color-fuchsia-900: #b8b5c6;
+  
   --color-violet-50: #a3c4f3;
   --color-violet-100: #f7b2ad;
   --color-violet-200: #b5ead7;
@@ -302,6 +355,7 @@
   --color-violet-700: #b5ead7;
   --color-violet-800: #ffe066;
   --color-violet-900: #b8b5c6;
+  
   --color-sky-50: #a3c4f3;
   --color-sky-100: #f7b2ad;
   --color-sky-200: #b5ead7;
@@ -312,6 +366,7 @@
   --color-sky-700: #b5ead7;
   --color-sky-800: #ffe066;
   --color-sky-900: #b8b5c6;
+  
   --color-slate-50: #f7f3fa;
   --color-slate-100: #e9f6fb;
   --color-slate-200: #b8b5c6;
@@ -322,6 +377,7 @@
   --color-slate-700: #f7b2ad;
   --color-slate-800: #a3c4f3;
   --color-slate-900: #b8b5c6;
+  
   --color-stone-50: #f7f3fa;
   --color-stone-100: #e9f6fb;
   --color-stone-200: #b8b5c6;
@@ -332,6 +388,7 @@
   --color-stone-700: #f7b2ad;
   --color-stone-800: #a3c4f3;
   --color-stone-900: #b8b5c6;
+  
   --color-zinc-50: #f7f3fa;
   --color-zinc-100: #e9f6fb;
   --color-zinc-200: #b8b5c6;
@@ -342,4 +399,67 @@
   --color-zinc-700: #f7b2ad;
   --color-zinc-800: #a3c4f3;
   --color-zinc-900: #b8b5c6;
+}
+
+/* Base HTML elements with pastel theme */
+[theme="pastel"] html {
+  background-color: var(--html-bg);
+  color: var(--text);
+}
+
+[theme="pastel"] body {
+  background-color: var(--body-bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+[theme="pastel"] main {
+  background-color: var(--main-bg);
+  color: var(--text);
+}
+
+[theme="pastel"] h1,
+[theme="pastel"] h2,
+[theme="pastel"] h3,
+[theme="pastel"] h4,
+[theme="pastel"] h5,
+[theme="pastel"] h6 {
+  color: var(--text);
+}
+
+[theme="pastel"] p {
+  color: var(--text);
+}
+
+[theme="pastel"] a {
+  color: var(--primary);
+}
+
+[theme="pastel"] a:hover {
+  color: var(--accent);
+}
+
+[theme="pastel"] button {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: 1px solid var(--border);
+}
+
+[theme="pastel"] button:hover {
+  background-color: var(--hover-bg);
+}
+
+[theme="pastel"] input,
+[theme="pastel"] textarea,
+[theme="pastel"] select {
+  background-color: var(--input-bg);
+  color: var(--text);
+  border: 1px solid var(--input-border);
+}
+
+[theme="pastel"] input:focus,
+[theme="pastel"] textarea:focus,
+[theme="pastel"] select:focus {
+  border-color: var(--focus-border);
+  box-shadow: 0 0 0 2px var(--focus-ring);
 } 

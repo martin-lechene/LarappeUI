@@ -21,6 +21,292 @@ main {
   color: #839496;
 }
 
+/* Styles pour les éléments de base */
+h1, h2, h3, h4, h5, h6 {
+  color: #93a1a1;
+}
+
+p {
+  color: #839496;
+}
+
+a {
+  color: #268bd2;
+}
+
+a:hover {
+  color: #2aa198;
+}
+
+/* Styles pour les éléments de formulaire */
+input, textarea, select {
+  background-color: #073642;
+  color: #839496;
+  border: 1px solid #586e75;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #268bd2;
+  outline-color: #268bd2;
+}
+
+/* Styles pour les boutons */
+button {
+  background-color: #073642;
+  color: #839496;
+  border: 1px solid #586e75;
+}
+
+button:hover {
+  background-color: #586e75;
+}
+
+/* Styles pour les tableaux */
+table {
+  background-color: #002b36;
+  color: #839496;
+}
+
+th {
+  background-color: #073642;
+  color: #93a1a1;
+}
+
+td {
+  border-color: #073642;
+}
+
+/* Styles pour les listes */
+ul, ol {
+  color: #839496;
+}
+
+li {
+  color: #839496;
+}
+
+/* Styles pour les citations */
+blockquote {
+  background-color: #073642;
+  border-left: 4px solid #268bd2;
+  color: #93a1a1;
+}
+
+/* Styles pour le code */
+code {
+  background-color: #073642;
+  color: #dc322f;
+}
+
+pre {
+  background-color: #073642;
+  color: #839496;
+  border: 1px solid #073642;
+}
+
+/* Styles pour les liens de navigation */
+nav a {
+  color: #839496;
+}
+
+nav a:hover {
+  color: #268bd2;
+}
+
+/* Styles pour les éléments de mise en page */
+header, footer {
+  background-color: #073642;
+  color: #839496;
+}
+
+aside {
+  background-color: #073642;
+  color: #839496;
+}
+
+/* Styles pour les éléments interactifs */
+details {
+  background-color: #073642;
+  color: #839496;
+}
+
+summary {
+  color: #93a1a1;
+}
+
+/* Styles pour les éléments de média */
+img {
+  border-color: #073642;
+}
+
+/* Styles pour les éléments de formulaire avancés */
+fieldset {
+  border-color: #073642;
+}
+
+legend {
+  color: #93a1a1;
+}
+
+/* Styles pour les éléments de navigation */
+menu {
+  background-color: #073642;
+  color: #839496;
+}
+
+/* Styles pour les éléments de dialogue */
+dialog {
+  background-color: #073642;
+  color: #839496;
+  border-color: #073642;
+}
+
+/* Styles pour les éléments de données */
+data {
+  color: #2aa198;
+}
+
+/* Styles pour les éléments de temps */
+time {
+  color: #b58900;
+}
+
+/* Styles pour les éléments de marquage */
+mark {
+  background-color: #b58900;
+  color: #002b36;
+}
+
+/* Styles pour les éléments de suppression */
+del {
+  color: #dc322f;
+}
+
+/* Styles pour les éléments d'insertion */
+ins {
+  color: #859900;
+}
+
+/* Styles pour les éléments de variable */
+var {
+  color: #d33682;
+}
+
+/* Styles pour les éléments de sortie */
+output {
+  color: #2aa198;
+}
+
+/* Styles pour les éléments de mètre */
+meter {
+  background-color: #073642;
+}
+
+meter::-webkit-meter-bar {
+  background-color: #073642;
+}
+
+meter::-webkit-meter-optimum-value {
+  background-color: #859900;
+}
+
+meter::-webkit-meter-suboptimum-value {
+  background-color: #b58900;
+}
+
+meter::-webkit-meter-even-less-good-value {
+  background-color: #dc322f;
+}
+
+/* Styles pour les éléments de progression */
+progress {
+  background-color: #073642;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #073642;
+}
+
+progress::-webkit-progress-value {
+  background-color: #268bd2;
+}
+
+/* Styles pour les éléments de ruban */
+ruby {
+  color: #839496;
+}
+
+rt {
+  color: #93a1a1;
+}
+
+/* Styles pour les éléments de règle */
+hr {
+  border-color: #073642;
+  background-color: #073642;
+}
+
+/* Styles pour les éléments de division */
+div {
+  color: #839496;
+}
+
+/* Styles pour les éléments de section */
+section {
+  color: #839496;
+}
+
+/* Styles pour les éléments d'article */
+article {
+  color: #839496;
+}
+
+/* Styles pour les éléments de figure */
+figure {
+  color: #839496;
+}
+
+figcaption {
+  color: #93a1a1;
+}
+
+/* Styles pour les éléments de détail */
+details {
+  color: #839496;
+}
+
+/* Styles pour les éléments de résumé */
+summary {
+  color: #93a1a1;
+}
+
+/* Styles pour les éléments de commande */
+command {
+  color: #268bd2;
+}
+
+/* Styles pour les éléments de menu */
+menuitem {
+  color: #839496;
+}
+
+/* Styles pour les éléments de menu contextuel */
+contextmenu {
+  background-color: #073642;
+  color: #839496;
+}
+
+/* Styles pour les éléments de menu contextuel */
+contextmenu menuitem {
+  color: #839496;
+}
+
+/* Styles pour les éléments de menu contextuel au survol */
+contextmenu menuitem:hover {
+  background-color: #586e75;
+  color: #268bd2;
+}
+
 /* Variables CSS pour le thème Solarized Dark */
 [theme="solarized-dark"] {
   /* Couleurs de base Solarized */
