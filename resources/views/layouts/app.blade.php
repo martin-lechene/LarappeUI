@@ -7,6 +7,22 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <link rel="stylesheet" id="theme-css" href="/resources/css/themes/light.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const select = document.getElementById('theme-select');
+            const themeLink = document.getElementById('theme-css');
+            function setTheme(theme) {
+                document.documentElement.setAttribute('theme', theme);
+                themeLink.href = `/resources/css/themes/${theme}.css`;
+            }
+            select.addEventListener('change', function () {
+                setTheme(this.value);
+            });
+            // Initial theme
+            setTheme(select.value);
+        });
+    </script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans min-h-screen flex flex-col">
     <!-- Header -->
@@ -34,17 +50,6 @@
                 <option value="2d">2D</option>
             </select>
         </div>
-        <style>
-            [theme="pro"] { --tw-bg-opacity: 1; background-color: #f8fafc; color: #1e293b; }
-            [theme="light"] { background-color: #fff; color: #111827; }
-            [theme="dark"] { background-color: #18181b; color: #f3f4f6; }
-            [theme="glass"] { background: rgba(255,255,255,0.6); color: #374151; backdrop-filter: blur(8px); }
-            [theme="forest"] { background-color: #f0fdf4; color: #14532d; }
-            [theme="sea"] { background-color: #e0f2fe; color: #0c4a6e; }
-            [theme="summer"] { background-color: #fff7ed; color: #78350f; }
-            [theme="2d"] { background-color: #f1f5f9; color: #0f172a; }
-            html[theme] { transition: background 0.3s, color 0.3s; }
-        </style>
     </header>
     <!-- Hero -->
     <section class="bg-blue-50 py-12 px-4 text-center border-b border-blue-100">
