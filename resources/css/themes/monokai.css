@@ -1,79 +1,79 @@
 [theme="monokai"] {
-  --background: #272822;
-  --surface: #383830;
-  --surface-alt: #49483e;
-  --overlay: rgba(39,40,34,0.12);
-  --input-bg: #383830;
-  --text: #f8f8f2;
-  --text-muted: #75715e;
-  --text-inverse: #272822;
-  --text-placeholder: #75715e;
-  --border: #49483e;
-  --border-strong: #f92672;
-  --input-border: #f92672;
-  --focus-ring: #a6e22e;
-  --primary: #a6e22e;
-  --primary-foreground: #272822;
-  --secondary: #fd971f;
-  --secondary-foreground: #272822;
-  --accent: #f92672;
-  --accent-foreground: #f8f8f2;
-  --success: #a6e22e;
-  --success-foreground: #272822;
-  --warning: #e6db74;
-  --warning-foreground: #272822;
-  --danger: #f92672;
-  --danger-foreground: #f8f8f2;
-  --info: #66d9ef;
-  --info-foreground: #272822;
-  --hover-bg: #383830;
-  --active-bg: #49483e;
-  --disabled-bg: #383830;
-  --disabled-text: #75715e;
-  --selected-bg: #49483e;
-  --selected-text: #a6e22e;
-  --focus-bg: #49483e;
-  --focus-border: #a6e22e;
-  --badge-bg-primary: #383830;
-  --badge-text-primary: #a6e22e;
-  --badge-bg-secondary: #49483e;
-  --badge-text-secondary: #fd971f;
-  --badge-bg-danger: #49483e;
-  --badge-text-danger: #f92672;
-  --badge-bg-success: #49483e;
-  --badge-text-success: #a6e22e;
-  --badge-bg-warning: #49483e;
-  --badge-text-warning: #e6db74;
-  --avatar-bg-green: #a6e22e;
-  --avatar-text-green: #272822;
-  --avatar-bg-orange: #fd971f;
-  --avatar-text-orange: #272822;
-  --progress-bg-green: #a6e22e;
-  --progress-bg-orange: #fd971f;
-  --progress-bg-pink: #f92672;
-  --progress-bg-yellow: #e6db74;
-  --progress-bg-blue: #66d9ef;
-  --spinner-color-green: #a6e22e;
-  --spinner-color-orange: #fd971f;
-  --spinner-color-pink: #f92672;
-  --divider: #49483e;
-  --shadow: 0 1px 2px 0 rgba(39,40,34,0.12);
-  --card-bg: #383830;
-  --modal-bg: #383830;
-  --drawer-bg: #383830;
-  --sidebar-bg: #272822;
-  --tooltip-bg: #f92672;
-  --tooltip-text: #f8f8f2;
-  --popover-bg: #49483e;
-  --popover-text: #f8f8f2;
-  --stepper-active-bg: #a6e22e;
-  --stepper-inactive-bg: #49483e;
-  --timeline-dot-bg: #a6e22e;
-  --timeline-dot-active-bg: #fd971f;
-  --muted: #49483e;
-  --highlight: #fd971f;
-  --scrollbar: #49483e;
-  --selection-bg: #a6e22e;
+  /* Variables de base du thème minimal */
+  --background: #ffffff;
+  --surface: #f7f7fa;
+  --surface-alt: #ececf0;
+  --overlay: rgba(0,0,0,0.03);
+  --input-bg: #f7f7fa;
+  --text: #22223b;
+  --text-muted: #9a9ab0;
+  --text-inverse: #fff;
+  --text-placeholder: #bfc0c0;
+  --border: #ececf0;
+  --border-strong: #bfc0c0;
+  --input-border: #bfc0c0;
+  --focus-ring: #4f8cff;
+  --primary: #4f8cff;
+  --primary-foreground: #fff;
+  --secondary: #9a9ab0;
+  --secondary-foreground: #fff;
+  --accent: #bfc0c0;
+  --accent-foreground: #22223b;
+  --success: #a3e635;
+  --success-foreground: #22223b;
+  --warning: #fbbf24;
+  --warning-foreground: #22223b;
+  --danger: #ef4444;
+  --danger-foreground: #fff;
+  --info: #4f8cff;
+  --info-foreground: #fff;
+  --hover-bg: #ececf0;
+  --active-bg: #d1d5db;
+  --disabled-bg: #f7f7fa;
+  --disabled-text: #bfc0c0;
+  --selected-bg: #ececf0;
+  --selected-text: #4f8cff;
+  --focus-bg: #ececf0;
+  --focus-border: #4f8cff;
+  --badge-bg-primary: #f7f7fa;
+  --badge-text-primary: #4f8cff;
+  --badge-bg-secondary: #ececf0;
+  --badge-text-secondary: #9a9ab0;
+  --badge-bg-danger: #fee2e2;
+  --badge-text-danger: #ef4444;
+  --badge-bg-success: #e6f9e6;
+  --badge-text-success: #a3e635;
+  --badge-bg-warning: #fef9c3;
+  --badge-text-warning: #fbbf24;
+  --avatar-bg-gray: #ececf0;
+  --avatar-text-gray: #9a9ab0;
+  --avatar-bg-blue: #dbeafe;
+  --avatar-text-blue: #4f8cff;
+  --progress-bg-blue: #4f8cff;
+  --progress-bg-green: #a3e635;
+  --progress-bg-red: #ef4444;
+  --progress-bg-yellow: #fbbf24;
+  --progress-bg-gray: #bfc0c0;
+  --spinner-color-blue: #4f8cff;
+  --spinner-color-gray: #bfc0c0;
+  --divider: #ececf0;
+  --shadow: 0 1px 2px 0 rgba(0,0,0,0.03);
+  --card-bg: #f7f7fa;
+  --modal-bg: #f7f7fa;
+  --drawer-bg: #f7f7fa;
+  --sidebar-bg: #ffffff;
+  --tooltip-bg: #4f8cff;
+  --tooltip-text: #fff;
+  --popover-bg: #fff;
+  --popover-text: #22223b;
+  --stepper-active-bg: #4f8cff;
+  --stepper-inactive-bg: #ececf0;
+  --timeline-dot-bg: #4f8cff;
+  --timeline-dot-active-bg: #a3e635;
+  --muted: #ececf0;
+  --highlight: #fbbf24;
+  --scrollbar: #ececf0;
+  --selection-bg: #4f8cff;
   --radius-xs: 2px;
   --radius-sm: 4px;
   --radius-md: 6px;
@@ -81,327 +81,881 @@
   --radius-xl: 12px;
   --radius-full: 9999px;
   
-  /* Couleurs primaires - variations Monokai */
-  --color-primary-50: #f8f8f2;
-  --color-primary-100: #e6db74;
-  --color-primary-200: #a6e22e;
-  --color-primary-300: #fd971f;
-  --color-primary-400: #f92672;
-  --color-primary-500: #a6e22e;
-  --color-primary-600: #fd971f;
-  --color-primary-700: #f92672;
-  --color-primary-800: #66d9ef;
-  --color-primary-900: #75715e;
-  
-  /* Couleurs secondaires - variations Monokai */
-  --color-secondary-50: #75715e;
-  --color-secondary-100: #49483e;
-  --color-secondary-200: #383830;
-  --color-secondary-300: #272822;
-  --color-secondary-400: #f8f8f2;
-  --color-secondary-500: #fd971f;
-  --color-secondary-600: #a6e22e;
-  --color-secondary-700: #f92672;
-  --color-secondary-800: #66d9ef;
-  --color-secondary-900: #f8f8f2;
-  
-  /* Couleurs de succès - variations Monokai */
-  --color-success-50: #a6e22e;
-  --color-success-100: #e6db74;
-  --color-success-200: #f8f8f2;
-  --color-success-300: #fd971f;
-  --color-success-400: #f92672;
-  --color-success-500: #a6e22e;
-  --color-success-600: #fd971f;
-  --color-success-700: #f92672;
-  --color-success-800: #66d9ef;
-  --color-success-900: #75715e;
-  
-  /* Couleurs d'avertissement - variations Monokai */
-  --color-warning-50: #e6db74;
-  --color-warning-100: #f8f8f2;
-  --color-warning-200: #a6e22e;
-  --color-warning-300: #fd971f;
-  --color-warning-400: #f92672;
-  --color-warning-500: #e6db74;
-  --color-warning-600: #fd971f;
-  --color-warning-700: #f92672;
-  --color-warning-800: #66d9ef;
-  --color-warning-900: #75715e;
-  
-  /* Couleurs de danger - variations Monokai */
-  --color-danger-50: #f92672;
-  --color-danger-100: #fd971f;
-  --color-danger-200: #a6e22e;
-  --color-danger-300: #e6db74;
-  --color-danger-400: #f8f8f2;
-  --color-danger-500: #f92672;
-  --color-danger-600: #fd971f;
-  --color-danger-700: #a6e22e;
-  --color-danger-800: #66d9ef;
-  --color-danger-900: #75715e;
-  
-  /* Couleurs d'information - variations Monokai */
-  --color-info-50: #66d9ef;
-  --color-info-100: #a6e22e;
-  --color-info-200: #fd971f;
-  --color-info-300: #f92672;
-  --color-info-400: #e6db74;
-  --color-info-500: #66d9ef;
-  --color-info-600: #a6e22e;
-  --color-info-700: #fd971f;
-  --color-info-800: #f92672;
-  --color-info-900: #75715e;
-  
-  /* Couleurs neutres - variations Monokai */
-  --color-neutral-50: #f8f8f2;
-  --color-neutral-100: #75715e;
-  --color-neutral-200: #49483e;
-  --color-neutral-300: #383830;
-  --color-neutral-400: #272822;
-  --color-neutral-500: #75715e;
-  --color-neutral-600: #49483e;
-  --color-neutral-700: #383830;
-  --color-neutral-800: #272822;
-  --color-neutral-900: #272822;
-  
-  /* Couleurs rouges - variations Monokai */
-  --color-red-50: #f92672;
-  --color-red-100: #fd971f;
-  --color-red-200: #a6e22e;
-  --color-red-300: #e6db74;
-  --color-red-400: #f8f8f2;
-  --color-red-500: #f92672;
-  --color-red-600: #fd971f;
-  --color-red-700: #a6e22e;
-  --color-red-800: #66d9ef;
-  --color-red-900: #75715e;
-  
-  /* Couleurs vertes - variations Monokai */
-  --color-green-50: #a6e22e;
-  --color-green-100: #e6db74;
-  --color-green-200: #f8f8f2;
-  --color-green-300: #fd971f;
-  --color-green-400: #f92672;
-  --color-green-500: #a6e22e;
-  --color-green-600: #fd971f;
-  --color-green-700: #f92672;
-  --color-green-800: #66d9ef;
-  --color-green-900: #75715e;
-  
-  /* Couleurs bleues - variations Monokai */
-  --color-blue-50: #66d9ef;
-  --color-blue-100: #a6e22e;
-  --color-blue-200: #fd971f;
-  --color-blue-300: #f92672;
-  --color-blue-400: #e6db74;
-  --color-blue-500: #66d9ef;
-  --color-blue-600: #a6e22e;
-  --color-blue-700: #fd971f;
-  --color-blue-800: #f92672;
-  --color-blue-900: #75715e;
-  
-  /* Couleurs jaunes - variations Monokai */
-  --color-yellow-50: #e6db74;
-  --color-yellow-100: #f8f8f2;
-  --color-yellow-200: #a6e22e;
-  --color-yellow-300: #fd971f;
-  --color-yellow-400: #f92672;
-  --color-yellow-500: #e6db74;
-  --color-yellow-600: #fd971f;
-  --color-yellow-700: #f92672;
-  --color-yellow-800: #66d9ef;
-  --color-yellow-900: #75715e;
-  
-  /* Couleurs oranges - variations Monokai */
-  --color-orange-50: #fd971f;
-  --color-orange-100: #f92672;
-  --color-orange-200: #e6db74;
-  --color-orange-300: #a6e22e;
-  --color-orange-400: #f8f8f2;
-  --color-orange-500: #fd971f;
-  --color-orange-600: #f92672;
-  --color-orange-700: #e6db74;
-  --color-orange-800: #a6e22e;
-  --color-orange-900: #75715e;
-  
-  /* Couleurs roses - variations Monokai */
-  --color-pink-50: #f92672;
-  --color-pink-100: #fd971f;
-  --color-pink-200: #a6e22e;
-  --color-pink-300: #e6db74;
-  --color-pink-400: #f8f8f2;
-  --color-pink-500: #f92672;
-  --color-pink-600: #fd971f;
-  --color-pink-700: #a6e22e;
-  --color-pink-800: #66d9ef;
-  --color-pink-900: #75715e;
-  
-  /* Couleurs violettes - variations Monokai */
-  --color-purple-50: #a6e22e;
-  --color-purple-100: #fd971f;
-  --color-purple-200: #f92672;
-  --color-purple-300: #e6db74;
-  --color-purple-400: #f8f8f2;
-  --color-purple-500: #a6e22e;
-  --color-purple-600: #fd971f;
-  --color-purple-700: #f92672;
-  --color-purple-800: #66d9ef;
-  --color-purple-900: #75715e;
-  
-  /* Couleurs indigo - variations Monokai */
-  --color-indigo-50: #66d9ef;
-  --color-indigo-100: #a6e22e;
-  --color-indigo-200: #fd971f;
-  --color-indigo-300: #f92672;
-  --color-indigo-400: #e6db74;
-  --color-indigo-500: #66d9ef;
-  --color-indigo-600: #a6e22e;
-  --color-indigo-700: #fd971f;
-  --color-indigo-800: #f92672;
-  --color-indigo-900: #75715e;
-  
-  /* Couleurs teal - variations Monokai */
-  --color-teal-50: #a6e22e;
-  --color-teal-100: #fd971f;
-  --color-teal-200: #f92672;
-  --color-teal-300: #e6db74;
-  --color-teal-400: #f8f8f2;
-  --color-teal-500: #a6e22e;
-  --color-teal-600: #fd971f;
-  --color-teal-700: #f92672;
-  --color-teal-800: #66d9ef;
-  --color-teal-900: #75715e;
-  
-  /* Couleurs cyan - variations Monokai */
-  --color-cyan-50: #66d9ef;
-  --color-cyan-100: #a6e22e;
-  --color-cyan-200: #fd971f;
-  --color-cyan-300: #f92672;
-  --color-cyan-400: #e6db74;
-  --color-cyan-500: #66d9ef;
-  --color-cyan-600: #a6e22e;
-  --color-cyan-700: #fd971f;
-  --color-cyan-800: #f92672;
-  --color-cyan-900: #75715e;
-  
-  /* Couleurs lime - variations Monokai */
-  --color-lime-50: #a6e22e;
-  --color-lime-100: #fd971f;
-  --color-lime-200: #f92672;
-  --color-lime-300: #e6db74;
-  --color-lime-400: #f8f8f2;
-  --color-lime-500: #a6e22e;
-  --color-lime-600: #fd971f;
-  --color-lime-700: #f92672;
-  --color-lime-800: #66d9ef;
-  --color-lime-900: #75715e;
-  
-  /* Couleurs amber - variations Monokai */
-  --color-amber-50: #e6db74;
-  --color-amber-100: #f8f8f2;
-  --color-amber-200: #a6e22e;
-  --color-amber-300: #fd971f;
-  --color-amber-400: #f92672;
-  --color-amber-500: #e6db74;
-  --color-amber-600: #fd971f;
-  --color-amber-700: #f92672;
-  --color-amber-800: #66d9ef;
-  --color-amber-900: #75715e;
-  
-  /* Couleurs emerald - variations Monokai */
-  --color-emerald-50: #a6e22e;
-  --color-emerald-100: #fd971f;
-  --color-emerald-200: #f92672;
-  --color-emerald-300: #e6db74;
-  --color-emerald-400: #f8f8f2;
-  --color-emerald-500: #a6e22e;
-  --color-emerald-600: #fd971f;
-  --color-emerald-700: #f92672;
-  --color-emerald-800: #66d9ef;
-  --color-emerald-900: #75715e;
-  
-  /* Couleurs fuchsia - variations Monokai */
-  --color-fuchsia-50: #f92672;
-  --color-fuchsia-100: #fd971f;
-  --color-fuchsia-200: #a6e22e;
-  --color-fuchsia-300: #e6db74;
-  --color-fuchsia-400: #f8f8f2;
-  --color-fuchsia-500: #f92672;
-  --color-fuchsia-600: #fd971f;
-  --color-fuchsia-700: #a6e22e;
-  --color-fuchsia-800: #66d9ef;
-  --color-fuchsia-900: #75715e;
-  
-  /* Couleurs violet - variations Monokai */
-  --color-violet-50: #a6e22e;
-  --color-violet-100: #fd971f;
-  --color-violet-200: #f92672;
-  --color-violet-300: #e6db74;
-  --color-violet-400: #f8f8f2;
-  --color-violet-500: #a6e22e;
-  --color-violet-600: #fd971f;
-  --color-violet-700: #f92672;
-  --color-violet-800: #66d9ef;
-  --color-violet-900: #75715e;
-  
-  /* Couleurs sky - variations Monokai */
-  --color-sky-50: #66d9ef;
-  --color-sky-100: #a6e22e;
-  --color-sky-200: #fd971f;
-  --color-sky-300: #f92672;
-  --color-sky-400: #e6db74;
-  --color-sky-500: #66d9ef;
-  --color-sky-600: #a6e22e;
-  --color-sky-700: #fd971f;
-  --color-sky-800: #f92672;
-  --color-sky-900: #75715e;
-  
-  /* Couleurs slate - variations Monokai */
-  --color-slate-50: #75715e;
-  --color-slate-100: #49483e;
-  --color-slate-200: #383830;
-  --color-slate-300: #272822;
-  --color-slate-400: #f8f8f2;
-  --color-slate-500: #75715e;
-  --color-slate-600: #49483e;
-  --color-slate-700: #383830;
-  --color-slate-800: #272822;
-  --color-slate-900: #272822;
-  
-  /* Couleurs stone - variations Monokai */
-  --color-stone-50: #75715e;
-  --color-stone-100: #49483e;
-  --color-stone-200: #383830;
-  --color-stone-300: #272822;
-  --color-stone-400: #f8f8f2;
-  --color-stone-500: #75715e;
-  --color-stone-600: #49483e;
-  --color-stone-700: #383830;
-  --color-stone-800: #272822;
-  --color-stone-900: #272822;
-  
-  /* Couleurs zinc - variations Monokai */
-  --color-zinc-50: #75715e;
-  --color-zinc-100: #49483e;
-  --color-zinc-200: #383830;
-  --color-zinc-300: #272822;
-  --color-zinc-400: #f8f8f2;
-  --color-zinc-500: #75715e;
-  --color-zinc-600: #49483e;
-  --color-zinc-700: #383830;
-  --color-zinc-800: #272822;
-  --color-zinc-900: #272822;
-  
-  /* Couleurs gray - variations Monokai */
-  --color-gray-50: #f8f8f2;
-  --color-gray-100: #75715e;
-  --color-gray-200: #49483e;
-  --color-gray-300: #383830;
-  --color-gray-400: #272822;
-  --color-gray-500: #75715e;
-  --color-gray-600: #49483e;
-  --color-gray-700: #383830;
-  --color-gray-800: #272822;
-  --color-gray-900: #272822;
+  /* Styles pour les balises HTML de base */
+  color: var(--text);
+  background-color: var(--background);
+}
+
+[theme="monokai"] html {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+[theme="monokai"] body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+[theme="monokai"] main {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+[theme="monokai"] h1,
+[theme="monokai"] h2,
+[theme="monokai"] h3,
+[theme="monokai"] h4,
+[theme="monokai"] h5,
+[theme="monokai"] h6 {
+  color: var(--text);
+  background-color: transparent;
+}
+
+[theme="monokai"] p {
+  color: var(--text);
+  background-color: transparent;
+}
+
+[theme="monokai"] a {
+  color: var(--primary);
+  background-color: transparent;
+}
+
+[theme="monokai"] a:hover {
+  color: var(--primary);
+  background-color: var(--hover-bg);
+}
+
+[theme="monokai"] button {
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] input,
+[theme="monokai"] textarea,
+[theme="monokai"] select {
+  background-color: var(--input-bg);
+  color: var(--text);
+  border: 1px solid var(--input-border);
+}
+
+[theme="monokai"] input:focus,
+[theme="monokai"] textarea:focus,
+[theme="monokai"] select:focus {
+  background-color: var(--focus-bg);
+  border-color: var(--focus-border);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--focus-ring);
+}
+
+[theme="monokai"] table {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] th,
+[theme="monokai"] td {
+  background-color: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+[theme="monokai"] code {
+  background-color: var(--surface-alt);
+  color: var(--text);
+}
+
+[theme="monokai"] pre {
+  background-color: var(--surface-alt);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] blockquote {
+  background-color: var(--surface-alt);
+  color: var(--text);
+  border-left: 4px solid var(--primary);
+}
+
+[theme="monokai"] hr {
+  background-color: var(--divider);
+  border: none;
+  height: 1px;
+}
+
+[theme="monokai"] ul,
+[theme="monokai"] ol {
+  color: var(--text);
+  background-color: transparent;
+}
+
+[theme="monokai"] li {
+  color: var(--text);
+  background-color: transparent;
+}
+
+[theme="monokai"] strong {
+  color: var(--text);
+  background-color: transparent;
+}
+
+[theme="monokai"] em {
+  color: var(--text);
+  background-color: transparent;
+}
+
+[theme="monokai"] mark {
+  background-color: var(--highlight);
+  color: var(--text);
+}
+
+[theme="monokai"] del {
+  color: var(--text-muted);
+  background-color: transparent;
+}
+
+[theme="monokai"] ins {
+  color: var(--success);
+  background-color: transparent;
+}
+
+[theme="monokai"] small {
+  color: var(--text-muted);
+  background-color: transparent;
+}
+
+[theme="monokai"] sub,
+[theme="monokai"] sup {
+  color: var(--text);
+  background-color: transparent;
+}
+
+[theme="monokai"] details {
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] summary {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] dialog {
+  background-color: var(--modal-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] fieldset {
+  background-color: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] legend {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] label {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] optgroup {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] option {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] datalist {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] meter {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] progress {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] output {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] canvas {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] svg {
+  background-color: transparent;
+}
+
+[theme="monokai"] iframe {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] object,
+[theme="monokai"] embed {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] video,
+[theme="monokai"] audio {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] source {
+  background-color: transparent;
+}
+
+[theme="monokai"] track {
+  background-color: transparent;
+}
+
+[theme="monokai"] map {
+  background-color: transparent;
+}
+
+[theme="monokai"] area {
+  background-color: transparent;
+}
+
+[theme="monokai"] article {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] aside {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] header {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] footer {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] nav {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] section {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] figure {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] figcaption {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] address {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] time {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] cite {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] q {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] abbr {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] acronym {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] dfn {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] kbd {
+  background-color: var(--surface-alt);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] samp {
+  background-color: var(--surface-alt);
+  color: var(--text);
+}
+
+[theme="monokai"] var {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] bdo {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] bdi {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] ruby {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] rt {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] rp {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] wbr {
+  background-color: transparent;
+}
+
+[theme="monokai"] data {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] meter {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] progress {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] output {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] canvas {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] svg {
+  background-color: transparent;
+}
+
+[theme="monokai"] iframe {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] object,
+[theme="monokai"] embed {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] video,
+[theme="monokai"] audio {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] source {
+  background-color: transparent;
+}
+
+[theme="monokai"] track {
+  background-color: transparent;
+}
+
+[theme="monokai"] map {
+  background-color: transparent;
+}
+
+[theme="monokai"] area {
+  background-color: transparent;
+}
+
+[theme="monokai"] article {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] aside {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] header {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] footer {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] nav {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] section {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] figure {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] figcaption {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] address {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+[theme="monokai"] time {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] cite {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] q {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] abbr {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] acronym {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] dfn {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] kbd {
+  background-color: var(--surface-alt);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+[theme="monokai"] samp {
+  background-color: var(--surface-alt);
+  color: var(--text);
+}
+
+[theme="monokai"] var {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] bdo {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] bdi {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] ruby {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] rt {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] rp {
+  background-color: transparent;
+  color: var(--text);
+}
+
+[theme="monokai"] wbr {
+  background-color: transparent;
+}
+
+[theme="monokai"] data {
+  background-color: transparent;
+  color: var(--text);
+}
+
+/* Couleurs primaires - variations du thème minimal */
+--color-primary-50: #f7f7fa;
+--color-primary-100: #ececf0;
+--color-primary-200: #bfc0c0;
+--color-primary-300: #9a9ab0;
+--color-primary-400: #4f8cff;
+--color-primary-500: #4f8cff;
+--color-primary-600: #2563eb;
+--color-primary-700: #1d4ed8;
+--color-primary-800: #1e40af;
+--color-primary-900: #1e3a8a;
+
+/* Couleurs secondaires - variations du thème minimal */
+--color-secondary-50: #ececf0;
+--color-secondary-100: #bfc0c0;
+--color-secondary-200: #9a9ab0;
+--color-secondary-300: #4f8cff;
+--color-secondary-400: #bfc0c0;
+--color-secondary-500: #9a9ab0;
+--color-secondary-600: #4f8cff;
+--color-secondary-700: #2563eb;
+--color-secondary-800: #1d4ed8;
+--color-secondary-900: #1e3a8a;
+
+/* Couleurs de succès - variations du thème minimal */
+--color-success-50: #f7f7fa;
+--color-success-100: #ececf0;
+--color-success-200: #bfc0c0;
+--color-success-300: #a3e635;
+--color-success-400: #4f8cff;
+--color-success-500: #a3e635;
+--color-success-600: #2563eb;
+--color-success-700: #1d4ed8;
+--color-success-800: #1e40af;
+--color-success-900: #1e3a8a;
+
+/* Couleurs d'avertissement - variations du thème minimal */
+--color-warning-50: #f7f7fa;
+--color-warning-100: #ececf0;
+--color-warning-200: #bfc0c0;
+--color-warning-300: #fbbf24;
+--color-warning-400: #4f8cff;
+--color-warning-500: #fbbf24;
+--color-warning-600: #2563eb;
+--color-warning-700: #1d4ed8;
+--color-warning-800: #1e40af;
+--color-warning-900: #1e3a8a;
+
+/* Couleurs de danger - variations du thème minimal */
+--color-danger-50: #f7f7fa;
+--color-danger-100: #ececf0;
+--color-danger-200: #bfc0c0;
+--color-danger-300: #ef4444;
+--color-danger-400: #4f8cff;
+--color-danger-500: #ef4444;
+--color-danger-600: #2563eb;
+--color-danger-700: #1d4ed8;
+--color-danger-800: #1e40af;
+--color-danger-900: #1e3a8a;
+
+/* Couleurs d'information - variations du thème minimal */
+--color-info-50: #f7f7fa;
+--color-info-100: #ececf0;
+--color-info-200: #bfc0c0;
+--color-info-300: #4f8cff;
+--color-info-400: #9a9ab0;
+--color-info-500: #4f8cff;
+--color-info-600: #2563eb;
+--color-info-700: #1d4ed8;
+--color-info-800: #1e40af;
+--color-info-900: #1e3a8a;
+
+/* Couleurs neutres - variations du thème minimal */
+--color-neutral-50: #f7f7fa;
+--color-neutral-100: #ececf0;
+--color-neutral-200: #bfc0c0;
+--color-neutral-300: #9a9ab0;
+--color-neutral-400: #22223b;
+--color-neutral-500: #bfc0c0;
+--color-neutral-600: #9a9ab0;
+--color-neutral-700: #4f8cff;
+--color-neutral-800: #2563eb;
+--color-neutral-900: #1d4ed8;
+
+/* Couleurs rouges - variations du thème minimal */
+--color-red-50: #f7f7fa;
+--color-red-100: #ececf0;
+--color-red-200: #bfc0c0;
+--color-red-300: #ef4444;
+--color-red-400: #4f8cff;
+--color-red-500: #ef4444;
+--color-red-600: #2563eb;
+--color-red-700: #1d4ed8;
+--color-red-800: #1e40af;
+--color-red-900: #1e3a8a;
+
+/* Couleurs vertes - variations du thème minimal */
+--color-green-50: #f7f7fa;
+--color-green-100: #ececf0;
+--color-green-200: #bfc0c0;
+--color-green-300: #a3e635;
+--color-green-400: #4f8cff;
+--color-green-500: #a3e635;
+--color-green-600: #2563eb;
+--color-green-700: #1d4ed8;
+--color-green-800: #1e40af;
+--color-green-900: #1e3a8a;
+
+/* Couleurs bleues - variations du thème minimal */
+--color-blue-50: #f7f7fa;
+--color-blue-100: #dbeafe;
+--color-blue-200: #bfdbfe;
+--color-blue-300: #93c5fd;
+--color-blue-400: #4f8cff;
+--color-blue-500: #4f8cff;
+--color-blue-600: #2563eb;
+--color-blue-700: #1d4ed8;
+--color-blue-800: #1e40af;
+--color-blue-900: #1e3a8a;
+
+/* Couleurs jaunes - variations du thème minimal */
+--color-yellow-50: #f7f7fa;
+--color-yellow-100: #ececf0;
+--color-yellow-200: #bfc0c0;
+--color-yellow-300: #fbbf24;
+--color-yellow-400: #4f8cff;
+--color-yellow-500: #fbbf24;
+--color-yellow-600: #2563eb;
+--color-yellow-700: #1d4ed8;
+--color-yellow-800: #1e40af;
+--color-yellow-900: #1e3a8a;
+
+/* Couleurs oranges - variations du thème minimal */
+--color-orange-50: #f7f7fa;
+--color-orange-100: #ececf0;
+--color-orange-200: #bfc0c0;
+--color-orange-300: #fbbf24;
+--color-orange-400: #4f8cff;
+--color-orange-500: #fbbf24;
+--color-orange-600: #2563eb;
+--color-orange-700: #1d4ed8;
+--color-orange-800: #1e40af;
+--color-orange-900: #1e3a8a;
+
+/* Couleurs roses - variations du thème minimal */
+--color-pink-50: #f7f7fa;
+--color-pink-100: #ececf0;
+--color-pink-200: #bfc0c0;
+--color-pink-300: #fbbf24;
+--color-pink-400: #4f8cff;
+--color-pink-500: #fbbf24;
+--color-pink-600: #2563eb;
+--color-pink-700: #1d4ed8;
+--color-pink-800: #1e40af;
+--color-pink-900: #1e3a8a;
+
+/* Couleurs violettes - variations du thème minimal */
+--color-purple-50: #f7f7fa;
+--color-purple-100: #ececf0;
+--color-purple-200: #bfc0c0;
+--color-purple-300: #4f8cff;
+--color-purple-400: #9a9ab0;
+--color-purple-500: #4f8cff;
+--color-purple-600: #2563eb;
+--color-purple-700: #1d4ed8;
+--color-purple-800: #1e40af;
+--color-purple-900: #1e3a8a;
+
+/* Couleurs indigo - variations du thème minimal */
+--color-indigo-50: #f7f7fa;
+--color-indigo-100: #ececf0;
+--color-indigo-200: #bfc0c0;
+--color-indigo-300: #4f8cff;
+--color-indigo-400: #9a9ab0;
+--color-indigo-500: #4f8cff;
+--color-indigo-600: #2563eb;
+--color-indigo-700: #1d4ed8;
+--color-indigo-800: #1e40af;
+--color-indigo-900: #1e3a8a;
+
+/* Couleurs teal - variations du thème minimal */
+--color-teal-50: #f7f7fa;
+--color-teal-100: #ececf0;
+--color-teal-200: #bfc0c0;
+--color-teal-300: #4f8cff;
+--color-teal-400: #9a9ab0;
+--color-teal-500: #4f8cff;
+--color-teal-600: #2563eb;
+--color-teal-700: #1d4ed8;
+--color-teal-800: #1e40af;
+--color-teal-900: #1e3a8a;
+
+/* Couleurs cyan - variations du thème minimal */
+--color-cyan-50: #f7f7fa;
+--color-cyan-100: #ececf0;
+--color-cyan-200: #bfc0c0;
+--color-cyan-300: #4f8cff;
+--color-cyan-400: #9a9ab0;
+--color-cyan-500: #4f8cff;
+--color-cyan-600: #2563eb;
+--color-cyan-700: #1d4ed8;
+--color-cyan-800: #1e40af;
+--color-cyan-900: #1e3a8a;
+
+/* Couleurs lime - variations du thème minimal */
+--color-lime-50: #f7f7fa;
+--color-lime-100: #ececf0;
+--color-lime-200: #bfc0c0;
+--color-lime-300: #a3e635;
+--color-lime-400: #4f8cff;
+--color-lime-500: #a3e635;
+--color-lime-600: #2563eb;
+--color-lime-700: #1d4ed8;
+--color-lime-800: #1e40af;
+--color-lime-900: #1e3a8a;
+
+/* Couleurs amber - variations du thème minimal */
+--color-amber-50: #f7f7fa;
+--color-amber-100: #ececf0;
+--color-amber-200: #bfc0c0;
+--color-amber-300: #fbbf24;
+--color-amber-400: #4f8cff;
+--color-amber-500: #fbbf24;
+--color-amber-600: #2563eb;
+--color-amber-700: #1d4ed8;
+--color-amber-800: #1e40af;
+--color-amber-900: #1e3a8a;
+
+/* Couleurs emerald - variations du thème minimal */
+--color-emerald-50: #f7f7fa;
+--color-emerald-100: #ececf0;
+--color-emerald-200: #bfc0c0;
+--color-emerald-300: #a3e635;
+--color-emerald-400: #4f8cff;
+--color-emerald-500: #a3e635;
+--color-emerald-600: #2563eb;
+--color-emerald-700: #1d4ed8;
+--color-emerald-800: #1e40af;
+--color-emerald-900: #1e3a8a;
+
+/* Couleurs fuchsia - variations du thème minimal */
+--color-fuchsia-50: #f7f7fa;
+--color-fuchsia-100: #ececf0;
+--color-fuchsia-200: #bfc0c0;
+--color-fuchsia-300: #fbbf24;
+--color-fuchsia-400: #4f8cff;
+--color-fuchsia-500: #fbbf24;
+--color-fuchsia-600: #2563eb;
+--color-fuchsia-700: #1d4ed8;
+--color-fuchsia-800: #1e40af;
+--color-fuchsia-900: #1e3a8a;
+
+/* Couleurs violet - variations du thème minimal */
+--color-violet-50: #f7f7fa;
+--color-violet-100: #ececf0;
+--color-violet-200: #bfc0c0;
+--color-violet-300: #4f8cff;
+--color-violet-400: #9a9ab0;
+--color-violet-500: #4f8cff;
+--color-violet-600: #2563eb;
+--color-violet-700: #1d4ed8;
+--color-violet-800: #1e40af;
+--color-violet-900: #1e3a8a;
+
+/* Couleurs sky - variations du thème minimal */
+--color-sky-50: #f7f7fa;
+--color-sky-100: #ececf0;
+--color-sky-200: #bfc0c0;
+--color-sky-300: #4f8cff;
+--color-sky-400: #9a9ab0;
+--color-sky-500: #4f8cff;
+--color-sky-600: #2563eb;
+--color-sky-700: #1d4ed8;
+--color-sky-800: #1e40af;
+--color-sky-900: #1e3a8a;
+
+/* Couleurs slate - variations du thème minimal */
+--color-slate-50: #f7f7fa;
+--color-slate-100: #ececf0;
+--color-slate-200: #bfc0c0;
+--color-slate-300: #9a9ab0;
+--color-slate-400: #22223b;
+--color-slate-500: #bfc0c0;
+--color-slate-600: #9a9ab0;
+--color-slate-700: #4f8cff;
+--color-slate-800: #2563eb;
+--color-slate-900: #1d4ed8;
+
+/* Couleurs stone - variations du thème minimal */
+--color-stone-50: #f7f7fa;
+--color-stone-100: #ececf0;
+--color-stone-200: #bfc0c0;
+--color-stone-300: #9a9ab0;
+--color-stone-400: #22223b;
+--color-stone-500: #bfc0c0;
+--color-stone-600: #9a9ab0;
+--color-stone-700: #4f8cff;
+--color-stone-800: #2563eb;
+--color-stone-900: #1d4ed8;
+
+/* Couleurs zinc - variations du thème minimal */
+--color-zinc-50: #f7f7fa;
+--color-zinc-100: #ececf0;
+--color-zinc-200: #bfc0c0;
+--color-zinc-300: #9a9ab0;
+--color-zinc-400: #22223b;
+--color-zinc-500: #bfc0c0;
+--color-zinc-600: #9a9ab0;
+--color-zinc-700: #4f8cff;
+--color-zinc-800: #2563eb;
+--color-zinc-900: #1d4ed8;
 } 

@@ -761,4 +761,16 @@ contextmenu menuitem:hover {
   --color-fuchsia-700: #d33682;
   --color-fuchsia-800: #d33682;
   --color-fuchsia-900: #d33682;
+  
+  /* Variables manquantes pour la compatibilité */
+  --color-gray-50: #fdf6e3;
+  --color-gray-100: #eee8d5;
+  --color-gray-200: #e1dbcd;
+  --color-gray-300: #93a1a1;
+  --color-gray-400: #839496;
+  --color-gray-500: #657b83;
+  --color-gray-600: #586e75;
+  --color-gray-700: #073642;
+  --color-gray-800: #002b36;
+  --color-gray-900: #002b36;
 } 
