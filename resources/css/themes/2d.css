@@ -1,100 +1,100 @@
 [theme="2d"] {
-  /* === COULEURS ULTRA CUBIQUES === */
-  --background: #ffffff;
-  --surface: #f0f0f0;
-  --surface-alt: #e0e0e0;
-  --overlay: rgba(0,0,0,0.1);
-  --input-bg: #ffffff;
-  --text: #000000;
+  /* === COULEURS JEU VIDÉO RÉTRO STYLE MARIO === */
+  --background: #87CEEB; /* Bleu ciel */
+  --surface: #FFFFFF; /* Blanc pur */
+  --surface-alt: #F0F0F0; /* Gris très clair */
+  --overlay: rgba(0,0,0,0.2);
+  --input-bg: #FFFFFF;
+  --text: #000000; /* Noir pur */
   --text-muted: #404040;
-  --text-inverse: #ffffff;
+  --text-inverse: #FFFFFF;
   --text-placeholder: #808080;
-  --border: #000000;
+  --border: #000000; /* Bordures noires */
   --border-strong: #000000;
   --input-border: #000000;
-  --focus-ring: #000000;
-  --primary: #000000;
-  --primary-foreground: #ffffff;
-  --secondary: #404040;
-  --secondary-foreground: #ffffff;
-  --accent: #808080;
+  --focus-ring: #FF0000; /* Rouge vif */
+  --primary: #FF0000; /* Rouge Mario */
+  --primary-foreground: #FFFFFF;
+  --secondary: #00FF00; /* Vert vif */
+  --secondary-foreground: #000000;
+  --accent: #FFFF00; /* Jaune vif */
   --accent-foreground: #000000;
-  --success: #000000;
-  --success-foreground: #ffffff;
-  --warning: #404040;
-  --warning-foreground: #ffffff;
-  --danger: #000000;
-  --danger-foreground: #ffffff;
-  --info: #000000;
-  --info-foreground: #ffffff;
-  --hover-bg: #e0e0e0;
-  --active-bg: #c0c0c0;
-  --disabled-bg: #f8f8f8;
+  --success: #00FF00; /* Vert vif */
+  --success-foreground: #000000;
+  --warning: #FF8000; /* Orange vif */
+  --warning-foreground: #000000;
+  --danger: #FF0000; /* Rouge vif */
+  --danger-foreground: #FFFFFF;
+  --info: #0080FF; /* Bleu vif */
+  --info-foreground: #FFFFFF;
+  --hover-bg: #FFFF00; /* Jaune au hover */
+  --active-bg: #FF8000; /* Orange actif */
+  --disabled-bg: #C0C0C0; /* Gris */
   --disabled-text: #808080;
-  --selected-bg: #000000;
-  --selected-text: #ffffff;
-  --focus-bg: #ffffff;
-  --focus-border: #000000;
+  --selected-bg: #FF0000; /* Rouge sélectionné */
+  --selected-text: #FFFFFF;
+  --focus-bg: #FFFFFF;
+  --focus-border: #FF0000;
   
-  /* === BADGES ULTRA CUBIQUES === */
-  --badge-bg-primary: #000000;
-  --badge-text-primary: #ffffff;
-  --badge-bg-secondary: #404040;
-  --badge-text-secondary: #ffffff;
-  --badge-bg-danger: #000000;
-  --badge-text-danger: #ffffff;
-  --badge-bg-success: #000000;
-  --badge-text-success: #ffffff;
-  --badge-bg-warning: #404040;
-  --badge-text-warning: #ffffff;
+  /* === BADGES JEU VIDÉO === */
+  --badge-bg-primary: #FF0000; /* Rouge */
+  --badge-text-primary: #FFFFFF;
+  --badge-bg-secondary: #00FF00; /* Vert */
+  --badge-text-secondary: #000000;
+  --badge-bg-danger: #FF0000; /* Rouge */
+  --badge-text-danger: #FFFFFF;
+  --badge-bg-success: #00FF00; /* Vert */
+  --badge-text-success: #000000;
+  --badge-bg-warning: #FF8000; /* Orange */
+  --badge-text-warning: #000000;
   
-  /* === AVATARS ULTRA CUBIQUES === */
-  --avatar-bg-gray: #e0e0e0;
+  /* === AVATARS JEU VIDÉO === */
+  --avatar-bg-gray: #C0C0C0; /* Gris */
   --avatar-text-gray: #000000;
-  --avatar-bg-blue: #000000;
-  --avatar-text-blue: #ffffff;
-  --avatar-bg-red: #000000;
-  --avatar-text-red: #ffffff;
-  --avatar-bg-green: #000000;
-  --avatar-text-green: #ffffff;
-  --avatar-bg-yellow: #404040;
-  --avatar-text-yellow: #ffffff;
+  --avatar-bg-blue: #0080FF; /* Bleu */
+  --avatar-text-blue: #FFFFFF;
+  --avatar-bg-red: #FF0000; /* Rouge */
+  --avatar-text-red: #FFFFFF;
+  --avatar-bg-green: #00FF00; /* Vert */
+  --avatar-text-green: #000000;
+  --avatar-bg-yellow: #FFFF00; /* Jaune */
+  --avatar-text-yellow: #000000;
   
-  /* === PROGRESS & SPINNER ULTRA CUBIQUES === */
-  --progress-bg-blue: #000000;
-  --progress-bg-green: #000000;
-  --progress-bg-red: #000000;
-  --progress-bg-yellow: #404040;
-  --progress-bg-gray: #e0e0e0;
-  --spinner-color-blue: #000000;
-  --spinner-color-gray: #404040;
-  --spinner-color-red: #000000;
-  --spinner-color-green: #000000;
-  --spinner-color-yellow: #404040;
+  /* === PROGRESS & SPINNER JEU VIDÉO === */
+  --progress-bg-blue: #0080FF; /* Bleu */
+  --progress-bg-green: #00FF00; /* Vert */
+  --progress-bg-red: #FF0000; /* Rouge */
+  --progress-bg-yellow: #FFFF00; /* Jaune */
+  --progress-bg-gray: #C0C0C0; /* Gris */
+  --spinner-color-blue: #0080FF; /* Bleu */
+  --spinner-color-gray: #808080; /* Gris */
+  --spinner-color-red: #FF0000; /* Rouge */
+  --spinner-color-green: #00FF00; /* Vert */
+  --spinner-color-yellow: #FFFF00; /* Jaune */
   
-  /* === LAYOUT ULTRA CUBIQUE === */
-  --divider: #000000;
-  --shadow: 2px 2px 0px 0px rgba(0,0,0,1);
-  --card-bg: #ffffff;
-  --modal-bg: #ffffff;
-  --drawer-bg: #ffffff;
-  --sidebar-bg: #f0f0f0;
-  --tooltip-bg: #000000;
-  --tooltip-text: #ffffff;
-  --popover-bg: #ffffff;
+  /* === LAYOUT JEU VIDÉO === */
+  --divider: #000000; /* Noir */
+  --shadow: 4px 4px 0px 0px rgba(0,0,0,1); /* Ombre pixelisée */
+  --card-bg: #FFFFFF; /* Blanc */
+  --modal-bg: #FFFFFF;
+  --drawer-bg: #FFFFFF;
+  --sidebar-bg: #C0C0C0; /* Gris */
+  --tooltip-bg: #FF0000; /* Rouge */
+  --tooltip-text: #FFFFFF;
+  --popover-bg: #FFFFFF;
   --popover-text: #000000;
   
-  /* === COMPONENTS ULTRA CUBIQUES === */
-  --stepper-active-bg: #000000;
-  --stepper-inactive-bg: #e0e0e0;
-  --timeline-dot-bg: #000000;
-  --timeline-dot-active-bg: #404040;
-  --muted: #e0e0e0;
-  --highlight: #404040;
-  --scrollbar: #c0c0c0;
-  --selection-bg: #000000;
+  /* === COMPONENTS JEU VIDÉO === */
+  --stepper-active-bg: #FF0000; /* Rouge */
+  --stepper-inactive-bg: #C0C0C0; /* Gris */
+  --timeline-dot-bg: #FF0000; /* Rouge */
+  --timeline-dot-active-bg: #FFFF00; /* Jaune */
+  --muted: #C0C0C0; /* Gris */
+  --highlight: #FFFF00; /* Jaune */
+  --scrollbar: #808080; /* Gris */
+  --selection-bg: #FF0000; /* Rouge */
   
-  /* === BORDER RADIUS ULTRA CUBIQUES === */
+  /* === BORDER RADIUS PIXELISÉ === */
   --radius-xs: 0px;
   --radius-sm: 0px;
   --radius-md: 0px;
@@ -102,262 +102,285 @@
   --radius-xl: 0px;
   --radius-full: 0px;
   
-  /* === PALETTE DE COULEURS ULTRA CUBIQUES === */
-  --color-primary-50: #ffffff;
-  --color-primary-100: #f8f8f8;
-  --color-primary-200: #f0f0f0;
-  --color-primary-300: #e0e0e0;
-  --color-primary-400: #c0c0c0;
-  --color-primary-500: #808080;
-  --color-primary-600: #404040;
-  --color-primary-700: #202020;
-  --color-primary-800: #101010;
-  --color-primary-900: #000000;
+  /* === PALETTE DE COULEURS JEU VIDÉO === */
+  --color-primary-50: #FFE6E6; /* Rouge très clair */
+  --color-primary-100: #FFCCCC;
+  --color-primary-200: #FF9999;
+  --color-primary-300: #FF6666;
+  --color-primary-400: #FF3333;
+  --color-primary-500: #FF0000; /* Rouge Mario */
+  --color-primary-600: #CC0000;
+  --color-primary-700: #990000;
+  --color-primary-800: #660000;
+  --color-primary-900: #330000;
   
-  /* === COULEURS NEUTRALES ULTRA CUBIQUES === */
-  --color-neutral-50: #ffffff;
-  --color-neutral-100: #f8f8f8;
-  --color-neutral-200: #f0f0f0;
-  --color-neutral-300: #e0e0e0;
-  --color-neutral-400: #c0c0c0;
+  /* === COULEURS NEUTRALES JEU VIDÉO === */
+  --color-neutral-50: #FFFFFF; /* Blanc */
+  --color-neutral-100: #F0F0F0;
+  --color-neutral-200: #E0E0E0;
+  --color-neutral-300: #C0C0C0;
+  --color-neutral-400: #A0A0A0;
   --color-neutral-500: #808080;
-  --color-neutral-600: #404040;
-  --color-neutral-700: #202020;
-  --color-neutral-800: #101010;
-  --color-neutral-900: #000000;
+  --color-neutral-600: #606060;
+  --color-neutral-700: #404040;
+  --color-neutral-800: #202020;
+  --color-neutral-900: #000000; /* Noir */
   
-  /* === COULEURS MONOCHROMATIQUES === */
-  --color-red-50: #ffffff;
-  --color-red-100: #f8f8f8;
-  --color-red-200: #f0f0f0;
-  --color-red-300: #e0e0e0;
-  --color-red-400: #c0c0c0;
-  --color-red-500: #808080;
-  --color-red-600: #404040;
-  --color-red-700: #202020;
-  --color-red-800: #101010;
-  --color-red-900: #000000;
+  /* === COULEURS JEU VIDÉO VIVES === */
+  --color-red-50: #FFE6E6;
+  --color-red-100: #FFCCCC;
+  --color-red-200: #FF9999;
+  --color-red-300: #FF6666;
+  --color-red-400: #FF3333;
+  --color-red-500: #FF0000; /* Rouge vif */
+  --color-red-600: #CC0000;
+  --color-red-700: #990000;
+  --color-red-800: #660000;
+  --color-red-900: #330000;
   
-  --color-green-50: #ffffff;
-  --color-green-100: #f8f8f8;
-  --color-green-200: #f0f0f0;
-  --color-green-300: #e0e0e0;
-  --color-green-400: #c0c0c0;
-  --color-green-500: #808080;
-  --color-green-600: #404040;
-  --color-green-700: #202020;
-  --color-green-800: #101010;
-  --color-green-900: #000000;
+  --color-green-50: #E6FFE6;
+  --color-green-100: #CCFFCC;
+  --color-green-200: #99FF99;
+  --color-green-300: #66FF66;
+  --color-green-400: #33FF33;
+  --color-green-500: #00FF00; /* Vert vif */
+  --color-green-600: #00CC00;
+  --color-green-700: #009900;
+  --color-green-800: #006600;
+  --color-green-900: #003300;
   
-  --color-blue-50: #ffffff;
-  --color-blue-100: #f8f8f8;
-  --color-blue-200: #f0f0f0;
-  --color-blue-300: #e0e0e0;
-  --color-blue-400: #c0c0c0;
-  --color-blue-500: #808080;
-  --color-blue-600: #404040;
-  --color-blue-700: #202020;
-  --color-blue-800: #101010;
-  --color-blue-900: #000000;
+  --color-blue-50: #E6F3FF;
+  --color-blue-100: #CCE7FF;
+  --color-blue-200: #99CFFF;
+  --color-blue-300: #66B7FF;
+  --color-blue-400: #339FFF;
+  --color-blue-500: #0080FF; /* Bleu vif */
+  --color-blue-600: #0066CC;
+  --color-blue-700: #004C99;
+  --color-blue-800: #003366;
+  --color-blue-900: #001933;
   
-  --color-yellow-50: #ffffff;
-  --color-yellow-100: #f8f8f8;
-  --color-yellow-200: #f0f0f0;
-  --color-yellow-300: #e0e0e0;
-  --color-yellow-400: #c0c0c0;
-  --color-yellow-500: #808080;
-  --color-yellow-600: #404040;
-  --color-yellow-700: #202020;
-  --color-yellow-800: #101010;
-  --color-yellow-900: #000000;
+  --color-yellow-50: #FFFFE6;
+  --color-yellow-100: #FFFFCC;
+  --color-yellow-200: #FFFF99;
+  --color-yellow-300: #FFFF66;
+  --color-yellow-400: #FFFF33;
+  --color-yellow-500: #FFFF00; /* Jaune vif */
+  --color-yellow-600: #CCCC00;
+  --color-yellow-700: #999900;
+  --color-yellow-800: #666600;
+  --color-yellow-900: #333300;
+  
+  /* === COULEURS JEU VIDÉO SUPPLÉMENTAIRES === */
+  --color-orange-50: #FFF0E6;
+  --color-orange-100: #FFE1CC;
+  --color-orange-200: #FFC399;
+  --color-orange-300: #FFA566;
+  --color-orange-400: #FF8733;
+  --color-orange-500: #FF8000; /* Orange vif */
+  --color-orange-600: #CC6600;
+  --color-orange-700: #994C00;
+  --color-orange-800: #663300;
+  --color-orange-900: #331900;
+  
+  --color-purple-50: #F0E6FF;
+  --color-purple-100: #E1CCFF;
+  --color-purple-200: #C399FF;
+  --color-purple-300: #A566FF;
+  --color-purple-400: #8733FF;
+  --color-purple-500: #8000FF; /* Violet vif */
+  --color-purple-600: #6600CC;
+  --color-purple-700: #4C0099;
+  --color-purple-800: #330066;
+  --color-purple-900: #190033;
+  
+  --color-pink-50: #FFE6F0;
+  --color-pink-100: #FFCCE1;
+  --color-pink-200: #FF99C3;
+  --color-pink-300: #FF66A5;
+  --color-pink-400: #FF3387;
+  --color-pink-500: #FF0069; /* Rose vif */
+  --color-pink-600: #CC0054;
+  --color-pink-700: #99003F;
+  --color-pink-800: #66002A;
+  --color-pink-900: #330015;
+  
+  --color-cyan-50: #E6FFFF;
+  --color-cyan-100: #CCFFFF;
+  --color-cyan-200: #99FFFF;
+  --color-cyan-300: #66FFFF;
+  --color-cyan-400: #33FFFF;
+  --color-cyan-500: #00FFFF; /* Cyan vif */
+  --color-cyan-600: #00CCCC;
+  --color-cyan-700: #009999;
+  --color-cyan-800: #006666;
+  --color-cyan-900: #003333;
+  
+  --color-lime-50: #F0FFE6;
+  --color-lime-100: #E1FFCC;
+  --color-lime-200: #C3FF99;
+  --color-lime-300: #A5FF66;
+  --color-lime-400: #87FF33;
+  --color-lime-500: #80FF00; /* Lime vif */
+  --color-lime-600: #66CC00;
+  --color-lime-700: #4C9900;
+  --color-lime-800: #336600;
+  --color-lime-900: #193300;
   
   /* === RÉPÉTITION POUR TOUTES LES COULEURS === */
-  --color-orange-50: #ffffff;
-  --color-orange-100: #f8f8f8;
-  --color-orange-200: #f0f0f0;
-  --color-orange-300: #e0e0e0;
-  --color-orange-400: #c0c0c0;
-  --color-orange-500: #808080;
-  --color-orange-600: #404040;
-  --color-orange-700: #202020;
-  --color-orange-800: #101010;
-  --color-orange-900: #000000;
+  --color-indigo-50: #E6E6FF;
+  --color-indigo-100: #CCCCFF;
+  --color-indigo-200: #9999FF;
+  --color-indigo-300: #6666FF;
+  --color-indigo-400: #3333FF;
+  --color-indigo-500: #0000FF; /* Indigo vif */
+  --color-indigo-600: #0000CC;
+  --color-indigo-700: #000099;
+  --color-indigo-800: #000066;
+  --color-indigo-900: #000033;
   
-  --color-pink-50: #ffffff;
-  --color-pink-100: #f8f8f8;
-  --color-pink-200: #f0f0f0;
-  --color-pink-300: #e0e0e0;
-  --color-pink-400: #c0c0c0;
-  --color-pink-500: #808080;
-  --color-pink-600: #404040;
-  --color-pink-700: #202020;
-  --color-pink-800: #101010;
-  --color-pink-900: #000000;
+  --color-teal-50: #E6FFFF;
+  --color-teal-100: #CCFFFF;
+  --color-teal-200: #99FFFF;
+  --color-teal-300: #66FFFF;
+  --color-teal-400: #33FFFF;
+  --color-teal-500: #00FFFF; /* Teal vif */
+  --color-teal-600: #00CCCC;
+  --color-teal-700: #009999;
+  --color-teal-800: #006666;
+  --color-teal-900: #003333;
   
-  --color-purple-50: #ffffff;
-  --color-purple-100: #f8f8f8;
-  --color-purple-200: #f0f0f0;
-  --color-purple-300: #e0e0e0;
-  --color-purple-400: #c0c0c0;
-  --color-purple-500: #808080;
-  --color-purple-600: #404040;
-  --color-purple-700: #202020;
-  --color-purple-800: #101010;
-  --color-purple-900: #000000;
+  --color-amber-50: #FFF8E6;
+  --color-amber-100: #FFF1CC;
+  --color-amber-200: #FFE399;
+  --color-amber-300: #FFD566;
+  --color-amber-400: #FFC733;
+  --color-amber-500: #FFB800; /* Amber vif */
+  --color-amber-600: #CC9300;
+  --color-amber-700: #996E00;
+  --color-amber-800: #664900;
+  --color-amber-900: #332400;
   
-  --color-indigo-50: #ffffff;
-  --color-indigo-100: #f8f8f8;
-  --color-indigo-200: #f0f0f0;
-  --color-indigo-300: #e0e0e0;
-  --color-indigo-400: #c0c0c0;
-  --color-indigo-500: #808080;
-  --color-indigo-600: #404040;
-  --color-indigo-700: #202020;
-  --color-indigo-800: #101010;
-  --color-indigo-900: #000000;
+  --color-emerald-50: #E6FFF0;
+  --color-emerald-100: #CCFFE1;
+  --color-emerald-200: #99FFC3;
+  --color-emerald-300: #66FFA5;
+  --color-emerald-400: #33FF87;
+  --color-emerald-500: #00FF69; /* Emerald vif */
+  --color-emerald-600: #00CC54;
+  --color-emerald-700: #00993F;
+  --color-emerald-800: #00662A;
+  --color-emerald-900: #003315;
   
-  --color-teal-50: #ffffff;
-  --color-teal-100: #f8f8f8;
-  --color-teal-200: #f0f0f0;
-  --color-teal-300: #e0e0e0;
-  --color-teal-400: #c0c0c0;
-  --color-teal-500: #808080;
-  --color-teal-600: #404040;
-  --color-teal-700: #202020;
-  --color-teal-800: #101010;
-  --color-teal-900: #000000;
+  --color-fuchsia-50: #FFE6FF;
+  --color-fuchsia-100: #FFCCFF;
+  --color-fuchsia-200: #FF99FF;
+  --color-fuchsia-300: #FF66FF;
+  --color-fuchsia-400: #FF33FF;
+  --color-fuchsia-500: #FF00FF; /* Fuchsia vif */
+  --color-fuchsia-600: #CC00CC;
+  --color-fuchsia-700: #990099;
+  --color-fuchsia-800: #660066;
+  --color-fuchsia-900: #330033;
   
-  --color-cyan-50: #ffffff;
-  --color-cyan-100: #f8f8f8;
-  --color-cyan-200: #f0f0f0;
-  --color-cyan-300: #e0e0e0;
-  --color-cyan-400: #c0c0c0;
-  --color-cyan-500: #808080;
-  --color-cyan-600: #404040;
-  --color-cyan-700: #202020;
-  --color-cyan-800: #101010;
-  --color-cyan-900: #000000;
+  --color-violet-50: #F0E6FF;
+  --color-violet-100: #E1CCFF;
+  --color-violet-200: #C399FF;
+  --color-violet-300: #A566FF;
+  --color-violet-400: #8733FF;
+  --color-violet-500: #8000FF; /* Violet vif */
+  --color-violet-600: #6600CC;
+  --color-violet-700: #4C0099;
+  --color-violet-800: #330066;
+  --color-violet-900: #190033;
   
-  --color-lime-50: #ffffff;
-  --color-lime-100: #f8f8f8;
-  --color-lime-200: #f0f0f0;
-  --color-lime-300: #e0e0e0;
-  --color-lime-400: #c0c0c0;
-  --color-lime-500: #808080;
-  --color-lime-600: #404040;
-  --color-lime-700: #202020;
-  --color-lime-800: #101010;
-  --color-lime-900: #000000;
+  --color-sky-50: #E6F3FF;
+  --color-sky-100: #CCE7FF;
+  --color-sky-200: #99CFFF;
+  --color-sky-300: #66B7FF;
+  --color-sky-400: #339FFF;
+  --color-sky-500: #0080FF; /* Sky vif */
+  --color-sky-600: #0066CC;
+  --color-sky-700: #004C99;
+  --color-sky-800: #003366;
+  --color-sky-900: #001933;
   
-  --color-amber-50: #ffffff;
-  --color-amber-100: #f8f8f8;
-  --color-amber-200: #f0f0f0;
-  --color-amber-300: #e0e0e0;
-  --color-amber-400: #c0c0c0;
-  --color-amber-500: #808080;
-  --color-amber-600: #404040;
-  --color-amber-700: #202020;
-  --color-amber-800: #101010;
-  --color-amber-900: #000000;
+  --color-slate-50: #F8F9FA;
+  --color-slate-100: #F1F3F4;
+  --color-slate-200: #E8EAED;
+  --color-slate-300: #DADCE0;
+  --color-slate-400: #BDC1C6;
+  --color-slate-500: #9AA0A6;
+  --color-slate-600: #80868B;
+  --color-slate-700: #5F6368;
+  --color-slate-800: #3C4043;
+  --color-slate-900: #202124;
   
-  --color-emerald-50: #ffffff;
-  --color-emerald-100: #f8f8f8;
-  --color-emerald-200: #f0f0f0;
-  --color-emerald-300: #e0e0e0;
-  --color-emerald-400: #c0c0c0;
-  --color-emerald-500: #808080;
-  --color-emerald-600: #404040;
-  --color-emerald-700: #202020;
-  --color-emerald-800: #101010;
-  --color-emerald-900: #000000;
+  --color-stone-50: #FAFAF9;
+  --color-stone-100: #F5F5F4;
+  --color-stone-200: #E7E5E4;
+  --color-stone-300: #D6D3D1;
+  --color-stone-400: #A8A29E;
+  --color-stone-500: #78716C;
+  --color-stone-600: #57534E;
+  --color-stone-700: #44403C;
+  --color-stone-800: #292524;
+  --color-stone-900: #1C1917;
   
-  --color-fuchsia-50: #ffffff;
-  --color-fuchsia-100: #f8f8f8;
-  --color-fuchsia-200: #f0f0f0;
-  --color-fuchsia-300: #e0e0e0;
-  --color-fuchsia-400: #c0c0c0;
-  --color-fuchsia-500: #808080;
-  --color-fuchsia-600: #404040;
-  --color-fuchsia-700: #202020;
-  --color-fuchsia-800: #101010;
-  --color-fuchsia-900: #000000;
+  --color-zinc-50: #FAFAFA;
+  --color-zinc-100: #F4F4F5;
+  --color-zinc-200: #E4E4E7;
+  --color-zinc-300: #D4D4D8;
+  --color-zinc-400: #A1A1AA;
+  --color-zinc-500: #71717A;
+  --color-zinc-600: #52525B;
+  --color-zinc-700: #3F3F46;
+  --color-zinc-800: #27272A;
+  --color-zinc-900: #18181B;
   
-  --color-violet-50: #ffffff;
-  --color-violet-100: #f8f8f8;
-  --color-violet-200: #f0f0f0;
-  --color-violet-300: #e0e0e0;
-  --color-violet-400: #c0c0c0;
-  --color-violet-500: #808080;
-  --color-violet-600: #404040;
-  --color-violet-700: #202020;
-  --color-violet-800: #101010;
-  --color-violet-900: #000000;
-  
-  --color-sky-50: #ffffff;
-  --color-sky-100: #f8f8f8;
-  --color-sky-200: #f0f0f0;
-  --color-sky-300: #e0e0e0;
-  --color-sky-400: #c0c0c0;
-  --color-sky-500: #808080;
-  --color-sky-600: #404040;
-  --color-sky-700: #202020;
-  --color-sky-800: #101010;
-  --color-sky-900: #000000;
-  
-  --color-slate-50: #ffffff;
-  --color-slate-100: #f8f8f8;
-  --color-slate-200: #f0f0f0;
-  --color-slate-300: #e0e0e0;
-  --color-slate-400: #c0c0c0;
-  --color-slate-500: #808080;
-  --color-slate-600: #404040;
-  --color-slate-700: #202020;
-  --color-slate-800: #101010;
-  --color-slate-900: #000000;
-  
-  --color-stone-50: #ffffff;
-  --color-stone-100: #f8f8f8;
-  --color-stone-200: #f0f0f0;
-  --color-stone-300: #e0e0e0;
-  --color-stone-400: #c0c0c0;
-  --color-stone-500: #808080;
-  --color-stone-600: #404040;
-  --color-stone-700: #202020;
-  --color-stone-800: #101010;
-  --color-stone-900: #000000;
-  
-  --color-zinc-50: #ffffff;
-  --color-zinc-100: #f8f8f8;
-  --color-zinc-200: #f0f0f0;
-  --color-zinc-300: #e0e0e0;
-  --color-zinc-400: #c0c0c0;
-  --color-zinc-500: #808080;
-  --color-zinc-600: #404040;
-  --color-zinc-700: #202020;
-  --color-zinc-800: #101010;
-  --color-zinc-900: #000000;
-  
-  /* === OPTIONS AVANCÉES ULTRA CUBIQUES === */
-  --accent-pink-500: #808080;
-  --caret-pink-500: #000000;
-  --selection-pink-500: #000000;
-  --decoration-pink-500: #000000;
-  --outline-pink-500: #000000;
-  --ring-pink-500: #000000;
-  --divide-pink-500: #000000;
+  /* === OPTIONS AVANCÉES JEU VIDÉO === */
+  --accent-pink-500: #FF0069;
+  --caret-pink-500: #FF0000;
+  --selection-pink-500: #FF0000;
+  --decoration-pink-500: #FF0000;
+  --outline-pink-500: #FF0000;
+  --ring-pink-500: #FF0000;
+  --divide-pink-500: #FF0000;
 }
 
-/* === STYLES HTML DE BASE ULTRA CUBIQUES === */
+/* === STYLES HTML DE BASE JEU VIDÉO === */
 [theme="2d"] body {
   background-color: var(--background);
   color: var(--text);
   font-family: 'Courier New', monospace;
-  border: 2px solid var(--border);
+  border: 3px solid var(--border);
   margin: 0;
   padding: 0;
+  background-image: 
+    linear-gradient(45deg, var(--background) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--background) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--background) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--background) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
 }
 
 [theme="2d"] h1, [theme="2d"] h2, [theme="2d"] h3, [theme="2d"] h4, [theme="2d"] h5, [theme="2d"] h6 {
+  color: var(--text);
+  border: 3px solid var(--border);
+  padding: 12px;
+  margin: 12px 0;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border-radius: 0;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+}
+
+[theme="2d"] p {
   color: var(--text);
   border: 2px solid var(--border);
   padding: 8px;
@@ -365,142 +388,170 @@
   background-color: var(--surface);
   border-radius: 0;
   font-family: 'Courier New', monospace;
-  font-weight: bold;
-}
-
-[theme="2d"] p {
-  color: var(--text);
-  border: 1px solid var(--border);
-  padding: 4px;
-  margin: 4px 0;
-  background-color: var(--surface);
-  border-radius: 0;
-  font-family: 'Courier New', monospace;
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] a {
   color: var(--text);
   text-decoration: none;
-  border: 1px solid var(--border);
-  padding: 2px 4px;
-  background-color: var(--surface);
+  border: 2px solid var(--border);
+  padding: 4px 8px;
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
   border-radius: 0;
   font-family: 'Courier New', monospace;
+  font-weight: bold;
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] a:hover {
   background-color: var(--hover-bg);
-  border-color: var(--border-strong);
+  color: var(--accent-foreground);
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] button {
-  border: 2px solid var(--border);
-  background-color: var(--surface);
-  color: var(--text);
-  padding: 8px 16px;
+  border: 3px solid var(--border);
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  padding: 12px 24px;
   border-radius: 0;
   font-family: 'Courier New', monospace;
   font-weight: bold;
   cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+  transition: all 0.1s ease;
 }
 
 [theme="2d"] button:hover {
   background-color: var(--hover-bg);
-  border-color: var(--border-strong);
+  color: var(--accent-foreground);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+}
+
+[theme="2d"] button:active {
+  transform: translate(0px, 0px);
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] input, [theme="2d"] textarea, [theme="2d"] select {
-  border: 2px solid var(--border);
+  border: 3px solid var(--border);
   background-color: var(--input-bg);
   color: var(--text);
-  padding: 8px;
+  padding: 12px;
   border-radius: 0;
   font-family: 'Courier New', monospace;
+  font-weight: bold;
+  box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] input:focus, [theme="2d"] textarea:focus, [theme="2d"] select:focus {
-  outline: 2px solid var(--focus-border);
+  outline: 3px solid var(--focus-border);
   outline-offset: 0;
   border-color: var(--focus-border);
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] table {
-  border: 2px solid var(--border);
+  border: 3px solid var(--border);
   border-collapse: collapse;
   background-color: var(--surface);
   font-family: 'Courier New', monospace;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] th, [theme="2d"] td {
-  border: 1px solid var(--border);
-  padding: 8px;
+  border: 2px solid var(--border);
+  padding: 12px;
   text-align: left;
-}
-
-[theme="2d"] th {
-  background-color: var(--surface-alt);
   font-weight: bold;
 }
 
+[theme="2d"] th {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  text-transform: uppercase;
+}
+
 [theme="2d"] ul, [theme="2d"] ol {
-  border: 1px solid var(--border);
-  padding: 16px 32px;
-  margin: 8px 0;
+  border: 2px solid var(--border);
+  padding: 20px 40px;
+  margin: 12px 0;
   background-color: var(--surface);
   border-radius: 0;
   font-family: 'Courier New', monospace;
+  box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] li {
-  border: 1px solid var(--border);
-  padding: 2px 4px;
-  margin: 2px 0;
-  background-color: var(--surface-alt);
+  border: 2px solid var(--border);
+  padding: 4px 8px;
+  margin: 4px 0;
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
   border-radius: 0;
+  font-weight: bold;
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] blockquote {
-  border: 2px solid var(--border);
-  padding: 8px;
-  margin: 8px 0;
-  background-color: var(--surface-alt);
+  border: 3px solid var(--border);
+  padding: 12px;
+  margin: 12px 0;
+  background-color: var(--accent);
+  color: var(--accent-foreground);
   border-radius: 0;
   font-family: 'Courier New', monospace;
   font-style: italic;
+  font-weight: bold;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] code {
-  border: 1px solid var(--border);
-  padding: 2px 4px;
-  background-color: var(--surface-alt);
+  border: 2px solid var(--border);
+  padding: 4px 8px;
+  background-color: var(--warning);
+  color: var(--warning-foreground);
   border-radius: 0;
   font-family: 'Courier New', monospace;
   font-size: 0.9em;
+  font-weight: bold;
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] pre {
-  border: 2px solid var(--border);
-  padding: 8px;
-  background-color: var(--surface-alt);
+  border: 3px solid var(--border);
+  padding: 12px;
+  background-color: var(--danger);
+  color: var(--danger-foreground);
   border-radius: 0;
   font-family: 'Courier New', monospace;
+  font-weight: bold;
   overflow-x: auto;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] hr {
-  border: 2px solid var(--border);
-  margin: 16px 0;
+  border: 3px solid var(--border);
+  margin: 20px 0;
   background-color: var(--border);
-  height: 2px;
+  height: 3px;
   border-radius: 0;
+  box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] img {
-  border: 2px solid var(--border);
+  border: 3px solid var(--border);
   border-radius: 0;
   image-rendering: pixelated;
   image-rendering: -moz-crisp-edges;
   image-rendering: crisp-edges;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
 }
 
 [theme="2d"] * {
@@ -512,7 +563,34 @@
 }
 
 [theme="2d"] *:focus {
-  outline: 2px solid var(--focus-border);
+  outline: 3px solid var(--focus-border);
   outline-offset: 0;
   border-radius: 0;
+}
+
+/* === ANIMATIONS JEU VIDÉO === */
+[theme="2d"] button:hover,
+[theme="2d"] a:hover {
+  animation: pixel-bounce 0.2s ease;
+}
+
+@keyframes pixel-bounce {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-2px, -2px); }
+  100% { transform: translate(-1px, -1px); }
+}
+
+/* === EFFETS SPÉCIAUX JEU VIDÉO === */
+[theme="2d"] .glitch {
+  position: relative;
+  animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px, 2px); }
+  40% { transform: translate(-2px, -2px); }
+  60% { transform: translate(2px, 2px); }
+  80% { transform: translate(2px, -2px); }
+  100% { transform: translate(0); }
 }
