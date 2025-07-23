@@ -15,6 +15,22 @@ LarappeUI intègre un système de thèmes visuels permettant de changer l’appa
 
 Chaque thème applique des couleurs et styles différents à l’ensemble de l’application via des attributs HTML (`<html theme="...">`) et des variables CSS.
 
+## Nouveaux thèmes disponibles
+
+- **Solarized Light** : Palette claire inspirée du thème Solarized, idéale pour le confort visuel.
+- **Solarized Dark** : Version sombre du Solarized, pour les amateurs de dark mode.
+- **Monokai** : Couleurs vives et contrastées, inspiré des éditeurs de code.
+- **Pastel** : Couleurs douces et désaturées, ambiance légère et apaisante.
+- **Minimal** : Blanc, gris, noir, pour une interface ultra épurée.
+- **Coffee** : Tons bruns et beiges, ambiance chaleureuse de café.
+- **Sakura** : Rose pâle et blanc, inspiration florale japonaise.
+- **Forest Night** : Verts foncés et marrons, ambiance forêt nocturne.
+- **Retro 80s** : Violet, turquoise, rose flashy, style années 80.
+- **Space** : Bleu nuit, violet, touches d’étoiles/blanc, ambiance cosmique.
+- **Vintage** : Jaune pâle, vert olive, orange doux, style rétro années 70.
+
+Pour utiliser un thème, sélectionnez-le dans le menu déroulant en haut à droite de l’interface. Chaque thème applique automatiquement sa palette de couleurs à l’ensemble de l’UI.
+
 ## Changer de thème
 
 Dans l’interface, utilise le menu déroulant “Thème” dans le header pour basculer instantanément entre les thèmes. Le thème sélectionné modifie l’attribut `theme` sur la balise `<html>`, ce qui applique les styles correspondants définis dans le layout principal (`resources/views/layouts/app.blade.php`).
