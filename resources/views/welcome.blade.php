@@ -74,6 +74,7 @@
                 </div>
             </div>
             {{-- INPUT --}}
+            <form>
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
                     <h3 class="font-semibold text-lg mb-3 text-gray-800">Input</h3>
@@ -238,6 +239,7 @@
                     </div>
                 </div>
             </div>
+            </form>
             {{-- SELECT --}}
             <div class="bg-white rounded-lg shadow border border-gray-100 p-6 flex flex-col md:flex-row md:items-start md:gap-8 transition hover:shadow-md">
                 <div class="flex-1 mb-4 md:mb-0">
