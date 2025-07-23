@@ -443,12 +443,38 @@
   border-color: #181818 !important;
 }
 
-[theme="dark"] .text-black,
-[theme="dark"] .text-gray-900,
-[theme="dark"] .text-gray-800,
-[theme="dark"] .text-gray-700,
-[theme="dark"] .text-gray-600,
+[theme="dark"] *,
+[theme="dark"] .text-blue-50,
+[theme="dark"] .text-blue-100,
+[theme="dark"] .text-blue-200,
+[theme="dark"] .text-blue-300,
+[theme="dark"] .text-blue-400,
+[theme="dark"] .text-blue-500,
+[theme="dark"] .text-blue-600,
+[theme="dark"] .text-blue-700,
+[theme="dark"] .text-blue-800,
+[theme="dark"] .text-blue-900,
+[theme="dark"] .text-gray-50,
+[theme="dark"] .text-gray-100,
+[theme="dark"] .text-gray-200,
+[theme="dark"] .text-gray-300,
+[theme="dark"] .text-gray-400,
 [theme="dark"] .text-gray-500,
+[theme="dark"] .text-gray-600,
+[theme="dark"] .text-gray-700,
+[theme="dark"] .text-gray-800,
+[theme="dark"] .text-gray-900,
+[theme="dark"] .text-black,
+[theme="dark"] .text-primary,
+[theme="dark"] .text-secondary,
+[theme="dark"] .text-accent,
+[theme="dark"] .text-success,
+[theme="dark"] .text-warning,
+[theme="dark"] .text-danger,
+[theme="dark"] .text-info {
+  color: #fff !important;
+}
+
 [theme="dark"] .text-white {
   color: #fff !important;
 }
