@@ -681,7 +681,7 @@
     --color-textSecondary: #636e72;
     --color-border: #ddd;
     --color-accent: #ffcccb;
-    
+
     /* Variables d'état */
     --hover-bg: #f1f2f6;
     --active-bg: #dfe4ea;
@@ -691,7 +691,7 @@
     --selected-text: #2d3436;
     --focus-bg: #f1f2f6;
     --focus-border: #ddd;
-    
+
     /* Variables de design system */
     --radius-xs: 2px;
     --radius-sm: 4px;
@@ -699,7 +699,7 @@
     --radius-lg: 8px;
     --radius-xl: 12px;
     --radius-full: 9999px;
-    --shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+    --shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --muted: #f8f9fa;
     --highlight: #f1f2f6;
     --scrollbar: #dfe4ea;
