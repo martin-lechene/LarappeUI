@@ -978,3 +978,171 @@ body {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
         0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
+
+/* Règles pour les couleurs de fond supplémentaires */
+.theme-light .bg-blue-100,
+.theme-dark .bg-blue-100,
+.theme-pro .bg-blue-100,
+.theme-enterprise .bg-blue-100,
+.theme-glass .bg-blue-100,
+.theme-neon .bg-blue-100,
+.theme-forest .bg-blue-100,
+.theme-sea .bg-blue-100,
+.theme-sunset .bg-blue-100,
+.theme-modern .bg-blue-100,
+.theme-minimal .bg-blue-100,
+.theme-2d .bg-blue-100,
+.theme-retro .bg-blue-100,
+.theme-cyberpunk .bg-blue-100,
+.theme-pastel .bg-blue-100 {
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
+}
+
+.theme-light .bg-red-100,
+.theme-dark .bg-red-100,
+.theme-pro .bg-red-100,
+.theme-enterprise .bg-red-100,
+.theme-glass .bg-red-100,
+.theme-neon .bg-red-100,
+.theme-forest .bg-red-100,
+.theme-sea .bg-red-100,
+.theme-sunset .bg-red-100,
+.theme-modern .bg-red-100,
+.theme-minimal .bg-red-100,
+.theme-2d .bg-red-100,
+.theme-retro .bg-red-100,
+.theme-cyberpunk .bg-red-100,
+.theme-pastel .bg-red-100 {
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
+}
+
+.theme-light .bg-green-100,
+.theme-dark .bg-green-100,
+.theme-pro .bg-green-100,
+.theme-enterprise .bg-green-100,
+.theme-glass .bg-green-100,
+.theme-neon .bg-green-100,
+.theme-forest .bg-green-100,
+.theme-sea .bg-green-100,
+.theme-sunset .bg-green-100,
+.theme-modern .bg-green-100,
+.theme-minimal .bg-green-100,
+.theme-2d .bg-green-100,
+.theme-retro .bg-green-100,
+.theme-cyberpunk .bg-green-100,
+.theme-pastel .bg-green-100 {
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
+}
+
+.theme-light .bg-yellow-100,
+.theme-dark .bg-yellow-100,
+.theme-pro .bg-yellow-100,
+.theme-enterprise .bg-yellow-100,
+.theme-glass .bg-yellow-100,
+.theme-neon .bg-yellow-100,
+.theme-forest .bg-yellow-100,
+.theme-sea .bg-yellow-100,
+.theme-sunset .bg-yellow-100,
+.theme-modern .bg-yellow-100,
+.theme-minimal .bg-yellow-100,
+.theme-2d .bg-yellow-100,
+.theme-retro .bg-yellow-100,
+.theme-cyberpunk .bg-yellow-100,
+.theme-pastel .bg-yellow-100 {
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
+}
+
+/* Règles pour les couleurs de texte supplémentaires */
+.theme-light .text-blue-800,
+.theme-dark .text-blue-800,
+.theme-pro .text-blue-800,
+.theme-enterprise .text-blue-800,
+.theme-glass .text-blue-800,
+.theme-neon .text-blue-800,
+.theme-forest .text-blue-800,
+.theme-sea .text-blue-800,
+.theme-sunset .text-blue-800,
+.theme-modern .text-blue-800,
+.theme-minimal .text-blue-800,
+.theme-2d .text-blue-800,
+.theme-retro .text-blue-800,
+.theme-cyberpunk .text-blue-800,
+.theme-pastel .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-light .text-red-800,
+.theme-dark .text-red-800,
+.theme-pro .text-red-800,
+.theme-enterprise .text-red-800,
+.theme-glass .text-red-800,
+.theme-neon .text-red-800,
+.theme-forest .text-red-800,
+.theme-sea .text-red-800,
+.theme-sunset .text-red-800,
+.theme-modern .text-red-800,
+.theme-minimal .text-red-800,
+.theme-2d .text-red-800,
+.theme-retro .text-red-800,
+.theme-cyberpunk .text-red-800,
+.theme-pastel .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-light .text-green-800,
+.theme-dark .text-green-800,
+.theme-pro .text-green-800,
+.theme-enterprise .text-green-800,
+.theme-glass .text-green-800,
+.theme-neon .text-green-800,
+.theme-forest .text-green-800,
+.theme-sea .text-green-800,
+.theme-sunset .text-green-800,
+.theme-modern .text-green-800,
+.theme-minimal .text-green-800,
+.theme-2d .text-green-800,
+.theme-retro .text-green-800,
+.theme-cyberpunk .text-green-800,
+.theme-pastel .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-light .text-yellow-800,
+.theme-dark .text-yellow-800,
+.theme-pro .text-yellow-800,
+.theme-enterprise .text-yellow-800,
+.theme-glass .text-yellow-800,
+.theme-neon .text-yellow-800,
+.theme-forest .text-yellow-800,
+.theme-sea .text-yellow-800,
+.theme-sunset .text-yellow-800,
+.theme-modern .text-yellow-800,
+.theme-minimal .text-yellow-800,
+.theme-2d .text-yellow-800,
+.theme-retro .text-yellow-800,
+.theme-cyberpunk .text-yellow-800,
+.theme-pastel .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-light .text-gray-800,
+.theme-dark .text-gray-800,
+.theme-pro .text-gray-800,
+.theme-enterprise .text-gray-800,
+.theme-glass .text-gray-800,
+.theme-neon .text-gray-800,
+.theme-forest .text-gray-800,
+.theme-sea .text-gray-800,
+.theme-sunset .text-gray-800,
+.theme-modern .text-gray-800,
+.theme-minimal .text-gray-800,
+.theme-2d .text-gray-800,
+.theme-retro .text-gray-800,
+.theme-cyberpunk .text-gray-800,
+.theme-pastel .text-gray-800 {
+    color: var(--color-text) !important;
+}
