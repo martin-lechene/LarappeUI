@@ -1,0 +1,321 @@
+/* Variables de thèmes pour LarappeUI */
+
+:root {
+    /* Variables par défaut (thème light) */
+    --color-primary: #3b82f6;
+    --color-secondary: #6b7280;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #06b6d4;
+    --color-background: #ffffff;
+    --color-surface: #f9fafb;
+    --color-text: #111827;
+    --color-textSecondary: #6b7280;
+    --color-border: #e5e7eb;
+    --color-accent: #f59e42;
+}
+
+/* Classes utilitaires pour les thèmes */
+.theme-light {
+    --color-primary: #3b82f6;
+    --color-secondary: #6b7280;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #06b6d4;
+    --color-background: #ffffff;
+    --color-surface: #f9fafb;
+    --color-text: #111827;
+    --color-textSecondary: #6b7280;
+    --color-border: #e5e7eb;
+    --color-accent: #f59e42;
+}
+
+.theme-dark {
+    --color-primary: #60a5fa;
+    --color-secondary: #9ca3af;
+    --color-success: #34d399;
+    --color-warning: #fbbf24;
+    --color-danger: #f87171;
+    --color-info: #22d3ee;
+    --color-background: #111827;
+    --color-surface: #1f2937;
+    --color-text: #f9fafb;
+    --color-textSecondary: #d1d5db;
+    --color-border: #374151;
+    --color-accent: #fb923c;
+}
+
+.theme-pro {
+    --color-primary: #6366f1;
+    --color-secondary: #64748b;
+    --color-success: #059669;
+    --color-warning: #d97706;
+    --color-danger: #dc2626;
+    --color-info: #0891b2;
+    --color-background: #ffffff;
+    --color-surface: #f8fafc;
+    --color-text: #0f172a;
+    --color-textSecondary: #475569;
+    --color-border: #e2e8f0;
+    --color-accent: #f97316;
+}
+
+.theme-enterprise {
+    --color-primary: #1e40af;
+    --color-secondary: #4b5563;
+    --color-success: #047857;
+    --color-warning: #b45309;
+    --color-danger: #b91c1c;
+    --color-info: #0e7490;
+    --color-background: #ffffff;
+    --color-surface: #f9fafb;
+    --color-text: #111827;
+    --color-textSecondary: #6b7280;
+    --color-border: #d1d5db;
+    --color-accent: #ea580c;
+}
+
+.theme-glass {
+    --color-primary: rgba(59, 130, 246, 0.8);
+    --color-secondary: rgba(107, 114, 128, 0.8);
+    --color-success: rgba(16, 185, 129, 0.8);
+    --color-warning: rgba(245, 158, 11, 0.8);
+    --color-danger: rgba(239, 68, 68, 0.8);
+    --color-info: rgba(6, 182, 212, 0.8);
+    --color-background: rgba(255, 255, 255, 0.1);
+    --color-surface: rgba(249, 250, 251, 0.1);
+    --color-text: #111827;
+    --color-textSecondary: #6b7280;
+    --color-border: rgba(229, 231, 235, 0.3);
+    --color-accent: rgba(245, 158, 66, 0.8);
+}
+
+.theme-neon {
+    --color-primary: #00ff88;
+    --color-secondary: #ff00ff;
+    --color-success: #00ff00;
+    --color-warning: #ffff00;
+    --color-danger: #ff0080;
+    --color-info: #00ffff;
+    --color-background: #000000;
+    --color-surface: #1a1a1a;
+    --color-text: #ffffff;
+    --color-textSecondary: #cccccc;
+    --color-border: #333333;
+    --color-accent: #ff6600;
+}
+
+.theme-forest {
+    --color-primary: #059669;
+    --color-secondary: #6b7280;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #06b6d4;
+    --color-background: #f0fdf4;
+    --color-surface: #ecfdf5;
+    --color-text: #064e3b;
+    --color-textSecondary: #065f46;
+    --color-border: #bbf7d0;
+    --color-accent: #16a34a;
+}
+
+.theme-sea {
+    --color-primary: #0ea5e9;
+    --color-secondary: #64748b;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #06b6d4;
+    --color-background: #f0f9ff;
+    --color-surface: #e0f2fe;
+    --color-text: #0c4a6e;
+    --color-textSecondary: #0f766e;
+    --color-border: #bae6fd;
+    --color-accent: #0284c7;
+}
+
+.theme-sunset {
+    --color-primary: #f97316;
+    --color-secondary: #6b7280;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #06b6d4;
+    --color-background: #fff7ed;
+    --color-surface: #fed7aa;
+    --color-text: #7c2d12;
+    --color-textSecondary: #9a3412;
+    --color-border: #fdba74;
+    --color-accent: #ea580c;
+}
+
+.theme-modern {
+    --color-primary: #8b5cf6;
+    --color-secondary: #64748b;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #06b6d4;
+    --color-background: #ffffff;
+    --color-surface: #f8fafc;
+    --color-text: #0f172a;
+    --color-textSecondary: #475569;
+    --color-border: #e2e8f0;
+    --color-accent: #a855f7;
+}
+
+.theme-minimal {
+    --color-primary: #000000;
+    --color-secondary: #6b7280;
+    --color-success: #000000;
+    --color-warning: #000000;
+    --color-danger: #000000;
+    --color-info: #000000;
+    --color-background: #ffffff;
+    --color-surface: #f9fafb;
+    --color-text: #000000;
+    --color-textSecondary: #6b7280;
+    --color-border: #e5e7eb;
+    --color-accent: #000000;
+}
+
+.theme-2d {
+    --color-primary: #ff6b6b;
+    --color-secondary: #4ecdc4;
+    --color-success: #45b7d1;
+    --color-warning: #f7b731;
+    --color-danger: #ee5a24;
+    --color-info: #a55eea;
+    --color-background: #ffffff;
+    --color-surface: #f8f9fa;
+    --color-text: #2d3436;
+    --color-textSecondary: #636e72;
+    --color-border: #ddd;
+    --color-accent: #ffa502;
+}
+
+.theme-retro {
+    --color-primary: #ff6b35;
+    --color-secondary: #f7931e;
+    --color-success: #4ecdc4;
+    --color-warning: #ffe66d;
+    --color-danger: #ff6b6b;
+    --color-info: #45b7d1;
+    --color-background: #f7f1e3;
+    --color-surface: #e8d5c4;
+    --color-text: #2d3436;
+    --color-textSecondary: #636e72;
+    --color-border: #ddd;
+    --color-accent: #ffa502;
+}
+
+.theme-cyberpunk {
+    --color-primary: #00ffff;
+    --color-secondary: #ff00ff;
+    --color-success: #00ff00;
+    --color-warning: #ffff00;
+    --color-danger: #ff0000;
+    --color-info: #0000ff;
+    --color-background: #000000;
+    --color-surface: #1a1a1a;
+    --color-text: #ffffff;
+    --color-textSecondary: #cccccc;
+    --color-border: #333333;
+    --color-accent: #ff6600;
+}
+
+.theme-pastel {
+    --color-primary: #ffb3ba;
+    --color-secondary: #baffc9;
+    --color-success: #bae1ff;
+    --color-warning: #ffffba;
+    --color-danger: #ffb3ba;
+    --color-info: #b3d9ff;
+    --color-background: #ffffff;
+    --color-surface: #f8f9fa;
+    --color-text: #2d3436;
+    --color-textSecondary: #636e72;
+    --color-border: #ddd;
+    --color-accent: #ffcccb;
+}
+
+/* Styles de base utilisant les variables CSS */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
+.bg-success {
+    background-color: var(--color-success);
+}
+
+.bg-warning {
+    background-color: var(--color-warning);
+}
+
+.bg-danger {
+    background-color: var(--color-danger);
+}
+
+.bg-info {
+    background-color: var(--color-info);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-success {
+    color: var(--color-success);
+}
+
+.text-warning {
+    color: var(--color-warning);
+}
+
+.text-danger {
+    color: var(--color-danger);
+}
+
+.text-info {
+    color: var(--color-info);
+}
+
+.border-primary {
+    border-color: var(--color-primary);
+}
+
+.border-secondary {
+    border-color: var(--color-secondary);
+}
+
+.border-success {
+    border-color: var(--color-success);
+}
+
+.border-warning {
+    border-color: var(--color-warning);
+}
+
+.border-danger {
+    border-color: var(--color-danger);
+}
+
+.border-info {
+    border-color: var(--color-info);
+}
