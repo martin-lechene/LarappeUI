@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ asset('css/themes-complete.css') }}">
     <script src="{{ asset('js/themes-manager.js') }}"></script>
 </head>
-<body class="h-full bg-background text-text" x-data="{ 
+<body class="h-full bg-background text-text" x-data="{
     currentTheme: 'light',
     testResults: []
 }" x-init="
@@ -18,7 +18,7 @@
     if (window.ThemeManager) {
         window.ThemeManager.applyTheme(currentTheme);
     }
-    
+
     // Tests automatiques
     setTimeout(() => {
         runTests();
@@ -27,11 +27,11 @@
     <div class="min-h-screen p-8">
         <div class="max-w-4xl mx-auto">
             <h1 class="text-3xl font-bold text-text mb-8">🧪 Test du Système de Thèmes</h1>
-            
+
             <!-- Sélecteur de thème -->
             <div class="mb-8 p-6 bg-surface rounded-lg border border-border">
                 <h2 class="text-xl font-semibold text-text mb-4">Sélecteur de Thème</h2>
-                <select x-model="currentTheme" 
+                <select x-model="currentTheme"
                         @change="
                             if (window.ThemeManager) {
                                 window.ThemeManager.applyTheme(currentTheme);
@@ -145,14 +145,14 @@
     <script>
         function runTests() {
             const results = [];
-            
+
             // Test 1: ThemeManager disponible
             results.push({
                 test: 'ThemeManager disponible',
                 passed: !!window.ThemeManager,
                 message: window.ThemeManager ? 'OK' : 'ThemeManager non trouvé'
             });
-            
+
             // Test 2: Thème appliqué
             const currentTheme = localStorage.getItem('theme') || 'light';
             const htmlClasses = document.documentElement.className;
@@ -161,7 +161,7 @@
                 passed: htmlClasses.includes(`theme-${currentTheme}`),
                 message: `Classe attendue: theme-${currentTheme}, Classes actuelles: ${htmlClasses}`
             });
-            
+
             // Test 3: Variables CSS définies
             const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--color-primary');
             results.push({
@@ -169,14 +169,14 @@
                 passed: primaryColor && primaryColor.trim() !== '',
                 message: `Couleur primaire: ${primaryColor}`
             });
-            
+
             // Test 4: localStorage fonctionne
             results.push({
                 test: 'localStorage fonctionne',
                 passed: typeof localStorage !== 'undefined',
                 message: 'localStorage disponible'
             });
-            
+
             // Test 5: Sélecteur fonctionne
             const selector = document.querySelector('[data-theme-selector]');
             results.push({
@@ -184,12 +184,12 @@
                 passed: !!selector,
                 message: selector ? 'Sélecteur trouvé' : 'Sélecteur non trouvé'
             });
-            
+
             // Mettre à jour les résultats
             Alpine.store('testResults', results);
             document.querySelector('[x-data]').__x.$data.testResults = results;
         }
-        
+
         // Écouter les changements de thème
         document.addEventListener('themeChanged', (event) => {
             console.log('Thème changé:', event.detail);
@@ -197,4 +197,4 @@
         });
     </script>
 </body>
-</html> 
+</html>
