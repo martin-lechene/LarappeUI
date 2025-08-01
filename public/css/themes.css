@@ -20,7 +20,7 @@
     --color-textSecondary: #6b7280;
     --color-border: #e5e7eb;
     --color-accent: #f59e42;
-    
+
     /* Variables d'état */
     --hover-bg: #f7f7f7;
     --active-bg: #ededed;
@@ -30,7 +30,7 @@
     --selected-text: #111;
     --focus-bg: #ededed;
     --focus-border: #bbb;
-    
+
     /* Variables de design system */
     --radius-xs: 2px;
     --radius-sm: 4px;
@@ -38,7 +38,7 @@
     --radius-lg: 8px;
     --radius-xl: 12px;
     --radius-full: 9999px;
-    --shadow: 0 1px 2px 0 rgba(0,0,0,0.02);
+    --shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
     --muted: #f7f7f7;
     --highlight: #ededed;
     --scrollbar: #eaeaea;
@@ -65,7 +65,7 @@
     --color-textSecondary: #6b7280;
     --color-border: #e5e7eb;
     --color-accent: #f59e42;
-    
+
     /* Variables d'état */
     --hover-bg: #f7f7f7;
     --active-bg: #ededed;
@@ -75,7 +75,7 @@
     --selected-text: #111;
     --focus-bg: #ededed;
     --focus-border: #bbb;
-    
+
     /* Variables de design system */
     --radius-xs: 2px;
     --radius-sm: 4px;
@@ -83,7 +83,7 @@
     --radius-lg: 8px;
     --radius-xl: 12px;
     --radius-full: 9999px;
-    --shadow: 0 1px 2px 0 rgba(0,0,0,0.02);
+    --shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02);
     --muted: #f7f7f7;
     --highlight: #ededed;
     --scrollbar: #eaeaea;
@@ -109,7 +109,7 @@
     --color-textSecondary: #d1d5db;
     --color-border: #374151;
     --color-accent: #fb923c;
-    
+
     /* Variables d'état */
     --hover-bg: #181818;
     --active-bg: #222;
@@ -119,7 +119,7 @@
     --selected-text: #fff;
     --focus-bg: #181818;
     --focus-border: #333;
-    
+
     /* Variables de design system */
     --radius-xs: 2px;
     --radius-sm: 4px;
@@ -127,7 +127,7 @@
     --radius-lg: 8px;
     --radius-xl: 12px;
     --radius-full: 9999px;
-    --shadow: 0 1px 2px 0 rgba(0,0,0,0.7);
+    --shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.7);
     --muted: #111;
     --highlight: #222;
     --scrollbar: #181818;
