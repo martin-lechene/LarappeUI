@@ -1582,3 +1582,213 @@ body {
 .theme-pastel .focus\:ring-offset-2:focus {
     --tw-ring-offset-width: 2px !important;
 }
+
+/* Règles pour les éléments de formulaire supplémentaires */
+.theme-light input[type="search"],
+.theme-dark input[type="search"],
+.theme-pro input[type="search"],
+.theme-enterprise input[type="search"],
+.theme-glass input[type="search"],
+.theme-neon input[type="search"],
+.theme-forest input[type="search"],
+.theme-sea input[type="search"],
+.theme-sunset input[type="search"],
+.theme-modern input[type="search"],
+.theme-minimal input[type="search"],
+.theme-2d input[type="search"],
+.theme-retro input[type="search"],
+.theme-cyberpunk input[type="search"],
+.theme-pastel input[type="search"] {
+    background-color: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    border-color: var(--color-border) !important;
+}
+
+/* Règles pour les éléments de navigation supplémentaires */
+.theme-light .bg-gray-200,
+.theme-dark .bg-gray-200,
+.theme-pro .bg-gray-200,
+.theme-enterprise .bg-gray-200,
+.theme-glass .bg-gray-200,
+.theme-neon .bg-gray-200,
+.theme-forest .bg-gray-200,
+.theme-sea .bg-gray-200,
+.theme-sunset .bg-gray-200,
+.theme-modern .bg-gray-200,
+.theme-minimal .bg-gray-200,
+.theme-2d .bg-gray-200,
+.theme-retro .bg-gray-200,
+.theme-cyberpunk .bg-gray-200,
+.theme-pastel .bg-gray-200 {
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
+}
+
+/* Règles pour les éléments de texte supplémentaires */
+.theme-light .text-xs,
+.theme-dark .text-xs,
+.theme-pro .text-xs,
+.theme-enterprise .text-xs,
+.theme-glass .text-xs,
+.theme-neon .text-xs,
+.theme-forest .text-xs,
+.theme-sea .text-xs,
+.theme-sunset .text-xs,
+.theme-modern .text-xs,
+.theme-minimal .text-xs,
+.theme-2d .text-xs,
+.theme-retro .text-xs,
+.theme-cyberpunk .text-xs,
+.theme-pastel .text-xs {
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+}
+
+.theme-light .text-sm,
+.theme-dark .text-sm,
+.theme-pro .text-sm,
+.theme-enterprise .text-sm,
+.theme-glass .text-sm,
+.theme-neon .text-sm,
+.theme-forest .text-sm,
+.theme-sea .text-sm,
+.theme-sunset .text-sm,
+.theme-modern .text-sm,
+.theme-minimal .text-sm,
+.theme-2d .text-sm,
+.theme-retro .text-sm,
+.theme-cyberpunk .text-sm,
+.theme-pastel .text-sm {
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+}
+
+/* Règles pour les éléments de padding supplémentaires */
+.theme-light .p-3,
+.theme-dark .p-3,
+.theme-pro .p-3,
+.theme-enterprise .p-3,
+.theme-glass .p-3,
+.theme-neon .p-3,
+.theme-forest .p-3,
+.theme-sea .p-3,
+.theme-sunset .p-3,
+.theme-modern .p-3,
+.theme-minimal .p-3,
+.theme-2d .p-3,
+.theme-retro .p-3,
+.theme-cyberpunk .p-3,
+.theme-pastel .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-light .p-6,
+.theme-dark .p-6,
+.theme-pro .p-6,
+.theme-enterprise .p-6,
+.theme-glass .p-6,
+.theme-neon .p-6,
+.theme-forest .p-6,
+.theme-sea .p-6,
+.theme-sunset .p-6,
+.theme-modern .p-6,
+.theme-minimal .p-6,
+.theme-2d .p-6,
+.theme-retro .p-6,
+.theme-cyberpunk .p-6,
+.theme-pastel .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-light .p-8,
+.theme-dark .p-8,
+.theme-pro .p-8,
+.theme-enterprise .p-8,
+.theme-glass .p-8,
+.theme-neon .p-8,
+.theme-forest .p-8,
+.theme-sea .p-8,
+.theme-sunset .p-8,
+.theme-modern .p-8,
+.theme-minimal .p-8,
+.theme-2d .p-8,
+.theme-retro .p-8,
+.theme-cyberpunk .p-8,
+.theme-pastel .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-light .p-10,
+.theme-dark .p-10,
+.theme-pro .p-10,
+.theme-enterprise .p-10,
+.theme-glass .p-10,
+.theme-neon .p-10,
+.theme-forest .p-10,
+.theme-sea .p-10,
+.theme-sunset .p-10,
+.theme-modern .p-10,
+.theme-minimal .p-10,
+.theme-2d .p-10,
+.theme-retro .p-10,
+.theme-cyberpunk .p-10,
+.theme-pastel .p-10 {
+    padding: 2.5rem !important;
+}
+
+/* Règles pour les éléments de bordure supplémentaires */
+.theme-light .border-0,
+.theme-dark .border-0,
+.theme-pro .border-0,
+.theme-enterprise .border-0,
+.theme-glass .border-0,
+.theme-neon .border-0,
+.theme-forest .border-0,
+.theme-sea .border-0,
+.theme-sunset .border-0,
+.theme-modern .border-0,
+.theme-minimal .border-0,
+.theme-2d .border-0,
+.theme-retro .border-0,
+.theme-cyberpunk .border-0,
+.theme-pastel .border-0 {
+    border-width: 0px !important;
+}
+
+/* Règles pour les éléments de shadow supplémentaires */
+.theme-light .shadow-none,
+.theme-dark .shadow-none,
+.theme-pro .shadow-none,
+.theme-enterprise .shadow-none,
+.theme-glass .shadow-none,
+.theme-neon .shadow-none,
+.theme-forest .shadow-none,
+.theme-sea .shadow-none,
+.theme-sunset .shadow-none,
+.theme-modern .shadow-none,
+.theme-minimal .shadow-none,
+.theme-2d .shadow-none,
+.theme-retro .shadow-none,
+.theme-cyberpunk .shadow-none,
+.theme-pastel .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+/* Règles pour les éléments de durée de transition */
+.theme-light .duration-200,
+.theme-dark .duration-200,
+.theme-pro .duration-200,
+.theme-enterprise .duration-200,
+.theme-glass .duration-200,
+.theme-neon .duration-200,
+.theme-forest .duration-200,
+.theme-sea .duration-200,
+.theme-sunset .duration-200,
+.theme-modern .duration-200,
+.theme-minimal .duration-200,
+.theme-2d .duration-200,
+.theme-retro .duration-200,
+.theme-cyberpunk .duration-200,
+.theme-pastel .duration-200 {
+    transition-duration: 200ms !important;
+}
