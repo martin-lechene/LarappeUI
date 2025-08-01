@@ -329,7 +329,7 @@
     @elseif($icon)
         &lt;span class="mr-2"&gt;{!! $icon !!}&lt;/span&gt;
     @endif
-    {{ $label ?? $slot }}
+    {{ $label ?? 'Bouton' }}
 &lt;/button&gt;</code></pre>
                             </div>
 
