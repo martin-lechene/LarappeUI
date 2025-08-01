@@ -24,7 +24,6 @@
     
     <!-- Thèmes JavaScript -->
     <script src="{{ asset('js/themes-manager.js') }}"></script>
-    <script src="{{ asset('js/themes-extended.js') }}"></script>
     
     <!-- Styles personnalisés -->
     <style>
