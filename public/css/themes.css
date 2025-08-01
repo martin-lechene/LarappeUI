@@ -444,32 +444,90 @@
 
 .theme-modern {
     --color-primary: #8b5cf6;
+    --color-primary-hover: #7c3aed;
     --color-secondary: #64748b;
+    --color-secondary-hover: #475569;
     --color-success: #10b981;
+    --color-success-hover: #059669;
     --color-warning: #f59e0b;
+    --color-warning-hover: #d97706;
     --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
     --color-info: #06b6d4;
+    --color-info-hover: #0891b2;
     --color-background: #ffffff;
     --color-surface: #f8fafc;
     --color-text: #0f172a;
     --color-textSecondary: #475569;
     --color-border: #e2e8f0;
     --color-accent: #a855f7;
+    
+    /* Variables d'état */
+    --hover-bg: #f1f5f9;
+    --active-bg: #e2e8f0;
+    --disabled-bg: #f8fafc;
+    --disabled-text: #94a3b8;
+    --selected-bg: #e2e8f0;
+    --selected-text: #0f172a;
+    --focus-bg: #f1f5f9;
+    --focus-border: #cbd5e1;
+    
+    /* Variables de design system */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 9999px;
+    --shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+    --muted: #f8fafc;
+    --highlight: #f1f5f9;
+    --scrollbar: #e2e8f0;
+    --selection-bg: #cbd5e1;
 }
 
 .theme-minimal {
     --color-primary: #000000;
+    --color-primary-hover: #1a1a1a;
     --color-secondary: #6b7280;
+    --color-secondary-hover: #4b5563;
     --color-success: #000000;
+    --color-success-hover: #1a1a1a;
     --color-warning: #000000;
+    --color-warning-hover: #1a1a1a;
     --color-danger: #000000;
+    --color-danger-hover: #1a1a1a;
     --color-info: #000000;
+    --color-info-hover: #1a1a1a;
     --color-background: #ffffff;
     --color-surface: #f9fafb;
     --color-text: #000000;
     --color-textSecondary: #6b7280;
     --color-border: #e5e7eb;
     --color-accent: #000000;
+    
+    /* Variables d'état */
+    --hover-bg: #f3f4f6;
+    --active-bg: #e5e7eb;
+    --disabled-bg: #f9fafb;
+    --disabled-text: #9ca3af;
+    --selected-bg: #e5e7eb;
+    --selected-text: #000000;
+    --focus-bg: #f3f4f6;
+    --focus-border: #d1d5db;
+    
+    /* Variables de design system */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 9999px;
+    --shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+    --muted: #f9fafb;
+    --highlight: #f3f4f6;
+    --scrollbar: #e5e7eb;
+    --selection-bg: #d1d5db;
 }
 
 .theme-2d {
