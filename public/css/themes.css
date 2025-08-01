@@ -532,17 +532,46 @@
 
 .theme-2d {
     --color-primary: #ff6b6b;
+    --color-primary-hover: #ff5252;
     --color-secondary: #4ecdc4;
+    --color-secondary-hover: #26d0ce;
     --color-success: #45b7d1;
+    --color-success-hover: #00b894;
     --color-warning: #f7b731;
+    --color-warning-hover: #f39c12;
     --color-danger: #ee5a24;
+    --color-danger-hover: #e17055;
     --color-info: #a55eea;
+    --color-info-hover: #6c5ce7;
     --color-background: #ffffff;
     --color-surface: #f8f9fa;
     --color-text: #2d3436;
     --color-textSecondary: #636e72;
     --color-border: #000000;
     --color-accent: #ffa502;
+    
+    /* Variables d'état */
+    --hover-bg: #f1f2f6;
+    --active-bg: #dfe4ea;
+    --disabled-bg: #f8f9fa;
+    --disabled-text: #b2bec3;
+    --selected-bg: #dfe4ea;
+    --selected-text: #2d3436;
+    --focus-bg: #f1f2f6;
+    --focus-border: #74b9ff;
+    
+    /* Variables de design system */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 9999px;
+    --shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+    --muted: #f8f9fa;
+    --highlight: #f1f2f6;
+    --scrollbar: #dfe4ea;
+    --selection-bg: #74b9ff;
 }
 
 .theme-retro {
