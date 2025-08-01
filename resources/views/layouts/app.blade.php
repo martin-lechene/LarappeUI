@@ -94,7 +94,7 @@
     currentTheme: 'light'
 }" x-init="
     // Charger le thème depuis localStorage
-    const savedTheme = localStorage.getItem('selected-theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'light';
     currentTheme = savedTheme;
     if (window.ThemeManager) {
         window.ThemeManager.applyTheme(currentTheme);
