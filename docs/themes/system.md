@@ -26,17 +26,27 @@ Le système utilise un seul gestionnaire de thèmes (`ThemeManager`) qui :
 - **Dark** : Thème sombre élégant
 - **Pro** : Thème professionnel inspiré de FrappeUI
 - **Enterprise** : Thème entreprise sobre
+- **Modern** : Thème moderne vibrant
 - **Glass** : Effet de verre avec transparence
 - **Neon** : Thème néon avec couleurs vives
 - **Forest** : Thème forestier avec tons verts
+- **Forest Night** : Version nocturne du thème forest
 - **Sea** : Thème marin avec bleus océaniques
+- **Sakura** : Thème floral japonais
+- **Summer** : Thème estival chaleureux
 - **Sunset** : Thème coucher de soleil
-- **Modern** : Thème moderne vibrant
 - **Minimal** : Thème minimaliste noir/blanc
 - **2D** : Thème 2D géométrique
-- **Retro** : Thème rétro années 80
+- **Retro** : Thème rétro classique
+- **Retro 80s** : Thème rétro années 80
 - **Cyberpunk** : Thème cyberpunk futuriste
 - **Pastel** : Thème pastel doux
+- **Space** : Thème spatial mystérieux
+- **Coffee** : Thème café chaleureux
+- **Vintage** : Thème vintage classique
+- **Monokai** : Palette Monokai pour développeurs
+- **Solarized Light** : Palette Solarized claire
+- **Solarized Dark** : Palette Solarized sombre
 
 ## Utilisation
 
