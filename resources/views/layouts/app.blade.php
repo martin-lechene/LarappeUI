@@ -12,6 +12,7 @@
     
     <!-- Alpine.js -->
     <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script src="https://unpkg.com/@alpinejs/persist@3.x.x/dist/cdn.min.js" defer></script>
     
     <!-- Prism.js pour la coloration syntaxique -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
@@ -91,7 +92,54 @@
 </head>
 <body class="h-full bg-background text-text" x-data="{ 
     sidebarOpen: false,
-    currentTheme: 'light'
+    currentTheme: 'light',
+    searchQuery: '',
+    activeTab: 'preview',
+    customTheme: {
+        primary: '#3b82f6',
+        secondary: '#6b7280',
+        success: '#10b981',
+        warning: '#f59e0b',
+        danger: '#ef4444',
+        info: '#06b6d4',
+        background: '#ffffff',
+        surface: '#f9fafb',
+        text: '#111827',
+        textSecondary: '#6b7280',
+        border: '#e5e7eb',
+        accent: '#f59e42',
+    },
+    components: [
+        { name: 'Button', category: 'Basic', icon: '🔘', path: 'button' },
+        { name: 'Input', category: 'Form', icon: '📝', path: 'form/input' },
+        { name: 'Select', category: 'Form', icon: '📋', path: 'form/select' },
+        { name: 'Checkbox', category: 'Form', icon: '☑️', path: 'form/checkbox' },
+        { name: 'Switch', category: 'Form', icon: '🔀', path: 'form/switch' },
+        { name: 'Textarea', category: 'Form', icon: '📄', path: 'form/textarea' },
+        { name: 'Dropdown', category: 'Navigation', icon: '📂', path: 'dropdown' },
+        { name: 'Pagination', category: 'Data', icon: '📊', path: 'data/pagination' },
+        { name: 'Timeline', category: 'Data', icon: '⏱️', path: 'data/timeline' },
+        { name: 'Calendar', category: 'Basic', icon: '📅', path: 'calendar' },
+        { name: 'Tag', category: 'Basic', icon: '🏷️', path: 'tag' },
+        { name: 'Statistic', category: 'Data', icon: '📈', path: 'data/statistic' }
+    ],
+    themes: [
+        { key: 'light', name: 'Light', class: 'theme-light', description: 'Thème clair par défaut avec des couleurs modernes' },
+        { key: 'dark', name: 'Dark', class: 'theme-dark', description: 'Thème sombre élégant pour une expérience nocturne' },
+        { key: 'pro', name: 'Pro (FrappeUI)', class: 'theme-pro', description: 'Thème professionnel inspiré de FrappeUI' },
+        { key: 'enterprise', name: 'Enterprise', class: 'theme-enterprise', description: 'Thème entreprise avec des couleurs sobres et professionnelles' },
+        { key: 'glass', name: 'Glass', class: 'theme-glass', description: 'Effet de verre avec transparence et flou' },
+        { key: 'neon', name: 'Neon', class: 'theme-neon', description: 'Thème néon avec des couleurs vives et lumineuses' },
+        { key: 'forest', name: 'Forest', class: 'theme-forest', description: 'Thème forestier avec des tons verts naturels' },
+        { key: 'sea', name: 'Sea', class: 'theme-sea', description: 'Thème marin avec des bleus océaniques' },
+        { key: 'sunset', name: 'Sunset', class: 'theme-sunset', description: 'Thème coucher de soleil avec des oranges chaleureux' },
+        { key: 'modern', name: 'Modern', class: 'theme-modern', description: 'Thème moderne avec des couleurs vibrantes' },
+        { key: 'minimal', name: 'Minimal', class: 'theme-minimal', description: 'Thème minimaliste en noir et blanc' },
+        { key: '2d', name: '2D', class: 'theme-2d', description: 'Thème 2D avec des couleurs vives et géométriques' },
+        { key: 'retro', name: 'Retro', class: 'theme-retro', description: 'Thème rétro avec des couleurs des années 80' },
+        { key: 'cyberpunk', name: 'Cyberpunk', class: 'theme-cyberpunk', description: 'Thème cyberpunk futuriste' },
+        { key: 'pastel', name: 'Pastel', class: 'theme-pastel', description: 'Thème pastel doux et apaisant' }
+    ]
 }" x-init="
     // Charger le thème depuis localStorage
     const savedTheme = localStorage.getItem('theme') || 'light';
@@ -100,87 +148,140 @@
         window.ThemeManager.applyTheme(currentTheme);
     }
 ">
-    <!-- Navigation -->
-    <nav class="bg-surface border-b border-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <h1 class="text-xl font-bold text-text">
-                        <a href="{{ route('home') }}" class="hover:text-primary transition-colors">
-                            🎨 Component Library
-                        </a>
-                    </h1>
-                </div>
-                
-                <div class="flex items-center space-x-4">
-                    <!-- Sélecteur de thème -->
-                    <select x-model="currentTheme" 
-                            @change="
-                                if (window.ThemeManager) {
-                                    window.ThemeManager.applyTheme(currentTheme);
-                                }
-                            "
-                            data-theme-selector
-                            class="px-3 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-surface text-text">
-                        <option value="light">Light</option>
-                        <option value="dark">Dark</option>
-                        <option value="pro">Pro (FrappeUI)</option>
-                        <option value="enterprise">Enterprise</option>
-                        <option value="glass">Glass</option>
-                        <option value="neon">Neon</option>
-                        <option value="forest">Forest</option>
-                        <option value="sea">Sea</option>
-                        <option value="sunset">Sunset</option>
-                        <option value="modern">Modern</option>
-                        <option value="minimal">Minimal</option>
-                        <option value="2d">2D</option>
-                        <option value="retro">Retro</option>
-                        <option value="cyberpunk">Cyberpunk</option>
-                        <option value="pastel">Pastel</option>
-                    </select>
-                    
-                    <!-- Menu mobile -->
-                    <button @click="sidebarOpen = !sidebarOpen" class="md:hidden">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <!-- Sidebar -->
+    <div class="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform transition-transform duration-300"
+         :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'">
 
-    <!-- Contenu principal -->
-    <div class="flex h-full">
-        <!-- Sidebar -->
-        <div class="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
-            <div class="flex-1 flex flex-col min-h-0 bg-surface border-r border-border">
-                <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
-                    <nav class="mt-5 flex-1 px-2 space-y-1">
-                        <a href="{{ route('home') }}" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md text-text hover:bg-primary hover:text-white transition-colors">
-                            🏠 Accueil
-                        </a>
-                        <a href="{{ route('components-docs') }}" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md text-text hover:bg-primary hover:text-white transition-colors">
-                            📚 Documentation
-                        </a>
-                        <a href="{{ route('themes-manager') }}" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md text-text hover:bg-primary hover:text-white transition-colors">
-                            🎨 Gestionnaire de Thèmes
-                        </a>
-                        <a href="{{ route('themes-showcase') }}" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md text-text hover:bg-primary hover:text-white transition-colors">
-                            🌈 Showcase des Thèmes
-                        </a>
-                    </nav>
-                </div>
+        <!-- Header -->
+        <div class="flex items-center justify-between p-4 border-b">
+            <h1 class="text-xl font-bold text-gray-900">
+                <a href="{{ route('home') }}" class="hover:text-primary transition-colors">
+                    🎨 Component Library
+                </a>
+            </h1>
+            <button @click="sidebarOpen = false" class="lg:hidden p-2 rounded-md hover:bg-gray-100">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Search (pour les composants) -->
+        <div x-show="$store.route.current.includes('components-docs')" class="p-4 border-b">
+            <div class="relative">
+                <input type="text" 
+                       x-model="searchQuery"
+                       placeholder="Rechercher un composant..."
+                       class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <svg class="absolute left-3 top-2.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
             </div>
         </div>
 
-        <!-- Contenu principal -->
-        <div class="md:pl-64 flex flex-col flex-1">
-            <main class="flex-1">
+        <!-- Theme Selector -->
+        <div class="p-4 border-b">
+            <label class="block text-sm font-medium text-gray-700 mb-2">Thème</label>
+            <select x-model="currentTheme" 
+                    @change="
+                        if (window.ThemeManager) {
+                            window.ThemeManager.applyTheme(currentTheme);
+                        }
+                    "
+                    data-theme-selector
+                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <template x-for="theme in themes" :key="theme.key">
+                    <option :value="theme.key" x-text="theme.name"></option>
+                </template>
+            </select>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="flex-1 overflow-y-auto p-4">
+            <div class="mb-6">
+                <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Navigation</h3>
+                <ul class="space-y-1">
+                    <li>
+                        <a href="{{ route('home') }}" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                            <span class="mr-3">🏠</span>
+                            <span>Accueil</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('components-docs') }}" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                            <span class="mr-3">📚</span>
+                            <span>Documentation</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('themes-manager') }}" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                            <span class="mr-3">🎨</span>
+                            <span>Gestionnaire de Thèmes</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('themes-showcase') }}" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                            <span class="mr-3">🌈</span>
+                            <span>Showcase des Thèmes</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Components Navigation (pour la page components-docs) -->
+            <div x-show="$store.route.current.includes('components-docs')" class="mb-6">
+                <template x-for="category in ['Basic', 'Form', 'Navigation', 'Data']" :key="category">
+                    <div class="mb-6">
+                        <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3" x-text="category"></h3>
+                        <ul class="space-y-1">
+                            <template x-for="component in components.filter(c => c.category === category && c.name.toLowerCase().includes(searchQuery.toLowerCase()))" :key="component.name">
+                                <li>
+                                    <a :href="'/components-docs/' + component.path" 
+                                       class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                                        <span class="mr-3" x-text="component.icon"></span>
+                                        <span x-text="component.name"></span>
+                                    </a>
+                                </li>
+                            </template>
+                        </ul>
+                    </div>
+                </template>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="lg:pl-64">
+        <!-- Mobile Header -->
+        <div class="lg:hidden bg-white shadow-sm border-b">
+            <div class="flex items-center justify-between px-4 py-3">
+                <h1 class="text-lg font-semibold text-gray-900">🎨 Component Library</h1>
+                <button @click="sidebarOpen = true" class="p-2 rounded-md hover:bg-gray-100">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="p-6">
+            <div class="max-w-7xl mx-auto">
                 @yield('content')
-            </main>
+            </div>
         </div>
     </div>
+
+    <!-- Overlay for mobile -->
+    <div x-show="sidebarOpen" 
+         x-transition:enter="transition-opacity ease-linear duration-300"
+         x-transition:enter-start="opacity-0"
+         x-transition:enter-end="opacity-100"
+         x-transition:leave="transition-opacity ease-linear duration-300"
+         x-transition:leave-start="opacity-100"
+         x-transition:leave-end="opacity-0"
+         class="fixed inset-0 z-40 bg-black bg-opacity-50 lg:hidden"
+         @click="sidebarOpen = false"></div>
 
     <!-- Scripts -->
     @stack('scripts')
