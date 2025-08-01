@@ -1146,3 +1146,195 @@ body {
 .theme-pastel .text-gray-800 {
     color: var(--color-text) !important;
 }
+
+/* Règles pour les bordures colorées */
+.theme-light .border-red-500,
+.theme-dark .border-red-500,
+.theme-pro .border-red-500,
+.theme-enterprise .border-red-500,
+.theme-glass .border-red-500,
+.theme-neon .border-red-500,
+.theme-forest .border-red-500,
+.theme-sea .border-red-500,
+.theme-sunset .border-red-500,
+.theme-modern .border-red-500,
+.theme-minimal .border-red-500,
+.theme-2d .border-red-500,
+.theme-retro .border-red-500,
+.theme-cyberpunk .border-red-500,
+.theme-pastel .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-light .border-blue-500,
+.theme-dark .border-blue-500,
+.theme-pro .border-blue-500,
+.theme-enterprise .border-blue-500,
+.theme-glass .border-blue-500,
+.theme-neon .border-blue-500,
+.theme-forest .border-blue-500,
+.theme-sea .border-blue-500,
+.theme-sunset .border-blue-500,
+.theme-modern .border-blue-500,
+.theme-minimal .border-blue-500,
+.theme-2d .border-blue-500,
+.theme-retro .border-blue-500,
+.theme-cyberpunk .border-blue-500,
+.theme-pastel .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+/* Règles pour les états de focus */
+.theme-light .focus\:border-blue-500:focus,
+.theme-dark .focus\:border-blue-500:focus,
+.theme-pro .focus\:border-blue-500:focus,
+.theme-enterprise .focus\:border-blue-500:focus,
+.theme-glass .focus\:border-blue-500:focus,
+.theme-neon .focus\:border-blue-500:focus,
+.theme-forest .focus\:border-blue-500:focus,
+.theme-sea .focus\:border-blue-500:focus,
+.theme-sunset .focus\:border-blue-500:focus,
+.theme-modern .focus\:border-blue-500:focus,
+.theme-minimal .focus\:border-blue-500:focus,
+.theme-2d .focus\:border-blue-500:focus,
+.theme-retro .focus\:border-blue-500:focus,
+.theme-cyberpunk .focus\:border-blue-500:focus,
+.theme-pastel .focus\:border-blue-500:focus {
+    border-color: var(--color-primary) !important;
+}
+
+/* Règles pour les ombres supplémentaires */
+.theme-light .shadow-xl,
+.theme-dark .shadow-xl,
+.theme-pro .shadow-xl,
+.theme-enterprise .shadow-xl,
+.theme-glass .shadow-xl,
+.theme-neon .shadow-xl,
+.theme-forest .shadow-xl,
+.theme-sea .shadow-xl,
+.theme-sunset .shadow-xl,
+.theme-modern .shadow-xl,
+.theme-minimal .shadow-xl,
+.theme-2d .shadow-xl,
+.theme-retro .shadow-xl,
+.theme-cyberpunk .shadow-xl,
+.theme-pastel .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+/* Règles pour les transitions */
+.theme-light .transition-all,
+.theme-dark .transition-all,
+.theme-pro .transition-all,
+.theme-enterprise .transition-all,
+.theme-glass .transition-all,
+.theme-neon .transition-all,
+.theme-forest .transition-all,
+.theme-sea .transition-all,
+.theme-sunset .transition-all,
+.theme-modern .transition-all,
+.theme-minimal .transition-all,
+.theme-2d .transition-all,
+.theme-retro .transition-all,
+.theme-cyberpunk .transition-all,
+.theme-pastel .transition-all {
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
+}
+
+/* Règles pour les effets de hover supplémentaires */
+.theme-light .hover\:scale-105:hover,
+.theme-dark .hover\:scale-105:hover,
+.theme-pro .hover\:scale-105:hover,
+.theme-enterprise .hover\:scale-105:hover,
+.theme-glass .hover\:scale-105:hover,
+.theme-neon .hover\:scale-105:hover,
+.theme-forest .hover\:scale-105:hover,
+.theme-sea .hover\:scale-105:hover,
+.theme-sunset .hover\:scale-105:hover,
+.theme-modern .hover\:scale-105:hover,
+.theme-minimal .hover\:scale-105:hover,
+.theme-2d .hover\:scale-105:hover,
+.theme-retro .hover\:scale-105:hover,
+.theme-cyberpunk .hover\:scale-105:hover,
+.theme-pastel .hover\:scale-105:hover {
+    transform: scale(1.05) !important;
+}
+
+/* Règles pour les classes utilitaires supplémentaires */
+.bg-surface {
+    background-color: var(--color-surface) !important;
+}
+
+.bg-border {
+    background-color: var(--color-border) !important;
+}
+
+.text-border {
+    color: var(--color-border) !important;
+}
+
+.border-border {
+    border-color: var(--color-border) !important;
+}
+
+/* Règles pour les éléments de formulaire supplémentaires */
+.theme-light textarea,
+.theme-dark textarea,
+.theme-pro textarea,
+.theme-enterprise textarea,
+.theme-glass textarea,
+.theme-neon textarea,
+.theme-forest textarea,
+.theme-sea textarea,
+.theme-sunset textarea,
+.theme-modern textarea,
+.theme-minimal textarea,
+.theme-2d textarea,
+.theme-retro textarea,
+.theme-cyberpunk textarea,
+.theme-pastel textarea {
+    background-color: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    border-color: var(--color-border) !important;
+}
+
+/* Règles pour les éléments de navigation supplémentaires */
+.theme-light .bg-gray-50,
+.theme-dark .bg-gray-50,
+.theme-pro .bg-gray-50,
+.theme-enterprise .bg-gray-50,
+.theme-glass .bg-gray-50,
+.theme-neon .bg-gray-50,
+.theme-forest .bg-gray-50,
+.theme-sea .bg-gray-50,
+.theme-sunset .bg-gray-50,
+.theme-modern .bg-gray-50,
+.theme-minimal .bg-gray-50,
+.theme-2d .bg-gray-50,
+.theme-retro .bg-gray-50,
+.theme-cyberpunk .bg-gray-50,
+.theme-pastel .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+/* Règles pour les éléments de focus supplémentaires */
+.theme-light .focus\:ring-opacity-50:focus,
+.theme-dark .focus\:ring-opacity-50:focus,
+.theme-pro .focus\:ring-opacity-50:focus,
+.theme-enterprise .focus\:ring-opacity-50:focus,
+.theme-glass .focus\:ring-opacity-50:focus,
+.theme-neon .focus\:ring-opacity-50:focus,
+.theme-forest .focus\:ring-opacity-50:focus,
+.theme-sea .focus\:ring-opacity-50:focus,
+.theme-sunset .focus\:ring-opacity-50:focus,
+.theme-modern .focus\:ring-opacity-50:focus,
+.theme-minimal .focus\:ring-opacity-50:focus,
+.theme-2d .focus\:ring-opacity-50:focus,
+.theme-retro .focus\:ring-opacity-50:focus,
+.theme-cyberpunk .focus\:ring-opacity-50:focus,
+.theme-pastel .focus\:ring-opacity-50:focus {
+    --tw-ring-opacity: 0.5 !important;
+}
