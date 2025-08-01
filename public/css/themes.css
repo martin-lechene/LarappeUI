@@ -224,77 +224,222 @@
 
 .theme-glass {
     --color-primary: rgba(59, 130, 246, 0.9);
+    --color-primary-hover: rgba(37, 99, 235, 0.95);
     --color-secondary: rgba(107, 114, 128, 0.9);
+    --color-secondary-hover: rgba(75, 85, 99, 0.95);
     --color-success: rgba(16, 185, 129, 0.9);
+    --color-success-hover: rgba(5, 150, 105, 0.95);
     --color-warning: rgba(245, 158, 11, 0.9);
+    --color-warning-hover: rgba(217, 119, 6, 0.95);
     --color-danger: rgba(239, 68, 68, 0.9);
+    --color-danger-hover: rgba(220, 38, 38, 0.95);
     --color-info: rgba(6, 182, 212, 0.9);
+    --color-info-hover: rgba(8, 145, 178, 0.95);
     --color-background: rgba(255, 255, 255, 0.05);
     --color-surface: rgba(255, 255, 255, 0.15);
     --color-text: #1f2937;
     --color-textSecondary: #6b7280;
     --color-border: rgba(255, 255, 255, 0.2);
     --color-accent: rgba(245, 158, 66, 0.9);
+    
+    /* Variables d'état */
+    --hover-bg: rgba(247, 247, 247, 0.1);
+    --active-bg: rgba(237, 237, 237, 0.2);
+    --disabled-bg: rgba(247, 247, 247, 0.1);
+    --disabled-text: rgba(187, 187, 187, 0.8);
+    --selected-bg: rgba(237, 237, 237, 0.2);
+    --selected-text: #1f2937;
+    --focus-bg: rgba(237, 237, 237, 0.2);
+    --focus-border: rgba(187, 187, 187, 0.5);
+    
+    /* Variables de design system */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 9999px;
+    --shadow: 0 1px 2px 0 rgba(0,0,0,0.02);
+    --muted: rgba(247, 247, 247, 0.1);
+    --highlight: rgba(237, 237, 237, 0.2);
+    --scrollbar: rgba(234, 234, 234, 0.3);
+    --selection-bg: rgba(187, 187, 187, 0.3);
 }
 
 .theme-neon {
     --color-primary: #00ff88;
+    --color-primary-hover: #00cc6a;
     --color-secondary: #ff00ff;
+    --color-secondary-hover: #cc00cc;
     --color-success: #00ff00;
+    --color-success-hover: #00cc00;
     --color-warning: #ffff00;
+    --color-warning-hover: #cccc00;
     --color-danger: #ff0080;
+    --color-danger-hover: #cc0066;
     --color-info: #00ffff;
+    --color-info-hover: #00cccc;
     --color-background: #000000;
     --color-surface: #1a1a1a;
     --color-text: #ffffff;
     --color-textSecondary: #cccccc;
     --color-border: #333333;
     --color-accent: #ff6600;
+    
+    /* Variables d'état */
+    --hover-bg: #2a2a2a;
+    --active-bg: #333333;
+    --disabled-bg: #1a1a1a;
+    --disabled-text: #666666;
+    --selected-bg: #333333;
+    --selected-text: #ffffff;
+    --focus-bg: #2a2a2a;
+    --focus-border: #444444;
+    
+    /* Variables de design system */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 9999px;
+    --shadow: 0 1px 2px 0 rgba(0,0,0,0.8);
+    --muted: #1a1a1a;
+    --highlight: #2a2a2a;
+    --scrollbar: #333333;
+    --selection-bg: #333333;
 }
 
 .theme-forest {
     --color-primary: #059669;
+    --color-primary-hover: #047857;
     --color-secondary: #6b7280;
+    --color-secondary-hover: #4b5563;
     --color-success: #10b981;
+    --color-success-hover: #059669;
     --color-warning: #f59e0b;
+    --color-warning-hover: #d97706;
     --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
     --color-info: #06b6d4;
+    --color-info-hover: #0891b2;
     --color-background: #f0fdf4;
     --color-surface: #ecfdf5;
     --color-text: #064e3b;
     --color-textSecondary: #065f46;
     --color-border: #bbf7d0;
     --color-accent: #16a34a;
+    
+    /* Variables d'état */
+    --hover-bg: #dcfce7;
+    --active-bg: #bbf7d0;
+    --disabled-bg: #f0fdf4;
+    --disabled-text: #86efac;
+    --selected-bg: #bbf7d0;
+    --selected-text: #064e3b;
+    --focus-bg: #dcfce7;
+    --focus-border: #86efac;
+    
+    /* Variables de design system */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 9999px;
+    --shadow: 0 1px 2px 0 rgba(0,0,0,0.02);
+    --muted: #f0fdf4;
+    --highlight: #dcfce7;
+    --scrollbar: #bbf7d0;
+    --selection-bg: #86efac;
 }
 
 .theme-sea {
     --color-primary: #0ea5e9;
+    --color-primary-hover: #0284c7;
     --color-secondary: #64748b;
+    --color-secondary-hover: #475569;
     --color-success: #10b981;
+    --color-success-hover: #059669;
     --color-warning: #f59e0b;
+    --color-warning-hover: #d97706;
     --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
     --color-info: #06b6d4;
+    --color-info-hover: #0891b2;
     --color-background: #f0f9ff;
     --color-surface: #e0f2fe;
     --color-text: #0c4a6e;
     --color-textSecondary: #0f766e;
     --color-border: #bae6fd;
     --color-accent: #0284c7;
+    
+    /* Variables d'état */
+    --hover-bg: #dbeafe;
+    --active-bg: #bae6fd;
+    --disabled-bg: #f0f9ff;
+    --disabled-text: #7dd3fc;
+    --selected-bg: #bae6fd;
+    --selected-text: #0c4a6e;
+    --focus-bg: #dbeafe;
+    --focus-border: #7dd3fc;
+    
+    /* Variables de design system */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 9999px;
+    --shadow: 0 1px 2px 0 rgba(0,0,0,0.02);
+    --muted: #f0f9ff;
+    --highlight: #dbeafe;
+    --scrollbar: #bae6fd;
+    --selection-bg: #7dd3fc;
 }
 
 .theme-sunset {
     --color-primary: #f97316;
+    --color-primary-hover: #ea580c;
     --color-secondary: #6b7280;
+    --color-secondary-hover: #4b5563;
     --color-success: #10b981;
+    --color-success-hover: #059669;
     --color-warning: #f59e0b;
+    --color-warning-hover: #d97706;
     --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
     --color-info: #06b6d4;
+    --color-info-hover: #0891b2;
     --color-background: #fff7ed;
     --color-surface: #fed7aa;
     --color-text: #7c2d12;
     --color-textSecondary: #9a3412;
     --color-border: #fdba74;
     --color-accent: #ea580c;
+    
+    /* Variables d'état */
+    --hover-bg: #fed7aa;
+    --active-bg: #fdba74;
+    --disabled-bg: #fff7ed;
+    --disabled-text: #fb923c;
+    --selected-bg: #fdba74;
+    --selected-text: #7c2d12;
+    --focus-bg: #fed7aa;
+    --focus-border: #fb923c;
+    
+    /* Variables de design system */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 9999px;
+    --shadow: 0 1px 2px 0 rgba(0,0,0,0.02);
+    --muted: #fff7ed;
+    --highlight: #fed7aa;
+    --scrollbar: #fdba74;
+    --selection-bg: #fb923c;
 }
 
 .theme-modern {
