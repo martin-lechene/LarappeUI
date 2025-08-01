@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{ asset('css/themes.css') }}">
     <link rel="stylesheet" href="{{ asset('css/themes-complete.css') }}">
     <link rel="stylesheet" href="{{ asset('css/themes-extended.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/themes-all.css') }}">
 
     <!-- Thèmes JavaScript -->
     <script src="{{ asset('js/themes-manager.js') }}"></script>
