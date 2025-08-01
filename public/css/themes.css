@@ -1338,3 +1338,244 @@ body {
 .theme-pastel .focus\:ring-opacity-50:focus {
     --tw-ring-opacity: 0.5 !important;
 }
+
+/* Règles pour les éléments de formulaire supplémentaires */
+.theme-light input[type="email"],
+.theme-dark input[type="email"],
+.theme-pro input[type="email"],
+.theme-enterprise input[type="email"],
+.theme-glass input[type="email"],
+.theme-neon input[type="email"],
+.theme-forest input[type="email"],
+.theme-sea input[type="email"],
+.theme-sunset input[type="email"],
+.theme-modern input[type="email"],
+.theme-minimal input[type="email"],
+.theme-2d input[type="email"],
+.theme-retro input[type="email"],
+.theme-cyberpunk input[type="email"],
+.theme-pastel input[type="email"] {
+    background-color: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    border-color: var(--color-border) !important;
+}
+
+.theme-light input[type="password"],
+.theme-dark input[type="password"],
+.theme-pro input[type="password"],
+.theme-enterprise input[type="password"],
+.theme-glass input[type="password"],
+.theme-neon input[type="password"],
+.theme-forest input[type="password"],
+.theme-sea input[type="password"],
+.theme-sunset input[type="password"],
+.theme-modern input[type="password"],
+.theme-minimal input[type="password"],
+.theme-2d input[type="password"],
+.theme-retro input[type="password"],
+.theme-cyberpunk input[type="password"],
+.theme-pastel input[type="password"] {
+    background-color: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    border-color: var(--color-border) !important;
+}
+
+.theme-light input[type="number"],
+.theme-dark input[type="number"],
+.theme-pro input[type="number"],
+.theme-enterprise input[type="number"],
+.theme-glass input[type="number"],
+.theme-neon input[type="number"],
+.theme-forest input[type="number"],
+.theme-sea input[type="number"],
+.theme-sunset input[type="number"],
+.theme-modern input[type="number"],
+.theme-minimal input[type="number"],
+.theme-2d input[type="number"],
+.theme-retro input[type="number"],
+.theme-cyberpunk input[type="number"],
+.theme-pastel input[type="number"] {
+    background-color: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    border-color: var(--color-border) !important;
+}
+
+/* Règles pour les états disabled */
+.theme-light .disabled\:opacity-50:disabled,
+.theme-dark .disabled\:opacity-50:disabled,
+.theme-pro .disabled\:opacity-50:disabled,
+.theme-enterprise .disabled\:opacity-50:disabled,
+.theme-glass .disabled\:opacity-50:disabled,
+.theme-neon .disabled\:opacity-50:disabled,
+.theme-forest .disabled\:opacity-50:disabled,
+.theme-sea .disabled\:opacity-50:disabled,
+.theme-sunset .disabled\:opacity-50:disabled,
+.theme-modern .disabled\:opacity-50:disabled,
+.theme-minimal .disabled\:opacity-50:disabled,
+.theme-2d .disabled\:opacity-50:disabled,
+.theme-retro .disabled\:opacity-50:disabled,
+.theme-cyberpunk .disabled\:opacity-50:disabled,
+.theme-pastel .disabled\:opacity-50:disabled {
+    opacity: 0.5 !important;
+}
+
+.theme-light .disabled\:pointer-events-none:disabled,
+.theme-dark .disabled\:pointer-events-none:disabled,
+.theme-pro .disabled\:pointer-events-none:disabled,
+.theme-enterprise .disabled\:pointer-events-none:disabled,
+.theme-glass .disabled\:pointer-events-none:disabled,
+.theme-neon .disabled\:pointer-events-none:disabled,
+.theme-forest .disabled\:pointer-events-none:disabled,
+.theme-sea .disabled\:pointer-events-none:disabled,
+.theme-sunset .disabled\:pointer-events-none:disabled,
+.theme-modern .disabled\:pointer-events-none:disabled,
+.theme-minimal .disabled\:pointer-events-none:disabled,
+.theme-2d .disabled\:pointer-events-none:disabled,
+.theme-retro .disabled\:pointer-events-none:disabled,
+.theme-cyberpunk .disabled\:pointer-events-none:disabled,
+.theme-pastel .disabled\:pointer-events-none:disabled {
+    pointer-events: none !important;
+}
+
+/* Règles pour les animations */
+.theme-light .animate-spin,
+.theme-dark .animate-spin,
+.theme-pro .animate-spin,
+.theme-enterprise .animate-spin,
+.theme-glass .animate-spin,
+.theme-neon .animate-spin,
+.theme-forest .animate-spin,
+.theme-sea .animate-spin,
+.theme-sunset .animate-spin,
+.theme-modern .animate-spin,
+.theme-minimal .animate-spin,
+.theme-2d .animate-spin,
+.theme-retro .animate-spin,
+.theme-cyberpunk .animate-spin,
+.theme-pastel .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Règles pour les éléments de navigation supplémentaires */
+.theme-light .text-gray-400,
+.theme-dark .text-gray-400,
+.theme-pro .text-gray-400,
+.theme-enterprise .text-gray-400,
+.theme-glass .text-gray-400,
+.theme-neon .text-gray-400,
+.theme-forest .text-gray-400,
+.theme-sea .text-gray-400,
+.theme-sunset .text-gray-400,
+.theme-modern .text-gray-400,
+.theme-minimal .text-gray-400,
+.theme-2d .text-gray-400,
+.theme-retro .text-gray-400,
+.theme-cyberpunk .text-gray-400,
+.theme-pastel .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-light .text-gray-600,
+.theme-dark .text-gray-600,
+.theme-pro .text-gray-600,
+.theme-enterprise .text-gray-600,
+.theme-glass .text-gray-600,
+.theme-neon .text-gray-600,
+.theme-forest .text-gray-600,
+.theme-sea .text-gray-600,
+.theme-sunset .text-gray-600,
+.theme-modern .text-gray-600,
+.theme-minimal .text-gray-600,
+.theme-2d .text-gray-600,
+.theme-retro .text-gray-600,
+.theme-cyberpunk .text-gray-600,
+.theme-pastel .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+/* Règles pour les éléments de hover supplémentaires */
+.theme-light .hover\:text-gray-600:hover,
+.theme-dark .hover\:text-gray-600:hover,
+.theme-pro .hover\:text-gray-600:hover,
+.theme-enterprise .hover\:text-gray-600:hover,
+.theme-glass .hover\:text-gray-600:hover,
+.theme-neon .hover\:text-gray-600:hover,
+.theme-forest .hover\:text-gray-600:hover,
+.theme-sea .hover\:text-gray-600:hover,
+.theme-sunset .hover\:text-gray-600:hover,
+.theme-modern .hover\:text-gray-600:hover,
+.theme-minimal .hover\:text-gray-600:hover,
+.theme-2d .hover\:text-gray-600:hover,
+.theme-retro .hover\:text-gray-600:hover,
+.theme-cyberpunk .hover\:text-gray-600:hover,
+.theme-pastel .hover\:text-gray-600:hover {
+    color: var(--color-textSecondary) !important;
+}
+
+/* Règles pour les éléments de focus supplémentaires */
+.theme-light .focus\:outline-none:focus,
+.theme-dark .focus\:outline-none:focus,
+.theme-pro .focus\:outline-none:focus,
+.theme-enterprise .focus\:outline-none:focus,
+.theme-glass .focus\:outline-none:focus,
+.theme-neon .focus\:outline-none:focus,
+.theme-forest .focus\:outline-none:focus,
+.theme-sea .focus\:outline-none:focus,
+.theme-sunset .focus\:outline-none:focus,
+.theme-modern .focus\:outline-none:focus,
+.theme-minimal .focus\:outline-none:focus,
+.theme-2d .focus\:outline-none:focus,
+.theme-retro .focus\:outline-none:focus,
+.theme-cyberpunk .focus\:outline-none:focus,
+.theme-pastel .focus\:outline-none:focus {
+    outline: 2px solid transparent !important;
+    outline-offset: 2px !important;
+}
+
+/* Règles pour les éléments de ring supplémentaires */
+.theme-light .focus\:ring-2:focus,
+.theme-dark .focus\:ring-2:focus,
+.theme-pro .focus\:ring-2:focus,
+.theme-enterprise .focus\:ring-2:focus,
+.theme-glass .focus\:ring-2:focus,
+.theme-neon .focus\:ring-2:focus,
+.theme-forest .focus\:ring-2:focus,
+.theme-sea .focus\:ring-2:focus,
+.theme-sunset .focus\:ring-2:focus,
+.theme-modern .focus\:ring-2:focus,
+.theme-minimal .focus\:ring-2:focus,
+.theme-2d .focus\:ring-2:focus,
+.theme-retro .focus\:ring-2:focus,
+.theme-cyberpunk .focus\:ring-2:focus,
+.theme-pastel .focus\:ring-2:focus {
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color) !important;
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color) !important;
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000) !important;
+}
+
+.theme-light .focus\:ring-offset-2:focus,
+.theme-dark .focus\:ring-offset-2:focus,
+.theme-pro .focus\:ring-offset-2:focus,
+.theme-enterprise .focus\:ring-offset-2:focus,
+.theme-glass .focus\:ring-offset-2:focus,
+.theme-neon .focus\:ring-offset-2:focus,
+.theme-forest .focus\:ring-offset-2:focus,
+.theme-sea .focus\:ring-offset-2:focus,
+.theme-sunset .focus\:ring-offset-2:focus,
+.theme-modern .focus\:ring-offset-2:focus,
+.theme-minimal .focus\:ring-offset-2:focus,
+.theme-2d .focus\:ring-offset-2:focus,
+.theme-retro .focus\:ring-offset-2:focus,
+.theme-cyberpunk .focus\:ring-offset-2:focus,
+.theme-pastel .focus\:ring-offset-2:focus {
+    --tw-ring-offset-width: 2px !important;
+}
