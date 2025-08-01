@@ -1,4 +1,34 @@
 [theme="coffee"] {
+  /* Styles de base pour les éléments HTML */
+  html {
+    background: linear-gradient(135deg, #f5f3ef 0%, #ede6db 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #4b2e19;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: linear-gradient(135deg, #f5f3ef 0%, #ede6db 100%);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4b2e19;
+    transition: all 0.3s ease;
+  }
+
+  main {
+    background: linear-gradient(135deg, #ede6db 0%, #d6cfc7 100%);
+    min-height: 100vh;
+    padding: 2rem;
+    border-radius: 12px;
+    margin: 1rem;
+    box-shadow: 0 8px 32px rgba(111, 78, 55, 0.1);
+    backdrop-filter: blur(10px);
+  }
+
+  /* Variables de couleurs uniquement en nuances beige/café */
   --background: #f5f3ef;
   --surface: #ede6db;
   --surface-alt: #d6cfc7;
@@ -6,16 +36,16 @@
   --input-bg: #ede6db;
   --text: #4b2e19;
   --text-muted: #a89f91;
-  --text-inverse: #fff;
+  --text-inverse: #f5f3ef;
   --text-placeholder: #bfae9c;
   --border: #d6cfc7;
   --border-strong: #bfae9c;
   --input-border: #bfae9c;
   --focus-ring: #7c4a1e;
   --primary: #7c4a1e;
-  --primary-foreground: #fff;
+  --primary-foreground: #f5f3ef;
   --secondary: #a89f91;
-  --secondary-foreground: #fff;
+  --secondary-foreground: #f5f3ef;
   --accent: #c69c6d;
   --accent-foreground: #4b2e19;
   --success: #b7bfa6;
@@ -23,7 +53,7 @@
   --warning: #e2b07a;
   --warning-foreground: #4b2e19;
   --danger: #a9746e;
-  --danger-foreground: #fff;
+  --danger-foreground: #f5f3ef;
   --info: #bfae9c;
   --info-foreground: #4b2e19;
   --hover-bg: #ede6db;
@@ -55,14 +85,14 @@
   --spinner-color-brown: #7c4a1e;
   --spinner-color-cream: #ede6db;
   --divider: #d6cfc7;
-  --shadow: 0 1px 2px 0 rgba(111, 78, 55, 0.08);
+  --shadow: 0 8px 32px rgba(111, 78, 55, 0.15);
   --card-bg: #ede6db;
   --modal-bg: #ede6db;
   --drawer-bg: #ede6db;
   --sidebar-bg: #f5f3ef;
   --tooltip-bg: #7c4a1e;
-  --tooltip-text: #fff;
-  --popover-bg: #fff;
+  --tooltip-text: #f5f3ef;
+  --popover-bg: #f5f3ef;
   --popover-text: #4b2e19;
   --stepper-active-bg: #7c4a1e;
   --stepper-inactive-bg: #d6cfc7;
@@ -72,12 +102,82 @@
   --highlight: #e2b07a;
   --scrollbar: #d6cfc7;
   --selection-bg: #c69c6d;
-  --radius-xs: 2px;
-  --radius-sm: 4px;
-  --radius-md: 6px;
-  --radius-lg: 8px;
-  --radius-xl: 12px;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
   --radius-full: 9999px;
+
+  /* Styles pour les éléments de base avec style coulant */
+  h1, h2, h3, h4, h5, h6 {
+    color: #4b2e19;
+    font-weight: 600;
+    margin: 1.5rem 0 1rem 0;
+    transition: all 0.3s ease;
+  }
+
+  h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    color: #7c4a1e;
+    transform: translateX(5px);
+  }
+
+  p {
+    color: #4b2e19;
+    line-height: 1.8;
+    margin: 1rem 0;
+    transition: all 0.3s ease;
+  }
+
+  a {
+    color: #7c4a1e;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+  }
+
+  a:hover {
+    color: #c69c6d;
+    border-bottom-color: #c69c6d;
+    transform: translateY(-2px);
+  }
+
+  button {
+    background: linear-gradient(135deg, #7c4a1e 0%, #c69c6d 100%);
+    color: #f5f3ef;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(111, 78, 55, 0.2);
+  }
+
+  button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(111, 78, 55, 0.3);
+    background: linear-gradient(135deg, #c69c6d 0%, #7c4a1e 100%);
+  }
+
+  input, textarea, select {
+    background: #ede6db;
+    border: 2px solid #d6cfc7;
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: #4b2e19;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #7c4a1e;
+    box-shadow: 0 0 0 3px rgba(124, 74, 30, 0.1);
+    transform: scale(1.02);
+  }
+
+  /* Couleurs en nuances beige/café uniquement */
   --color-brown-50: #f5f3ef;
   --color-brown-100: #ede6db;
   --color-brown-200: #d6cfc7;
@@ -98,9 +198,26 @@
   --color-cream-700: #7c4a1e;
   --color-cream-800: #4b2e19;
   --color-cream-900: #3e2723;
-  --color-black: #000;
-  --color-white: #fff;
-  --color-transparent: transparent;
+  --color-beige-50: #f5f3ef;
+  --color-beige-100: #ede6db;
+  --color-beige-200: #d6cfc7;
+  --color-beige-300: #bfae9c;
+  --color-beige-400: #a89f91;
+  --color-beige-500: #7c4a1e;
+  --color-beige-600: #4b2e19;
+  --color-beige-700: #3e2723;
+  --color-beige-800: #2d1b12;
+  --color-beige-900: #1b0c02;
+  --color-coffee-50: #f5f3ef;
+  --color-coffee-100: #ede6db;
+  --color-coffee-200: #d6cfc7;
+  --color-coffee-300: #bfae9c;
+  --color-coffee-400: #a89f91;
+  --color-coffee-500: #7c4a1e;
+  --color-coffee-600: #4b2e19;
+  --color-coffee-700: #3e2723;
+  --color-coffee-800: #2d1b12;
+  --color-coffee-900: #1b0c02;
   --color-primary-50: #f5ece3;
   --color-primary-100: #e3c9a8;
   --color-primary-200: #d6cfc7;
