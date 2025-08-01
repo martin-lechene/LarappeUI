@@ -1,370 +1,257 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source '../**/*.blade.php';
-@source '../**/*.js';
+@layer base {
+    :root {
+        --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+            "Noto Color Emoji";
+    }
 
-:root {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    html,
+    body {
+        background: var(--background);
+        color: var(--text);
+        transition: background 0.3s, color 0.3s;
+    }
 }
 
-@import './themes/pro.css';
-@import './themes/light.css';
-@import './themes/dark.css';
-@import './themes/glass.css';
-@import './themes/forest.css';
-@import './themes/forest-night.css';
-@import './themes/sea.css';
-@import './themes/summer.css';
-@import './themes/2d.css';
-@import './themes/solarized-light.css';
-@import './themes/solarized-dark.css';
-@import './themes/monokai.css';
-@import './themes/pastel.css';
-@import './themes/minimal.css';
-@import './themes/coffee.css';
-@import './themes/sakura.css';
-@import './themes/retro80s.css';
-@import './themes/space.css';
-@import './themes/vintage.css';
+@layer components {
+    /* === TAILWIND CLASS OVERRIDES === */
+    .bg-white,
+    .bg-gray-50,
+    .bg-surface {
+        background: var(--surface) !important;
+    }
+    .bg-gray-100 {
+        background: var(--background) !important;
+    }
+    .text-gray-900,
+    .text-gray-800,
+    .text-black {
+        color: var(--text) !important;
+    }
+    .text-gray-500,
+    .text-gray-400,
+    .text-muted {
+        color: var(--text-muted) !important;
+    }
+    .border-gray-100,
+    .border-gray-200,
+    .border {
+        border-color: var(--border) !important;
+    }
+    .bg-primary {
+        background: var(--primary) !important;
+    }
+    .text-primary {
+        color: var(--primary) !important;
+    }
+    .bg-accent {
+        background: var(--accent) !important;
+    }
+    .text-accent {
+        color: var(--accent) !important;
+    }
 
+    /* === BUTTONS, CARDS, ETC. === */
+    .button,
+    .btn,
+    .card,
+    .surface {
+        background: var(--surface);
+        color: var(--text);
+        border-color: var(--border);
+    }
 
+    /* === SCROLLBAR, SELECTION, ETC. === */
+    ::selection {
+        background: var(--selection-bg);
+        color: var(--text-inverse);
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--primary);
+    }
 
-html, body {
-  background: var(--background);
-  color: var(--text);
-  transition: background 0.3s, color 0.3s;
-}
+    /* Classes fixes - CORRIGÉES POUR ULTRA SOLAIRE */
+    .text-black {
+        color: var(--text) !important;
+    }
+    .text-white {
+        color: var(--text) !important;
+    }
+    .bg-black {
+        background: var(--background) !important;
+    }
+    .bg-white {
+        background: var(--surface) !important;
+    }
+    .border-black {
+        border-color: var(--border) !important;
+    }
+    .border-white {
+        border-color: var(--border) !important;
+    }
+    .text-transparent {
+        color: transparent !important;
+    }
+    .bg-transparent {
+        background: transparent !important;
+    }
 
-/* === TAILWIND CLASS OVERRIDES === */
-.bg-white, .bg-gray-50, .bg-surface { background: var(--surface) !important; }
-.bg-gray-100 { background: var(--background) !important; }
-.text-gray-900, .text-gray-800, .text-black { color: var(--text) !important; }
-.text-gray-500, .text-gray-400, .text-muted { color: var(--text-muted) !important; }
-.border-gray-100, .border-gray-200, .border { border-color: var(--border) !important; }
-.bg-primary { background: var(--primary) !important; }
-.text-primary { color: var(--primary) !important; }
-.bg-accent { background: var(--accent) !important; }
-.text-accent { color: var(--accent) !important; }
+    /* === ÉLÉMENTS HTML DE BASE === */
+    html,
+    body,
+    main,
+    header,
+    footer,
+    nav,
+    aside,
+    section,
+    article {
+        background: var(--background) !important;
+        color: var(--text) !important;
+    }
 
-/* === BUTTONS, CARDS, ETC. === */
-.button, .btn, .card, .surface {
-  background: var(--surface);
-  color: var(--text);
-  border-color: var(--border);
-}
+    /* === ÉLÉMENTS DE NAVIGATION === */
+    nav a,
+    nav button,
+    nav span {
+        color: var(--text) !important;
+    }
 
-/* === SCROLLBAR, SELECTION, ETC. === */
-::selection { background: var(--selection-bg); color: var(--text-inverse); }
-::-webkit-scrollbar-thumb { background: var(--primary); }
+    nav a:hover,
+    nav button:hover {
+        color: var(--accent) !important;
+        background: var(--hover-bg) !important;
+    }
 
-/* Surcharges Tailwind blue pour theming immersif */
-.text-blue-50 { color: var(--color-blue-50) !important; }
-.text-blue-100 { color: var(--color-blue-100) !important; }
-.text-blue-200 { color: var(--color-blue-200) !important; }
-.text-blue-300 { color: var(--color-blue-300) !important; }
-.text-blue-400 { color: var(--color-blue-400) !important; }
-.text-blue-500 { color: var(--color-blue-500) !important; }
-.text-blue-600 { color: var(--color-blue-600) !important; }
-.text-blue-700 { color: var(--color-blue-700) !important; }
-.text-blue-800 { color: var(--color-blue-800) !important; }
-.text-blue-900 { color: var(--color-blue-900) !important; }
-.bg-blue-50 { background: var(--color-blue-50) !important; }
-.bg-blue-100 { background: var(--color-blue-100) !important; }
-.bg-blue-200 { background: var(--color-blue-200) !important; }
-.bg-blue-300 { background: var(--color-blue-300) !important; }
-.bg-blue-400 { background: var(--color-blue-400) !important; }
-.bg-blue-500 { background: var(--color-blue-500) !important; }
-.bg-blue-600 { background: var(--color-blue-600) !important; }
-.bg-blue-700 { background: var(--color-blue-700) !important; }
-.bg-blue-800 { background: var(--color-blue-800) !important; }
-.bg-blue-900 { background: var(--color-blue-900) !important; }
+    /* === ÉLÉMENTS DE LISTE === */
+    ul,
+    ol,
+    li {
+        color: var(--text) !important;
+    }
 
-/* Surcharges Tailwind pour toutes les couleurs principales */
-.text-red-50 { color: var(--color-red-50) !important; }
-.text-red-100 { color: var(--color-red-100) !important; }
-.text-red-200 { color: var(--color-red-200) !important; }
-.text-red-300 { color: var(--color-red-300) !important; }
-.text-red-400 { color: var(--color-red-400) !important; }
-.text-red-500 { color: var(--color-red-500) !important; }
-.text-red-600 { color: var(--color-red-600) !important; }
-.text-red-700 { color: var(--color-red-700) !important; }
-.text-red-800 { color: var(--color-red-800) !important; }
-.text-red-900 { color: var(--color-red-900) !important; }
-.bg-red-50 { background: var(--color-red-50) !important; }
-.bg-red-100 { background: var(--color-red-100) !important; }
-.bg-red-200 { background: var(--color-red-200) !important; }
-.bg-red-300 { background: var(--color-red-300) !important; }
-.bg-red-400 { background: var(--color-red-400) !important; }
-.bg-red-500 { background: var(--color-red-500) !important; }
-.bg-red-600 { background: var(--color-red-600) !important; }
-.bg-red-700 { background: var(--color-red-700) !important; }
-.bg-red-800 { background: var(--color-red-800) !important; }
-.bg-red-900 { background: var(--color-red-900) !important; }
+    ul li::before,
+    ol li::before {
+        color: var(--text-muted) !important;
+    }
 
-.text-green-50 { color: var(--color-green-50) !important; }
-.text-green-100 { color: var(--color-green-100) !important; }
-.text-green-200 { color: var(--color-green-200) !important; }
-.text-green-300 { color: var(--color-green-300) !important; }
-.text-green-400 { color: var(--color-green-400) !important; }
-.text-green-500 { color: var(--color-green-500) !important; }
-.text-green-600 { color: var(--color-green-600) !important; }
-.text-green-700 { color: var(--color-green-700) !important; }
-.text-green-800 { color: var(--color-green-800) !important; }
-.text-green-900 { color: var(--color-green-900) !important; }
-.bg-green-50 { background: var(--color-green-50) !important; }
-.bg-green-100 { background: var(--color-green-100) !important; }
-.bg-green-200 { background: var(--color-green-200) !important; }
-.bg-green-300 { background: var(--color-green-300) !important; }
-.bg-green-400 { background: var(--color-green-400) !important; }
-.bg-green-500 { background: var(--color-green-500) !important; }
-.bg-green-600 { background: var(--color-green-600) !important; }
-.bg-green-700 { background: var(--color-green-700) !important; }
-.bg-green-800 { background: var(--color-green-800) !important; }
-.bg-green-900 { background: var(--color-green-900) !important; }
+    /* === ÉLÉMENTS DE TEXTE === */
+    p,
+    span,
+    div,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--text) !important;
+    }
 
-.text-yellow-50 { color: var(--color-yellow-50) !important; }
-.text-yellow-100 { color: var(--color-yellow-100) !important; }
-.text-yellow-200 { color: var(--color-yellow-200) !important; }
-.text-yellow-300 { color: var(--color-yellow-300) !important; }
-.text-yellow-400 { color: var(--color-yellow-400) !important; }
-.text-yellow-500 { color: var(--color-yellow-500) !important; }
-.text-yellow-600 { color: var(--color-yellow-600) !important; }
-.text-yellow-700 { color: var(--color-yellow-700) !important; }
-.text-yellow-800 { color: var(--color-yellow-800) !important; }
-.text-yellow-900 { color: var(--color-yellow-900) !important; }
-.bg-yellow-50 { background: var(--color-yellow-50) !important; }
-.bg-yellow-100 { background: var(--color-yellow-100) !important; }
-.bg-yellow-200 { background: var(--color-yellow-200) !important; }
-.bg-yellow-300 { background: var(--color-yellow-300) !important; }
-.bg-yellow-400 { background: var(--color-yellow-400) !important; }
-.bg-yellow-500 { background: var(--color-yellow-500) !important; }
-.bg-yellow-600 { background: var(--color-yellow-600) !important; }
-.bg-yellow-700 { background: var(--color-yellow-700) !important; }
-.bg-yellow-800 { background: var(--color-yellow-800) !important; }
-.bg-yellow-900 { background: var(--color-yellow-900) !important; }
+    /* === ÉLÉMENTS DE FORMULAIRE === */
+    input,
+    textarea,
+    select,
+    button {
+        background: var(--input-bg) !important;
+        color: var(--text) !important;
+        border-color: var(--input-border) !important;
+    }
 
-.text-gray-50 { color: var(--color-gray-50) !important; }
-.text-gray-100 { color: var(--color-gray-100) !important; }
-.text-gray-200 { color: var(--color-gray-200) !important; }
-.text-gray-300 { color: var(--color-gray-300) !important; }
-.text-gray-400 { color: var(--color-gray-400) !important; }
-.text-gray-500 { color: var(--color-gray-500) !important; }
-.text-gray-600 { color: var(--color-gray-600) !important; }
-.text-gray-700 { color: var(--color-gray-700) !important; }
-.text-gray-800 { color: var(--color-gray-800) !important; }
-.text-gray-900 { color: var(--color-gray-900) !important; }
-.bg-gray-50 { background: var(--color-gray-50) !important; }
-.bg-gray-100 { background: var(--color-gray-100) !important; }
-.bg-gray-200 { background: var(--color-gray-200) !important; }
-.bg-gray-300 { background: var(--color-gray-300) !important; }
-.bg-gray-400 { background: var(--color-gray-400) !important; }
-.bg-gray-500 { background: var(--color-gray-500) !important; }
-.bg-gray-600 { background: var(--color-gray-600) !important; }
-.bg-gray-700 { background: var(--color-gray-700) !important; }
-.bg-gray-800 { background: var(--color-gray-800) !important; }
-.bg-gray-900 { background: var(--color-gray-900) !important; }
+    input::placeholder,
+    textarea::placeholder {
+        color: var(--text-placeholder) !important;
+    }
 
-/* Répéter pour chaque thème avec la gamme adaptée (bleu pour sea, orange pour summer, rouge pour 2d, pastel pour glass, etc.) */
+    /* === ÉLÉMENTS DE TABLEAU === */
+    table,
+    th,
+    td {
+        background: var(--surface) !important;
+        color: var(--text) !important;
+        border-color: var(--border) !important;
+    }
 
-/* Surcharges pour toutes les couleurs secondaires Tailwind */
-/* Exemple pour orange, à dupliquer pour chaque couleur secondaire */
-.text-orange-50 { color: var(--color-orange-50) !important; }
-.text-orange-100 { color: var(--color-orange-100) !important; }
-.text-orange-200 { color: var(--color-orange-200) !important; }
-.text-orange-300 { color: var(--color-orange-300) !important; }
-.text-orange-400 { color: var(--color-orange-400) !important; }
-.text-orange-500 { color: var(--color-orange-500) !important; }
-.text-orange-600 { color: var(--color-orange-600) !important; }
-.text-orange-700 { color: var(--color-orange-700) !important; }
-.text-orange-800 { color: var(--color-orange-800) !important; }
-.text-orange-900 { color: var(--color-orange-900) !important; }
-.bg-orange-50 { background: var(--color-orange-50) !important; }
-.bg-orange-100 { background: var(--color-orange-100) !important; }
-.bg-orange-200 { background: var(--color-orange-200) !important; }
-.bg-orange-300 { background: var(--color-orange-300) !important; }
-.bg-orange-400 { background: var(--color-orange-400) !important; }
-.bg-orange-500 { background: var(--color-orange-500) !important; }
-.bg-orange-600 { background: var(--color-orange-600) !important; }
-.bg-orange-700 { background: var(--color-orange-700) !important; }
-.bg-orange-800 { background: var(--color-orange-800) !important; }
-.bg-orange-900 { background: var(--color-orange-900) !important; }
-.border-orange-500 { border-color: var(--color-orange-500) !important; }
-.ring-orange-500 { --tw-ring-color: var(--color-orange-500) !important; }
-.outline-orange-500 { outline-color: var(--color-orange-500) !important; }
-.placeholder-orange-500::placeholder { color: var(--color-orange-500) !important; }
-.divide-orange-500 > :not([hidden]) ~ :not([hidden]) { border-color: var(--color-orange-500) !important; }
-.from-orange-500 { --tw-gradient-from: var(--color-orange-500) !important; }
-.to-orange-500 { --tw-gradient-to: var(--color-orange-500) !important; }
-.via-orange-500 { --tw-gradient-stops: var(--color-orange-500), var(--color-orange-500), var(--color-orange-500) !important; }
-.shadow-orange-500 { box-shadow: 0 1px 2px 0 var(--color-orange-500) !important; }
-/* Répéter pour pink, purple, indigo, teal, cyan, lime, amber, emerald, fuchsia, violet, sky, slate, stone, neutral, zinc, etc. */
+    /* === ÉLÉMENTS DE MODALE/POPUP === */
+    .modal,
+    .popup,
+    .dialog {
+        background: var(--modal-bg) !important;
+        color: var(--text) !important;
+    }
 
-/* SQUELETTE EXHAUSTIF OVERRIDE TAILWIND THEME */
+    /* === ÉLÉMENTS DE SIDEBAR === */
+    .sidebar,
+    .drawer {
+        background: var(--sidebar-bg) !important;
+        color: var(--text) !important;
+    }
 
-/* Pour chaque couleur et chaque shade, pour chaque utilitaire Tailwind */
-/* Exemple pour blue, à dupliquer pour chaque couleur */
-.text-blue-50 { color: var(--color-blue-50) !important; }
-.bg-blue-50 { background: var(--color-blue-50) !important; }
-.border-blue-50 { border-color: var(--color-blue-50) !important; }
-.ring-blue-50 { --tw-ring-color: var(--color-blue-50) !important; }
-.outline-blue-50 { outline-color: var(--color-blue-50) !important; }
-.placeholder-blue-50::placeholder { color: var(--color-blue-50) !important; }
-.divide-blue-50 > :not([hidden]) ~ :not([hidden]) { border-color: var(--color-blue-50) !important; }
-.from-blue-50 { --tw-gradient-from: var(--color-blue-50) !important; }
-.to-blue-50 { --tw-gradient-to: var(--color-blue-50) !important; }
-.via-blue-50 { --tw-gradient-stops: var(--color-blue-50), var(--color-blue-50), var(--color-blue-50) !important; }
-.shadow-blue-50 { box-shadow: 0 1px 2px 0 var(--color-blue-50) !important; }
-.accent-blue-50 { accent-color: var(--color-blue-50) !important; }
-.caret-blue-50 { caret-color: var(--color-blue-50) !important; }
-.selection-blue-50::selection { background: var(--color-blue-50) !important; }
-.decoration-blue-50 { text-decoration-color: var(--color-blue-50) !important; }
-.underline-blue-50 { text-decoration-color: var(--color-blue-50) !important; }
-.overline-blue-50 { text-decoration-color: var(--color-blue-50) !important; }
-.line-through-blue-50 { text-decoration-color: var(--color-blue-50) !important; }
-.fill-blue-50 { fill: var(--color-blue-50) !important; }
-.stroke-blue-50 { stroke: var(--color-blue-50) !important; }
-/* Répéter pour chaque shade (100 à 900) et chaque couleur */
+    /* === ÉLÉMENTS DE TOOLTIP === */
+    .tooltip {
+        background: var(--tooltip-bg) !important;
+        color: var(--tooltip-text) !important;
+    }
 
-/* Variantes d'états */
-.hover\:bg-blue-500:hover { background: var(--color-blue-500) !important; }
-.focus\:bg-blue-500:focus { background: var(--color-blue-500) !important; }
-.active\:bg-blue-500:active { background: var(--color-blue-500) !important; }
-.disabled\:bg-blue-500:disabled { background: var(--color-blue-500) !important; }
-/* Répéter pour tous les utilitaires et toutes les couleurs */
+    /* === ÉLÉMENTS DE CARD === */
+    .card,
+    .surface {
+        background: var(--card-bg) !important;
+        color: var(--text) !important;
+        border-color: var(--border) !important;
+    }
 
-/* Classes fixes - CORRIGÉES POUR ULTRA SOLAIRE */
-.text-black { color: var(--text) !important; }
-.text-white { color: var(--text) !important; }
-.bg-black { background: var(--background) !important; }
-.bg-white { background: var(--surface) !important; }
-.border-black { border-color: var(--border) !important; }
-.border-white { border-color: var(--border) !important; }
-.text-transparent { color: transparent !important; }
-.bg-transparent { background: transparent !important; }
+    /* === ÉLÉMENTS DE BADGE === */
+    .badge {
+        background: var(--badge-bg-primary) !important;
+        color: var(--badge-text-primary) !important;
+    }
 
-/* === ÉLÉMENTS HTML DE BASE === */
-html, body, main, header, footer, nav, aside, section, article {
-  background: var(--background) !important;
-  color: var(--text) !important;
-}
+    /* === ÉLÉMENTS DE PROGRESS === */
+    .progress {
+        background: var(--progress-bg-green) !important;
+    }
 
-/* === ÉLÉMENTS DE NAVIGATION === */
-nav a, nav button, nav span {
-  color: var(--text) !important;
-}
+    /* === ÉLÉMENTS DE SPINNER === */
+    .spinner {
+        color: var(--spinner-color-green) !important;
+    }
 
-nav a:hover, nav button:hover {
-  color: var(--accent) !important;
-  background: var(--hover-bg) !important;
-}
+    /* === ÉLÉMENTS DE DIVIDER === */
+    .divider,
+    hr {
+        background: var(--divider) !important;
+        border-color: var(--divider) !important;
+    }
 
-/* === ÉLÉMENTS DE LISTE === */
-ul, ol, li {
-  color: var(--text) !important;
-}
+    /* === ÉLÉMENTS DE SHADOW === */
+    .shadow {
+        box-shadow: var(--shadow) !important;
+    }
 
-ul li::before, ol li::before {
-  color: var(--text-muted) !important;
-}
+    /* === ÉLÉMENTS DE FOCUS === */
+    *:focus {
+        outline-color: var(--focus-ring) !important;
+    }
 
-/* === ÉLÉMENTS DE TEXTE === */
-p, span, div, h1, h2, h3, h4, h5, h6 {
-  color: var(--text) !important;
-}
+    /* === ÉLÉMENTS DE SELECTION === */
+    ::selection {
+        background: var(--selection-bg) !important;
+        color: var(--text-inverse) !important;
+    }
 
-/* === ÉLÉMENTS DE FORMULAIRE === */
-input, textarea, select, button {
-  background: var(--input-bg) !important;
-  color: var(--text) !important;
-  border-color: var(--input-border) !important;
-}
+    /* === ÉLÉMENTS DE SCROLLBAR === */
+    ::-webkit-scrollbar-track {
+        background: var(--background) !important;
+    }
 
-input::placeholder, textarea::placeholder {
-  color: var(--text-placeholder) !important;
-}
+    ::-webkit-scrollbar-thumb {
+        background: var(--primary) !important;
+    }
 
-/* === ÉLÉMENTS DE TABLEAU === */
-table, th, td {
-  background: var(--surface) !important;
-  color: var(--text) !important;
-  border-color: var(--border) !important;
-}
-
-/* === ÉLÉMENTS DE MODALE/POPUP === */
-.modal, .popup, .dialog {
-  background: var(--modal-bg) !important;
-  color: var(--text) !important;
-}
-
-/* === ÉLÉMENTS DE SIDEBAR === */
-.sidebar, .drawer {
-  background: var(--sidebar-bg) !important;
-  color: var(--text) !important;
-}
-
-/* === ÉLÉMENTS DE TOOLTIP === */
-.tooltip {
-  background: var(--tooltip-bg) !important;
-  color: var(--tooltip-text) !important;
-}
-
-/* === ÉLÉMENTS DE CARD === */
-.card, .surface {
-  background: var(--card-bg) !important;
-  color: var(--text) !important;
-  border-color: var(--border) !important;
-}
-
-/* === ÉLÉMENTS DE BADGE === */
-.badge {
-  background: var(--badge-bg-primary) !important;
-  color: var(--badge-text-primary) !important;
-}
-
-/* === ÉLÉMENTS DE PROGRESS === */
-.progress {
-  background: var(--progress-bg-green) !important;
-}
-
-/* === ÉLÉMENTS DE SPINNER === */
-.spinner {
-  color: var(--spinner-color-green) !important;
-}
-
-/* === ÉLÉMENTS DE DIVIDER === */
-.divider, hr {
-  background: var(--divider) !important;
-  border-color: var(--divider) !important;
-}
-
-/* === ÉLÉMENTS DE SHADOW === */
-.shadow {
-  box-shadow: var(--shadow) !important;
-}
-
-/* === ÉLÉMENTS DE FOCUS === */
-*:focus {
-  outline-color: var(--focus-ring) !important;
-}
-
-/* === ÉLÉMENTS DE SELECTION === */
-::selection {
-  background: var(--selection-bg) !important;
-  color: var(--text-inverse) !important;
-}
-
-/* === ÉLÉMENTS DE SCROLLBAR === */
-::-webkit-scrollbar-track {
-  background: var(--background) !important;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--primary) !important;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent) !important;
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--accent) !important;
+    }
 }

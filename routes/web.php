@@ -7,4 +7,4 @@ Route::get('/', function () {
 });
 
 // Routes pour la documentation des composants et thèmes
-require __DIR__.'/routes/components-docs.php';
+require __DIR__ . '/components-docs.php';
