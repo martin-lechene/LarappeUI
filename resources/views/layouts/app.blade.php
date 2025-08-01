@@ -1,84 +1,196 @@
 <!DOCTYPE html>
-<html lang="fr" theme="pro">
+<html lang="fr" class="h-full">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>LarappeUI</title>
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <link rel="stylesheet" id="theme-css" href="/resources/css/themes/light.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const select = document.getElementById('theme-select');
-            const themeLink = document.getElementById('theme-css');
-            function setTheme(theme) {
-                document.documentElement.setAttribute('theme', theme);
-                themeLink.href = `/resources/css/themes/${theme}.css`;
-            }
-            select.addEventListener('change', function () {
-                setTheme(this.value);
-            });
-            // Initial theme
-            setTheme(select.value);
-        });
-    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    
+    <title>@yield('title', 'Laravel App')</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Alpine.js -->
+    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    
+    <!-- Prism.js pour la coloration syntaxique -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    
+    <!-- Thèmes CSS -->
+    <link rel="stylesheet" href="{{ asset('css/themes-complete.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/themes-extended.css') }}">
+    
+    <!-- Thèmes JavaScript -->
+    <script src="{{ asset('js/themes-manager.js') }}"></script>
+    <script src="{{ asset('js/themes-extended.js') }}"></script>
+    
+    <!-- Styles personnalisés -->
+    <style>
+        /* Classes utilitaires pour les thèmes */
+        .btn {
+            @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+        }
+        
+        .btn-primary {
+            @apply bg-primary text-white hover:bg-primary-hover;
+        }
+        
+        .btn-secondary {
+            @apply bg-secondary text-white hover:bg-secondary-hover;
+        }
+        
+        .btn-success {
+            @apply bg-success text-white hover:bg-success-hover;
+        }
+        
+        .btn-danger {
+            @apply bg-danger text-white hover:bg-danger-hover;
+        }
+        
+        .btn-warning {
+            @apply bg-warning text-white hover:bg-warning-hover;
+        }
+        
+        .btn-info {
+            @apply bg-info text-white hover:bg-info-hover;
+        }
+        
+        .form-input {
+            @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+        }
+        
+        .card {
+            @apply bg-white rounded-lg shadow-sm border p-6;
+        }
+        
+        /* Variables CSS pour les thèmes */
+        :root {
+            --color-primary: #3b82f6;
+            --color-primary-hover: #2563eb;
+            --color-secondary: #6b7280;
+            --color-secondary-hover: #4b5563;
+            --color-success: #10b981;
+            --color-success-hover: #059669;
+            --color-warning: #f59e0b;
+            --color-warning-hover: #d97706;
+            --color-danger: #ef4444;
+            --color-danger-hover: #dc2626;
+            --color-info: #06b6d4;
+            --color-info-hover: #0891b2;
+            --color-background: #ffffff;
+            --color-surface: #f9fafb;
+            --color-text: #111827;
+            --color-text-secondary: #6b7280;
+            --color-border: #e5e7eb;
+            --color-accent: #f59e42;
+        }
+    </style>
+    
+    @stack('styles')
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans min-h-screen flex flex-col">
-    <!-- Header -->
-    <header class="w-full bg-white shadow-sm py-4 px-6 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-            <span class="text-xl font-bold text-blue-600">LarappeUI</span>
-            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded">for Laravel</span>
+<body class="h-full bg-background text-text" x-data="{ 
+    sidebarOpen: false,
+    currentTheme: 'light'
+}" x-init="
+    // Charger le thème depuis localStorage
+    const savedTheme = localStorage.getItem('selected-theme') || 'light';
+    currentTheme = savedTheme;
+    if (window.ThemeManager) {
+        window.ThemeManager.applyTheme(currentTheme);
+    }
+">
+    <!-- Navigation -->
+    <nav class="bg-surface border-b border-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <h1 class="text-xl font-bold text-text">
+                        <a href="{{ route('home') }}" class="hover:text-primary transition-colors">
+                            🎨 Component Library
+                        </a>
+                    </h1>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <!-- Sélecteur de thème -->
+                    <select x-model="currentTheme" 
+                            @change="
+                                if (window.ThemeManager) {
+                                    window.ThemeManager.applyTheme(currentTheme);
+                                }
+                            "
+                            class="px-3 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-surface text-text">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                        <option value="pro">Pro</option>
+                        <option value="enterprise">Enterprise</option>
+                        <option value="glass">Glass</option>
+                        <option value="neon">Neon</option>
+                        <option value="forest">Forest</option>
+                        <option value="sea">Sea</option>
+                        <option value="sunset">Sunset</option>
+                        <option value="modern">Modern</option>
+                        <option value="minimal">Minimal</option>
+                        <option value="2d">2D</option>
+                        <option value="retro">Retro</option>
+                        <option value="cyberpunk">Cyberpunk</option>
+                        <option value="pastel">Pastel</option>
+                        <option value="midnight">Midnight</option>
+                        <option value="aurora">Aurora</option>
+                        <option value="cosmic">Cosmic</option>
+                        <option value="ocean">Ocean</option>
+                        <option value="fire">Fire</option>
+                        <option value="earth">Earth</option>
+                        <option value="lavender">Lavender</option>
+                        <option value="mint">Mint</option>
+                    </select>
+                    
+                    <!-- Menu mobile -->
+                    <button @click="sidebarOpen = !sidebarOpen" class="md:hidden">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
-        <nav class="flex gap-6 text-sm">
-            <a href="#components" class="hover:text-blue-600">Composants</a>
-            <a href="#install" class="hover:text-blue-600">Installation</a>
-            <a href="https://github.com/martin-lechene/LarappeUI" target="_blank" class="hover:text-blue-600">Github</a>
-        </nav>
-        <div class="flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-lg px-3 py-1 shadow-sm ml-4">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 5.66l-.71-.71M4.05 4.93l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
-            <label for="theme-select" class="sr-only">Thème</label>
-            <select id="theme-select" class="border-none bg-transparent focus:ring-2 focus:ring-blue-400 rounded px-2 py-1 text-sm font-medium text-blue-700 hover:bg-blue-100 transition">
-                <option value="pro">Pro (FrappeUI)</option>
-                <option value="light">Light</option>
-                <option value="dark">Dark</option>
-                <option value="glass">Glass</option>
-                <option value="forest">Forest</option>
-                <option value="sea">Sea</option>
-                <option value="summer">Summer</option>
-                <option value="2d">2D</option>
-                <option value="solarized-light">Solarized Light</option>
-                <option value="solarized-dark">Solarized Dark</option>
-                <option value="monokai">Monokai</option>
-                <option value="pastel">Pastel</option>
-                <option value="minimal">Minimal</option>
-                <option value="coffee">Coffee</option>
-                <option value="sakura">Sakura</option>
-                <option value="forest-night">Forest Night</option>
-                <option value="retro80s">Retro 80s</option>
-                <option value="space">Space</option>
-                <option value="vintage">Vintage</option>
-            </select>
+    </nav>
+
+    <!-- Contenu principal -->
+    <div class="flex h-full">
+        <!-- Sidebar -->
+        <div class="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
+            <div class="flex-1 flex flex-col min-h-0 bg-surface border-r border-border">
+                <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
+                    <nav class="mt-5 flex-1 px-2 space-y-1">
+                        <a href="{{ route('home') }}" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md text-text hover:bg-primary hover:text-white transition-colors">
+                            🏠 Accueil
+                        </a>
+                        <a href="{{ route('components-docs') }}" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md text-text hover:bg-primary hover:text-white transition-colors">
+                            📚 Documentation
+                        </a>
+                        <a href="{{ route('themes-manager') }}" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md text-text hover:bg-primary hover:text-white transition-colors">
+                            🎨 Gestionnaire de Thèmes
+                        </a>
+                        <a href="{{ route('themes-showcase') }}" class="group flex items-center px-2 py-2 text-sm font-medium rounded-md text-text hover:bg-primary hover:text-white transition-colors">
+                            🌈 Showcase des Thèmes
+                        </a>
+                    </nav>
+                </div>
+            </div>
         </div>
-    </header>
-    <!-- Hero -->
-    <section class="bg-blue-50 py-12 px-4 text-center border-b border-blue-100">
-        <h1 class="text-4xl font-bold mb-2 text-blue-700">LarappeUI</h1>
-        <p class="text-lg text-blue-900 mb-6">Une collection de composants UI inspirés de FrappeUI pour Laravel 12+ & TailwindCSS</p>
-        <a href="#install" class="inline-block bg-blue-600 text-white px-6 py-2 rounded shadow hover:bg-blue-700 transition">Installer maintenant</a>
-    </section>
-    <!-- Main Content -->
-    <main class="flex-1 w-full max-w-7xl mx-auto py-10 px-4">
-        @yield('content')
-    </main>
-    <!-- Footer -->
-    <footer class="w-full bg-white border-t border-gray-200 py-6 mt-10 text-center text-sm text-gray-500">
-        <div class="mb-2">
-            <a href="https://github.com/martin-lechene/LarappeUI" target="_blank" class="hover:text-blue-600 underline">Github</a> |
-            <a href="https://linkedin.com/in/martin-lechene/" target="_blank" class="hover:text-blue-600 underline">LinkedIn</a>
+
+        <!-- Contenu principal -->
+        <div class="md:pl-64 flex flex-col flex-1">
+            <main class="flex-1">
+                @yield('content')
+            </main>
         </div>
-        <div>&copy; {{ date('Y') }} LarappeUI. Inspiré par <a href="https://ui.frappe.io/" class="underline hover:text-blue-600" target="_blank">FrappeUI</a>.</div>
-    </footer>
+    </div>
+
+    <!-- Scripts -->
+    @stack('scripts')
 </body>
 </html> 
