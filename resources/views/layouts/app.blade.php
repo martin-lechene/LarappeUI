@@ -140,7 +140,18 @@
         { key: '2d', name: '2D', class: 'theme-2d', description: 'Thème 2D avec des couleurs vives et géométriques' },
         { key: 'retro', name: 'Retro', class: 'theme-retro', description: 'Thème rétro avec des couleurs des années 80' },
         { key: 'cyberpunk', name: 'Cyberpunk', class: 'theme-cyberpunk', description: 'Thème cyberpunk futuriste' },
-        { key: 'pastel', name: 'Pastel', class: 'theme-pastel', description: 'Thème pastel doux et apaisant' }
+        { key: 'pastel', name: 'Pastel', class: 'theme-pastel', description: 'Thème pastel doux et apaisant' },
+        { key: 'forest-night', name: 'Forest Night', class: 'theme-forest-night', description: 'Thème forestier nocturne avec des tons verts' },
+        { key: 'sakura', name: 'Sakura', class: 'theme-sakura', description: 'Thème sakura avec des couleurs roses et pastel' },
+        { key: 'summer', name: 'Summer', class: 'theme-summer', description: 'Thème estival avec des couleurs chaudes et lumineuses' },
+        { key: 'retro80s', name: 'Retro 80s', class: 'theme-retro80s', description: 'Thème rétro avec des couleurs des années 80' },
+        { key: 'space', name: 'Space', class: 'theme-space', description: 'Thème spatial mystérieux avec des tons bleus' },
+        { key: 'coffee', name: 'Coffee', class: 'theme-coffee', description: 'Thème café chaleureux avec des tons bruns' },
+        { key: 'vintage', name: 'Vintage', class: 'theme-vintage', description: 'Thème vintage classique avec des tons marrons' },
+        { key: 'monokai', name: 'Monokai', class: 'theme-monokai', description: 'Thème Monokai pour développeurs' },
+        { key: 'solarized-light', name: 'Solarized Light', class: 'theme-solarized-light', description: 'Thème Solarized clair' },
+        { key: 'solarized-dark', name: 'Solarized Dark', class: 'theme-solarized-dark', description: 'Thème Solarized sombre' },
+        { key: 'professional', name: 'Professional', class: 'theme-professional', description: 'Thème professionnel avec des couleurs sobres' }
     ]
 }" x-init="
     // Initialiser le thème au chargement
@@ -158,17 +169,17 @@
     });
 ">
     <!-- Sidebar -->
-    <div class="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform transition-transform duration-300"
+    <div class="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transition-transform duration-300 transform"
          :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'">
 
         <!-- Header -->
-        <div class="flex items-center justify-between p-4 border-b">
+        <div class="flex justify-between items-center p-4 border-b">
             <h1 class="text-xl font-bold text-gray-900">
-                <a href="{{ route('home') }}" class="hover:text-primary transition-colors">
+                <a href="{{ route('home') }}" class="transition-colors hover:text-primary">
                     🎨 Component Library
                 </a>
             </h1>
-            <button @click="sidebarOpen = false" class="lg:hidden p-2 rounded-md hover:bg-gray-100">
+            <button @click="sidebarOpen = false" class="p-2 rounded-md lg:hidden hover:bg-gray-100">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
@@ -181,8 +192,8 @@
                 <input type="text"
                        x-model="searchQuery"
                        placeholder="Rechercher un composant..."
-                       class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                <svg class="absolute left-3 top-2.5 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                       class="py-2 pr-4 pl-10 w-full rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                <svg class="absolute top-2.5 left-3 w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                 </svg>
             </div>
@@ -190,7 +201,7 @@
 
         <!-- Theme Selector -->
         <div class="p-4 border-b">
-            <label class="block text-sm font-medium text-gray-700 mb-2">Thème</label>
+            <label class="block mb-2 text-sm font-medium text-gray-700">Thème</label>
             <select x-model="currentTheme"
                     @change="
                         if (window.ThemeManager) {
@@ -198,7 +209,7 @@
                         }
                     "
                     data-theme-selector
-                    class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    class="px-3 py-2 w-full rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                 <template x-for="theme in themes" :key="theme.key">
                     <option :value="theme.key" x-text="theme.name"></option>
                 </template>
@@ -206,30 +217,30 @@
         </div>
 
         <!-- Navigation -->
-        <nav class="flex-1 overflow-y-auto p-4">
+        <nav class="overflow-y-auto flex-1 p-4">
             <div class="mb-6">
-                <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Navigation</h3>
+                <h3 class="mb-3 text-xs font-semibold tracking-wider text-gray-500 uppercase">Navigation</h3>
                 <ul class="space-y-1">
                     <li>
-                        <a href="{{ route('home') }}" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                        <a href="{{ route('home') }}" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md transition-colors hover:bg-gray-100 hover:text-gray-900">
                             <span class="mr-3">🏠</span>
                             <span>Accueil</span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('components-docs') }}" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                        <a href="{{ route('components-docs') }}" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md transition-colors hover:bg-gray-100 hover:text-gray-900">
                             <span class="mr-3">📚</span>
                             <span>Documentation</span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('themes-manager') }}" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                        <a href="{{ route('themes-manager') }}" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md transition-colors hover:bg-gray-100 hover:text-gray-900">
                             <span class="mr-3">🎨</span>
                             <span>Gestionnaire de Thèmes</span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('themes-showcase') }}" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                        <a href="{{ route('themes-showcase') }}" class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md transition-colors hover:bg-gray-100 hover:text-gray-900">
                             <span class="mr-3">🌈</span>
                             <span>Showcase des Thèmes</span>
                         </a>
@@ -241,12 +252,12 @@
             <div x-show="$store.route.current.includes('components-docs')" class="mb-6">
                 <template x-for="category in ['Basic', 'Form', 'Navigation', 'Data']" :key="category">
                     <div class="mb-6">
-                        <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3" x-text="category"></h3>
+                        <h3 class="mb-3 text-xs font-semibold tracking-wider text-gray-500 uppercase" x-text="category"></h3>
                         <ul class="space-y-1">
                             <template x-for="component in components.filter(c => c.category === category && c.name.toLowerCase().includes(searchQuery.toLowerCase()))" :key="component.name">
                                 <li>
                                     <a :href="'/components-docs/' + component.path"
-                                       class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                                       class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md transition-colors hover:bg-gray-100 hover:text-gray-900">
                                         <span class="mr-3" x-text="component.icon"></span>
                                         <span x-text="component.name"></span>
                                     </a>
@@ -262,8 +273,8 @@
     <!-- Main Content -->
     <div class="lg:pl-64">
         <!-- Mobile Header -->
-        <div class="lg:hidden bg-white shadow-sm border-b">
-            <div class="flex items-center justify-between px-4 py-3">
+        <div class="bg-white border-b shadow-sm lg:hidden">
+            <div class="flex justify-between items-center px-4 py-3">
                 <h1 class="text-lg font-semibold text-gray-900">🎨 Component Library</h1>
                 <button @click="sidebarOpen = true" class="p-2 rounded-md hover:bg-gray-100">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -275,7 +286,7 @@
 
         <!-- Content -->
         <div class="p-6">
-            <div class="max-w-7xl mx-auto">
+            <div class="mx-auto max-w-7xl">
                 @yield('content')
             </div>
         </div>
