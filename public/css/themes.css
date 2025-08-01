@@ -524,8 +524,6 @@ body {
     background-color: var(--color-primary) !important;
 }
 
-
-
 .theme-light .bg-gray-100,
 .theme-dark .bg-gray-100,
 .theme-pro .bg-gray-100,
@@ -640,8 +638,6 @@ body {
 .theme-solarized-dark .bg-gray-100 {
     background-color: var(--color-secondary) !important;
 }
-
-
 
 .theme-light .bg-red-600,
 .theme-dark .bg-red-600,
@@ -758,8 +754,6 @@ body {
     background-color: var(--color-danger) !important;
 }
 
-
-
 .theme-light .bg-green-600,
 .theme-dark .bg-green-600,
 .theme-pro .bg-green-600,
@@ -874,8 +868,6 @@ body {
 .theme-solarized-dark .bg-green-600 {
     background-color: var(--color-success) !important;
 }
-
-
 
 .theme-light .text-gray-900,
 .theme-dark .text-gray-900,
@@ -992,8 +984,6 @@ body {
     color: var(--color-text) !important;
 }
 
-
-
 .theme-light .text-gray-600,
 .theme-dark .text-gray-600,
 .theme-pro .text-gray-600,
@@ -1108,8 +1098,6 @@ body {
 .theme-solarized-dark .text-gray-600 {
     color: var(--color-textSecondary) !important;
 }
-
-
 
 .theme-light .border-gray-300,
 .theme-dark .border-gray-300,
@@ -1226,8 +1214,6 @@ body {
     border-color: var(--color-border) !important;
 }
 
-
-
 .theme-light .bg-white,
 .theme-dark .bg-white,
 .theme-pro .bg-white,
@@ -1342,8 +1328,6 @@ body {
 .theme-solarized-dark .bg-white {
     background-color: var(--color-surface) !important;
 }
-
-
 
 /* Classes utilitaires avec !important pour écraser Tailwind */
 .bg-primary {
@@ -1627,8 +1611,6 @@ body {
     background-color: var(--color-surface) !important;
 }
 
-
-
 /* Règles pour les champs de saisie */
 .theme-light input[type="text"],
 .theme-dark input[type="text"],
@@ -1786,8 +1768,6 @@ body {
     color: var(--color-text) !important;
 }
 
-
-
 /* Règles pour les bordures des cartes */
 .theme-light .border,
 .theme-dark .border,
@@ -1923,8 +1903,6 @@ body {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
 }
 
-
-
 /* Règles pour les icônes SVG */
 .theme-light svg,
 .theme-dark svg,
@@ -2059,8 +2037,6 @@ body {
 .theme-solarized-dark .text-blue-500 {
     color: var(--color-primary) !important;
 }
-
-
 
 /* Règles pour les états de survol des cartes */
 .theme-light .hover\:shadow-md:hover,
@@ -2198,8 +2174,6 @@ body {
     --tw-ring-color: var(--color-primary) !important;
 }
 
-
-
 .theme-light .ring-blue-500,
 .theme-dark .ring-blue-500,
 .theme-pro .ring-blue-500,
@@ -2314,8 +2288,6 @@ body {
 .theme-solarized-dark .ring-blue-500 {
     --tw-ring-color: var(--color-primary) !important;
 }
-
-
 
 /* Règles pour les éléments de navigation */
 .theme-light .bg-gray-100,
@@ -2433,8 +2405,6 @@ body {
     background-color: var(--color-secondary) !important;
 }
 
-
-
 /* Règles pour les icônes colorées dans la navigation */
 .theme-light .text-green-500,
 .theme-dark .text-green-500,
@@ -2551,8 +2521,6 @@ body {
     color: var(--color-success) !important;
 }
 
-
-
 .theme-light .text-red-500,
 .theme-dark .text-red-500,
 .theme-pro .text-red-500,
@@ -2668,8 +2636,6 @@ body {
     color: var(--color-danger) !important;
 }
 
-
-
 .theme-light .text-yellow-500,
 .theme-dark .text-yellow-500,
 .theme-pro .text-yellow-500,
@@ -2784,8 +2750,6 @@ body {
 .theme-solarized-dark .text-yellow-500 {
     color: var(--color-warning) !important;
 }
-
-
 
 /* Règles pour les éléments de la sidebar */
 .theme-light .border-gray-200,
@@ -2903,8 +2867,6 @@ body {
     border-color: var(--color-border) !important;
 }
 
-
-
 /* Règles pour les textes de la sidebar */
 .theme-light .text-gray-700,
 .theme-dark .text-gray-700,
@@ -3021,8 +2983,6 @@ body {
     color: var(--color-text) !important;
 }
 
-
-
 .theme-light .text-gray-500,
 .theme-dark .text-gray-500,
 .theme-pro .text-gray-500,
@@ -3137,8 +3097,6 @@ body {
 .theme-solarized-dark .text-gray-500 {
     color: var(--color-textSecondary) !important;
 }
-
-
 
 /* Règles pour les éléments de focus et hover de la navigation */
 .theme-light .hover\:bg-gray-100:hover,
@@ -3294,8 +3252,6 @@ body {
     background-color: var(--color-surface) !important;
 }
 
-
-
 /* Règles pour les ombres de la sidebar */
 .theme-light .shadow-lg,
 .theme-dark .shadow-lg,
@@ -3313,106 +3269,129 @@ body {
 .theme-cyberpunk .shadow-lg,
 /* Règles pour shadow-lg */
 .theme-light .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-dark .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-pro .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-enterprise .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-glass .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-neon .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-forest .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-forest-night .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-sea .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-sakura .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-summer .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-sunset .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-modern .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-minimal .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-2d .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-retro .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-retro80s .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-cyberpunk .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-pastel .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-space .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-coffee .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-vintage .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-monokai .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-solarized-light .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
 
 .theme-solarized-dark .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
-
-
 
 /* Règles pour les couleurs de fond supplémentaires */
 .theme-light .bg-blue-100,
@@ -3431,106 +3410,129 @@ body {
 .theme-cyberpunk .bg-blue-100,
 /* Règles pour bg-blue-100 */
 .theme-light .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-dark .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-pro .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-enterprise .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-glass .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-neon .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-forest .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-forest-night .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-sea .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-sakura .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-summer .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-sunset .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-modern .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-minimal .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-2d .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-retro .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-retro80s .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-cyberpunk .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-pastel .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-space .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-coffee .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-vintage .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-monokai .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-solarized-light .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
 
 .theme-solarized-dark .bg-blue-100 {
-    background-color: var(--color-primary) !important; opacity: 0.1;
+    background-color: var(--color-primary) !important;
+    opacity: 0.1;
 }
-
-
 
 .theme-light .bg-red-100,
 .theme-dark .bg-red-100,
@@ -3548,106 +3550,129 @@ body {
 .theme-cyberpunk .bg-red-100,
 /* Règles pour bg-red-100 */
 .theme-light .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-dark .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-pro .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-enterprise .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-glass .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-neon .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-forest .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-forest-night .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-sea .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-sakura .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-summer .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-sunset .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-modern .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-minimal .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-2d .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-retro .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-retro80s .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-cyberpunk .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-pastel .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-space .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-coffee .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-vintage .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-monokai .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-solarized-light .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
 
 .theme-solarized-dark .bg-red-100 {
-    background-color: var(--color-danger) !important; opacity: 0.1;
+    background-color: var(--color-danger) !important;
+    opacity: 0.1;
 }
-
-
 
 .theme-light .bg-green-100,
 .theme-dark .bg-green-100,
@@ -3665,106 +3690,129 @@ body {
 .theme-cyberpunk .bg-green-100,
 /* Règles pour bg-green-100 */
 .theme-light .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-dark .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-pro .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-enterprise .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-glass .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-neon .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-forest .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-forest-night .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-sea .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-sakura .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-summer .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-sunset .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-modern .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-minimal .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-2d .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-retro .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-retro80s .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-cyberpunk .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-pastel .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-space .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-coffee .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-vintage .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-monokai .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-solarized-light .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
 
 .theme-solarized-dark .bg-green-100 {
-    background-color: var(--color-success) !important; opacity: 0.1;
+    background-color: var(--color-success) !important;
+    opacity: 0.1;
 }
-
-
 
 .theme-light .bg-yellow-100,
 .theme-dark .bg-yellow-100,
@@ -3782,106 +3830,129 @@ body {
 .theme-cyberpunk .bg-yellow-100,
 /* Règles pour bg-yellow-100 */
 .theme-light .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-dark .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-pro .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-enterprise .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-glass .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-neon .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-forest .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-forest-night .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-sea .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-sakura .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-summer .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-sunset .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-modern .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-minimal .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-2d .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-retro .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-retro80s .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-cyberpunk .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-pastel .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-space .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-coffee .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-vintage .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-monokai .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-solarized-light .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-solarized-dark .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
-
-
 
 /* Règles pour les couleurs de texte supplémentaires */
 .theme-light .text-blue-800,
@@ -3999,8 +4070,6 @@ body {
     color: var(--color-primary) !important;
 }
 
-
-
 .theme-light .text-red-800,
 .theme-dark .text-red-800,
 .theme-pro .text-red-800,
@@ -4115,8 +4184,6 @@ body {
 .theme-solarized-dark .text-red-800 {
     color: var(--color-danger) !important;
 }
-
-
 
 .theme-light .text-green-800,
 .theme-dark .text-green-800,
@@ -4233,8 +4300,6 @@ body {
     color: var(--color-success) !important;
 }
 
-
-
 .theme-light .text-yellow-800,
 .theme-dark .text-yellow-800,
 .theme-pro .text-yellow-800,
@@ -4350,8 +4415,6 @@ body {
     color: var(--color-warning) !important;
 }
 
-
-
 .theme-light .text-gray-800,
 .theme-dark .text-gray-800,
 .theme-pro .text-gray-800,
@@ -4466,8 +4529,6 @@ body {
 .theme-solarized-dark .text-gray-800 {
     color: var(--color-text) !important;
 }
-
-
 
 /* Règles pour les bordures colorées */
 .theme-light .border-red-500,
@@ -4585,8 +4646,6 @@ body {
     border-color: var(--color-danger) !important;
 }
 
-
-
 .theme-light .border-blue-500,
 .theme-dark .border-blue-500,
 .theme-pro .border-blue-500,
@@ -4702,8 +4761,6 @@ body {
     border-color: var(--color-primary) !important;
 }
 
-
-
 /* Règles pour les états de focus */
 .theme-light .focus\:border-blue-500:focus,
 .theme-dark .focus\:border-blue-500:focus,
@@ -4740,106 +4797,129 @@ body {
 .theme-cyberpunk .shadow-xl,
 /* Règles pour shadow-xl */
 .theme-light .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-dark .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-pro .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-enterprise .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-glass .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-neon .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-forest .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-forest-night .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-sea .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-sakura .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-summer .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-sunset .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-modern .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-minimal .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-2d .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-retro .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-retro80s .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-cyberpunk .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-pastel .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-space .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-coffee .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-vintage .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-monokai .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-solarized-light .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-solarized-dark .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
-
-
 
 /* Règles pour les transitions */
 .theme-light .transition-all,
@@ -4858,106 +4938,154 @@ body {
 .theme-cyberpunk .transition-all,
 /* Règles pour transition-all */
 .theme-light .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-dark .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-pro .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-enterprise .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-glass .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-neon .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-forest .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-forest-night .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-sea .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-sakura .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-summer .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-sunset .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-modern .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-minimal .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-2d .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-retro .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-retro80s .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-cyberpunk .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-pastel .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-space .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-coffee .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-vintage .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-monokai .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-solarized-light .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-solarized-dark .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
-
-
 
 /* Règles pour les effets de hover supplémentaires */
 .theme-light .hover\:scale-105:hover,
@@ -5131,8 +5259,6 @@ body {
 .theme-solarized-dark .bg-gray-50 {
     background-color: var(--color-surface) !important;
 }
-
-
 
 /* Règles pour les éléments de focus supplémentaires */
 .theme-light .focus\:ring-opacity-50:focus,
@@ -5367,8 +5493,6 @@ body {
     animation: spin 1s linear infinite !important;
 }
 
-
-
 @keyframes spin {
     from {
         transform: rotate(0deg);
@@ -5494,8 +5618,6 @@ body {
     color: var(--color-textSecondary) !important;
 }
 
-
-
 .theme-light .text-gray-600,
 .theme-dark .text-gray-600,
 .theme-pro .text-gray-600,
@@ -5610,8 +5732,6 @@ body {
 .theme-solarized-dark .text-gray-600 {
     color: var(--color-textSecondary) !important;
 }
-
-
 
 /* Règles pour les éléments de hover supplémentaires */
 .theme-light .hover\:text-gray-600:hover,
@@ -5732,106 +5852,129 @@ body {
 .theme-cyberpunk .bg-gray-200,
 /* Règles pour bg-gray-200 */
 .theme-light .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-dark .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-pro .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-enterprise .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-glass .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-neon .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-forest .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-forest-night .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-sea .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-sakura .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-summer .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-sunset .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-modern .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-minimal .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-2d .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-retro .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-retro80s .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-cyberpunk .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-pastel .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-space .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-coffee .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-vintage .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-monokai .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-solarized-light .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
 
 .theme-solarized-dark .bg-gray-200 {
-    background-color: var(--color-secondary) !important; opacity: 0.2;
+    background-color: var(--color-secondary) !important;
+    opacity: 0.2;
 }
-
-
 
 /* Règles pour les éléments de texte supplémentaires */
 .theme-light .text-xs,
@@ -5850,106 +5993,129 @@ body {
 .theme-cyberpunk .text-xs,
 /* Règles pour text-xs */
 .theme-light .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-dark .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-pro .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-enterprise .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-glass .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-neon .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-forest .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-forest-night .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-sea .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-sakura .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-summer .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-sunset .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-modern .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-minimal .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-2d .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-retro .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-retro80s .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-cyberpunk .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-pastel .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-space .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-coffee .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-vintage .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-monokai .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-solarized-light .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
 
 .theme-solarized-dark .text-xs {
-    font-size: 0.75rem !important; line-height: 1rem !important;
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
 }
-
-
 
 .theme-light .text-sm,
 .theme-dark .text-sm,
@@ -5967,106 +6133,129 @@ body {
 .theme-cyberpunk .text-sm,
 /* Règles pour text-sm */
 .theme-light .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-dark .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-pro .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-enterprise .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-glass .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-neon .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-forest .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-forest-night .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-sea .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-sakura .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-summer .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-sunset .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-modern .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-minimal .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-2d .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-retro .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-retro80s .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-cyberpunk .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-pastel .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-space .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-coffee .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-vintage .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-monokai .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-solarized-light .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
 
 .theme-solarized-dark .text-sm {
-    font-size: 0.875rem !important; line-height: 1.25rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
 }
-
-
 
 /* Règles pour les éléments de padding supplémentaires */
 .theme-light .p-3,
@@ -6184,8 +6373,6 @@ body {
     padding: 0.75rem !important;
 }
 
-
-
 .theme-light .p-6,
 .theme-dark .p-6,
 .theme-pro .p-6,
@@ -6300,8 +6487,6 @@ body {
 .theme-solarized-dark .p-6 {
     padding: 1.5rem !important;
 }
-
-
 
 .theme-light .p-8,
 .theme-dark .p-8,
@@ -6418,8 +6603,6 @@ body {
     padding: 2rem !important;
 }
 
-
-
 .theme-light .p-10,
 .theme-dark .p-10,
 .theme-pro .p-10,
@@ -6534,8 +6717,6 @@ body {
 .theme-solarized-dark .p-10 {
     padding: 2.5rem !important;
 }
-
-
 
 /* Règles pour les éléments de bordure supplémentaires */
 .theme-light .border-0,
@@ -6652,8 +6833,6 @@ body {
 .theme-solarized-dark .border-0 {
     border-width: 0px !important;
 }
-
-
 
 /* Styles spécifiques pour le thème 2D style Mario */
 .theme-2d * {
@@ -6802,113 +6981,134 @@ body {
     background-color: var(--color-secondary) !important;
 }
 
-
-
 .theme-2d .shadow-sm,
 .theme-2d .shadow-md,
 .theme-2d .shadow-lg,
 /* Règles pour shadow-xl */
 .theme-light .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-dark .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-pro .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-enterprise .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-glass .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-neon .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-forest .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-forest-night .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-sea .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-sakura .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-summer .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-sunset .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-modern .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-minimal .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-2d .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-retro .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-retro80s .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-cyberpunk .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-pastel .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-space .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-coffee .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-vintage .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-monokai .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-solarized-light .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-solarized-dark .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
-
-
 
 .theme-2d .hover\:shadow-md:hover {
     box-shadow: 6px 0 0 var(--color-border), 0 6px 0 var(--color-border),
@@ -7056,8 +7256,6 @@ body {
     background-color: var(--color-surface) !important;
 }
 
-
-
 /* Styles pour la navigation 2D */
 .theme-2d nav,
 /* Règles pour bg-gray-100 */
@@ -7160,8 +7358,6 @@ body {
 .theme-solarized-dark .bg-gray-100 {
     background-color: var(--color-secondary) !important;
 }
-
-
 
 /* Styles pour les icônes 2D */
 .theme-2d svg {
@@ -7281,8 +7477,6 @@ body {
     color: var(--color-text) !important;
 }
 
-
-
 /* Styles spécifiques pour le thème Glass avec effet glassmorphism */
 .theme-glass * {
     backdrop-filter: blur(10px) !important;
@@ -7381,106 +7575,129 @@ body {
 .theme-glass .shadow-lg,
 /* Règles pour shadow-xl */
 .theme-light .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-dark .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-pro .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-enterprise .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-glass .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-neon .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-forest .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-forest-night .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-sea .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-sakura .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-summer .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-sunset .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-modern .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-minimal .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-2d .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-retro .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-retro80s .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-cyberpunk .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-pastel .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-space .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-coffee .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-vintage .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-monokai .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-solarized-light .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
 
 .theme-solarized-dark .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
-
-
 
 .theme-glass .hover\:shadow-md:hover {
     box-shadow: 0 16px 64px rgba(0, 0, 0, 0.15),
@@ -7605,8 +7822,6 @@ body {
     color: var(--color-textSecondary) !important;
 }
 
-
-
 .theme-glass .text-blue-500,
 /* Règles pour text-blue-800 */
 .theme-light .text-blue-800 {
@@ -7708,8 +7923,6 @@ body {
 .theme-solarized-dark .text-blue-800 {
     color: var(--color-primary) !important;
 }
-
-
 
 .theme-glass .text-red-500,
 /* Règles pour text-red-800 */
@@ -7813,8 +8026,6 @@ body {
     color: var(--color-danger) !important;
 }
 
-
-
 .theme-glass .text-green-500,
 /* Règles pour text-green-800 */
 .theme-light .text-green-800 {
@@ -7917,8 +8128,6 @@ body {
     color: var(--color-success) !important;
 }
 
-
-
 .theme-glass .text-yellow-500,
 /* Règles pour text-yellow-800 */
 .theme-light .text-yellow-800 {
@@ -8020,8 +8229,6 @@ body {
 .theme-solarized-dark .text-yellow-800 {
     color: var(--color-warning) !important;
 }
-
-
 
 .theme-glass .focus\:ring-2:focus,
 .theme-glass .focus\:ring-blue-500:focus {
@@ -8154,113 +8361,134 @@ body {
     background-color: var(--color-surface) !important;
 }
 
-
-
 .theme-glass .bg-blue-100,
 .theme-glass .bg-red-100,
 .theme-glass .bg-green-100,
 /* Règles pour bg-yellow-100 */
 .theme-light .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-dark .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-pro .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-enterprise .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-glass .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-neon .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-forest .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-forest-night .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-sea .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-sakura .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-summer .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-sunset .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-modern .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-minimal .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-2d .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-retro .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-retro80s .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-cyberpunk .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-pastel .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-space .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-coffee .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-vintage .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-monokai .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-solarized-light .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
 
 .theme-solarized-dark .bg-yellow-100 {
-    background-color: var(--color-warning) !important; opacity: 0.1;
+    background-color: var(--color-warning) !important;
+    opacity: 0.1;
 }
-
-
 
 .theme-glass .border-gray-300,
 /* Règles pour border-gray-200 */
@@ -8364,8 +8592,6 @@ body {
     border-color: var(--color-border) !important;
 }
 
-
-
 .theme-glass .ring-2,
 /* Règles pour ring-blue-500 */
 .theme-light .ring-blue-500 {
@@ -8468,114 +8694,160 @@ body {
     --tw-ring-color: var(--color-primary) !important;
 }
 
-
-
 .theme-glass .focus\:ring-opacity-50:focus {
     --tw-ring-opacity: 0.5 !important;
 }
 
 /* Règles pour transition-all */
 .theme-light .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-dark .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-pro .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-enterprise .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-glass .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-neon .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-forest .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-forest-night .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-sea .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-sakura .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-summer .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-sunset .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-modern .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-minimal .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-2d .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-retro .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-retro80s .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-cyberpunk .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-pastel .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-space .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-coffee .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-vintage .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-monokai .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-solarized-light .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
 
 .theme-solarized-dark .transition-all {
-    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
 }
-
-
 
 .theme-glass .hover\:scale-105:hover {
     transform: scale(1.02) !important;
@@ -8716,8 +8988,6 @@ body {
     box-shadow: 0 0 #0000 !important;
 }
 
-
-
 /* Règles pour les éléments de durée de transition */
 .theme-light .duration-200,
 .theme-dark .duration-200,
@@ -8833,5 +9103,3 @@ body {
 .theme-solarized-dark .duration-200 {
     transition-duration: 200ms !important;
 }
-
-
