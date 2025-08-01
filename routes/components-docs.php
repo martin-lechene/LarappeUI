@@ -33,6 +33,11 @@ Route::get('/test-system', function () {
     return view('test-system');
 })->name('test-system');
 
+// Route pour le test des thèmes
+Route::get('/test-themes', function () {
+    return view('test-themes');
+})->name('test-themes');
+
 // Route pour la page d'accueil
 Route::get('/', function () {
     return view('welcome');
