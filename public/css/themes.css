@@ -78,18 +78,18 @@
 }
 
 .theme-glass {
-    --color-primary: rgba(59, 130, 246, 0.9);
-    --color-secondary: rgba(107, 114, 128, 0.9);
-    --color-success: rgba(16, 185, 129, 0.9);
-    --color-warning: rgba(245, 158, 11, 0.9);
-    --color-danger: rgba(239, 68, 68, 0.9);
-    --color-info: rgba(6, 182, 212, 0.9);
-    --color-background: rgba(255, 255, 255, 0.05);
-    --color-surface: rgba(255, 255, 255, 0.15);
-    --color-text: #ffffff;
-    --color-textSecondary: rgba(255, 255, 255, 0.8);
-    --color-border: rgba(255, 255, 255, 0.2);
-    --color-accent: rgba(245, 158, 66, 0.9);
+    --color-primary: rgba(59, 130, 246, 0.8);
+    --color-secondary: rgba(107, 114, 128, 0.8);
+    --color-success: rgba(16, 185, 129, 0.8);
+    --color-warning: rgba(245, 158, 11, 0.8);
+    --color-danger: rgba(239, 68, 68, 0.8);
+    --color-info: rgba(6, 182, 212, 0.8);
+    --color-background: rgba(255, 255, 255, 0.1);
+    --color-surface: rgba(249, 250, 251, 0.1);
+    --color-text: #111827;
+    --color-textSecondary: #6b7280;
+    --color-border: rgba(229, 231, 235, 0.3);
+    --color-accent: rgba(245, 158, 66, 0.8);
 }
 
 .theme-neon {
@@ -122,6 +122,21 @@
     --color-accent: #16a34a;
 }
 
+.theme-forest-night {
+    --color-primary: #10b981;
+    --color-secondary: #6b7280;
+    --color-success: #34d399;
+    --color-warning: #fbbf24;
+    --color-danger: #f87171;
+    --color-info: #22d3ee;
+    --color-background: #0f172a;
+    --color-surface: #1e293b;
+    --color-text: #f1f5f9;
+    --color-textSecondary: #cbd5e1;
+    --color-border: #334155;
+    --color-accent: #059669;
+}
+
 .theme-sea {
     --color-primary: #0ea5e9;
     --color-secondary: #64748b;
@@ -135,6 +150,36 @@
     --color-textSecondary: #0f766e;
     --color-border: #bae6fd;
     --color-accent: #0284c7;
+}
+
+.theme-sakura {
+    --color-primary: #ec4899;
+    --color-secondary: #f472b6;
+    --color-success: #10b981;
+    --color-warning: #fbbf24;
+    --color-danger: #f87171;
+    --color-info: #06b6d4;
+    --color-background: #fdf2f8;
+    --color-surface: #fce7f3;
+    --color-text: #831843;
+    --color-textSecondary: #be185d;
+    --color-border: #fbcfe8;
+    --color-accent: #db2777;
+}
+
+.theme-summer {
+    --color-primary: #f59e0b;
+    --color-secondary: #fbbf24;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #06b6d4;
+    --color-background: #fffbeb;
+    --color-surface: #fef3c7;
+    --color-text: #92400e;
+    --color-textSecondary: #b45309;
+    --color-border: #fed7aa;
+    --color-accent: #d97706;
 }
 
 .theme-sunset {
@@ -193,7 +238,7 @@
     --color-surface: #f8f9fa;
     --color-text: #2d3436;
     --color-textSecondary: #636e72;
-    --color-border: #000000;
+    --color-border: #ddd;
     --color-accent: #ffa502;
 }
 
@@ -210,6 +255,21 @@
     --color-textSecondary: #636e72;
     --color-border: #ddd;
     --color-accent: #ffa502;
+}
+
+.theme-retro80s {
+    --color-primary: #ff0080;
+    --color-secondary: #00ffff;
+    --color-success: #00ff00;
+    --color-warning: #ffff00;
+    --color-danger: #ff0000;
+    --color-info: #0000ff;
+    --color-background: #000000;
+    --color-surface: #1a1a1a;
+    --color-text: #ffffff;
+    --color-textSecondary: #cccccc;
+    --color-border: #333333;
+    --color-accent: #ff6600;
 }
 
 .theme-cyberpunk {
@@ -242,6 +302,96 @@
     --color-accent: #ffcccb;
 }
 
+.theme-space {
+    --color-primary: #6366f1;
+    --color-secondary: #8b5cf6;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #06b6d4;
+    --color-background: #0f172a;
+    --color-surface: #1e293b;
+    --color-text: #f1f5f9;
+    --color-textSecondary: #cbd5e1;
+    --color-border: #334155;
+    --color-accent: #a855f7;
+}
+
+.theme-coffee {
+    --color-primary: #92400e;
+    --color-secondary: #a16207;
+    --color-success: #059669;
+    --color-warning: #d97706;
+    --color-danger: #dc2626;
+    --color-info: #0891b2;
+    --color-background: #fef3c7;
+    --color-surface: #fde68a;
+    --color-text: #451a03;
+    --color-textSecondary: #78350f;
+    --color-border: #fbbf24;
+    --color-accent: #b45309;
+}
+
+.theme-vintage {
+    --color-primary: #8b4513;
+    --color-secondary: #a0522d;
+    --color-success: #228b22;
+    --color-warning: #daa520;
+    --color-danger: #cd5c5c;
+    --color-info: #4682b4;
+    --color-background: #f5f5dc;
+    --color-surface: #faf0e6;
+    --color-text: #2f1b14;
+    --color-textSecondary: #654321;
+    --color-border: #deb887;
+    --color-accent: #d2691e;
+}
+
+.theme-monokai {
+    --color-primary: #f92672;
+    --color-secondary: #a6e22e;
+    --color-success: #a6e22e;
+    --color-warning: #fd971f;
+    --color-danger: #f92672;
+    --color-info: #66d9ef;
+    --color-background: #272822;
+    --color-surface: #3e3d32;
+    --color-text: #f8f8f2;
+    --color-textSecondary: #75715e;
+    --color-border: #75715e;
+    --color-accent: #ae81ff;
+}
+
+.theme-solarized-light {
+    --color-primary: #268bd2;
+    --color-secondary: #586e75;
+    --color-success: #859900;
+    --color-warning: #b58900;
+    --color-danger: #dc322f;
+    --color-info: #2aa198;
+    --color-background: #fdf6e3;
+    --color-surface: #eee8d5;
+    --color-text: #586e75;
+    --color-textSecondary: #657b83;
+    --color-border: #93a1a1;
+    --color-accent: #cb4b16;
+}
+
+.theme-solarized-dark {
+    --color-primary: #268bd2;
+    --color-secondary: #839496;
+    --color-success: #859900;
+    --color-warning: #b58900;
+    --color-danger: #dc322f;
+    --color-info: #2aa198;
+    --color-background: #002b36;
+    --color-surface: #073642;
+    --color-text: #839496;
+    --color-textSecondary: #93a1a1;
+    --color-border: #586e75;
+    --color-accent: #cb4b16;
+}
+
 /* Styles de base utilisant les variables CSS */
 body {
     background-color: var(--color-background) !important;
@@ -256,14 +406,24 @@ body {
 .theme-glass .bg-blue-600,
 .theme-neon .bg-blue-600,
 .theme-forest .bg-blue-600,
+.theme-forest-night .bg-blue-600,
 .theme-sea .bg-blue-600,
+.theme-sakura .bg-blue-600,
+.theme-summer .bg-blue-600,
 .theme-sunset .bg-blue-600,
 .theme-modern .bg-blue-600,
 .theme-minimal .bg-blue-600,
 .theme-2d .bg-blue-600,
 .theme-retro .bg-blue-600,
+.theme-retro80s .bg-blue-600,
 .theme-cyberpunk .bg-blue-600,
-.theme-pastel .bg-blue-600 {
+.theme-pastel .bg-blue-600,
+.theme-space .bg-blue-600,
+.theme-coffee .bg-blue-600,
+.theme-vintage .bg-blue-600,
+.theme-monokai .bg-blue-600,
+.theme-solarized-light .bg-blue-600,
+.theme-solarized-dark .bg-blue-600 {
     background-color: var(--color-primary) !important;
 }
 
