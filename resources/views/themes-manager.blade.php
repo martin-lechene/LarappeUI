@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <script src="https://unpkg.com/@alpinejs/persist@3.x.x/dist/cdn.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="{{ asset('js/themes-manager.js') }}"></script>
@@ -49,7 +49,7 @@
     ]
 }" x-init="
     // Load theme from localStorage
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    let savedTheme = localStorage.getItem('theme') || 'light';
     currentTheme = savedTheme;
     if (window.ThemeManager) {
         window.ThemeManager.applyTheme(currentTheme);
