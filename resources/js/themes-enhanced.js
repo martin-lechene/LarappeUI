@@ -1,3 +1,6 @@
+// Ce fichier est maintenant déprécié en faveur de themes-manager.js
+// Les thèmes sont maintenant gérés par window.ThemeManager
+
 export const enhancedThemes = [
   // Thèmes de base
   {
