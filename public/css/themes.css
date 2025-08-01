@@ -2644,3 +2644,305 @@ body {
 .theme-pastel .duration-200 {
     transition-duration: 200ms !important;
 }
+
+/* ===== VARIABLES DE COMPOSANTS ===== */
+
+/* Variables pour les badges */
+.theme-light {
+    --badge-bg-primary: #ededed;
+    --badge-text-primary: #111;
+    --badge-bg-secondary: #f5f5f5;
+    --badge-text-secondary: #888;
+    --badge-bg-danger: #ededed;
+    --badge-text-danger: #111;
+    --badge-bg-success: #ededed;
+    --badge-text-success: #111;
+    --badge-bg-warning: #f3f3f3;
+    --badge-text-warning: #888;
+}
+
+.theme-dark {
+    --badge-bg-primary: #111;
+    --badge-text-primary: #fff;
+    --badge-bg-secondary: #181818;
+    --badge-text-secondary: #fff;
+    --badge-bg-danger: #181818;
+    --badge-text-danger: #fff;
+    --badge-bg-success: #181818;
+    --badge-text-success: #fff;
+    --badge-bg-warning: #181818;
+    --badge-text-warning: #fff;
+}
+
+/* Variables pour les avatars */
+.theme-light {
+    --avatar-bg-gray: #f7f7f7;
+    --avatar-text-gray: #888;
+    --avatar-bg-blue: #ededed;
+    --avatar-text-blue: #111;
+    --avatar-bg-red: #ededed;
+    --avatar-text-red: #111;
+    --avatar-bg-green: #ededed;
+    --avatar-text-green: #111;
+    --avatar-bg-yellow: #f3f3f3;
+    --avatar-text-yellow: #888;
+}
+
+.theme-dark {
+    --avatar-bg-gray: #181818;
+    --avatar-text-gray: #fff;
+    --avatar-bg-blue: #181818;
+    --avatar-text-blue: #fff;
+    --avatar-bg-red: #181818;
+    --avatar-text-red: #fff;
+    --avatar-bg-green: #181818;
+    --avatar-text-green: #fff;
+    --avatar-bg-yellow: #181818;
+    --avatar-text-yellow: #fff;
+}
+
+/* Variables pour les progress bars */
+.theme-light {
+    --progress-bg-blue: #e0e0e0;
+    --progress-bg-green: #e0e0e0;
+    --progress-bg-red: #e0e0e0;
+    --progress-bg-yellow: #e0e0e0;
+    --progress-bg-gray: #bbb;
+}
+
+.theme-dark {
+    --progress-bg-blue: #181818;
+    --progress-bg-green: #181818;
+    --progress-bg-red: #181818;
+    --progress-bg-yellow: #181818;
+    --progress-bg-gray: #181818;
+}
+
+/* Variables pour les spinners */
+.theme-light {
+    --spinner-color-blue: #bbb;
+    --spinner-color-gray: #bbb;
+    --spinner-color-red: #bbb;
+    --spinner-color-green: #bbb;
+    --spinner-color-yellow: #bbb;
+}
+
+.theme-dark {
+    --spinner-color-blue: #fff;
+    --spinner-color-gray: #fff;
+    --spinner-color-red: #fff;
+    --spinner-color-green: #fff;
+    --spinner-color-yellow: #fff;
+}
+
+/* Variables pour les tooltips */
+.theme-light {
+    --tooltip-bg: #111;
+    --tooltip-text: #fff;
+}
+
+.theme-dark {
+    --tooltip-bg: #111;
+    --tooltip-text: #fff;
+}
+
+/* Variables pour les modales */
+.theme-light {
+    --modal-bg: #fff;
+}
+
+.theme-dark {
+    --modal-bg: #111;
+}
+
+/* Variables pour les drawers */
+.theme-light {
+    --drawer-bg: #fff;
+}
+
+.theme-dark {
+    --drawer-bg: #111;
+}
+
+/* Variables pour les sidebars */
+.theme-light {
+    --sidebar-bg: #fff;
+}
+
+.theme-dark {
+    --sidebar-bg: #000;
+}
+
+/* Variables pour les popovers */
+.theme-light {
+    --popover-bg: #fff;
+    --popover-text: #111;
+}
+
+.theme-dark {
+    --popover-bg: #111;
+    --popover-text: #fff;
+}
+
+/* Variables pour les steppers */
+.theme-light {
+    --stepper-active-bg: #bbb;
+    --stepper-inactive-bg: #eaeaea;
+}
+
+.theme-dark {
+    --stepper-active-bg: #181818;
+    --stepper-inactive-bg: #111;
+}
+
+/* Variables pour les timelines */
+.theme-light {
+    --timeline-dot-bg: #bbb;
+    --timeline-dot-active-bg: #e0e0e0;
+}
+
+.theme-dark {
+    --timeline-dot-bg: #181818;
+    --timeline-dot-active-bg: #111;
+}
+
+/* ===== CLASSES UTILITAIRES SUPPLÉMENTAIRES ===== */
+
+/* Classes pour les badges */
+.badge-primary {
+    background-color: var(--badge-bg-primary) !important;
+    color: var(--badge-text-primary) !important;
+}
+
+.badge-secondary {
+    background-color: var(--badge-bg-secondary) !important;
+    color: var(--badge-text-secondary) !important;
+}
+
+.badge-danger {
+    background-color: var(--badge-bg-danger) !important;
+    color: var(--badge-text-danger) !important;
+}
+
+.badge-success {
+    background-color: var(--badge-bg-success) !important;
+    color: var(--badge-text-success) !important;
+}
+
+.badge-warning {
+    background-color: var(--badge-bg-warning) !important;
+    color: var(--badge-text-warning) !important;
+}
+
+/* Classes pour les avatars */
+.avatar-gray {
+    background-color: var(--avatar-bg-gray) !important;
+    color: var(--avatar-text-gray) !important;
+}
+
+.avatar-blue {
+    background-color: var(--avatar-bg-blue) !important;
+    color: var(--avatar-text-blue) !important;
+}
+
+.avatar-red {
+    background-color: var(--avatar-bg-red) !important;
+    color: var(--avatar-text-red) !important;
+}
+
+.avatar-green {
+    background-color: var(--avatar-bg-green) !important;
+    color: var(--avatar-text-green) !important;
+}
+
+.avatar-yellow {
+    background-color: var(--avatar-bg-yellow) !important;
+    color: var(--avatar-text-yellow) !important;
+}
+
+/* Classes pour les progress bars */
+.progress-blue {
+    background-color: var(--progress-bg-blue) !important;
+}
+
+.progress-green {
+    background-color: var(--progress-bg-green) !important;
+}
+
+.progress-red {
+    background-color: var(--progress-bg-red) !important;
+}
+
+.progress-yellow {
+    background-color: var(--progress-bg-yellow) !important;
+}
+
+.progress-gray {
+    background-color: var(--progress-bg-gray) !important;
+}
+
+/* Classes pour les spinners */
+.spinner-blue {
+    color: var(--spinner-color-blue) !important;
+}
+
+.spinner-gray {
+    color: var(--spinner-color-gray) !important;
+}
+
+.spinner-red {
+    color: var(--spinner-color-red) !important;
+}
+
+.spinner-green {
+    color: var(--spinner-color-green) !important;
+}
+
+.spinner-yellow {
+    color: var(--spinner-color-yellow) !important;
+}
+
+/* Classes pour les tooltips */
+.tooltip {
+    background-color: var(--tooltip-bg) !important;
+    color: var(--tooltip-text) !important;
+}
+
+/* Classes pour les modales */
+.modal {
+    background-color: var(--modal-bg) !important;
+}
+
+/* Classes pour les drawers */
+.drawer {
+    background-color: var(--drawer-bg) !important;
+}
+
+/* Classes pour les sidebars */
+.sidebar {
+    background-color: var(--sidebar-bg) !important;
+}
+
+/* Classes pour les popovers */
+.popover {
+    background-color: var(--popover-bg) !important;
+    color: var(--popover-text) !important;
+}
+
+/* Classes pour les steppers */
+.stepper-active {
+    background-color: var(--stepper-active-bg) !important;
+}
+
+.stepper-inactive {
+    background-color: var(--stepper-inactive-bg) !important;
+}
+
+/* Classes pour les timelines */
+.timeline-dot {
+    background-color: var(--timeline-dot-bg) !important;
+}
+
+.timeline-dot-active {
+    background-color: var(--timeline-dot-active-bg) !important;
+}
