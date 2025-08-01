@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
-@section('title', 'Showcase des Thèmes - 23 Thèmes')
+@section('title', 'Showcase des Thèmes - 20 Thèmes')
 
 @section('content')
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <!-- Header -->
     <div class="mb-8">
         <h1 class="text-3xl font-bold text-text mb-2">🎨 Showcase des Thèmes</h1>
-        <p class="text-text-secondary">Découvrez nos 23 thèmes disponibles avec des exemples interactifs</p>
+        <p class="text-text-secondary">Découvrez nos 20 thèmes disponibles avec des exemples interactifs</p>
         <div class="flex items-center space-x-4 mt-4">
-            <span class="px-3 py-1 bg-primary text-white text-sm font-medium rounded-full">23 Thèmes</span>
+            <span class="px-3 py-1 bg-primary text-white text-sm font-medium rounded-full">20 Thèmes</span>
             <span class="px-3 py-1 bg-success text-white text-sm font-medium rounded-full">100% Fonctionnels</span>
             <span class="px-3 py-1 bg-info text-white text-sm font-medium rounded-full">Responsive</span>
         </div>
@@ -24,54 +24,59 @@
 
     <!-- Contenu principal -->
     <div x-data="{ 
-        activeTab: 'basic',
+        activeTab: 'all',
         searchQuery: '',
-        basicThemes: [
-            { key: 'light', name: 'Light', category: 'base', description: 'Thème clair par défaut' },
-            { key: 'dark', name: 'Dark', category: 'base', description: 'Thème sombre élégant' },
-            { key: 'pro', name: 'Pro (FrappeUI)', category: 'professional', description: 'Thème professionnel' },
-            { key: 'enterprise', name: 'Enterprise', category: 'professional', description: 'Thème entreprise' },
-            { key: 'glass', name: 'Glass', category: 'creative', description: 'Effet de verre avec transparence' },
-            { key: 'neon', name: 'Neon', category: 'creative', description: 'Couleurs vives et lumineuses' },
+        allThemes: [
+            // Thèmes de base
+            { key: 'light', name: 'Light', category: 'base', description: 'Thème clair par défaut', featured: true },
+            { key: 'dark', name: 'Dark', category: 'base', description: 'Thème sombre élégant', featured: true },
+            { key: 'pro', name: 'Pro (FrappeUI)', category: 'professional', description: 'Thème professionnel', featured: true },
+            
+            // Thèmes naturels
             { key: 'forest', name: 'Forest', category: 'nature', description: 'Tons verts naturels' },
+            { key: 'forest-night', name: 'Forest Night', category: 'nature', description: 'Version nocturne du thème forest' },
             { key: 'sea', name: 'Sea', category: 'nature', description: 'Bleus océaniques' },
-            { key: 'sunset', name: 'Sunset', category: 'nature', description: 'Oranges chaleureux' },
-            { key: 'modern', name: 'Modern', category: 'modern', description: 'Couleurs vibrantes' },
-            { key: 'minimal', name: 'Minimal', category: 'modern', description: 'Noir et blanc' },
-            { key: '2d', name: '2D', category: 'special', description: 'Couleurs géométriques' },
-            { key: 'retro', name: 'Retro', category: 'special', description: 'Années 80' },
-            { key: 'cyberpunk', name: 'Cyberpunk', category: 'special', description: 'Futuriste' },
-            { key: 'pastel', name: 'Pastel', category: 'special', description: 'Doux et apaisant' }
+            { key: 'sakura', name: 'Sakura', category: 'nature', description: 'Thème floral japonais' },
+            { key: 'summer', name: 'Summer', category: 'nature', description: 'Couleurs estivales chaleureuses' },
+            
+            // Thèmes créatifs
+            { key: 'glass', name: 'Glass', category: 'creative', description: 'Effet de verre avec transparence' },
+            { key: '2d', name: '2D', category: 'creative', description: 'Couleurs géométriques vives' },
+            { key: 'retro80s', name: 'Retro 80s', category: 'creative', description: 'Style rétro années 80' },
+            { key: 'space', name: 'Space', category: 'creative', description: 'Thème spatial mystérieux' },
+            
+            // Thèmes spécialisés
+            { key: 'minimal', name: 'Minimal', category: 'special', description: 'Design minimaliste épuré' },
+            { key: 'coffee', name: 'Coffee', category: 'special', description: 'Tons café chaleureux' },
+            { key: 'vintage', name: 'Vintage', category: 'special', description: 'Style vintage classique' },
+            { key: 'monokai', name: 'Monokai', category: 'special', description: 'Palette Monokai pour développeurs' },
+            { key: 'pastel', name: 'Pastel', category: 'special', description: 'Couleurs douces et apaisantes' },
+            
+            // Thèmes Solarized
+            { key: 'solarized-light', name: 'Solarized Light', category: 'solarized', description: 'Palette Solarized claire' },
+            { key: 'solarized-dark', name: 'Solarized Dark', category: 'solarized', description: 'Palette Solarized sombre' }
         ],
-        extendedThemes: [
-            { key: 'midnight', name: 'Midnight', category: 'dark', description: 'Thème nocturne mystérieux' },
-            { key: 'aurora', name: 'Aurora', category: 'nature', description: 'Aurores boréales' },
-            { key: 'cosmic', name: 'Cosmic', category: 'special', description: 'Galactique mystique' },
-            { key: 'ocean', name: 'Ocean', category: 'nature', description: 'Bleus profonds' },
-            { key: 'fire', name: 'Fire', category: 'special', description: 'Flamboyant ardent' },
-            { key: 'earth', name: 'Earth', category: 'nature', description: 'Terreux chaleureux' },
-            { key: 'lavender', name: 'Lavender', category: 'soft', description: 'Violet délicat' },
-            { key: 'mint', name: 'Mint', category: 'soft', description: 'Vert rafraîchissant' }
+        categories: [
+            { key: 'all', name: 'Tous les thèmes', count: 20 },
+            { key: 'base', name: 'Thèmes de base', count: 3 },
+            { key: 'nature', name: 'Thèmes naturels', count: 5 },
+            { key: 'creative', name: 'Thèmes créatifs', count: 4 },
+            { key: 'special', name: 'Thèmes spéciaux', count: 5 },
+            { key: 'solarized', name: 'Thèmes Solarized', count: 2 },
+            { key: 'professional', name: 'Thèmes professionnels', count: 1 }
         ]
     }">
         <!-- Tabs -->
         <div class="border-b border-border mb-8">
-            <nav class="-mb-px flex space-x-8">
-                <button @click="activeTab = 'basic'" 
-                        :class="activeTab === 'basic' ? 'border-primary text-primary' : 'border-transparent text-text-secondary hover:text-text hover:border-border'"
-                        class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
-                    Thèmes de Base (15)
-                </button>
-                <button @click="activeTab = 'extended'" 
-                        :class="activeTab === 'extended' ? 'border-primary text-primary' : 'border-transparent text-text-secondary hover:text-text hover:border-border'"
-                        class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
-                    Thèmes Étendus (8)
-                </button>
-                <button @click="activeTab = 'preview'" 
-                        :class="activeTab === 'preview' ? 'border-primary text-primary' : 'border-transparent text-text-secondary hover:text-text hover:border-border'"
-                        class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
-                    Preview Interactive
-                </button>
+            <nav class="-mb-px flex space-x-8 overflow-x-auto">
+                <template x-for="category in categories" :key="category.key">
+                    <button @click="activeTab = category.key" 
+                            :class="activeTab === category.key ? 'border-primary text-primary' : 'border-transparent text-text-secondary hover:text-text hover:border-border'"
+                            class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
+                        <span x-text="category.name"></span>
+                        <span class="ml-1 text-xs bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full" x-text="category.count"></span>
+                    </button>
+                </template>
             </nav>
         </div>
 
@@ -88,14 +93,28 @@
             </div>
         </div>
 
-        <!-- Basic Themes Tab -->
-        <div x-show="activeTab === 'basic'" class="space-y-8">
+        <!-- Themes Grid -->
+        <div class="space-y-8">
             <div class="card">
-                <h2 class="text-2xl font-bold text-text mb-6">Thèmes de Base</h2>
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-2xl font-bold text-text">
+                        <span x-show="activeTab === 'all'">Tous les Thèmes</span>
+                        <span x-show="activeTab === 'base'">Thèmes de Base</span>
+                        <span x-show="activeTab === 'nature'">Thèmes Naturels</span>
+                        <span x-show="activeTab === 'creative'">Thèmes Créatifs</span>
+                        <span x-show="activeTab === 'special'">Thèmes Spéciaux</span>
+                        <span x-show="activeTab === 'solarized'">Thèmes Solarized</span>
+                        <span x-show="activeTab === 'professional'">Thèmes Professionnels</span>
+                    </h2>
+                    <div class="text-sm text-text-secondary">
+                        <span x-text="allThemes.filter(t => (activeTab === 'all' || t.category === activeTab) && t.name.toLowerCase().includes(searchQuery.toLowerCase())).length"></span> thèmes trouvés
+                    </div>
+                </div>
                 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <template x-for="theme in basicThemes.filter(t => t.name.toLowerCase().includes(searchQuery.toLowerCase()))" :key="theme.key">
-                        <div class="border rounded-lg p-6 cursor-pointer hover:shadow-md transition-shadow bg-surface"
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <template x-for="theme in allThemes.filter(t => (activeTab === 'all' || t.category === activeTab) && t.name.toLowerCase().includes(searchQuery.toLowerCase()))" :key="theme.key">
+                        <div class="border rounded-lg p-6 cursor-pointer hover:shadow-md transition-all duration-200 bg-surface hover:scale-105"
+                             :class="theme.featured ? 'ring-2 ring-primary ring-opacity-50' : ''"
                              @click="
                                  if (window.ThemeManager) {
                                      window.ThemeManager.applyTheme(theme.key);
@@ -103,7 +122,10 @@
                              ">
                             <div class="flex items-center justify-between mb-4">
                                 <h3 class="text-lg font-semibold text-text" x-text="theme.name"></h3>
-                                <span class="px-2 py-1 text-xs font-medium bg-primary text-white rounded-full" x-text="theme.category"></span>
+                                <div class="flex items-center space-x-2">
+                                    <span x-show="theme.featured" class="px-2 py-1 text-xs font-medium bg-primary text-white rounded-full">⭐</span>
+                                    <span class="px-2 py-1 text-xs font-medium bg-secondary text-white rounded-full" x-text="theme.category"></span>
+                                </div>
                             </div>
                             
                             <p class="text-sm text-text-secondary mb-4" x-text="theme.description"></p>
@@ -128,48 +150,8 @@
             </div>
         </div>
 
-        <!-- Extended Themes Tab -->
-        <div x-show="activeTab === 'extended'" class="space-y-8">
-            <div class="card">
-                <h2 class="text-2xl font-bold text-text mb-6">Thèmes Étendus</h2>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <template x-for="theme in extendedThemes.filter(t => t.name.toLowerCase().includes(searchQuery.toLowerCase()))" :key="theme.key">
-                        <div class="border rounded-lg p-6 cursor-pointer hover:shadow-md transition-shadow bg-surface"
-                             @click="
-                                 if (window.ExtendedThemeManager) {
-                                     window.ExtendedThemeManager.applyExtendedTheme(theme.key);
-                                 }
-                             ">
-                            <div class="flex items-center justify-between mb-4">
-                                <h3 class="text-lg font-semibold text-text" x-text="theme.name"></h3>
-                                <span class="px-2 py-1 text-xs font-medium bg-purple-500 text-white rounded-full" x-text="theme.category"></span>
-                            </div>
-                            
-                            <p class="text-sm text-text-secondary mb-4" x-text="theme.description"></p>
-                            
-                            <!-- Color Preview -->
-                            <div class="flex space-x-2 mb-4">
-                                <div class="w-4 h-4 rounded-full bg-primary"></div>
-                                <div class="w-4 h-4 rounded-full bg-secondary"></div>
-                                <div class="w-4 h-4 rounded-full bg-success"></div>
-                                <div class="w-4 h-4 rounded-full bg-danger"></div>
-                            </div>
-                            
-                            <!-- Component Preview -->
-                            <div class="space-y-2">
-                                <button class="btn btn-primary btn-sm w-full">Primary</button>
-                                <button class="btn btn-secondary btn-sm w-full">Secondary</button>
-                                <button class="btn btn-success btn-sm w-full">Success</button>
-                            </div>
-                        </div>
-                    </template>
-                </div>
-            </div>
-        </div>
-
-        <!-- Preview Tab -->
-        <div x-show="activeTab === 'preview'" class="space-y-8">
+        <!-- Preview Interactive -->
+        <div class="mt-12">
             <div class="card">
                 <h2 class="text-2xl font-bold text-text mb-6">Preview Interactive</h2>
                 
