@@ -1,239 +1,174 @@
-# Système de Thèmes LarappeUI
+# Système de Thèmes - LarappeUI
 
 ## Vue d'ensemble
 
-LarappeUI intègre un système de thèmes avancé permettant de changer l'apparence globale de l'interface en temps réel. Le système utilise des variables CSS personnalisées et un gestionnaire JavaScript pour une expérience utilisateur fluide.
+Le système de thèmes de LarappeUI permet de personnaliser l'apparence de l'application en temps réel. Il utilise un gestionnaire unifié qui synchronise les thèmes entre le client et le serveur.
 
 ## Architecture
 
-### Fichiers principaux
+### 1. Gestionnaire de Thèmes Unifié
 
-- `resources/js/themes-manager.js` - Gestionnaire JavaScript principal
-- `resources/css/themes-complete.css` - Styles CSS pour tous les thèmes
-- `resources/views/layouts/app.blade.php` - Layout principal avec intégration des thèmes
-- `resources/views/themes-manager.blade.php` - Interface de gestion des thèmes
+Le système utilise un seul gestionnaire de thèmes (`ThemeManager`) qui :
+- Applique l'attribut `theme` sur l'élément HTML
+- Synchronise avec le serveur via des API REST
+- Persiste les préférences en localStorage
+- Gère les variables CSS personnalisées
 
-### Structure des thèmes
+### 2. Persistance Multi-niveaux
 
-Chaque thème est défini avec :
-- **key** : Identifiant unique du thème
-- **name** : Nom affiché dans l'interface
-- **class** : Classe CSS appliquée à l'élément `<html>`
-- **colors** : Objet contenant toutes les variables de couleur
-- **description** : Description du thème
+- **Client** : localStorage pour la persistance côté navigateur
+- **Serveur** : Session Laravel pour la persistance côté serveur
+- **HTML** : Attribut `theme` sur l'élément `<html>`
 
-## Thèmes disponibles
+### 3. Thèmes Disponibles
 
-### Thèmes de base
-- **Light** : Thème clair par défaut avec des couleurs modernes
-- **Dark** : Thème sombre élégant pour une expérience nocturne
-- **Pro (FrappeUI)** : Thème professionnel inspiré de FrappeUI
-- **Enterprise** : Thème entreprise avec des couleurs sobres
-
-### Thèmes créatifs
-- **Glass** : Effet de verre avec transparence et flou
-- **Neon** : Thème néon avec des couleurs vives et lumineuses
+- **Light** : Thème clair par défaut
+- **Dark** : Thème sombre élégant
+- **Pro** : Thème professionnel inspiré de FrappeUI
+- **Enterprise** : Thème entreprise sobre
+- **Glass** : Effet de verre avec transparence
+- **Neon** : Thème néon avec couleurs vives
+- **Forest** : Thème forestier avec tons verts
+- **Sea** : Thème marin avec bleus océaniques
+- **Sunset** : Thème coucher de soleil
+- **Modern** : Thème moderne vibrant
+- **Minimal** : Thème minimaliste noir/blanc
+- **2D** : Thème 2D géométrique
+- **Retro** : Thème rétro années 80
 - **Cyberpunk** : Thème cyberpunk futuriste
-
-### Thèmes naturels
-- **Forest** : Thème forestier avec des tons verts naturels
-- **Sea** : Thème marin avec des bleus océaniques
-- **Sunset** : Thème coucher de soleil avec des oranges chaleureux
-
-### Thèmes modernes
-- **Modern** : Thème moderne avec des couleurs vibrantes
-- **Minimal** : Thème minimaliste en noir et blanc
-- **2D** : Thème 2D avec des couleurs vives et géométriques
-- **Retro** : Thème rétro avec des couleurs des années 80
-- **Pastel** : Thème pastel doux et apaisant
-
-## Variables CSS
-
-Chaque thème définit les variables CSS suivantes :
-
-```css
---color-primary: #3b82f6;
---color-primary-hover: #2563eb;
---color-secondary: #6b7280;
---color-secondary-hover: #4b5563;
---color-success: #10b981;
---color-success-hover: #059669;
---color-warning: #f59e0b;
---color-warning-hover: #d97706;
---color-danger: #ef4444;
---color-danger-hover: #dc2626;
---color-info: #06b6d4;
---color-info-hover: #0891b2;
---color-background: #ffffff;
---color-surface: #f9fafb;
---color-text: #111827;
---color-textSecondary: #6b7280;
---color-border: #e5e7eb;
---color-accent: #f59e42;
-```
+- **Pastel** : Thème pastel doux
 
 ## Utilisation
 
-### Changement de thème via l'interface
+### Application Automatique
 
-1. Utilisez le sélecteur de thème dans la navigation
-2. Le thème est automatiquement appliqué et sauvegardé
-3. La persistance est gérée via localStorage
-
-### Changement programmatique
+Le thème est appliqué automatiquement au chargement de la page :
 
 ```javascript
-// Appliquer un thème
-window.ThemeManager.applyTheme('dark');
-
-// Obtenir le thème actuel
-const currentTheme = window.ThemeManager.getCurrentTheme();
-
-// Obtenir les informations d'un thème
-const themeInfo = window.ThemeManager.getTheme('pro');
+// Le thème est chargé depuis le serveur puis localStorage
+const savedTheme = localStorage.getItem('theme') || 'light';
+ThemeManager.applyTheme(savedTheme);
 ```
 
-### Écouter les changements de thème
+### Changement de Thème
 
 ```javascript
+// Changer de thème
+ThemeManager.applyTheme('dark');
+
+// Écouter les changements
 document.addEventListener('themeChanged', (event) => {
-  console.log('Thème changé:', event.detail.theme);
-  console.log('Données du thème:', event.detail.themeData);
+    console.log('Nouveau thème:', event.detail.theme);
 });
 ```
 
-## Classes utilitaires
+### Sélecteurs de Thème
 
-### Couleurs de fond
-- `.bg-primary` - Fond couleur primaire
-- `.bg-secondary` - Fond couleur secondaire
-- `.bg-success` - Fond couleur succès
-- `.bg-warning` - Fond couleur avertissement
-- `.bg-danger` - Fond couleur danger
-- `.bg-info` - Fond couleur info
-- `.bg-background` - Fond principal
-- `.bg-surface` - Fond surface
-
-### Couleurs de texte
-- `.text-primary` - Texte couleur primaire
-- `.text-secondary` - Texte couleur secondaire
-- `.text-success` - Texte couleur succès
-- `.text-warning` - Texte couleur avertissement
-- `.text-danger` - Texte couleur danger
-- `.text-info` - Texte couleur info
-- `.text-text` - Texte principal
-- `.text-textSecondary` - Texte secondaire
-
-### Bordures
-- `.border-primary` - Bordure couleur primaire
-- `.border-secondary` - Bordure couleur secondaire
-- `.border-success` - Bordure couleur succès
-- `.border-warning` - Bordure couleur avertissement
-- `.border-danger` - Bordure couleur danger
-- `.border-info` - Bordure couleur info
-- `.border-border` - Bordure par défaut
-
-### Boutons
-- `.btn-primary` - Bouton primaire
-- `.btn-secondary` - Bouton secondaire
-- `.btn-success` - Bouton succès
-- `.btn-warning` - Bouton avertissement
-- `.btn-danger` - Bouton danger
-- `.btn-info` - Bouton info
-
-### Formulaires
-- `.form-input` - Champ de saisie stylisé
-
-## Effets spéciaux
-
-### Thème Glass
-- Effet de flou (backdrop-filter)
-- Transparence sur les éléments
-
-### Thème Neon
-- Ombres lumineuses sur les boutons
-- Animation de pulsation
-
-### Thème Cyberpunk
-- Ombres colorées intenses
-- Effets de lueur sur le texte
-
-## Création d'un nouveau thème
-
-### 1. Ajouter le thème dans themes-manager.js
-
-```javascript
-{
-  key: 'mon-theme',
-  name: 'Mon Thème',
-  class: 'theme-mon-theme',
-  colors: {
-    primary: '#7c3aed',
-    secondary: '#6b7280',
-    // ... autres couleurs
-  },
-  description: 'Description de mon thème'
-}
-```
-
-### 2. Ajouter les styles CSS
-
-```css
-.theme-mon-theme {
-  --color-primary: #7c3aed;
-  --color-primary-hover: #6d28d9;
-  /* ... autres variables */
-}
-```
-
-### 3. Ajouter au sélecteur
-
-Dans `resources/views/layouts/app.blade.php` :
+Les sélecteurs de thème utilisent l'attribut `data-theme-selector` :
 
 ```html
-<option value="mon-theme">Mon Thème</option>
+<select data-theme-selector>
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+    <!-- ... -->
+</select>
 ```
 
-## Persistance
+## Variables CSS
 
-Le système utilise localStorage pour sauvegarder le thème sélectionné :
+Chaque thème définit des variables CSS personnalisées :
 
-- **Clé** : `theme`
-- **Valeur** : Clé du thème (ex: `dark`, `pro`, etc.)
-- **Fallback** : `light` si aucun thème n'est sauvegardé
+```css
+:root {
+    --color-primary: #3b82f6;
+    --color-secondary: #6b7280;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #06b6d4;
+    --color-background: #ffffff;
+    --color-surface: #f9fafb;
+    --color-text: #111827;
+    --color-text-secondary: #6b7280;
+    --color-border: #e5e7eb;
+    --color-accent: #f59e42;
+}
+```
 
-## Performance
+## API Serveur
 
-- Les transitions sont optimisées pour une expérience fluide
-- Les variables CSS sont appliquées directement au DOM
-- Pas de rechargement de page lors du changement de thème
+### Endpoints
 
-## Accessibilité
+- `GET /theme/get` : Récupérer le thème actuel
+- `POST /theme/set` : Définir un nouveau thème
 
-- Support des préférences de réduction de mouvement
-- Contraste approprié pour tous les thèmes
-- Focus visible sur tous les éléments interactifs
+### Exemple d'utilisation
+
+```javascript
+// Récupérer le thème
+const response = await fetch('/theme/get');
+const data = await response.json();
+console.log('Thème actuel:', data.theme);
+
+// Changer le thème
+await fetch('/theme/set', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content
+    },
+    body: JSON.stringify({ theme: 'dark' })
+});
+```
+
+## Middleware
+
+Le `ThemeMiddleware` gère automatiquement :
+- L'initialisation du thème par défaut
+- Le partage du thème avec toutes les vues
+- La persistance en session
+
+## Thèmes Personnalisés
+
+Il est possible de créer des thèmes personnalisés :
+
+```javascript
+// Créer un thème personnalisé
+const customColors = {
+    primary: '#ff0000',
+    background: '#ffffff',
+    text: '#000000'
+};
+
+// Appliquer temporairement
+ThemeManager.applyCustomTheme(customColors);
+```
 
 ## Compatibilité
 
-- Support complet des navigateurs modernes
-- Fallback gracieux pour les navigateurs plus anciens
-- Compatible avec Tailwind CSS
-- Intégration Alpine.js pour la réactivité
+Le système est compatible avec :
+- Tous les navigateurs modernes
+- Les variables CSS personnalisées
+- Les sessions Laravel
+- Le localStorage
 
 ## Dépannage
 
-### Le thème ne change pas
-1. Vérifiez que `themes-manager.js` est chargé
-2. Vérifiez la console pour les erreurs JavaScript
-3. Vérifiez que les classes CSS sont bien appliquées
+### Problèmes Courants
 
-### Les couleurs ne s'appliquent pas
-1. Vérifiez que `themes-complete.css` est chargé
-2. Vérifiez que les variables CSS sont définies
-3. Vérifiez que les classes utilitaires sont utilisées
+1. **Thème ne s'applique pas** : Vérifier que le fichier `themes-manager.js` est chargé
+2. **Persistance ne fonctionne pas** : Vérifier les permissions de localStorage
+3. **Synchronisation serveur échoue** : Vérifier le token CSRF
 
-### Problème de persistance
-1. Vérifiez que localStorage est disponible
-2. Vérifiez la clé `theme` dans localStorage
-3. Vérifiez que le thème par défaut est défini 
+### Debug
+
+```javascript
+// Vérifier le thème actuel
+console.log('Thème actuel:', ThemeManager.getCurrentTheme());
+
+// Lister tous les thèmes
+console.log('Thèmes disponibles:', ThemeManager.getAllThemes());
+
+// Vérifier les variables CSS
+console.log('Variables CSS:', getComputedStyle(document.documentElement));
+``` 

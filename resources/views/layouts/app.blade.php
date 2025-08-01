@@ -4,67 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    
+
     <title>@yield('title', 'Laravel App')</title>
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Alpine.js -->
     <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <script src="https://unpkg.com/@alpinejs/persist@3.x.x/dist/cdn.min.js" defer></script>
-    
+
     <!-- Prism.js pour la coloration syntaxique -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
-    
+
     <!-- Thèmes CSS -->
     <link rel="stylesheet" href="{{ asset('css/themes-complete.css') }}">
     <link rel="stylesheet" href="{{ asset('css/themes-extended.css') }}">
-    
+
     <!-- Thèmes JavaScript -->
     <script src="{{ asset('js/themes-manager.js') }}"></script>
-    
+
     <!-- Styles personnalisés -->
     <style>
         /* Classes utilitaires pour les thèmes */
         .btn {
             @apply px-4 py-2 rounded-lg font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
         }
-        
+
         .btn-primary {
             @apply bg-primary text-white hover:bg-primary-hover;
         }
-        
+
         .btn-secondary {
             @apply bg-secondary text-white hover:bg-secondary-hover;
         }
-        
+
         .btn-success {
             @apply bg-success text-white hover:bg-success-hover;
         }
-        
+
         .btn-danger {
             @apply bg-danger text-white hover:bg-danger-hover;
         }
-        
+
         .btn-warning {
             @apply bg-warning text-white hover:bg-warning-hover;
         }
-        
+
         .btn-info {
             @apply bg-info text-white hover:bg-info-hover;
         }
-        
+
         .form-input {
             @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent;
         }
-        
+
         .card {
             @apply bg-white rounded-lg shadow-sm border p-6;
         }
-        
+
         /* Variables CSS pour les thèmes */
         :root {
             --color-primary: #3b82f6;
@@ -87,10 +87,10 @@
             --color-accent: #f59e42;
         }
     </style>
-    
+
     @stack('styles')
 </head>
-<body class="h-full bg-background text-text" x-data="{ 
+<body class="h-full bg-background text-text" x-data="{
     sidebarOpen: false,
     currentTheme: localStorage.getItem('theme') || 'light',
     searchQuery: '',
@@ -144,12 +144,12 @@
     // Initialiser le thème au chargement
     const savedTheme = localStorage.getItem('theme') || 'light';
     currentTheme = savedTheme;
-    
+
     // Appliquer le thème immédiatement
     if (window.ThemeManager) {
         window.ThemeManager.applyTheme(savedTheme);
     }
-    
+
     // Écouter les changements de thème
     document.addEventListener('themeChanged', (event) => {
         currentTheme = event.detail.theme;
@@ -176,7 +176,7 @@
         <!-- Search (pour les composants) -->
         <div x-show="$store.route.current.includes('components-docs')" class="p-4 border-b">
             <div class="relative">
-                <input type="text" 
+                <input type="text"
                        x-model="searchQuery"
                        placeholder="Rechercher un composant..."
                        class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
@@ -189,7 +189,7 @@
         <!-- Theme Selector -->
         <div class="p-4 border-b">
             <label class="block text-sm font-medium text-gray-700 mb-2">Thème</label>
-            <select x-model="currentTheme" 
+            <select x-model="currentTheme"
                     @change="
                         if (window.ThemeManager) {
                             window.ThemeManager.applyTheme(currentTheme);
@@ -243,7 +243,7 @@
                         <ul class="space-y-1">
                             <template x-for="component in components.filter(c => c.category === category && c.name.toLowerCase().includes(searchQuery.toLowerCase()))" :key="component.name">
                                 <li>
-                                    <a :href="'/components-docs/' + component.path" 
+                                    <a :href="'/components-docs/' + component.path"
                                        class="flex items-center px-3 py-2 text-sm font-medium text-gray-700 rounded-md hover:bg-gray-100 hover:text-gray-900 transition-colors">
                                         <span class="mr-3" x-text="component.icon"></span>
                                         <span x-text="component.name"></span>
@@ -280,7 +280,7 @@
     </div>
 
     <!-- Overlay for mobile -->
-    <div x-show="sidebarOpen" 
+    <div x-show="sidebarOpen"
          x-transition:enter="transition-opacity ease-linear duration-300"
          x-transition:enter-start="opacity-0"
          x-transition:enter-end="opacity-100"
@@ -293,4 +293,4 @@
     <!-- Scripts -->
     @stack('scripts')
 </body>
-</html> 
+</html>

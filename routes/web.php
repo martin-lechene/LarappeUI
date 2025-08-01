@@ -14,29 +14,32 @@ use App\Http\Controllers\ThemeController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+// Appliquer le middleware de thèmes à toutes les routes
+Route::middleware(['theme'])->group(function () {
+    Route::get('/', function () {
+        return view('welcome');
+    })->name('home');
 
-Route::get('/components-docs', function () {
-    return view('components-docs');
-})->name('components-docs');
+    Route::get('/components-docs', function () {
+        return view('components-docs');
+    })->name('components-docs');
 
-Route::get('/components-docs/{component}', function ($component) {
-    return view('components-docs', compact('component'));
-})->name('components-docs.show');
+    Route::get('/components-docs/{component}', function ($component) {
+        return view('components-docs', compact('component'));
+    })->name('components-docs.show');
 
-Route::get('/themes-manager', function () {
-    return view('themes-manager');
-})->name('themes-manager');
+    Route::get('/themes-manager', function () {
+        return view('themes-manager');
+    })->name('themes-manager');
 
-Route::get('/themes-showcase', function () {
-    return view('themes-showcase');
-})->name('themes-showcase');
+    Route::get('/themes-showcase', function () {
+        return view('themes-showcase');
+    })->name('themes-showcase');
 
-Route::get('/test-themes', function () {
-    return view('test-themes');
-})->name('test-themes');
+    Route::get('/test-themes', function () {
+        return view('test-themes');
+    })->name('test-themes');
+});
 
 // Routes pour la gestion des thèmes
 Route::post('/theme/set', [ThemeController::class, 'setTheme'])->name('theme.set');

@@ -13,37 +13,50 @@ class ThemeController extends Controller
     public function setTheme(Request $request)
     {
         $theme = $request->input('theme', 'light');
-        
+
         // Valider le thème
-        $validThemes = [
-            'light', 'dark', 'pro', 'enterprise', 'glass', 'neon', 
-            'forest', 'sea', 'sunset', 'modern', 'minimal', '2d', 
-            'retro', 'cyberpunk', 'pastel'
-        ];
-        
+        // Récupérer dynamiquement les thèmes disponibles depuis le fichier CSS
+        $themeCssPath = public_path('css/themes-complete.css');
+        $validThemes = [];
+
+        if (file_exists($themeCssPath)) {
+            $cssContent = file_get_contents($themeCssPath);
+            // Cherche les classes .theme-xxxx { ... }
+            preg_match_all('/\.theme-([a-zA-Z0-9_-]+)\s*\{/', $cssContent, $matches);
+            if (!empty($matches[1])) {
+                $validThemes = $matches[1];
+            }
+        }
+
+        // Fallback si aucun thème trouvé
+        if (empty($validThemes)) {
+            $validThemes = ['light'];
+        }
+
         if (!in_array($theme, $validThemes)) {
             $theme = 'light';
         }
-        
+
         // Sauvegarder en session
         Session::put('theme', $theme);
-        
+
         return response()->json([
             'success' => true,
             'theme' => $theme,
-            'message' => 'Thème mis à jour avec succès'
+            'message' => 'Thème mis à jour avec succès',
+            'validThemes' => $validThemes
         ]);
     }
-    
+
     /**
      * Obtenir le thème actuel
      */
     public function getTheme()
     {
         $theme = Session::get('theme', 'light');
-        
+
         return response()->json([
             'theme' => $theme
         ]);
     }
-} 
+}
