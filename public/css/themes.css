@@ -153,7 +153,7 @@
     --color-textSecondary: #475569;
     --color-border: #e2e8f0;
     --color-accent: #f97316;
-    
+
     /* Variables d'état */
     --hover-bg: #f1f5f9;
     --active-bg: #e2e8f0;
@@ -163,7 +163,7 @@
     --selected-text: #0f172a;
     --focus-bg: #f1f5f9;
     --focus-border: #cbd5e1;
-    
+
     /* Variables de design system */
     --radius-xs: 2px;
     --radius-sm: 4px;
@@ -171,7 +171,7 @@
     --radius-lg: 8px;
     --radius-xl: 12px;
     --radius-full: 9999px;
-    --shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+    --shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --muted: #f8fafc;
     --highlight: #f1f5f9;
     --scrollbar: #e2e8f0;
@@ -197,7 +197,7 @@
     --color-textSecondary: #6b7280;
     --color-border: #d1d5db;
     --color-accent: #ea580c;
-    
+
     /* Variables d'état */
     --hover-bg: #f3f4f6;
     --active-bg: #e5e7eb;
@@ -207,7 +207,7 @@
     --selected-text: #111827;
     --focus-bg: #f3f4f6;
     --focus-border: #d1d5db;
-    
+
     /* Variables de design system */
     --radius-xs: 2px;
     --radius-sm: 4px;
@@ -215,7 +215,7 @@
     --radius-lg: 8px;
     --radius-xl: 12px;
     --radius-full: 9999px;
-    --shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+    --shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --muted: #f9fafb;
     --highlight: #f3f4f6;
     --scrollbar: #e5e7eb;
