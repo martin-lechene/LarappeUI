@@ -1,0 +1,543 @@
+/* Système de thèmes complet pour LarappeUI */
+
+/* Variables CSS par défaut */
+:root {
+    --color-primary: #3b82f6;
+    --color-primary-hover: #2563eb;
+    --color-secondary: #6b7280;
+    --color-secondary-hover: #4b5563;
+    --color-success: #10b981;
+    --color-success-hover: #059669;
+    --color-warning: #f59e0b;
+    --color-warning-hover: #d97706;
+    --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
+    --color-info: #06b6d4;
+    --color-info-hover: #0891b2;
+    --color-background: #ffffff;
+    --color-surface: #f9fafb;
+    --color-text: #111827;
+    --color-textSecondary: #6b7280;
+    --color-border: #e5e7eb;
+    --color-accent: #f59e42;
+}
+
+/* Thème Light (par défaut) */
+.theme-light {
+    --color-primary: #3b82f6;
+    --color-primary-hover: #2563eb;
+    --color-secondary: #6b7280;
+    --color-secondary-hover: #4b5563;
+    --color-success: #10b981;
+    --color-success-hover: #059669;
+    --color-warning: #f59e0b;
+    --color-warning-hover: #d97706;
+    --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
+    --color-info: #06b6d4;
+    --color-info-hover: #0891b2;
+    --color-background: #ffffff;
+    --color-surface: #f9fafb;
+    --color-text: #111827;
+    --color-textSecondary: #6b7280;
+    --color-border: #e5e7eb;
+    --color-accent: #f59e42;
+}
+
+/* Thème Dark */
+.theme-dark {
+    --color-primary: #60a5fa;
+    --color-primary-hover: #3b82f6;
+    --color-secondary: #9ca3af;
+    --color-secondary-hover: #6b7280;
+    --color-success: #34d399;
+    --color-success-hover: #10b981;
+    --color-warning: #fbbf24;
+    --color-warning-hover: #f59e0b;
+    --color-danger: #f87171;
+    --color-danger-hover: #ef4444;
+    --color-info: #22d3ee;
+    --color-info-hover: #06b6d4;
+    --color-background: #111827;
+    --color-surface: #1f2937;
+    --color-text: #f9fafb;
+    --color-textSecondary: #d1d5db;
+    --color-border: #374151;
+    --color-accent: #fbbf24;
+}
+
+/* Thème Pro (FrappeUI) */
+.theme-pro {
+    --color-primary: #2563eb;
+    --color-primary-hover: #1d4ed8;
+    --color-secondary: #64748b;
+    --color-secondary-hover: #475569;
+    --color-success: #059669;
+    --color-success-hover: #047857;
+    --color-warning: #d97706;
+    --color-warning-hover: #b45309;
+    --color-danger: #dc2626;
+    --color-danger-hover: #b91c1c;
+    --color-info: #0891b2;
+    --color-info-hover: #0e7490;
+    --color-background: #f8fafc;
+    --color-surface: #ffffff;
+    --color-text: #1e293b;
+    --color-textSecondary: #64748b;
+    --color-border: #e2e8f0;
+    --color-accent: #fbbf24;
+}
+
+/* Thème Enterprise */
+.theme-enterprise {
+    --color-primary: #1e40af;
+    --color-primary-hover: #1e3a8a;
+    --color-secondary: #475569;
+    --color-secondary-hover: #334155;
+    --color-success: #047857;
+    --color-success-hover: #065f46;
+    --color-warning: #b45309;
+    --color-warning-hover: #92400e;
+    --color-danger: #b91c1c;
+    --color-danger-hover: #991b1b;
+    --color-info: #0e7490;
+    --color-info-hover: #155e75;
+    --color-background: #f1f5f9;
+    --color-surface: #ffffff;
+    --color-text: #0f172a;
+    --color-textSecondary: #475569;
+    --color-border: #cbd5e1;
+    --color-accent: #f59e0b;
+}
+
+/* Thème Glass */
+.theme-glass {
+    --color-primary: #a5b4fc;
+    --color-primary-hover: #818cf8;
+    --color-secondary: #c7d2fe;
+    --color-secondary-hover: #a5b4fc;
+    --color-success: #86efac;
+    --color-success-hover: #4ade80;
+    --color-warning: #fde047;
+    --color-warning-hover: #facc15;
+    --color-danger: #fca5a5;
+    --color-danger-hover: #f87171;
+    --color-info: #67e8f9;
+    --color-info-hover: #22d3ee;
+    --color-background: rgba(255, 255, 255, 0.6);
+    --color-surface: rgba(255, 255, 255, 0.8);
+    --color-text: #374151;
+    --color-textSecondary: #6b7280;
+    --color-border: rgba(255, 255, 255, 0.3);
+    --color-accent: #f472b6;
+}
+
+/* Thème Neon */
+.theme-neon {
+    --color-primary: #00ffff;
+    --color-primary-hover: #00e6e6;
+    --color-secondary: #ff00ff;
+    --color-secondary-hover: #e600e6;
+    --color-success: #00ff00;
+    --color-success-hover: #00e600;
+    --color-warning: #ffff00;
+    --color-warning-hover: #e6e600;
+    --color-danger: #ff0080;
+    --color-danger-hover: #e60073;
+    --color-info: #0080ff;
+    --color-info-hover: #0066cc;
+    --color-background: #000000;
+    --color-surface: #1a1a1a;
+    --color-text: #ffffff;
+    --color-textSecondary: #cccccc;
+    --color-border: #333333;
+    --color-accent: #ff6b6b;
+}
+
+/* Thème Forest */
+.theme-forest {
+    --color-primary: #22c55e;
+    --color-primary-hover: #16a34a;
+    --color-secondary: #84cc16;
+    --color-secondary-hover: #65a30d;
+    --color-success: #16a34a;
+    --color-success-hover: #15803d;
+    --color-warning: #ca8a04;
+    --color-warning-hover: #a16207;
+    --color-danger: #dc2626;
+    --color-danger-hover: #b91c1c;
+    --color-info: #0891b2;
+    --color-info-hover: #0e7490;
+    --color-background: #f0fdf4;
+    --color-surface: #ffffff;
+    --color-text: #14532d;
+    --color-textSecondary: #166534;
+    --color-border: #bbf7d0;
+    --color-accent: #a3e635;
+}
+
+/* Thème Sea */
+.theme-sea {
+    --color-primary: #0ea5e9;
+    --color-primary-hover: #0284c7;
+    --color-secondary: #38bdf8;
+    --color-secondary-hover: #0ea5e9;
+    --color-success: #10b981;
+    --color-success-hover: #059669;
+    --color-warning: #f59e0b;
+    --color-warning-hover: #d97706;
+    --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
+    --color-info: #06b6d4;
+    --color-info-hover: #0891b2;
+    --color-background: #e0f2fe;
+    --color-surface: #ffffff;
+    --color-text: #0c4a6e;
+    --color-textSecondary: #0369a1;
+    --color-border: #bae6fd;
+    --color-accent: #38bdf8;
+}
+
+/* Thème Sunset */
+.theme-sunset {
+    --color-primary: #f59e42;
+    --color-primary-hover: #d97706;
+    --color-secondary: #fb923c;
+    --color-secondary-hover: #ea580c;
+    --color-success: #10b981;
+    --color-success-hover: #059669;
+    --color-warning: #fbbf24;
+    --color-warning-hover: #f59e0b;
+    --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
+    --color-info: #06b6d4;
+    --color-info-hover: #0891b2;
+    --color-background: #fff7ed;
+    --color-surface: #ffffff;
+    --color-text: #78350f;
+    --color-textSecondary: #92400e;
+    --color-border: #fed7aa;
+    --color-accent: #fbbf24;
+}
+
+/* Thème Modern */
+.theme-modern {
+    --color-primary: #6366f1;
+    --color-primary-hover: #4f46e5;
+    --color-secondary: #8b5cf6;
+    --color-secondary-hover: #7c3aed;
+    --color-success: #10b981;
+    --color-success-hover: #059669;
+    --color-warning: #f59e0b;
+    --color-warning-hover: #d97706;
+    --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
+    --color-info: #06b6d4;
+    --color-info-hover: #0891b2;
+    --color-background: #fafafa;
+    --color-surface: #ffffff;
+    --color-text: #1f2937;
+    --color-textSecondary: #6b7280;
+    --color-border: #e5e7eb;
+    --color-accent: #8b5cf6;
+}
+
+/* Thème Minimal */
+.theme-minimal {
+    --color-primary: #000000;
+    --color-primary-hover: #1f2937;
+    --color-secondary: #6b7280;
+    --color-secondary-hover: #4b5563;
+    --color-success: #10b981;
+    --color-success-hover: #059669;
+    --color-warning: #f59e0b;
+    --color-warning-hover: #d97706;
+    --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
+    --color-info: #06b6d4;
+    --color-info-hover: #0891b2;
+    --color-background: #ffffff;
+    --color-surface: #fafafa;
+    --color-text: #000000;
+    --color-textSecondary: #6b7280;
+    --color-border: #e5e7eb;
+    --color-accent: #f59e0b;
+}
+
+/* Thème 2D */
+.theme-2d {
+    --color-primary: #f43f5e;
+    --color-primary-hover: #e11d48;
+    --color-secondary: #a21caf;
+    --color-secondary-hover: #86198f;
+    --color-success: #22c55e;
+    --color-success-hover: #16a34a;
+    --color-warning: #f59e0b;
+    --color-warning-hover: #d97706;
+    --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
+    --color-info: #06b6d4;
+    --color-info-hover: #0891b2;
+    --color-background: #f1f5f9;
+    --color-surface: #ffffff;
+    --color-text: #0f172a;
+    --color-textSecondary: #475569;
+    --color-border: #cbd5e1;
+    --color-accent: #a21caf;
+}
+
+/* Thème Retro */
+.theme-retro {
+    --color-primary: #ff6b6b;
+    --color-primary-hover: #ff5252;
+    --color-secondary: #4ecdc4;
+    --color-secondary-hover: #26c6da;
+    --color-success: #45b7d1;
+    --color-success-hover: #00acc1;
+    --color-warning: #f7b731;
+    --color-warning-hover: #f39c12;
+    --color-danger: #ee5a52;
+    --color-danger-hover: #e74c3c;
+    --color-info: #a55eea;
+    --color-info-hover: #9c27b0;
+    --color-background: #f8f9fa;
+    --color-surface: #ffffff;
+    --color-text: #2d3436;
+    --color-textSecondary: #636e72;
+    --color-border: #ddd;
+    --color-accent: #f7b731;
+}
+
+/* Thème Cyberpunk */
+.theme-cyberpunk {
+    --color-primary: #ff0080;
+    --color-primary-hover: #e60073;
+    --color-secondary: #00ffff;
+    --color-secondary-hover: #00e6e6;
+    --color-success: #00ff00;
+    --color-success-hover: #00e600;
+    --color-warning: #ffff00;
+    --color-warning-hover: #e6e600;
+    --color-danger: #ff0000;
+    --color-danger-hover: #cc0000;
+    --color-info: #0080ff;
+    --color-info-hover: #0066cc;
+    --color-background: #0a0a0a;
+    --color-surface: #1a1a1a;
+    --color-text: #ffffff;
+    --color-textSecondary: #cccccc;
+    --color-border: #333333;
+    --color-accent: #ff0080;
+}
+
+/* Thème Pastel */
+.theme-pastel {
+    --color-primary: #a5b4fc;
+    --color-primary-hover: #818cf8;
+    --color-secondary: #fbbf24;
+    --color-secondary-hover: #f59e0b;
+    --color-success: #86efac;
+    --color-success-hover: #4ade80;
+    --color-warning: #fde047;
+    --color-warning-hover: #facc15;
+    --color-danger: #fca5a5;
+    --color-danger-hover: #f87171;
+    --color-info: #67e8f9;
+    --color-info-hover: #22d3ee;
+    --color-background: #fefefe;
+    --color-surface: #ffffff;
+    --color-text: #374151;
+    --color-textSecondary: #6b7280;
+    --color-border: #e5e7eb;
+    --color-accent: #f472b6;
+}
+
+/* Classes utilitaires pour utiliser les variables CSS */
+.bg-primary {
+    background-color: var(--color-primary);
+}
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+.bg-success {
+    background-color: var(--color-success);
+}
+.bg-warning {
+    background-color: var(--color-warning);
+}
+.bg-danger {
+    background-color: var(--color-danger);
+}
+.bg-info {
+    background-color: var(--color-info);
+}
+.bg-background {
+    background-color: var(--color-background);
+}
+.bg-surface {
+    background-color: var(--color-surface);
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+.text-secondary {
+    color: var(--color-secondary);
+}
+.text-success {
+    color: var(--color-success);
+}
+.text-warning {
+    color: var(--color-warning);
+}
+.text-danger {
+    color: var(--color-danger);
+}
+.text-info {
+    color: var(--color-info);
+}
+.text-text {
+    color: var(--color-text);
+}
+.text-textSecondary {
+    color: var(--color-textSecondary);
+}
+
+.border-primary {
+    border-color: var(--color-primary);
+}
+.border-secondary {
+    border-color: var(--color-secondary);
+}
+.border-success {
+    border-color: var(--color-success);
+}
+.border-warning {
+    border-color: var(--color-warning);
+}
+.border-danger {
+    border-color: var(--color-danger);
+}
+.border-info {
+    border-color: var(--color-info);
+}
+.border-border {
+    border-color: var(--color-border);
+}
+
+/* Classes pour les boutons */
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary);
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-secondary-hover);
+}
+
+.btn-success {
+    background-color: var(--color-success);
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.btn-success:hover {
+    background-color: var(--color-success-hover);
+}
+
+.btn-warning {
+    background-color: var(--color-warning);
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.btn-warning:hover {
+    background-color: var(--color-warning-hover);
+}
+
+.btn-danger {
+    background-color: var(--color-danger);
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.btn-danger:hover {
+    background-color: var(--color-danger-hover);
+}
+
+.btn-info {
+    background-color: var(--color-info);
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.btn-info:hover {
+    background-color: var(--color-info-hover);
+}
+
+/* Classes pour les formulaires */
+.form-input {
+    border-color: var(--color-border);
+    color: var(--color-text);
+    background-color: var(--color-surface);
+}
+
+.form-input:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Effets spéciaux pour certains thèmes */
+.theme-glass {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.theme-neon .btn-primary,
+.theme-neon .btn-secondary,
+.theme-neon .btn-success,
+.theme-neon .btn-warning,
+.theme-neon .btn-danger,
+.theme-neon .btn-info {
+    box-shadow: 0 0 10px currentColor;
+    animation: neon-pulse 2s infinite;
+}
+
+.theme-cyberpunk .btn-primary,
+.theme-cyberpunk .btn-secondary,
+.theme-cyberpunk .btn-success,
+.theme-cyberpunk .btn-warning,
+.theme-cyberpunk .btn-danger,
+.theme-cyberpunk .btn-info {
+    box-shadow: 0 0 15px currentColor;
+    text-shadow: 0 0 5px currentColor;
+}
+
+@keyframes neon-pulse {
+    0%,
+    100% {
+        box-shadow: 0 0 10px currentColor;
+    }
+    50% {
+        box-shadow: 0 0 20px currentColor, 0 0 30px currentColor;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .theme-glass {
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+    }
+}

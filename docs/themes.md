@@ -1,80 +1,173 @@
-# Système de thèmes
+# Système de Thèmes - LarappeUI
 
-LarappeUI intègre un système de thèmes visuels permettant de changer l’apparence globale de l’interface en un clic, directement depuis le sélecteur de thème situé dans l’en-tête (header).
+## Vue d'ensemble
 
-## Thèmes disponibles par défaut
+Le système de thèmes de LarappeUI permet de personnaliser l'apparence de l'application avec différents thèmes prédéfinis et la possibilité de créer des thèmes personnalisés.
 
-- Pro (FrappeUI)
-- Light
-- Dark
-- Glass
-- Forest
-- Sea
-- Summer
-- 2D
+## Thèmes Disponibles
 
-Chaque thème applique des couleurs et styles différents à l’ensemble de l’application via des attributs HTML (`<html theme="...">`) et des variables CSS.
+LarappeUI propose **20 thèmes** organisés en 6 catégories distinctes :
 
-## Nouveaux thèmes disponibles
+### 🎯 Thèmes de Base (3)
 
-- **Solarized Light** : Palette claire inspirée du thème Solarized, idéale pour le confort visuel.
-- **Solarized Dark** : Version sombre du Solarized, pour les amateurs de dark mode.
-- **Monokai** : Couleurs vives et contrastées, inspiré des éditeurs de code.
-- **Pastel** : Couleurs douces et désaturées, ambiance légère et apaisante.
-- **Minimal** : Blanc, gris, noir, pour une interface ultra épurée.
-- **Coffee** : Tons bruns et beiges, ambiance chaleureuse de café.
-- **Sakura** : Rose pâle et blanc, inspiration florale japonaise.
-- **Forest Night** : Verts foncés et marrons, ambiance forêt nocturne.
-- **Retro 80s** : Violet, turquoise, rose flashy, style années 80.
-- **Space** : Bleu nuit, violet, touches d’étoiles/blanc, ambiance cosmique.
-- **Vintage** : Jaune pâle, vert olive, orange doux, style rétro années 70.
-- **Dark** : Désormais full noir, toutes les surfaces, fonds, accents et éléments sont noirs ou gris très foncés, avec un texte blanc pour un contraste maximal.
+1. **Light** - Thème clair par défaut avec des couleurs modernes
+2. **Dark** - Thème sombre élégant pour une expérience nocturne
+3. **Pro (FrappeUI)** - Thème professionnel inspiré de FrappeUI
 
-Pour utiliser un thème, sélectionnez-le dans le menu déroulant en haut à droite de l’interface. Chaque thème applique automatiquement sa palette de couleurs à l’ensemble de l’UI.
+### 🌿 Thèmes Naturels (5)
 
-## Changer de thème
+4. **Forest** - Thème forestier avec des tons verts naturels
+5. **Forest Night** - Version nocturne du thème forest
+6. **Sea** - Thème marin avec des bleus océaniques
+7. **Sakura** - Thème floral japonais avec des tons roses
+8. **Summer** - Couleurs estivales chaleureuses
 
-Dans l’interface, utilise le menu déroulant “Thème” dans le header pour basculer instantanément entre les thèmes. Le thème sélectionné modifie l’attribut `theme` sur la balise `<html>`, ce qui applique les styles correspondants définis dans le layout principal (`resources/views/layouts/app.blade.php`).
+### 🎨 Thèmes Créatifs (4)
 
-## Créer un thème personnalisé
+9. **Glass** - Effet de verre avec transparence
+10. **2D** - Couleurs géométriques vives
+11. **Retro 80s** - Style rétro années 80
+12. **Space** - Thème spatial mystérieux
 
-1. **Définir le style dans le layout**
-   
-   Dans `resources/views/layouts/app.blade.php`, ajoute une nouvelle règle CSS dans le bloc `<style>` :
-   
-   ```html
-   [theme="mon-theme"] {
-       background-color: #f0e6ff;
-       color: #3b0764;
-       /* Ajoute ici tes variables ou styles personnalisés */
-   }
-   ```
+### ⚡ Thèmes Spécialisés (5)
 
-2. **Ajouter le thème au sélecteur**
-   
-   Dans le `<select id="theme-select">`, ajoute une nouvelle option :
-   
-   ```html
-   <option value="mon-theme">Mon Thème</option>
-   ```
+13. **Minimal** - Design minimaliste épuré
+14. **Coffee** - Tons café chaleureux
+15. **Vintage** - Style vintage classique
+16. **Monokai** - Palette Monokai pour développeurs
+17. **Pastel** - Couleurs douces et apaisantes
 
-3. **(Optionnel) Ajouter des variables CSS personnalisées**
-   
-   Tu peux définir des variables CSS pour les couleurs, backgrounds, etc. Exemple :
-   
-   ```css
-   [theme="mon-theme"] {
-       --color-primary: #7c3aed;
-       --color-bg: #f0e6ff;
-       --color-text: #3b0764;
-       background-color: var(--color-bg);
-       color: var(--color-text);
-   }
-   ```
-   Utilise ensuite ces variables dans tes composants ou ton CSS.
+### 🌞 Thèmes Solarized (2)
 
-4. **Utiliser le thème**
-   
-   Relance l’application, sélectionne “Mon Thème” dans le menu, et vérifie le rendu.
+18. **Solarized Light** - Palette Solarized claire
+19. **Solarized Dark** - Palette Solarized sombre
 
-**Astuce :** Tu peux t’inspirer des thèmes existants dans le layout pour la structure et la syntaxe. 
+### 💼 Thèmes Professionnels (1)
+
+20. **Pro (FrappeUI)** - Thème professionnel
+
+> **Note** : Pour une documentation complète des thèmes étendus, consultez [extended-themes.md](extended-themes.md).
+
+## Structure des Fichiers
+
+```
+public/
+├── css/
+│   ├── themes.css          # Variables CSS de base
+│   ├── themes-complete.css # Thèmes complets
+│   ├── themes-extended.css # Thèmes étendus
+│   └── themes-all.css      # Tous les thèmes (20 thèmes)
+├── js/
+│   └── themes-manager.js   # Gestionnaire JavaScript des thèmes
+resources/
+├── css/
+│   └── themes/             # Fichiers CSS individuels des thèmes
+└── views/
+    ├── themes-manager.blade.php    # Interface de gestion des thèmes
+    └── themes-showcase.blade.php   # Showcase des thèmes
+```
+
+## Variables CSS
+
+Chaque thème utilise les variables CSS suivantes :
+
+```css
+:root {
+    --color-primary: #3b82f6; /* Couleur principale */
+    --color-secondary: #6b7280; /* Couleur secondaire */
+    --color-success: #10b981; /* Couleur de succès */
+    --color-warning: #f59e0b; /* Couleur d'avertissement */
+    --color-danger: #ef4444; /* Couleur de danger */
+    --color-info: #06b6d4; /* Couleur d'information */
+    --color-background: #ffffff; /* Couleur d'arrière-plan */
+    --color-surface: #f9fafb; /* Couleur de surface */
+    --color-text: #111827; /* Couleur de texte */
+    --color-textSecondary: #6b7280; /* Couleur de texte secondaire */
+    --color-border: #e5e7eb; /* Couleur de bordure */
+    --color-accent: #f59e42; /* Couleur d'accent */
+}
+```
+
+## Utilisation
+
+### Dans les Vues Blade
+
+```html
+<!-- Utiliser les classes de couleur -->
+<button class="bg-primary text-white">Bouton Principal</button>
+<div class="bg-success text-white">Message de succès</div>
+<p class="text-danger">Message d'erreur</p>
+```
+
+### Dans JavaScript
+
+```javascript
+// Changer de thème
+if (window.ThemeManager) {
+    window.ThemeManager.applyTheme("dark");
+}
+
+// Obtenir le thème actuel
+const currentTheme = window.ThemeManager.getCurrentTheme();
+
+// Obtenir les couleurs d'un thème
+const colors = window.ThemeManager.getThemeColors("light");
+```
+
+## Gestionnaire de Thèmes
+
+Le fichier `themes-manager.js` contient la classe `ThemeManager` qui gère :
+
+-   **Changement de thème** : `applyTheme(themeName)`
+-   **Persistance** : Sauvegarde automatique dans localStorage
+-   **Événements** : Déclenche un événement `themeChanged` lors du changement
+-   **Thèmes personnalisés** : Support pour créer des thèmes personnalisés
+
+## Interface de Gestion
+
+L'interface de gestion des thèmes (`/themes-manager`) permet de :
+
+1. **Prévisualiser** les thèmes sur des composants
+2. **Sélectionner** un thème parmi les disponibles
+3. **Personnaliser** les couleurs d'un thème
+4. **Exporter** les thèmes personnalisés
+
+## Personnalisation
+
+### Créer un Thème Personnalisé
+
+```javascript
+const customColors = {
+    primary: "#ff6b6b",
+    secondary: "#4ecdc4",
+    // ... autres couleurs
+};
+
+window.ThemeManager.applyCustomTheme(customColors);
+```
+
+### Ajouter un Nouveau Thème
+
+1. Ajouter les variables CSS dans `public/css/themes.css`
+2. Ajouter la configuration dans `public/js/themes-manager.js`
+3. Mettre à jour l'interface dans `themes-manager.blade.php`
+
+## Compatibilité
+
+-   **Navigateurs** : Tous les navigateurs modernes supportant les variables CSS
+-   **Laravel** : Compatible avec Laravel 12+
+-   **Alpine.js** : Utilisé pour l'interactivité de l'interface
+
+## Dépannage
+
+### Erreurs Courantes
+
+1. **Fichier JavaScript manquant** : Vérifier que `themes-manager.js` existe dans `public/js/`
+2. **Erreur Alpine.js** : Vérifier la syntaxe JavaScript dans les expressions Alpine
+3. **Thème non appliqué** : Vérifier que le fichier CSS `themes.css` est chargé
+
+### Solutions
+
+-   Recharger la page après modification des fichiers
+-   Vérifier la console du navigateur pour les erreurs JavaScript
+-   S'assurer que tous les fichiers sont bien servis par le serveur web

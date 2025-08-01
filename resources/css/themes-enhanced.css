@@ -1,0 +1,426 @@
+/* Thèmes améliorés pour les composants */
+
+/* Thème Light (par défaut) */
+.theme-light {
+  --color-primary: #3b82f6;
+  --color-secondary: #6b7280;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #06b6d4;
+  --color-background: #ffffff;
+  --color-surface: #f9fafb;
+  --color-text: #111827;
+  --color-textSecondary: #6b7280;
+  --color-border: #e5e7eb;
+  --color-accent: #f59e42;
+}
+
+/* Thème Dark */
+.theme-dark {
+  --color-primary: #60a5fa;
+  --color-secondary: #9ca3af;
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+  --color-danger: #f87171;
+  --color-info: #22d3ee;
+  --color-background: #111827;
+  --color-surface: #1f2937;
+  --color-text: #f9fafb;
+  --color-textSecondary: #d1d5db;
+  --color-border: #374151;
+  --color-accent: #fbbf24;
+}
+
+/* Thème Pro (FrappeUI) */
+.theme-pro {
+  --color-primary: #2563eb;
+  --color-secondary: #64748b;
+  --color-success: #059669;
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+  --color-info: #0891b2;
+  --color-background: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text: #1e293b;
+  --color-textSecondary: #64748b;
+  --color-border: #e2e8f0;
+  --color-accent: #fbbf24;
+}
+
+/* Thème Enterprise */
+.theme-enterprise {
+  --color-primary: #1e40af;
+  --color-secondary: #475569;
+  --color-success: #047857;
+  --color-warning: #b45309;
+  --color-danger: #b91c1c;
+  --color-info: #0e7490;
+  --color-background: #f1f5f9;
+  --color-surface: #ffffff;
+  --color-text: #0f172a;
+  --color-textSecondary: #475569;
+  --color-border: #cbd5e1;
+  --color-accent: #f59e0b;
+}
+
+/* Thème Glass */
+.theme-glass {
+  --color-primary: #a5b4fc;
+  --color-secondary: #c7d2fe;
+  --color-success: #86efac;
+  --color-warning: #fde047;
+  --color-danger: #fca5a5;
+  --color-info: #67e8f9;
+  --color-background: rgba(255,255,255,0.6);
+  --color-surface: rgba(255,255,255,0.8);
+  --color-text: #374151;
+  --color-textSecondary: #6b7280;
+  --color-border: rgba(255,255,255,0.3);
+  --color-accent: #f472b6;
+}
+
+/* Thème Neon */
+.theme-neon {
+  --color-primary: #00ffff;
+  --color-secondary: #ff00ff;
+  --color-success: #00ff00;
+  --color-warning: #ffff00;
+  --color-danger: #ff0080;
+  --color-info: #0080ff;
+  --color-background: #000000;
+  --color-surface: #1a1a1a;
+  --color-text: #ffffff;
+  --color-textSecondary: #cccccc;
+  --color-border: #333333;
+  --color-accent: #ff6b6b;
+}
+
+/* Thème Forest */
+.theme-forest {
+  --color-primary: #22c55e;
+  --color-secondary: #84cc16;
+  --color-success: #16a34a;
+  --color-warning: #ca8a04;
+  --color-danger: #dc2626;
+  --color-info: #0891b2;
+  --color-background: #f0fdf4;
+  --color-surface: #ffffff;
+  --color-text: #14532d;
+  --color-textSecondary: #166534;
+  --color-border: #bbf7d0;
+  --color-accent: #a3e635;
+}
+
+/* Thème Sea */
+.theme-sea {
+  --color-primary: #0ea5e9;
+  --color-secondary: #38bdf8;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #06b6d4;
+  --color-background: #e0f2fe;
+  --color-surface: #ffffff;
+  --color-text: #0c4a6e;
+  --color-textSecondary: #0369a1;
+  --color-border: #bae6fd;
+  --color-accent: #38bdf8;
+}
+
+/* Thème Sunset */
+.theme-sunset {
+  --color-primary: #f59e42;
+  --color-secondary: #fb923c;
+  --color-success: #10b981;
+  --color-warning: #fbbf24;
+  --color-danger: #ef4444;
+  --color-info: #06b6d4;
+  --color-background: #fff7ed;
+  --color-surface: #ffffff;
+  --color-text: #78350f;
+  --color-textSecondary: #92400e;
+  --color-border: #fed7aa;
+  --color-accent: #fbbf24;
+}
+
+/* Thème Modern */
+.theme-modern {
+  --color-primary: #6366f1;
+  --color-secondary: #8b5cf6;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #06b6d4;
+  --color-background: #fafafa;
+  --color-surface: #ffffff;
+  --color-text: #1f2937;
+  --color-textSecondary: #6b7280;
+  --color-border: #e5e7eb;
+  --color-accent: #8b5cf6;
+}
+
+/* Thème Minimal */
+.theme-minimal {
+  --color-primary: #000000;
+  --color-secondary: #6b7280;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #06b6d4;
+  --color-background: #ffffff;
+  --color-surface: #fafafa;
+  --color-text: #000000;
+  --color-textSecondary: #6b7280;
+  --color-border: #e5e7eb;
+  --color-accent: #f59e0b;
+}
+
+/* Thème 2D */
+.theme-2d {
+  --color-primary: #f43f5e;
+  --color-secondary: #a21caf;
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-info: #06b6d4;
+  --color-background: #f1f5f9;
+  --color-surface: #ffffff;
+  --color-text: #0f172a;
+  --color-textSecondary: #475569;
+  --color-border: #cbd5e1;
+  --color-accent: #a21caf;
+}
+
+/* Thème Retro */
+.theme-retro {
+  --color-primary: #ff6b6b;
+  --color-secondary: #4ecdc4;
+  --color-success: #45b7d1;
+  --color-warning: #f7b731;
+  --color-danger: #ee5a52;
+  --color-info: #a55eea;
+  --color-background: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-text: #2d3436;
+  --color-textSecondary: #636e72;
+  --color-border: #ddd;
+  --color-accent: #f7b731;
+}
+
+/* Thème Cyberpunk */
+.theme-cyberpunk {
+  --color-primary: #ff0080;
+  --color-secondary: #00ffff;
+  --color-success: #00ff00;
+  --color-warning: #ffff00;
+  --color-danger: #ff0000;
+  --color-info: #0080ff;
+  --color-background: #0a0a0a;
+  --color-surface: #1a1a1a;
+  --color-text: #ffffff;
+  --color-textSecondary: #cccccc;
+  --color-border: #333333;
+  --color-accent: #ff0080;
+}
+
+/* Thème Pastel */
+.theme-pastel {
+  --color-primary: #a5b4fc;
+  --color-secondary: #fbbf24;
+  --color-success: #86efac;
+  --color-warning: #fde047;
+  --color-danger: #fca5a5;
+  --color-info: #67e8f9;
+  --color-background: #fefefe;
+  --color-surface: #ffffff;
+  --color-text: #374151;
+  --color-textSecondary: #6b7280;
+  --color-border: #e5e7eb;
+  --color-accent: #f472b6;
+}
+
+/* Styles globaux pour les thèmes */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Styles pour les composants avec variables CSS */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+.btn-success {
+  background-color: var(--color-success);
+  color: white;
+}
+
+.btn-danger {
+  background-color: var(--color-danger);
+  color: white;
+}
+
+.btn-warning {
+  background-color: var(--color-warning);
+  color: white;
+}
+
+.btn-info {
+  background-color: var(--color-info);
+  color: white;
+}
+
+/* Styles pour les inputs */
+.form-input {
+  background-color: var(--color-surface);
+  border-color: var(--color-border);
+  color: var(--color-text);
+}
+
+.form-input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Styles pour les textes */
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-textSecondary);
+}
+
+.text-success {
+  color: var(--color-success);
+}
+
+.text-danger {
+  color: var(--color-danger);
+}
+
+.text-warning {
+  color: var(--color-warning);
+}
+
+.text-info {
+  color: var(--color-info);
+}
+
+/* Styles pour les backgrounds */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-success {
+  background-color: var(--color-success);
+}
+
+.bg-danger {
+  background-color: var(--color-danger);
+}
+
+.bg-warning {
+  background-color: var(--color-warning);
+}
+
+.bg-info {
+  background-color: var(--color-info);
+}
+
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.bg-background {
+  background-color: var(--color-background);
+}
+
+/* Styles pour les bordures */
+.border-primary {
+  border-color: var(--color-primary);
+}
+
+.border-secondary {
+  border-color: var(--color-secondary);
+}
+
+.border-success {
+  border-color: var(--color-success);
+}
+
+.border-danger {
+  border-color: var(--color-danger);
+}
+
+.border-warning {
+  border-color: var(--color-warning);
+}
+
+.border-info {
+  border-color: var(--color-info);
+}
+
+.border-default {
+  border-color: var(--color-border);
+}
+
+/* Effets spéciaux pour certains thèmes */
+.theme-glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.theme-neon .btn-primary,
+.theme-neon .btn-secondary,
+.theme-neon .btn-success,
+.theme-neon .btn-danger,
+.theme-neon .btn-warning,
+.theme-neon .btn-info {
+  box-shadow: 0 0 10px currentColor;
+  text-shadow: 0 0 5px currentColor;
+}
+
+.theme-cyberpunk .btn-primary,
+.theme-cyberpunk .btn-secondary,
+.theme-cyberpunk .btn-success,
+.theme-cyberpunk .btn-danger,
+.theme-cyberpunk .btn-warning,
+.theme-cyberpunk .btn-info {
+  box-shadow: 0 0 15px currentColor;
+  text-shadow: 0 0 8px currentColor;
+  border: 2px solid currentColor;
+}
+
+/* Animations pour les thèmes */
+@keyframes neon-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.theme-neon .btn-primary,
+.theme-neon .btn-secondary,
+.theme-neon .btn-success,
+.theme-neon .btn-danger,
+.theme-neon .btn-warning,
+.theme-neon .btn-info {
+  animation: neon-pulse 2s infinite;
+}
+
+/* Responsive design pour les thèmes */
+@media (max-width: 768px) {
+  .theme-glass {
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+  }
+}
