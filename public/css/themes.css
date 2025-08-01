@@ -423,9 +423,108 @@ body {
 .theme-vintage .bg-blue-600,
 .theme-monokai .bg-blue-600,
 .theme-solarized-light .bg-blue-600,
+/* Règles pour bg-blue-600 */
+.theme-light .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-dark .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-pro .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-enterprise .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-glass .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-neon .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-forest .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-forest-night .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-sea .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-sakura .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-summer .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-sunset .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-modern .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-minimal .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-2d .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-retro .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-retro80s .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-cyberpunk .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-pastel .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-space .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-coffee .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-vintage .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-monokai .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-solarized-light .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
 .theme-solarized-dark .bg-blue-600 {
     background-color: var(--color-primary) !important;
 }
+
+
 
 .theme-light .bg-gray-100,
 .theme-dark .bg-gray-100,
@@ -441,9 +540,108 @@ body {
 .theme-2d .bg-gray-100,
 .theme-retro .bg-gray-100,
 .theme-cyberpunk .bg-gray-100,
+/* Règles pour bg-gray-100 */
+.theme-light .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-dark .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-pro .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-enterprise .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-glass .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-neon .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-forest .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-forest-night .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-sea .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-sakura .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-summer .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-sunset .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-modern .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-minimal .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-2d .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-retro .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-retro80s .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-cyberpunk .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
 .theme-pastel .bg-gray-100 {
     background-color: var(--color-secondary) !important;
 }
+
+.theme-space .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-coffee .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-vintage .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-monokai .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-solarized-light .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-solarized-dark .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+
 
 .theme-light .bg-red-600,
 .theme-dark .bg-red-600,
@@ -459,9 +657,108 @@ body {
 .theme-2d .bg-red-600,
 .theme-retro .bg-red-600,
 .theme-cyberpunk .bg-red-600,
+/* Règles pour bg-red-600 */
+.theme-light .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-dark .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-pro .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-enterprise .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-glass .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-neon .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-forest .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-forest-night .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-sea .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-sakura .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-summer .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-sunset .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-modern .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-minimal .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-2d .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-retro .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-retro80s .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-cyberpunk .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
 .theme-pastel .bg-red-600 {
     background-color: var(--color-danger) !important;
 }
+
+.theme-space .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-coffee .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-vintage .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-monokai .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-solarized-light .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-solarized-dark .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+
 
 .theme-light .bg-green-600,
 .theme-dark .bg-green-600,
@@ -477,9 +774,108 @@ body {
 .theme-2d .bg-green-600,
 .theme-retro .bg-green-600,
 .theme-cyberpunk .bg-green-600,
+/* Règles pour bg-green-600 */
+.theme-light .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-dark .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-pro .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-enterprise .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-glass .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-neon .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-forest .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-forest-night .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-sea .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-sakura .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-summer .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-sunset .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-modern .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-minimal .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-2d .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-retro .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-retro80s .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-cyberpunk .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
 .theme-pastel .bg-green-600 {
     background-color: var(--color-success) !important;
 }
+
+.theme-space .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-coffee .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-vintage .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-monokai .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-solarized-light .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-solarized-dark .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+
 
 .theme-light .text-gray-900,
 .theme-dark .text-gray-900,
@@ -495,9 +891,108 @@ body {
 .theme-2d .text-gray-900,
 .theme-retro .text-gray-900,
 .theme-cyberpunk .text-gray-900,
+/* Règles pour text-gray-900 */
+.theme-light .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-dark .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-pro .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-enterprise .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-glass .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-neon .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-forest .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-forest-night .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-sea .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-sakura .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-summer .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-sunset .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-modern .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-minimal .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-2d .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-retro .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-retro80s .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-cyberpunk .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
 .theme-pastel .text-gray-900 {
     color: var(--color-text) !important;
 }
+
+.theme-space .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-coffee .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-vintage .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-monokai .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-solarized-light .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-solarized-dark .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+
 
 .theme-light .text-gray-600,
 .theme-dark .text-gray-600,
@@ -513,9 +1008,108 @@ body {
 .theme-2d .text-gray-600,
 .theme-retro .text-gray-600,
 .theme-cyberpunk .text-gray-600,
+/* Règles pour text-gray-600 */
+.theme-light .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-dark .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-pro .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-enterprise .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-glass .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-neon .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-forest .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-forest-night .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sea .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sakura .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-summer .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sunset .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-modern .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-minimal .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-2d .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-retro .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-retro80s .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-cyberpunk .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
 .theme-pastel .text-gray-600 {
     color: var(--color-textSecondary) !important;
 }
+
+.theme-space .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-coffee .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-vintage .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-monokai .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-solarized-light .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-solarized-dark .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+
 
 .theme-light .border-gray-300,
 .theme-dark .border-gray-300,
@@ -531,9 +1125,108 @@ body {
 .theme-2d .border-gray-300,
 .theme-retro .border-gray-300,
 .theme-cyberpunk .border-gray-300,
+/* Règles pour border-gray-300 */
+.theme-light .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-dark .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-pro .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-enterprise .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-glass .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-neon .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-forest .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-forest-night .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-sea .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-sakura .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-summer .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-sunset .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-modern .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-minimal .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-2d .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-retro .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-retro80s .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-cyberpunk .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
 .theme-pastel .border-gray-300 {
     border-color: var(--color-border) !important;
 }
+
+.theme-space .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-coffee .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-vintage .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-monokai .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-solarized-light .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-solarized-dark .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+
 
 .theme-light .bg-white,
 .theme-dark .bg-white,
@@ -549,9 +1242,108 @@ body {
 .theme-2d .bg-white,
 .theme-retro .bg-white,
 .theme-cyberpunk .bg-white,
+/* Règles pour bg-white */
+.theme-light .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-dark .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-pro .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-enterprise .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-glass .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-neon .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-forest .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-forest-night .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sea .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sakura .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-summer .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sunset .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-modern .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-minimal .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-2d .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-retro .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-retro80s .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-cyberpunk .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
 .theme-pastel .bg-white {
     background-color: var(--color-surface) !important;
 }
+
+.theme-space .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-coffee .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-vintage .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-monokai .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-solarized-light .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-solarized-dark .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+
 
 /* Classes utilitaires avec !important pour écraser Tailwind */
 .bg-primary {
@@ -734,9 +1526,108 @@ body {
 .theme-2d .bg-white,
 .theme-retro .bg-white,
 .theme-cyberpunk .bg-white,
+/* Règles pour bg-white */
+.theme-light .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-dark .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-pro .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-enterprise .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-glass .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-neon .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-forest .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-forest-night .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sea .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sakura .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-summer .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sunset .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-modern .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-minimal .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-2d .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-retro .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-retro80s .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-cyberpunk .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
 .theme-pastel .bg-white {
     background-color: var(--color-surface) !important;
 }
+
+.theme-space .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-coffee .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-vintage .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-monokai .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-solarized-light .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-solarized-dark .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+
 
 /* Règles pour les champs de saisie */
 .theme-light input[type="text"],
@@ -794,9 +1685,108 @@ body {
 .theme-2d .text-gray-900,
 .theme-retro .text-gray-900,
 .theme-cyberpunk .text-gray-900,
+/* Règles pour text-gray-900 */
+.theme-light .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-dark .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-pro .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-enterprise .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-glass .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-neon .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-forest .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-forest-night .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-sea .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-sakura .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-summer .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-sunset .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-modern .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-minimal .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-2d .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-retro .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-retro80s .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-cyberpunk .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
 .theme-pastel .text-gray-900 {
     color: var(--color-text) !important;
 }
+
+.theme-space .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-coffee .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-vintage .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-monokai .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-solarized-light .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-solarized-dark .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+
 
 /* Règles pour les bordures des cartes */
 .theme-light .border,
@@ -832,9 +1822,108 @@ body {
 .theme-2d .shadow-sm,
 .theme-retro .shadow-sm,
 .theme-cyberpunk .shadow-sm,
+/* Règles pour shadow-sm */
+.theme-light .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-dark .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-pro .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-enterprise .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-glass .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-neon .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-forest .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-forest-night .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-sea .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-sakura .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-summer .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-sunset .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-modern .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-minimal .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-2d .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-retro .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-retro80s .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-cyberpunk .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
 .theme-pastel .shadow-sm {
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
 }
+
+.theme-space .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-coffee .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-vintage .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-monokai .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-solarized-light .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-solarized-dark .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+
 
 /* Règles pour les icônes SVG */
 .theme-light svg,
@@ -870,9 +1959,108 @@ body {
 .theme-2d .text-blue-500,
 .theme-retro .text-blue-500,
 .theme-cyberpunk .text-blue-500,
+/* Règles pour text-blue-500 */
+.theme-light .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-dark .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-pro .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-enterprise .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-glass .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-neon .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-forest .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-forest-night .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-sea .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-sakura .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-summer .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-sunset .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-modern .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-minimal .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-2d .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-retro .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-retro80s .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-cyberpunk .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
 .theme-pastel .text-blue-500 {
     color: var(--color-primary) !important;
 }
+
+.theme-space .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-coffee .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-vintage .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-monokai .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-solarized-light .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+.theme-solarized-dark .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+
 
 /* Règles pour les états de survol des cartes */
 .theme-light .hover\:shadow-md:hover,
@@ -909,9 +2097,108 @@ body {
 .theme-2d .ring-2,
 .theme-retro .ring-2,
 .theme-cyberpunk .ring-2,
+/* Règles pour ring-2 */
+.theme-light .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-dark .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-pro .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-enterprise .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-glass .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-neon .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-forest .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-forest-night .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-sea .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-sakura .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-summer .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-sunset .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-modern .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-minimal .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-2d .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-retro .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-retro80s .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-cyberpunk .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
 .theme-pastel .ring-2 {
     --tw-ring-color: var(--color-primary) !important;
 }
+
+.theme-space .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-coffee .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-vintage .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-monokai .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-solarized-light .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-solarized-dark .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+
 
 .theme-light .ring-blue-500,
 .theme-dark .ring-blue-500,
@@ -927,9 +2214,108 @@ body {
 .theme-2d .ring-blue-500,
 .theme-retro .ring-blue-500,
 .theme-cyberpunk .ring-blue-500,
+/* Règles pour ring-blue-500 */
+.theme-light .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-dark .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-pro .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-enterprise .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-glass .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-neon .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-forest .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-forest-night .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-sea .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-sakura .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-summer .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-sunset .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-modern .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-minimal .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-2d .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-retro .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-retro80s .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-cyberpunk .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
 .theme-pastel .ring-blue-500 {
     --tw-ring-color: var(--color-primary) !important;
 }
+
+.theme-space .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-coffee .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-vintage .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-monokai .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-solarized-light .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-solarized-dark .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+
 
 /* Règles pour les éléments de navigation */
 .theme-light .bg-gray-100,
@@ -946,10 +2332,108 @@ body {
 .theme-2d .bg-gray-100,
 .theme-retro .bg-gray-100,
 .theme-cyberpunk .bg-gray-100,
+/* Règles pour bg-gray-100 */
+.theme-light .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-dark .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-pro .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-enterprise .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-glass .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-neon .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-forest .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-forest-night .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-sea .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-sakura .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-summer .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-sunset .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-modern .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-minimal .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-2d .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-retro .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-retro80s .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-cyberpunk .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
 .theme-pastel .bg-gray-100 {
     background-color: var(--color-secondary) !important;
-    opacity: 0.1;
 }
+
+.theme-space .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-coffee .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-vintage .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-monokai .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-solarized-light .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-solarized-dark .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+
 
 /* Règles pour les icônes colorées dans la navigation */
 .theme-light .text-green-500,
@@ -966,9 +2450,108 @@ body {
 .theme-2d .text-green-500,
 .theme-retro .text-green-500,
 .theme-cyberpunk .text-green-500,
+/* Règles pour text-green-500 */
+.theme-light .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-dark .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-pro .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-enterprise .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-glass .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-neon .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-forest .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-forest-night .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-sea .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-sakura .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-summer .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-sunset .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-modern .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-minimal .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-2d .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-retro .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-retro80s .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-cyberpunk .text-green-500 {
+    color: var(--color-success) !important;
+}
+
 .theme-pastel .text-green-500 {
     color: var(--color-success) !important;
 }
+
+.theme-space .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-coffee .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-vintage .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-monokai .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-solarized-light .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-solarized-dark .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+
 
 .theme-light .text-red-500,
 .theme-dark .text-red-500,
@@ -984,9 +2567,108 @@ body {
 .theme-2d .text-red-500,
 .theme-retro .text-red-500,
 .theme-cyberpunk .text-red-500,
+/* Règles pour text-red-500 */
+.theme-light .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-dark .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-pro .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-enterprise .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-glass .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-neon .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-forest .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-forest-night .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-sea .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-sakura .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-summer .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-sunset .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-modern .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-minimal .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-2d .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-retro .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-retro80s .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-cyberpunk .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
 .theme-pastel .text-red-500 {
     color: var(--color-danger) !important;
 }
+
+.theme-space .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-coffee .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-vintage .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-monokai .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-solarized-light .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-solarized-dark .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+
 
 .theme-light .text-yellow-500,
 .theme-dark .text-yellow-500,
@@ -1002,9 +2684,108 @@ body {
 .theme-2d .text-yellow-500,
 .theme-retro .text-yellow-500,
 .theme-cyberpunk .text-yellow-500,
+/* Règles pour text-yellow-500 */
+.theme-light .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-dark .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-pro .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-enterprise .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-glass .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-neon .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-forest .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-forest-night .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-sea .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-sakura .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-summer .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-sunset .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-modern .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-minimal .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-2d .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-retro .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-retro80s .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-cyberpunk .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
 .theme-pastel .text-yellow-500 {
     color: var(--color-warning) !important;
 }
+
+.theme-space .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-coffee .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-vintage .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-monokai .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-solarized-light .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+.theme-solarized-dark .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+
 
 /* Règles pour les éléments de la sidebar */
 .theme-light .border-gray-200,
@@ -1021,9 +2802,108 @@ body {
 .theme-2d .border-gray-200,
 .theme-retro .border-gray-200,
 .theme-cyberpunk .border-gray-200,
+/* Règles pour border-gray-200 */
+.theme-light .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-dark .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-pro .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-enterprise .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-glass .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-neon .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-forest .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-forest-night .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-sea .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-sakura .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-summer .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-sunset .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-modern .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-minimal .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-2d .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-retro .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-retro80s .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-cyberpunk .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
 .theme-pastel .border-gray-200 {
     border-color: var(--color-border) !important;
 }
+
+.theme-space .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-coffee .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-vintage .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-monokai .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-solarized-light .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-solarized-dark .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+
 
 /* Règles pour les textes de la sidebar */
 .theme-light .text-gray-700,
@@ -1040,9 +2920,108 @@ body {
 .theme-2d .text-gray-700,
 .theme-retro .text-gray-700,
 .theme-cyberpunk .text-gray-700,
+/* Règles pour text-gray-700 */
+.theme-light .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-dark .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-pro .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-enterprise .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-glass .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-neon .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-forest .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-forest-night .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-sea .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-sakura .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-summer .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-sunset .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-modern .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-minimal .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-2d .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-retro .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-retro80s .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-cyberpunk .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
 .theme-pastel .text-gray-700 {
     color: var(--color-text) !important;
 }
+
+.theme-space .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-coffee .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-vintage .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-monokai .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-solarized-light .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-solarized-dark .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+
 
 .theme-light .text-gray-500,
 .theme-dark .text-gray-500,
@@ -1058,9 +3037,108 @@ body {
 .theme-2d .text-gray-500,
 .theme-retro .text-gray-500,
 .theme-cyberpunk .text-gray-500,
+/* Règles pour text-gray-500 */
+.theme-light .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-dark .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-pro .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-enterprise .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-glass .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-neon .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-forest .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-forest-night .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sea .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sakura .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-summer .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sunset .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-modern .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-minimal .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-2d .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-retro .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-retro80s .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-cyberpunk .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
 .theme-pastel .text-gray-500 {
     color: var(--color-textSecondary) !important;
 }
+
+.theme-space .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-coffee .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-vintage .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-monokai .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-solarized-light .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-solarized-dark .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+
 
 /* Règles pour les éléments de focus et hover de la navigation */
 .theme-light .hover\:bg-gray-100:hover,
@@ -1115,9 +3193,108 @@ body {
 .theme-2d .bg-white,
 .theme-retro .bg-white,
 .theme-cyberpunk .bg-white,
+/* Règles pour bg-white */
+.theme-light .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-dark .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-pro .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-enterprise .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-glass .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-neon .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-forest .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-forest-night .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sea .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sakura .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-summer .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sunset .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-modern .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-minimal .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-2d .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-retro .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-retro80s .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-cyberpunk .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
 .theme-pastel .bg-white {
     background-color: var(--color-surface) !important;
 }
+
+.theme-space .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-coffee .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-vintage .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-monokai .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-solarized-light .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-solarized-dark .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+
 
 /* Règles pour les ombres de la sidebar */
 .theme-light .shadow-lg,
@@ -1134,10 +3311,108 @@ body {
 .theme-2d .shadow-lg,
 .theme-retro .shadow-lg,
 .theme-cyberpunk .shadow-lg,
-.theme-pastel .shadow-lg {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+/* Règles pour shadow-lg */
+.theme-light .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
+
+.theme-dark .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-pro .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-enterprise .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-glass .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-neon .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-forest .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-forest-night .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-sea .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-sakura .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-summer .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-sunset .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-modern .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-minimal .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-2d .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-retro .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-retro80s .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-cyberpunk .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-pastel .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-space .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-coffee .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-vintage .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-monokai .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-solarized-light .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.theme-solarized-dark .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+
 
 /* Règles pour les couleurs de fond supplémentaires */
 .theme-light .bg-blue-100,
@@ -1154,10 +3429,108 @@ body {
 .theme-2d .bg-blue-100,
 .theme-retro .bg-blue-100,
 .theme-cyberpunk .bg-blue-100,
-.theme-pastel .bg-blue-100 {
-    background-color: var(--color-primary) !important;
-    opacity: 0.1;
+/* Règles pour bg-blue-100 */
+.theme-light .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
 }
+
+.theme-dark .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-pro .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-enterprise .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-glass .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-neon .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-forest .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-forest-night .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-sea .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-sakura .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-summer .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-sunset .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-modern .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-minimal .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-2d .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-retro .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-retro80s .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-cyberpunk .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-pastel .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-space .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-coffee .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-vintage .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-monokai .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-solarized-light .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+.theme-solarized-dark .bg-blue-100 {
+    background-color: var(--color-primary) !important; opacity: 0.1;
+}
+
+
 
 .theme-light .bg-red-100,
 .theme-dark .bg-red-100,
@@ -1173,10 +3546,108 @@ body {
 .theme-2d .bg-red-100,
 .theme-retro .bg-red-100,
 .theme-cyberpunk .bg-red-100,
-.theme-pastel .bg-red-100 {
-    background-color: var(--color-danger) !important;
-    opacity: 0.1;
+/* Règles pour bg-red-100 */
+.theme-light .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
 }
+
+.theme-dark .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-pro .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-enterprise .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-glass .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-neon .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-forest .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-forest-night .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-sea .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-sakura .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-summer .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-sunset .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-modern .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-minimal .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-2d .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-retro .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-retro80s .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-cyberpunk .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-pastel .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-space .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-coffee .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-vintage .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-monokai .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-solarized-light .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+.theme-solarized-dark .bg-red-100 {
+    background-color: var(--color-danger) !important; opacity: 0.1;
+}
+
+
 
 .theme-light .bg-green-100,
 .theme-dark .bg-green-100,
@@ -1192,10 +3663,108 @@ body {
 .theme-2d .bg-green-100,
 .theme-retro .bg-green-100,
 .theme-cyberpunk .bg-green-100,
-.theme-pastel .bg-green-100 {
-    background-color: var(--color-success) !important;
-    opacity: 0.1;
+/* Règles pour bg-green-100 */
+.theme-light .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
 }
+
+.theme-dark .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-pro .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-enterprise .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-glass .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-neon .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-forest .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-forest-night .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-sea .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-sakura .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-summer .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-sunset .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-modern .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-minimal .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-2d .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-retro .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-retro80s .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-cyberpunk .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-pastel .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-space .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-coffee .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-vintage .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-monokai .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-solarized-light .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+.theme-solarized-dark .bg-green-100 {
+    background-color: var(--color-success) !important; opacity: 0.1;
+}
+
+
 
 .theme-light .bg-yellow-100,
 .theme-dark .bg-yellow-100,
@@ -1211,10 +3780,108 @@ body {
 .theme-2d .bg-yellow-100,
 .theme-retro .bg-yellow-100,
 .theme-cyberpunk .bg-yellow-100,
-.theme-pastel .bg-yellow-100 {
-    background-color: var(--color-warning) !important;
-    opacity: 0.1;
+/* Règles pour bg-yellow-100 */
+.theme-light .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
 }
+
+.theme-dark .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-pro .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-enterprise .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-glass .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-neon .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-forest .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-forest-night .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-sea .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-sakura .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-summer .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-sunset .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-modern .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-minimal .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-2d .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-retro .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-retro80s .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-cyberpunk .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-pastel .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-space .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-coffee .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-vintage .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-monokai .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-solarized-light .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-solarized-dark .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+
 
 /* Règles pour les couleurs de texte supplémentaires */
 .theme-light .text-blue-800,
@@ -1231,9 +3898,108 @@ body {
 .theme-2d .text-blue-800,
 .theme-retro .text-blue-800,
 .theme-cyberpunk .text-blue-800,
+/* Règles pour text-blue-800 */
+.theme-light .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-dark .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-pro .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-enterprise .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-glass .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-neon .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-forest .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-forest-night .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-sea .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-sakura .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-summer .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-sunset .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-modern .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-minimal .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-2d .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-retro .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-retro80s .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-cyberpunk .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
 .theme-pastel .text-blue-800 {
     color: var(--color-primary) !important;
 }
+
+.theme-space .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-coffee .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-vintage .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-monokai .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-solarized-light .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-solarized-dark .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+
 
 .theme-light .text-red-800,
 .theme-dark .text-red-800,
@@ -1249,9 +4015,108 @@ body {
 .theme-2d .text-red-800,
 .theme-retro .text-red-800,
 .theme-cyberpunk .text-red-800,
+/* Règles pour text-red-800 */
+.theme-light .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-dark .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-pro .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-enterprise .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-glass .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-neon .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-forest .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-forest-night .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-sea .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-sakura .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-summer .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-sunset .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-modern .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-minimal .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-2d .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-retro .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-retro80s .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-cyberpunk .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
 .theme-pastel .text-red-800 {
     color: var(--color-danger) !important;
 }
+
+.theme-space .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-coffee .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-vintage .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-monokai .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-solarized-light .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-solarized-dark .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+
 
 .theme-light .text-green-800,
 .theme-dark .text-green-800,
@@ -1267,9 +4132,108 @@ body {
 .theme-2d .text-green-800,
 .theme-retro .text-green-800,
 .theme-cyberpunk .text-green-800,
+/* Règles pour text-green-800 */
+.theme-light .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-dark .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-pro .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-enterprise .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-glass .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-neon .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-forest .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-forest-night .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-sea .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-sakura .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-summer .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-sunset .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-modern .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-minimal .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-2d .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-retro .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-retro80s .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-cyberpunk .text-green-800 {
+    color: var(--color-success) !important;
+}
+
 .theme-pastel .text-green-800 {
     color: var(--color-success) !important;
 }
+
+.theme-space .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-coffee .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-vintage .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-monokai .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-solarized-light .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-solarized-dark .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+
 
 .theme-light .text-yellow-800,
 .theme-dark .text-yellow-800,
@@ -1285,9 +4249,108 @@ body {
 .theme-2d .text-yellow-800,
 .theme-retro .text-yellow-800,
 .theme-cyberpunk .text-yellow-800,
+/* Règles pour text-yellow-800 */
+.theme-light .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-dark .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-pro .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-enterprise .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-glass .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-neon .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-forest .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-forest-night .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-sea .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-sakura .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-summer .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-sunset .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-modern .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-minimal .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-2d .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-retro .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-retro80s .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-cyberpunk .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
 .theme-pastel .text-yellow-800 {
     color: var(--color-warning) !important;
 }
+
+.theme-space .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-coffee .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-vintage .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-monokai .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-solarized-light .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-solarized-dark .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+
 
 .theme-light .text-gray-800,
 .theme-dark .text-gray-800,
@@ -1303,9 +4366,108 @@ body {
 .theme-2d .text-gray-800,
 .theme-retro .text-gray-800,
 .theme-cyberpunk .text-gray-800,
+/* Règles pour text-gray-800 */
+.theme-light .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-dark .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-pro .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-enterprise .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-glass .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-neon .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-forest .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-forest-night .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-sea .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-sakura .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-summer .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-sunset .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-modern .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-minimal .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-2d .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-retro .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-retro80s .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-cyberpunk .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
 .theme-pastel .text-gray-800 {
     color: var(--color-text) !important;
 }
+
+.theme-space .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-coffee .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-vintage .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-monokai .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-solarized-light .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+.theme-solarized-dark .text-gray-800 {
+    color: var(--color-text) !important;
+}
+
+
 
 /* Règles pour les bordures colorées */
 .theme-light .border-red-500,
@@ -1322,9 +4484,108 @@ body {
 .theme-2d .border-red-500,
 .theme-retro .border-red-500,
 .theme-cyberpunk .border-red-500,
+/* Règles pour border-red-500 */
+.theme-light .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-dark .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-pro .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-enterprise .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-glass .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-neon .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-forest .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-forest-night .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-sea .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-sakura .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-summer .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-sunset .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-modern .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-minimal .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-2d .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-retro .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-retro80s .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-cyberpunk .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
 .theme-pastel .border-red-500 {
     border-color: var(--color-danger) !important;
 }
+
+.theme-space .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-coffee .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-vintage .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-monokai .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-solarized-light .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-solarized-dark .border-red-500 {
+    border-color: var(--color-danger) !important;
+}
+
+
 
 .theme-light .border-blue-500,
 .theme-dark .border-blue-500,
@@ -1340,9 +4601,108 @@ body {
 .theme-2d .border-blue-500,
 .theme-retro .border-blue-500,
 .theme-cyberpunk .border-blue-500,
+/* Règles pour border-blue-500 */
+.theme-light .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-dark .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-pro .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-enterprise .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-glass .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-neon .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-forest .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-forest-night .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-sea .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-sakura .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-summer .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-sunset .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-modern .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-minimal .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-2d .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-retro .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-retro80s .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-cyberpunk .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
 .theme-pastel .border-blue-500 {
     border-color: var(--color-primary) !important;
 }
+
+.theme-space .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-coffee .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-vintage .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-monokai .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-solarized-light .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-solarized-dark .border-blue-500 {
+    border-color: var(--color-primary) !important;
+}
+
+
 
 /* Règles pour les états de focus */
 .theme-light .focus\:border-blue-500:focus,
@@ -1378,10 +4738,108 @@ body {
 .theme-2d .shadow-xl,
 .theme-retro .shadow-xl,
 .theme-cyberpunk .shadow-xl,
-.theme-pastel .shadow-xl {
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
-        0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+/* Règles pour shadow-xl */
+.theme-light .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
+
+.theme-dark .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-pro .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-enterprise .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-glass .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-neon .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-forest .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-forest-night .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-sea .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-sakura .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-summer .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-sunset .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-modern .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-minimal .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-2d .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-retro .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-retro80s .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-cyberpunk .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-pastel .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-space .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-coffee .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-vintage .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-monokai .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-solarized-light .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-solarized-dark .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+
 
 /* Règles pour les transitions */
 .theme-light .transition-all,
@@ -1398,11 +4856,108 @@ body {
 .theme-2d .transition-all,
 .theme-retro .transition-all,
 .theme-cyberpunk .transition-all,
-.theme-pastel .transition-all {
-    transition-property: all !important;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
-    transition-duration: 150ms !important;
+/* Règles pour transition-all */
+.theme-light .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
 }
+
+.theme-dark .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-pro .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-enterprise .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-glass .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-neon .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-forest .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-forest-night .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-sea .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-sakura .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-summer .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-sunset .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-modern .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-minimal .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-2d .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-retro .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-retro80s .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-cyberpunk .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-pastel .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-space .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-coffee .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-vintage .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-monokai .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-solarized-light .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-solarized-dark .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+
 
 /* Règles pour les effets de hover supplémentaires */
 .theme-light .hover\:scale-105:hover,
@@ -1476,9 +5031,108 @@ body {
 .theme-2d .bg-gray-50,
 .theme-retro .bg-gray-50,
 .theme-cyberpunk .bg-gray-50,
+/* Règles pour bg-gray-50 */
+.theme-light .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-dark .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-pro .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-enterprise .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-glass .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-neon .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-forest .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-forest-night .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sea .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sakura .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-summer .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sunset .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-modern .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-minimal .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-2d .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-retro .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-retro80s .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-cyberpunk .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
 .theme-pastel .bg-gray-50 {
     background-color: var(--color-surface) !important;
 }
+
+.theme-space .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-coffee .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-vintage .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-monokai .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-solarized-light .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-solarized-dark .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+
 
 /* Règles pour les éléments de focus supplémentaires */
 .theme-light .focus\:ring-opacity-50:focus,
@@ -1612,9 +5266,108 @@ body {
 .theme-2d .animate-spin,
 .theme-retro .animate-spin,
 .theme-cyberpunk .animate-spin,
+/* Règles pour animate-spin */
+.theme-light .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-dark .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-pro .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-enterprise .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-glass .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-neon .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-forest .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-forest-night .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-sea .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-sakura .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-summer .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-sunset .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-modern .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-minimal .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-2d .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-retro .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-retro80s .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-cyberpunk .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
 .theme-pastel .animate-spin {
     animation: spin 1s linear infinite !important;
 }
+
+.theme-space .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-coffee .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-vintage .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-monokai .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-solarized-light .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+.theme-solarized-dark .animate-spin {
+    animation: spin 1s linear infinite !important;
+}
+
+
 
 @keyframes spin {
     from {
@@ -1640,9 +5393,108 @@ body {
 .theme-2d .text-gray-400,
 .theme-retro .text-gray-400,
 .theme-cyberpunk .text-gray-400,
+/* Règles pour text-gray-400 */
+.theme-light .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-dark .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-pro .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-enterprise .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-glass .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-neon .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-forest .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-forest-night .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sea .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sakura .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-summer .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sunset .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-modern .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-minimal .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-2d .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-retro .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-retro80s .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-cyberpunk .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
 .theme-pastel .text-gray-400 {
     color: var(--color-textSecondary) !important;
 }
+
+.theme-space .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-coffee .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-vintage .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-monokai .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-solarized-light .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-solarized-dark .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+
 
 .theme-light .text-gray-600,
 .theme-dark .text-gray-600,
@@ -1658,9 +5510,108 @@ body {
 .theme-2d .text-gray-600,
 .theme-retro .text-gray-600,
 .theme-cyberpunk .text-gray-600,
+/* Règles pour text-gray-600 */
+.theme-light .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-dark .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-pro .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-enterprise .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-glass .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-neon .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-forest .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-forest-night .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sea .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sakura .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-summer .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sunset .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-modern .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-minimal .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-2d .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-retro .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-retro80s .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-cyberpunk .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
 .theme-pastel .text-gray-600 {
     color: var(--color-textSecondary) !important;
 }
+
+.theme-space .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-coffee .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-vintage .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-monokai .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-solarized-light .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-solarized-dark .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+
 
 /* Règles pour les éléments de hover supplémentaires */
 .theme-light .hover\:text-gray-600:hover,
@@ -1779,10 +5730,108 @@ body {
 .theme-2d .bg-gray-200,
 .theme-retro .bg-gray-200,
 .theme-cyberpunk .bg-gray-200,
-.theme-pastel .bg-gray-200 {
-    background-color: var(--color-secondary) !important;
-    opacity: 0.2;
+/* Règles pour bg-gray-200 */
+.theme-light .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
 }
+
+.theme-dark .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-pro .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-enterprise .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-glass .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-neon .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-forest .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-forest-night .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-sea .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-sakura .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-summer .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-sunset .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-modern .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-minimal .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-2d .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-retro .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-retro80s .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-cyberpunk .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-pastel .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-space .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-coffee .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-vintage .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-monokai .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-solarized-light .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+.theme-solarized-dark .bg-gray-200 {
+    background-color: var(--color-secondary) !important; opacity: 0.2;
+}
+
+
 
 /* Règles pour les éléments de texte supplémentaires */
 .theme-light .text-xs,
@@ -1799,10 +5848,108 @@ body {
 .theme-2d .text-xs,
 .theme-retro .text-xs,
 .theme-cyberpunk .text-xs,
-.theme-pastel .text-xs {
-    font-size: 0.75rem !important;
-    line-height: 1rem !important;
+/* Règles pour text-xs */
+.theme-light .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
 }
+
+.theme-dark .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-pro .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-enterprise .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-glass .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-neon .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-forest .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-forest-night .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-sea .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-sakura .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-summer .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-sunset .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-modern .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-minimal .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-2d .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-retro .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-retro80s .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-cyberpunk .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-pastel .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-space .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-coffee .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-vintage .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-monokai .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-solarized-light .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+.theme-solarized-dark .text-xs {
+    font-size: 0.75rem !important; line-height: 1rem !important;
+}
+
+
 
 .theme-light .text-sm,
 .theme-dark .text-sm,
@@ -1818,10 +5965,108 @@ body {
 .theme-2d .text-sm,
 .theme-retro .text-sm,
 .theme-cyberpunk .text-sm,
-.theme-pastel .text-sm {
-    font-size: 0.875rem !important;
-    line-height: 1.25rem !important;
+/* Règles pour text-sm */
+.theme-light .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
 }
+
+.theme-dark .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-pro .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-enterprise .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-glass .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-neon .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-forest .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-forest-night .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-sea .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-sakura .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-summer .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-sunset .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-modern .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-minimal .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-2d .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-retro .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-retro80s .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-cyberpunk .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-pastel .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-space .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-coffee .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-vintage .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-monokai .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-solarized-light .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+.theme-solarized-dark .text-sm {
+    font-size: 0.875rem !important; line-height: 1.25rem !important;
+}
+
+
 
 /* Règles pour les éléments de padding supplémentaires */
 .theme-light .p-3,
@@ -1838,9 +6083,108 @@ body {
 .theme-2d .p-3,
 .theme-retro .p-3,
 .theme-cyberpunk .p-3,
+/* Règles pour p-3 */
+.theme-light .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-dark .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-pro .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-enterprise .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-glass .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-neon .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-forest .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-forest-night .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-sea .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-sakura .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-summer .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-sunset .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-modern .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-minimal .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-2d .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-retro .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-retro80s .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-cyberpunk .p-3 {
+    padding: 0.75rem !important;
+}
+
 .theme-pastel .p-3 {
     padding: 0.75rem !important;
 }
+
+.theme-space .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-coffee .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-vintage .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-monokai .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-solarized-light .p-3 {
+    padding: 0.75rem !important;
+}
+
+.theme-solarized-dark .p-3 {
+    padding: 0.75rem !important;
+}
+
+
 
 .theme-light .p-6,
 .theme-dark .p-6,
@@ -1856,9 +6200,108 @@ body {
 .theme-2d .p-6,
 .theme-retro .p-6,
 .theme-cyberpunk .p-6,
+/* Règles pour p-6 */
+.theme-light .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-dark .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-pro .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-enterprise .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-glass .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-neon .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-forest .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-forest-night .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-sea .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-sakura .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-summer .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-sunset .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-modern .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-minimal .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-2d .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-retro .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-retro80s .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-cyberpunk .p-6 {
+    padding: 1.5rem !important;
+}
+
 .theme-pastel .p-6 {
     padding: 1.5rem !important;
 }
+
+.theme-space .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-coffee .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-vintage .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-monokai .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-solarized-light .p-6 {
+    padding: 1.5rem !important;
+}
+
+.theme-solarized-dark .p-6 {
+    padding: 1.5rem !important;
+}
+
+
 
 .theme-light .p-8,
 .theme-dark .p-8,
@@ -1874,9 +6317,108 @@ body {
 .theme-2d .p-8,
 .theme-retro .p-8,
 .theme-cyberpunk .p-8,
+/* Règles pour p-8 */
+.theme-light .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-dark .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-pro .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-enterprise .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-glass .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-neon .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-forest .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-forest-night .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-sea .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-sakura .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-summer .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-sunset .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-modern .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-minimal .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-2d .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-retro .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-retro80s .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-cyberpunk .p-8 {
+    padding: 2rem !important;
+}
+
 .theme-pastel .p-8 {
     padding: 2rem !important;
 }
+
+.theme-space .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-coffee .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-vintage .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-monokai .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-solarized-light .p-8 {
+    padding: 2rem !important;
+}
+
+.theme-solarized-dark .p-8 {
+    padding: 2rem !important;
+}
+
+
 
 .theme-light .p-10,
 .theme-dark .p-10,
@@ -1892,9 +6434,108 @@ body {
 .theme-2d .p-10,
 .theme-retro .p-10,
 .theme-cyberpunk .p-10,
+/* Règles pour p-10 */
+.theme-light .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-dark .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-pro .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-enterprise .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-glass .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-neon .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-forest .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-forest-night .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-sea .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-sakura .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-summer .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-sunset .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-modern .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-minimal .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-2d .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-retro .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-retro80s .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-cyberpunk .p-10 {
+    padding: 2.5rem !important;
+}
+
 .theme-pastel .p-10 {
     padding: 2.5rem !important;
 }
+
+.theme-space .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-coffee .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-vintage .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-monokai .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-solarized-light .p-10 {
+    padding: 2.5rem !important;
+}
+
+.theme-solarized-dark .p-10 {
+    padding: 2.5rem !important;
+}
+
+
 
 /* Règles pour les éléments de bordure supplémentaires */
 .theme-light .border-0,
@@ -1911,9 +6552,108 @@ body {
 .theme-2d .border-0,
 .theme-retro .border-0,
 .theme-cyberpunk .border-0,
+/* Règles pour border-0 */
+.theme-light .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-dark .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-pro .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-enterprise .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-glass .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-neon .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-forest .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-forest-night .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-sea .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-sakura .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-summer .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-sunset .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-modern .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-minimal .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-2d .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-retro .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-retro80s .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-cyberpunk .border-0 {
+    border-width: 0px !important;
+}
+
 .theme-pastel .border-0 {
     border-width: 0px !important;
 }
+
+.theme-space .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-coffee .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-vintage .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-monokai .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-solarized-light .border-0 {
+    border-width: 0px !important;
+}
+
+.theme-solarized-dark .border-0 {
+    border-width: 0px !important;
+}
+
+
 
 /* Styles spécifiques pour le thème 2D style Mario */
 .theme-2d * {
@@ -1961,20 +6701,214 @@ body {
 
 .theme-2d .bg-white,
 .theme-2d .bg-gray-50,
-.theme-2d .bg-gray-100 {
-    background-color: var(--color-surface) !important;
-    border: 4px solid var(--color-border) !important;
-    box-shadow: 4px 0 0 var(--color-border), 0 4px 0 var(--color-border),
-        4px 4px 0 var(--color-border) !important;
+/* Règles pour bg-gray-100 */
+.theme-light .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
 }
+
+.theme-dark .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-pro .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-enterprise .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-glass .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-neon .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-forest .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-forest-night .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-sea .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-sakura .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-summer .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-sunset .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-modern .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-minimal .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-2d .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-retro .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-retro80s .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-cyberpunk .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-pastel .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-space .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-coffee .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-vintage .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-monokai .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-solarized-light .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-solarized-dark .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+
 
 .theme-2d .shadow-sm,
 .theme-2d .shadow-md,
 .theme-2d .shadow-lg,
-.theme-2d .shadow-xl {
-    box-shadow: 4px 0 0 var(--color-border), 0 4px 0 var(--color-border),
-        4px 4px 0 var(--color-border) !important;
+/* Règles pour shadow-xl */
+.theme-light .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
+
+.theme-dark .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-pro .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-enterprise .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-glass .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-neon .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-forest .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-forest-night .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-sea .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-sakura .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-summer .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-sunset .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-modern .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-minimal .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-2d .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-retro .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-retro80s .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-cyberpunk .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-pastel .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-space .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-coffee .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-vintage .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-monokai .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-solarized-light .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-solarized-dark .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+
 
 .theme-2d .hover\:shadow-md:hover {
     box-shadow: 6px 0 0 var(--color-border), 0 6px 0 var(--color-border),
@@ -2021,22 +6955,213 @@ body {
 
 /* Styles pour les cartes et conteneurs 2D */
 .theme-2d .card,
+/* Règles pour bg-white */
+.theme-light .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-dark .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-pro .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-enterprise .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-glass .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-neon .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-forest .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-forest-night .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sea .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sakura .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-summer .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sunset .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-modern .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-minimal .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
 .theme-2d .bg-white {
     background-color: var(--color-surface) !important;
-    border: 4px solid var(--color-border) !important;
-    box-shadow: 4px 0 0 var(--color-border), 0 4px 0 var(--color-border),
-        4px 4px 0 var(--color-border) !important;
-    padding: 16px !important;
 }
+
+.theme-retro .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-retro80s .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-cyberpunk .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-pastel .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-space .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-coffee .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-vintage .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-monokai .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-solarized-light .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-solarized-dark .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+
 
 /* Styles pour la navigation 2D */
 .theme-2d nav,
+/* Règles pour bg-gray-100 */
+.theme-light .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-dark .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-pro .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-enterprise .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-glass .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-neon .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-forest .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-forest-night .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-sea .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-sakura .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-summer .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-sunset .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-modern .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-minimal .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
 .theme-2d .bg-gray-100 {
     background-color: var(--color-secondary) !important;
-    border: 4px solid var(--color-border) !important;
-    box-shadow: 4px 0 0 var(--color-border), 0 4px 0 var(--color-border),
-        4px 4px 0 var(--color-border) !important;
 }
+
+.theme-retro .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-retro80s .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-cyberpunk .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-pastel .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-space .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-coffee .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-vintage .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-monokai .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-solarized-light .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-solarized-dark .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+
 
 /* Styles pour les icônes 2D */
 .theme-2d svg {
@@ -2055,10 +7180,108 @@ body {
 }
 
 .theme-2d .text-gray-900,
+/* Règles pour text-gray-700 */
+.theme-light .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-dark .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-pro .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-enterprise .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-glass .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-neon .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-forest .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-forest-night .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-sea .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-sakura .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-summer .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-sunset .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-modern .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-minimal .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
 .theme-2d .text-gray-700 {
     color: var(--color-text) !important;
-    text-shadow: 1px 1px 0 var(--color-border) !important;
 }
+
+.theme-retro .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-retro80s .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-cyberpunk .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-pastel .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-space .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-coffee .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-vintage .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-monokai .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-solarized-light .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-solarized-dark .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+
 
 /* Styles spécifiques pour le thème Glass avec effet glassmorphism */
 .theme-glass * {
@@ -2156,10 +7379,108 @@ body {
 .theme-glass .shadow-sm,
 .theme-glass .shadow-md,
 .theme-glass .shadow-lg,
-.theme-glass .shadow-xl {
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+/* Règles pour shadow-xl */
+.theme-light .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
 }
+
+.theme-dark .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-pro .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-enterprise .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-glass .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-neon .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-forest .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-forest-night .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-sea .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-sakura .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-summer .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-sunset .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-modern .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-minimal .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-2d .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-retro .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-retro80s .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-cyberpunk .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-pastel .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-space .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-coffee .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-vintage .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-monokai .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-solarized-light .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.theme-solarized-dark .shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+
 
 .theme-glass .hover\:shadow-md:hover {
     box-shadow: 0 16px 64px rgba(0, 0, 0, 0.15),
@@ -2183,34 +7504,524 @@ body {
 .theme-glass .text-gray-700,
 .theme-glass .text-gray-600,
 .theme-glass .text-gray-500,
-.theme-glass .text-gray-400 {
-    color: var(--color-text) !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+/* Règles pour text-gray-400 */
+.theme-light .text-gray-400 {
+    color: var(--color-textSecondary) !important;
 }
+
+.theme-dark .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-pro .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-enterprise .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-glass .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-neon .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-forest .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-forest-night .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sea .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sakura .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-summer .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-sunset .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-modern .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-minimal .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-2d .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-retro .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-retro80s .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-cyberpunk .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-pastel .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-space .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-coffee .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-vintage .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-monokai .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-solarized-light .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-solarized-dark .text-gray-400 {
+    color: var(--color-textSecondary) !important;
+}
+
+
 
 .theme-glass .text-blue-500,
+/* Règles pour text-blue-800 */
+.theme-light .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-dark .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-pro .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-enterprise .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
 .theme-glass .text-blue-800 {
     color: var(--color-primary) !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
 }
+
+.theme-neon .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-forest .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-forest-night .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-sea .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-sakura .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-summer .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-sunset .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-modern .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-minimal .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-2d .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-retro .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-retro80s .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-cyberpunk .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-pastel .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-space .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-coffee .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-vintage .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-monokai .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-solarized-light .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+.theme-solarized-dark .text-blue-800 {
+    color: var(--color-primary) !important;
+}
+
+
 
 .theme-glass .text-red-500,
+/* Règles pour text-red-800 */
+.theme-light .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-dark .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-pro .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-enterprise .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
 .theme-glass .text-red-800 {
     color: var(--color-danger) !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
 }
+
+.theme-neon .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-forest .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-forest-night .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-sea .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-sakura .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-summer .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-sunset .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-modern .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-minimal .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-2d .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-retro .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-retro80s .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-cyberpunk .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-pastel .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-space .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-coffee .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-vintage .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-monokai .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-solarized-light .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+.theme-solarized-dark .text-red-800 {
+    color: var(--color-danger) !important;
+}
+
+
 
 .theme-glass .text-green-500,
-.theme-glass .text-green-800 {
+/* Règles pour text-green-800 */
+.theme-light .text-green-800 {
     color: var(--color-success) !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
 }
 
+.theme-dark .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-pro .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-enterprise .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-glass .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-neon .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-forest .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-forest-night .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-sea .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-sakura .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-summer .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-sunset .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-modern .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-minimal .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-2d .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-retro .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-retro80s .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-cyberpunk .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-pastel .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-space .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-coffee .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-vintage .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-monokai .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-solarized-light .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+.theme-solarized-dark .text-green-800 {
+    color: var(--color-success) !important;
+}
+
+
+
 .theme-glass .text-yellow-500,
+/* Règles pour text-yellow-800 */
+.theme-light .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-dark .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-pro .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-enterprise .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
 .theme-glass .text-yellow-800 {
     color: var(--color-warning) !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
 }
+
+.theme-neon .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-forest .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-forest-night .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-sea .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-sakura .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-summer .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-sunset .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-modern .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-minimal .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-2d .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-retro .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-retro80s .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-cyberpunk .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-pastel .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-space .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-coffee .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-vintage .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-monokai .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-solarized-light .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+.theme-solarized-dark .text-yellow-800 {
+    color: var(--color-warning) !important;
+}
+
+
 
 .theme-glass .focus\:ring-2:focus,
 .theme-glass .focus\:ring-blue-500:focus {
@@ -2242,43 +8053,529 @@ body {
 
 .theme-glass .bg-gray-100,
 .theme-glass .bg-gray-200,
-.theme-glass .bg-gray-50 {
-    background: rgba(255, 255, 255, 0.1) !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-radius: 16px !important;
+/* Règles pour bg-gray-50 */
+.theme-light .bg-gray-50 {
+    background-color: var(--color-surface) !important;
 }
+
+.theme-dark .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-pro .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-enterprise .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-glass .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-neon .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-forest .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-forest-night .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sea .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sakura .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-summer .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-sunset .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-modern .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-minimal .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-2d .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-retro .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-retro80s .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-cyberpunk .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-pastel .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-space .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-coffee .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-vintage .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-monokai .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-solarized-light .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+.theme-solarized-dark .bg-gray-50 {
+    background-color: var(--color-surface) !important;
+}
+
+
 
 .theme-glass .bg-blue-100,
 .theme-glass .bg-red-100,
 .theme-glass .bg-green-100,
-.theme-glass .bg-yellow-100 {
-    background: rgba(255, 255, 255, 0.15) !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-radius: 12px !important;
+/* Règles pour bg-yellow-100 */
+.theme-light .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
 }
+
+.theme-dark .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-pro .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-enterprise .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-glass .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-neon .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-forest .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-forest-night .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-sea .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-sakura .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-summer .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-sunset .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-modern .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-minimal .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-2d .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-retro .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-retro80s .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-cyberpunk .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-pastel .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-space .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-coffee .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-vintage .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-monokai .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-solarized-light .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+.theme-solarized-dark .bg-yellow-100 {
+    background-color: var(--color-warning) !important; opacity: 0.1;
+}
+
+
 
 .theme-glass .border-gray-300,
-.theme-glass .border-gray-200 {
-    border-color: rgba(255, 255, 255, 0.2) !important;
+/* Règles pour border-gray-200 */
+.theme-light .border-gray-200 {
+    border-color: var(--color-border) !important;
 }
 
-.theme-glass .ring-2,
-.theme-glass .ring-blue-500 {
-    --tw-ring-color: rgba(255, 255, 255, 0.4) !important;
-    --tw-ring-opacity: 0.5 !important;
+.theme-dark .border-gray-200 {
+    border-color: var(--color-border) !important;
 }
+
+.theme-pro .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-enterprise .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-glass .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-neon .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-forest .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-forest-night .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-sea .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-sakura .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-summer .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-sunset .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-modern .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-minimal .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-2d .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-retro .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-retro80s .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-cyberpunk .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-pastel .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-space .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-coffee .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-vintage .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-monokai .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-solarized-light .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-solarized-dark .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+
+
+.theme-glass .ring-2,
+/* Règles pour ring-blue-500 */
+.theme-light .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-dark .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-pro .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-enterprise .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-glass .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-neon .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-forest .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-forest-night .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-sea .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-sakura .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-summer .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-sunset .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-modern .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-minimal .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-2d .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-retro .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-retro80s .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-cyberpunk .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-pastel .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-space .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-coffee .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-vintage .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-monokai .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-solarized-light .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-solarized-dark .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+
 
 .theme-glass .focus\:ring-opacity-50:focus {
     --tw-ring-opacity: 0.5 !important;
 }
 
-.theme-glass .transition-all {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+/* Règles pour transition-all */
+.theme-light .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
 }
+
+.theme-dark .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-pro .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-enterprise .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-glass .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-neon .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-forest .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-forest-night .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-sea .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-sakura .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-summer .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-sunset .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-modern .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-minimal .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-2d .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-retro .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-retro80s .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-cyberpunk .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-pastel .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-space .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-coffee .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-vintage .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-monokai .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-solarized-light .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+.theme-solarized-dark .transition-all {
+    transition-property: all !important; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important; transition-duration: 150ms !important;
+}
+
+
 
 .theme-glass .hover\:scale-105:hover {
     transform: scale(1.02) !important;
@@ -2318,9 +8615,108 @@ body {
 .theme-2d .shadow-none,
 .theme-retro .shadow-none,
 .theme-cyberpunk .shadow-none,
+/* Règles pour shadow-none */
+.theme-light .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-dark .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-pro .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-enterprise .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-glass .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-neon .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-forest .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-forest-night .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-sea .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-sakura .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-summer .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-sunset .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-modern .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-minimal .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-2d .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-retro .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-retro80s .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-cyberpunk .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
 .theme-pastel .shadow-none {
     box-shadow: 0 0 #0000 !important;
 }
+
+.theme-space .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-coffee .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-vintage .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-monokai .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-solarized-light .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+.theme-solarized-dark .shadow-none {
+    box-shadow: 0 0 #0000 !important;
+}
+
+
 
 /* Règles pour les éléments de durée de transition */
 .theme-light .duration-200,
@@ -2337,6 +8733,105 @@ body {
 .theme-2d .duration-200,
 .theme-retro .duration-200,
 .theme-cyberpunk .duration-200,
+/* Règles pour duration-200 */
+.theme-light .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-dark .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-pro .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-enterprise .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-glass .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-neon .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-forest .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-forest-night .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-sea .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-sakura .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-summer .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-sunset .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-modern .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-minimal .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-2d .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-retro .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-retro80s .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-cyberpunk .duration-200 {
+    transition-duration: 200ms !important;
+}
+
 .theme-pastel .duration-200 {
     transition-duration: 200ms !important;
 }
+
+.theme-space .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-coffee .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-vintage .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-monokai .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-solarized-light .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+.theme-solarized-dark .duration-200 {
+    transition-duration: 200ms !important;
+}
+
+
