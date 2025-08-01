@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" class="h-full">
+<html lang="fr" class="h-full" theme="{{ session('theme', 'light') }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -92,7 +92,7 @@
 </head>
 <body class="h-full bg-background text-text" x-data="{ 
     sidebarOpen: false,
-    currentTheme: 'light',
+    currentTheme: localStorage.getItem('theme') || 'light',
     searchQuery: '',
     activeTab: 'preview',
     customTheme: {
@@ -141,12 +141,19 @@
         { key: 'pastel', name: 'Pastel', class: 'theme-pastel', description: 'Thème pastel doux et apaisant' }
     ]
 }" x-init="
-    // Charger le thème depuis localStorage
+    // Initialiser le thème au chargement
     const savedTheme = localStorage.getItem('theme') || 'light';
     currentTheme = savedTheme;
+    
+    // Appliquer le thème immédiatement
     if (window.ThemeManager) {
-        window.ThemeManager.applyTheme(currentTheme);
+        window.ThemeManager.applyTheme(savedTheme);
     }
+    
+    // Écouter les changements de thème
+    document.addEventListener('themeChanged', (event) => {
+        currentTheme = event.detail.theme;
+    });
 ">
     <!-- Sidebar -->
     <div class="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform transition-transform duration-300"
