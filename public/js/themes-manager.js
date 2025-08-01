@@ -272,9 +272,6 @@ class ThemeManager {
         this.currentTheme = themeName;
         const theme = this.themes[themeName];
 
-        // Sauvegarder dans localStorage
-        localStorage.setItem("theme", themeName);
-
         // Synchroniser avec le serveur
         try {
             await fetch("/theme/set", {
@@ -296,16 +293,13 @@ class ThemeManager {
         const html = document.documentElement;
         html.setAttribute("theme", themeName);
 
-        // Appliquer les variables CSS
-        Object.entries(theme).forEach(([key, value]) => {
-            html.style.setProperty(`--color-${key}`, value);
-        });
-
-        // Ajouter la classe du thème au body
+        // Supprimer toutes les classes de thème existantes du body
         document.body.className = document.body.className.replace(
             /theme-\w+/g,
             ""
         );
+
+        // Ajouter la classe du thème au body
         document.body.classList.add(`theme-${themeName}`);
 
         // Mettre à jour tous les sélecteurs de thème
@@ -352,11 +346,33 @@ class ThemeManager {
     applyCustomTheme(colors) {
         const customTheme = this.createCustomTheme(colors);
 
-        // Appliquer temporairement
-        const root = document.documentElement;
-        Object.entries(customTheme).forEach(([key, value]) => {
-            root.style.setProperty(`--color-${key}`, value);
-        });
+        // Créer une classe CSS temporaire pour le thème personnalisé
+        const styleId = "custom-theme-style";
+        let styleElement = document.getElementById(styleId);
+
+        if (!styleElement) {
+            styleElement = document.createElement("style");
+            styleElement.id = styleId;
+            document.head.appendChild(styleElement);
+        }
+
+        // Générer le CSS pour le thème personnalisé
+        const cssRules = Object.entries(customTheme)
+            .map(([key, value]) => `--color-${key}: ${value};`)
+            .join("\n    ");
+
+        styleElement.textContent = `
+            .theme-custom {
+                ${cssRules}
+            }
+        `;
+
+        // Appliquer la classe custom au body
+        document.body.className = document.body.className.replace(
+            /theme-\w+/g,
+            ""
+        );
+        document.body.classList.add("theme-custom");
     }
 }
 

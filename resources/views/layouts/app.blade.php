@@ -20,6 +20,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 
     <!-- Thèmes CSS -->
+    <link rel="stylesheet" href="{{ asset('css/themes.css') }}">
     <link rel="stylesheet" href="{{ asset('css/themes-complete.css') }}">
     <link rel="stylesheet" href="{{ asset('css/themes-extended.css') }}">
 
@@ -90,7 +91,7 @@
 
     @stack('styles')
 </head>
-<body class="h-full bg-background text-text" x-data="{
+<body class="h-full bg-background text-text theme-{{ session('theme', 'light') }}" x-data="{
     sidebarOpen: false,
     currentTheme: localStorage.getItem('theme') || 'light',
     searchQuery: '',

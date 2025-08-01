@@ -244,78 +244,737 @@
 
 /* Styles de base utilisant les variables CSS */
 body {
-    background-color: var(--color-background);
-    color: var(--color-text);
+    background-color: var(--color-background) !important;
+    color: var(--color-text) !important;
 }
 
+/* Règles avec spécificité élevée pour écraser les classes Tailwind */
+.theme-light .bg-blue-600,
+.theme-dark .bg-blue-600,
+.theme-pro .bg-blue-600,
+.theme-enterprise .bg-blue-600,
+.theme-glass .bg-blue-600,
+.theme-neon .bg-blue-600,
+.theme-forest .bg-blue-600,
+.theme-sea .bg-blue-600,
+.theme-sunset .bg-blue-600,
+.theme-modern .bg-blue-600,
+.theme-minimal .bg-blue-600,
+.theme-2d .bg-blue-600,
+.theme-retro .bg-blue-600,
+.theme-cyberpunk .bg-blue-600,
+.theme-pastel .bg-blue-600 {
+    background-color: var(--color-primary) !important;
+}
+
+.theme-light .bg-gray-100,
+.theme-dark .bg-gray-100,
+.theme-pro .bg-gray-100,
+.theme-enterprise .bg-gray-100,
+.theme-glass .bg-gray-100,
+.theme-neon .bg-gray-100,
+.theme-forest .bg-gray-100,
+.theme-sea .bg-gray-100,
+.theme-sunset .bg-gray-100,
+.theme-modern .bg-gray-100,
+.theme-minimal .bg-gray-100,
+.theme-2d .bg-gray-100,
+.theme-retro .bg-gray-100,
+.theme-cyberpunk .bg-gray-100,
+.theme-pastel .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+}
+
+.theme-light .bg-red-600,
+.theme-dark .bg-red-600,
+.theme-pro .bg-red-600,
+.theme-enterprise .bg-red-600,
+.theme-glass .bg-red-600,
+.theme-neon .bg-red-600,
+.theme-forest .bg-red-600,
+.theme-sea .bg-red-600,
+.theme-sunset .bg-red-600,
+.theme-modern .bg-red-600,
+.theme-minimal .bg-red-600,
+.theme-2d .bg-red-600,
+.theme-retro .bg-red-600,
+.theme-cyberpunk .bg-red-600,
+.theme-pastel .bg-red-600 {
+    background-color: var(--color-danger) !important;
+}
+
+.theme-light .bg-green-600,
+.theme-dark .bg-green-600,
+.theme-pro .bg-green-600,
+.theme-enterprise .bg-green-600,
+.theme-glass .bg-green-600,
+.theme-neon .bg-green-600,
+.theme-forest .bg-green-600,
+.theme-sea .bg-green-600,
+.theme-sunset .bg-green-600,
+.theme-modern .bg-green-600,
+.theme-minimal .bg-green-600,
+.theme-2d .bg-green-600,
+.theme-retro .bg-green-600,
+.theme-cyberpunk .bg-green-600,
+.theme-pastel .bg-green-600 {
+    background-color: var(--color-success) !important;
+}
+
+.theme-light .text-gray-900,
+.theme-dark .text-gray-900,
+.theme-pro .text-gray-900,
+.theme-enterprise .text-gray-900,
+.theme-glass .text-gray-900,
+.theme-neon .text-gray-900,
+.theme-forest .text-gray-900,
+.theme-sea .text-gray-900,
+.theme-sunset .text-gray-900,
+.theme-modern .text-gray-900,
+.theme-minimal .text-gray-900,
+.theme-2d .text-gray-900,
+.theme-retro .text-gray-900,
+.theme-cyberpunk .text-gray-900,
+.theme-pastel .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+.theme-light .text-gray-600,
+.theme-dark .text-gray-600,
+.theme-pro .text-gray-600,
+.theme-enterprise .text-gray-600,
+.theme-glass .text-gray-600,
+.theme-neon .text-gray-600,
+.theme-forest .text-gray-600,
+.theme-sea .text-gray-600,
+.theme-sunset .text-gray-600,
+.theme-modern .text-gray-600,
+.theme-minimal .text-gray-600,
+.theme-2d .text-gray-600,
+.theme-retro .text-gray-600,
+.theme-cyberpunk .text-gray-600,
+.theme-pastel .text-gray-600 {
+    color: var(--color-textSecondary) !important;
+}
+
+.theme-light .border-gray-300,
+.theme-dark .border-gray-300,
+.theme-pro .border-gray-300,
+.theme-enterprise .border-gray-300,
+.theme-glass .border-gray-300,
+.theme-neon .border-gray-300,
+.theme-forest .border-gray-300,
+.theme-sea .border-gray-300,
+.theme-sunset .border-gray-300,
+.theme-modern .border-gray-300,
+.theme-minimal .border-gray-300,
+.theme-2d .border-gray-300,
+.theme-retro .border-gray-300,
+.theme-cyberpunk .border-gray-300,
+.theme-pastel .border-gray-300 {
+    border-color: var(--color-border) !important;
+}
+
+.theme-light .bg-white,
+.theme-dark .bg-white,
+.theme-pro .bg-white,
+.theme-enterprise .bg-white,
+.theme-glass .bg-white,
+.theme-neon .bg-white,
+.theme-forest .bg-white,
+.theme-sea .bg-white,
+.theme-sunset .bg-white,
+.theme-modern .bg-white,
+.theme-minimal .bg-white,
+.theme-2d .bg-white,
+.theme-retro .bg-white,
+.theme-cyberpunk .bg-white,
+.theme-pastel .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+/* Classes utilitaires avec !important pour écraser Tailwind */
 .bg-primary {
-    background-color: var(--color-primary);
+    background-color: var(--color-primary) !important;
 }
 
 .bg-secondary {
-    background-color: var(--color-secondary);
+    background-color: var(--color-secondary) !important;
 }
 
 .bg-success {
-    background-color: var(--color-success);
+    background-color: var(--color-success) !important;
 }
 
 .bg-warning {
-    background-color: var(--color-warning);
+    background-color: var(--color-warning) !important;
 }
 
 .bg-danger {
-    background-color: var(--color-danger);
+    background-color: var(--color-danger) !important;
 }
 
 .bg-info {
-    background-color: var(--color-info);
+    background-color: var(--color-info) !important;
 }
 
 .text-primary {
-    color: var(--color-primary);
+    color: var(--color-primary) !important;
 }
 
 .text-secondary {
-    color: var(--color-secondary);
+    color: var(--color-secondary) !important;
 }
 
 .text-success {
-    color: var(--color-success);
+    color: var(--color-success) !important;
 }
 
 .text-warning {
-    color: var(--color-warning);
+    color: var(--color-warning) !important;
 }
 
 .text-danger {
-    color: var(--color-danger);
+    color: var(--color-danger) !important;
 }
 
 .text-info {
-    color: var(--color-info);
+    color: var(--color-info) !important;
 }
 
 .border-primary {
-    border-color: var(--color-primary);
+    border-color: var(--color-primary) !important;
 }
 
 .border-secondary {
-    border-color: var(--color-secondary);
+    border-color: var(--color-secondary) !important;
 }
 
 .border-success {
-    border-color: var(--color-success);
+    border-color: var(--color-success) !important;
 }
 
 .border-warning {
-    border-color: var(--color-warning);
+    border-color: var(--color-warning) !important;
 }
 
 .border-danger {
-    border-color: var(--color-danger);
+    border-color: var(--color-danger) !important;
 }
 
 .border-info {
-    border-color: var(--color-info);
+    border-color: var(--color-info) !important;
+}
+
+/* Règles pour les états hover et focus */
+.theme-light .hover\:bg-blue-700:hover,
+.theme-dark .hover\:bg-blue-700:hover,
+.theme-pro .hover\:bg-blue-700:hover,
+.theme-enterprise .hover\:bg-blue-700:hover,
+.theme-glass .hover\:bg-blue-700:hover,
+.theme-neon .hover\:bg-blue-700:hover,
+.theme-forest .hover\:bg-blue-700:hover,
+.theme-sea .hover\:bg-blue-700:hover,
+.theme-sunset .hover\:bg-blue-700:hover,
+.theme-modern .hover\:bg-blue-700:hover,
+.theme-minimal .hover\:bg-blue-700:hover,
+.theme-2d .hover\:bg-blue-700:hover,
+.theme-retro .hover\:bg-blue-700:hover,
+.theme-cyberpunk .hover\:bg-blue-700:hover,
+.theme-pastel .hover\:bg-blue-700:hover {
+    background-color: var(--color-primary) !important;
+    opacity: 0.8;
+}
+
+.theme-light .hover\:bg-gray-200:hover,
+.theme-dark .hover\:bg-gray-200:hover,
+.theme-pro .hover\:bg-gray-200:hover,
+.theme-enterprise .hover\:bg-gray-200:hover,
+.theme-glass .hover\:bg-gray-200:hover,
+.theme-neon .hover\:bg-gray-200:hover,
+.theme-forest .hover\:bg-gray-200:hover,
+.theme-sea .hover\:bg-gray-200:hover,
+.theme-sunset .hover\:bg-gray-200:hover,
+.theme-modern .hover\:bg-gray-200:hover,
+.theme-minimal .hover\:bg-gray-200:hover,
+.theme-2d .hover\:bg-gray-200:hover,
+.theme-retro .hover\:bg-gray-200:hover,
+.theme-cyberpunk .hover\:bg-gray-200:hover,
+.theme-pastel .hover\:bg-gray-200:hover {
+    background-color: var(--color-secondary) !important;
+    opacity: 0.8;
+}
+
+.theme-light .focus\:ring-blue-500:focus,
+.theme-dark .focus\:ring-blue-500:focus,
+.theme-pro .focus\:ring-blue-500:focus,
+.theme-enterprise .focus\:ring-blue-500:focus,
+.theme-glass .focus\:ring-blue-500:focus,
+.theme-neon .focus\:ring-blue-500:focus,
+.theme-forest .focus\:ring-blue-500:focus,
+.theme-sea .focus\:ring-blue-500:focus,
+.theme-sunset .focus\:ring-blue-500:focus,
+.theme-modern .focus\:ring-blue-500:focus,
+.theme-minimal .focus\:ring-blue-500:focus,
+.theme-2d .focus\:ring-blue-500:focus,
+.theme-retro .focus\:ring-blue-500:focus,
+.theme-cyberpunk .focus\:ring-blue-500:focus,
+.theme-pastel .focus\:ring-blue-500:focus {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-light .hover\:text-gray-700:hover,
+.theme-dark .hover\:text-gray-700:hover,
+.theme-pro .hover\:text-gray-700:hover,
+.theme-enterprise .hover\:text-gray-700:hover,
+.theme-glass .hover\:text-gray-700:hover,
+.theme-neon .hover\:text-gray-700:hover,
+.theme-forest .hover\:text-gray-700:hover,
+.theme-sea .hover\:text-gray-700:hover,
+.theme-sunset .hover\:text-gray-700:hover,
+.theme-modern .hover\:text-gray-700:hover,
+.theme-minimal .hover\:text-gray-700:hover,
+.theme-2d .hover\:text-gray-700:hover,
+.theme-retro .hover\:text-gray-700:hover,
+.theme-cyberpunk .hover\:text-gray-700:hover,
+.theme-pastel .hover\:text-gray-700:hover {
+    color: var(--color-text) !important;
+}
+
+.theme-light .hover\:text-gray-900:hover,
+.theme-dark .hover\:text-gray-900:hover,
+.theme-pro .hover\:text-gray-900:hover,
+.theme-enterprise .hover\:text-gray-900:hover,
+.theme-glass .hover\:text-gray-900:hover,
+.theme-neon .hover\:text-gray-900:hover,
+.theme-forest .hover\:text-gray-900:hover,
+.theme-sea .hover\:text-gray-900:hover,
+.theme-sunset .hover\:text-gray-900:hover,
+.theme-modern .hover\:text-gray-900:hover,
+.theme-minimal .hover\:text-gray-900:hover,
+.theme-2d .hover\:text-gray-900:hover,
+.theme-retro .hover\:text-gray-900:hover,
+.theme-cyberpunk .hover\:text-gray-900:hover,
+.theme-pastel .hover\:text-gray-900:hover {
+    color: var(--color-text) !important;
+}
+
+/* Règles pour les cartes et conteneurs */
+.theme-light .bg-white,
+.theme-dark .bg-white,
+.theme-pro .bg-white,
+.theme-enterprise .bg-white,
+.theme-glass .bg-white,
+.theme-neon .bg-white,
+.theme-forest .bg-white,
+.theme-sea .bg-white,
+.theme-sunset .bg-white,
+.theme-modern .bg-white,
+.theme-minimal .bg-white,
+.theme-2d .bg-white,
+.theme-retro .bg-white,
+.theme-cyberpunk .bg-white,
+.theme-pastel .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+/* Règles pour les champs de saisie */
+.theme-light input[type="text"],
+.theme-dark input[type="text"],
+.theme-pro input[type="text"],
+.theme-enterprise input[type="text"],
+.theme-glass input[type="text"],
+.theme-neon input[type="text"],
+.theme-forest input[type="text"],
+.theme-sea input[type="text"],
+.theme-sunset input[type="text"],
+.theme-modern input[type="text"],
+.theme-minimal input[type="text"],
+.theme-2d input[type="text"],
+.theme-retro input[type="text"],
+.theme-cyberpunk input[type="text"],
+.theme-pastel input[type="text"] {
+    background-color: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    border-color: var(--color-border) !important;
+}
+
+.theme-light select,
+.theme-dark select,
+.theme-pro select,
+.theme-enterprise select,
+.theme-glass select,
+.theme-neon select,
+.theme-forest select,
+.theme-sea select,
+.theme-sunset select,
+.theme-modern select,
+.theme-minimal select,
+.theme-2d select,
+.theme-retro select,
+.theme-cyberpunk select,
+.theme-pastel select {
+    background-color: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    border-color: var(--color-border) !important;
+}
+
+/* Règles pour les textes dans les cartes */
+.theme-light .text-gray-900,
+.theme-dark .text-gray-900,
+.theme-pro .text-gray-900,
+.theme-enterprise .text-gray-900,
+.theme-glass .text-gray-900,
+.theme-neon .text-gray-900,
+.theme-forest .text-gray-900,
+.theme-sea .text-gray-900,
+.theme-sunset .text-gray-900,
+.theme-modern .text-gray-900,
+.theme-minimal .text-gray-900,
+.theme-2d .text-gray-900,
+.theme-retro .text-gray-900,
+.theme-cyberpunk .text-gray-900,
+.theme-pastel .text-gray-900 {
+    color: var(--color-text) !important;
+}
+
+/* Règles pour les bordures des cartes */
+.theme-light .border,
+.theme-dark .border,
+.theme-pro .border,
+.theme-enterprise .border,
+.theme-glass .border,
+.theme-neon .border,
+.theme-forest .border,
+.theme-sea .border,
+.theme-sunset .border,
+.theme-modern .border,
+.theme-minimal .border,
+.theme-2d .border,
+.theme-retro .border,
+.theme-cyberpunk .border,
+.theme-pastel .border {
+    border-color: var(--color-border) !important;
+}
+
+/* Règles pour les ombres */
+.theme-light .shadow-sm,
+.theme-dark .shadow-sm,
+.theme-pro .shadow-sm,
+.theme-enterprise .shadow-sm,
+.theme-glass .shadow-sm,
+.theme-neon .shadow-sm,
+.theme-forest .shadow-sm,
+.theme-sea .shadow-sm,
+.theme-sunset .shadow-sm,
+.theme-modern .shadow-sm,
+.theme-minimal .shadow-sm,
+.theme-2d .shadow-sm,
+.theme-retro .shadow-sm,
+.theme-cyberpunk .shadow-sm,
+.theme-pastel .shadow-sm {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Règles pour les icônes SVG */
+.theme-light svg,
+.theme-dark svg,
+.theme-pro svg,
+.theme-enterprise svg,
+.theme-glass svg,
+.theme-neon svg,
+.theme-forest svg,
+.theme-sea svg,
+.theme-sunset svg,
+.theme-modern svg,
+.theme-minimal svg,
+.theme-2d svg,
+.theme-retro svg,
+.theme-cyberpunk svg,
+.theme-pastel svg {
+    color: var(--color-text) !important;
+}
+
+/* Règles pour les icônes colorées spécifiques */
+.theme-light .text-blue-500,
+.theme-dark .text-blue-500,
+.theme-pro .text-blue-500,
+.theme-enterprise .text-blue-500,
+.theme-glass .text-blue-500,
+.theme-neon .text-blue-500,
+.theme-forest .text-blue-500,
+.theme-sea .text-blue-500,
+.theme-sunset .text-blue-500,
+.theme-modern .text-blue-500,
+.theme-minimal .text-blue-500,
+.theme-2d .text-blue-500,
+.theme-retro .text-blue-500,
+.theme-cyberpunk .text-blue-500,
+.theme-pastel .text-blue-500 {
+    color: var(--color-primary) !important;
+}
+
+/* Règles pour les états de survol des cartes */
+.theme-light .hover\:shadow-md:hover,
+.theme-dark .hover\:shadow-md:hover,
+.theme-pro .hover\:shadow-md:hover,
+.theme-enterprise .hover\:shadow-md:hover,
+.theme-glass .hover\:shadow-md:hover,
+.theme-neon .hover\:shadow-md:hover,
+.theme-forest .hover\:shadow-md:hover,
+.theme-sea .hover\:shadow-md:hover,
+.theme-sunset .hover\:shadow-md:hover,
+.theme-modern .hover\:shadow-md:hover,
+.theme-minimal .hover\:shadow-md:hover,
+.theme-2d .hover\:shadow-md:hover,
+.theme-retro .hover\:shadow-md:hover,
+.theme-cyberpunk .hover\:shadow-md:hover,
+.theme-pastel .hover\:shadow-md:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Règles pour les bordures colorées (ring) */
+.theme-light .ring-2,
+.theme-dark .ring-2,
+.theme-pro .ring-2,
+.theme-enterprise .ring-2,
+.theme-glass .ring-2,
+.theme-neon .ring-2,
+.theme-forest .ring-2,
+.theme-sea .ring-2,
+.theme-sunset .ring-2,
+.theme-modern .ring-2,
+.theme-minimal .ring-2,
+.theme-2d .ring-2,
+.theme-retro .ring-2,
+.theme-cyberpunk .ring-2,
+.theme-pastel .ring-2 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+.theme-light .ring-blue-500,
+.theme-dark .ring-blue-500,
+.theme-pro .ring-blue-500,
+.theme-enterprise .ring-blue-500,
+.theme-glass .ring-blue-500,
+.theme-neon .ring-blue-500,
+.theme-forest .ring-blue-500,
+.theme-sea .ring-blue-500,
+.theme-sunset .ring-blue-500,
+.theme-modern .ring-blue-500,
+.theme-minimal .ring-blue-500,
+.theme-2d .ring-blue-500,
+.theme-retro .ring-blue-500,
+.theme-cyberpunk .ring-blue-500,
+.theme-pastel .ring-blue-500 {
+    --tw-ring-color: var(--color-primary) !important;
+}
+
+/* Règles pour les éléments de navigation */
+.theme-light .bg-gray-100,
+.theme-dark .bg-gray-100,
+.theme-pro .bg-gray-100,
+.theme-enterprise .bg-gray-100,
+.theme-glass .bg-gray-100,
+.theme-neon .bg-gray-100,
+.theme-forest .bg-gray-100,
+.theme-sea .bg-gray-100,
+.theme-sunset .bg-gray-100,
+.theme-modern .bg-gray-100,
+.theme-minimal .bg-gray-100,
+.theme-2d .bg-gray-100,
+.theme-retro .bg-gray-100,
+.theme-cyberpunk .bg-gray-100,
+.theme-pastel .bg-gray-100 {
+    background-color: var(--color-secondary) !important;
+    opacity: 0.1;
+}
+
+/* Règles pour les icônes colorées dans la navigation */
+.theme-light .text-green-500,
+.theme-dark .text-green-500,
+.theme-pro .text-green-500,
+.theme-enterprise .text-green-500,
+.theme-glass .text-green-500,
+.theme-neon .text-green-500,
+.theme-forest .text-green-500,
+.theme-sea .text-green-500,
+.theme-sunset .text-green-500,
+.theme-modern .text-green-500,
+.theme-minimal .text-green-500,
+.theme-2d .text-green-500,
+.theme-retro .text-green-500,
+.theme-cyberpunk .text-green-500,
+.theme-pastel .text-green-500 {
+    color: var(--color-success) !important;
+}
+
+.theme-light .text-red-500,
+.theme-dark .text-red-500,
+.theme-pro .text-red-500,
+.theme-enterprise .text-red-500,
+.theme-glass .text-red-500,
+.theme-neon .text-red-500,
+.theme-forest .text-red-500,
+.theme-sea .text-red-500,
+.theme-sunset .text-red-500,
+.theme-modern .text-red-500,
+.theme-minimal .text-red-500,
+.theme-2d .text-red-500,
+.theme-retro .text-red-500,
+.theme-cyberpunk .text-red-500,
+.theme-pastel .text-red-500 {
+    color: var(--color-danger) !important;
+}
+
+.theme-light .text-yellow-500,
+.theme-dark .text-yellow-500,
+.theme-pro .text-yellow-500,
+.theme-enterprise .text-yellow-500,
+.theme-glass .text-yellow-500,
+.theme-neon .text-yellow-500,
+.theme-forest .text-yellow-500,
+.theme-sea .text-yellow-500,
+.theme-sunset .text-yellow-500,
+.theme-modern .text-yellow-500,
+.theme-minimal .text-yellow-500,
+.theme-2d .text-yellow-500,
+.theme-retro .text-yellow-500,
+.theme-cyberpunk .text-yellow-500,
+.theme-pastel .text-yellow-500 {
+    color: var(--color-warning) !important;
+}
+
+/* Règles pour les éléments de la sidebar */
+.theme-light .border-gray-200,
+.theme-dark .border-gray-200,
+.theme-pro .border-gray-200,
+.theme-enterprise .border-gray-200,
+.theme-glass .border-gray-200,
+.theme-neon .border-gray-200,
+.theme-forest .border-gray-200,
+.theme-sea .border-gray-200,
+.theme-sunset .border-gray-200,
+.theme-modern .border-gray-200,
+.theme-minimal .border-gray-200,
+.theme-2d .border-gray-200,
+.theme-retro .border-gray-200,
+.theme-cyberpunk .border-gray-200,
+.theme-pastel .border-gray-200 {
+    border-color: var(--color-border) !important;
+}
+
+/* Règles pour les textes de la sidebar */
+.theme-light .text-gray-700,
+.theme-dark .text-gray-700,
+.theme-pro .text-gray-700,
+.theme-enterprise .text-gray-700,
+.theme-glass .text-gray-700,
+.theme-neon .text-gray-700,
+.theme-forest .text-gray-700,
+.theme-sea .text-gray-700,
+.theme-sunset .text-gray-700,
+.theme-modern .text-gray-700,
+.theme-minimal .text-gray-700,
+.theme-2d .text-gray-700,
+.theme-retro .text-gray-700,
+.theme-cyberpunk .text-gray-700,
+.theme-pastel .text-gray-700 {
+    color: var(--color-text) !important;
+}
+
+.theme-light .text-gray-500,
+.theme-dark .text-gray-500,
+.theme-pro .text-gray-500,
+.theme-enterprise .text-gray-500,
+.theme-glass .text-gray-500,
+.theme-neon .text-gray-500,
+.theme-forest .text-gray-500,
+.theme-sea .text-gray-500,
+.theme-sunset .text-gray-500,
+.theme-modern .text-gray-500,
+.theme-minimal .text-gray-500,
+.theme-2d .text-gray-500,
+.theme-retro .text-gray-500,
+.theme-cyberpunk .text-gray-500,
+.theme-pastel .text-gray-500 {
+    color: var(--color-textSecondary) !important;
+}
+
+/* Règles pour les éléments de focus et hover de la navigation */
+.theme-light .hover\:bg-gray-100:hover,
+.theme-dark .hover\:bg-gray-100:hover,
+.theme-pro .hover\:bg-gray-100:hover,
+.theme-enterprise .hover\:bg-gray-100:hover,
+.theme-glass .hover\:bg-gray-100:hover,
+.theme-neon .hover\:bg-gray-100:hover,
+.theme-forest .hover\:bg-gray-100:hover,
+.theme-sea .hover\:bg-gray-100:hover,
+.theme-sunset .hover\:bg-gray-100:hover,
+.theme-modern .hover\:bg-gray-100:hover,
+.theme-minimal .hover\:bg-gray-100:hover,
+.theme-2d .hover\:bg-gray-100:hover,
+.theme-retro .hover\:bg-gray-100:hover,
+.theme-cyberpunk .hover\:bg-gray-100:hover,
+.theme-pastel .hover\:bg-gray-100:hover {
+    background-color: var(--color-secondary) !important;
+    opacity: 0.1;
+}
+
+.theme-light .hover\:text-gray-900:hover,
+.theme-dark .hover\:text-gray-900:hover,
+.theme-pro .hover\:text-gray-900:hover,
+.theme-enterprise .hover\:text-gray-900:hover,
+.theme-glass .hover\:text-gray-900:hover,
+.theme-neon .hover\:text-gray-900:hover,
+.theme-forest .hover\:text-gray-900:hover,
+.theme-sea .hover\:text-gray-900:hover,
+.theme-sunset .hover\:text-gray-900:hover,
+.theme-modern .hover\:text-gray-900:hover,
+.theme-minimal .hover\:text-gray-900:hover,
+.theme-2d .hover\:text-gray-900:hover,
+.theme-retro .hover\:text-gray-900:hover,
+.theme-cyberpunk .hover\:text-gray-900:hover,
+.theme-pastel .hover\:text-gray-900:hover {
+    color: var(--color-text) !important;
+}
+
+/* Règles pour les éléments de la sidebar avec fond blanc */
+.theme-light .bg-white,
+.theme-dark .bg-white,
+.theme-pro .bg-white,
+.theme-enterprise .bg-white,
+.theme-glass .bg-white,
+.theme-neon .bg-white,
+.theme-forest .bg-white,
+.theme-sea .bg-white,
+.theme-sunset .bg-white,
+.theme-modern .bg-white,
+.theme-minimal .bg-white,
+.theme-2d .bg-white,
+.theme-retro .bg-white,
+.theme-cyberpunk .bg-white,
+.theme-pastel .bg-white {
+    background-color: var(--color-surface) !important;
+}
+
+/* Règles pour les ombres de la sidebar */
+.theme-light .shadow-lg,
+.theme-dark .shadow-lg,
+.theme-pro .shadow-lg,
+.theme-enterprise .shadow-lg,
+.theme-glass .shadow-lg,
+.theme-neon .shadow-lg,
+.theme-forest .shadow-lg,
+.theme-sea .shadow-lg,
+.theme-sunset .shadow-lg,
+.theme-modern .shadow-lg,
+.theme-minimal .shadow-lg,
+.theme-2d .shadow-lg,
+.theme-retro .shadow-lg,
+.theme-cyberpunk .shadow-lg,
+.theme-pastel .shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
 }
