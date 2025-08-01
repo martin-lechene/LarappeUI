@@ -1,5 +1,5 @@
 /**
- * ThemeManager - Gestionnaire de thèmes pour LarappeUI
+ * ThemeManager - Gestionnaire de thèmes unifié pour LarappeUI
  */
 class ThemeManager {
     constructor() {
@@ -227,6 +227,20 @@ class ThemeManager {
         
         // Exposer la classe globalement
         window.ThemeManager = this;
+        
+        // Initialiser les sélecteurs de thème
+        this.initThemeSelectors();
+    }
+
+    initThemeSelectors() {
+        // Initialiser tous les sélecteurs de thème sur la page
+        const themeSelectors = document.querySelectorAll('[data-theme-selector], select[data-theme-selector]');
+        themeSelectors.forEach(selector => {
+            selector.value = this.currentTheme;
+            selector.addEventListener('change', (e) => {
+                this.applyTheme(e.target.value);
+            });
+        });
     }
 
     applyTheme(themeName) {
@@ -241,16 +255,24 @@ class ThemeManager {
         // Sauvegarder dans localStorage
         localStorage.setItem('theme', themeName);
 
+        // Appliquer l'attribut theme sur l'élément HTML
+        const html = document.documentElement;
+        html.setAttribute('theme', themeName);
+
         // Appliquer les variables CSS
-        const root = document.documentElement;
-        
         Object.entries(theme).forEach(([key, value]) => {
-            root.style.setProperty(`--color-${key}`, value);
+            html.style.setProperty(`--color-${key}`, value);
         });
 
         // Ajouter la classe du thème au body
         document.body.className = document.body.className.replace(/theme-\w+/g, '');
         document.body.classList.add(`theme-${themeName}`);
+
+        // Mettre à jour tous les sélecteurs de thème
+        const themeSelectors = document.querySelectorAll('[data-theme-selector], select[data-theme-selector]');
+        themeSelectors.forEach(selector => {
+            selector.value = themeName;
+        });
 
         // Déclencher un événement personnalisé
         const event = new CustomEvent('themeChanged', {
