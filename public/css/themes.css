@@ -2031,25 +2031,25 @@ body {
 .theme-glass .text-blue-500,
 .theme-glass .text-blue-800 {
     color: var(--color-primary) !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+    text-shadow: none !important;
 }
 
 .theme-glass .text-red-500,
 .theme-glass .text-red-800 {
     color: var(--color-danger) !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+    text-shadow: none !important;
 }
 
 .theme-glass .text-green-500,
 .theme-glass .text-green-800 {
     color: var(--color-success) !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+    text-shadow: none !important;
 }
 
 .theme-glass .text-yellow-500,
 .theme-glass .text-yellow-800 {
     color: var(--color-warning) !important;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+    text-shadow: none !important;
 }
 
 .theme-glass .focus\:ring-2:focus,
