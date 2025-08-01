@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
     <script src="{{ asset('js/themes-manager.js') }}"></script>
 </head>
-<body class="h-full bg-gray-50" x-data="{ 
+<body class="h-full bg-gray-50" x-data="{
     currentTheme: 'light',
     sidebarOpen: false,
     activeTab: 'preview',
@@ -58,7 +58,7 @@
     <!-- Sidebar -->
     <div class="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform transition-transform duration-300"
          :class="sidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'">
-        
+
         <!-- Header -->
         <div class="flex items-center justify-between p-4 border-b">
             <h1 class="text-xl font-bold text-gray-900">🎨 Thèmes</h1>
@@ -92,7 +92,7 @@
             <!-- Current Theme -->
             <div class="mb-6">
                 <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Thème Actuel</h3>
-                <select x-model="currentTheme" 
+                <select x-model="currentTheme"
                         @change="
                             if (window.ThemeManager) {
                                 window.ThemeManager.applyTheme(currentTheme);
@@ -134,21 +134,21 @@
                             <p class="text-gray-600">Personnalisez l'apparence de vos composants avec nos thèmes prédéfinis</p>
                         </div>
                     </div>
-                    
+
                     <!-- Tabs -->
                     <div class="border-b border-gray-200">
                         <nav class="-mb-px flex space-x-8">
-                            <button @click="activeTab = 'preview'" 
+                            <button @click="activeTab = 'preview'"
                                     :class="activeTab === 'preview' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
                                     class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
                                 Preview
                             </button>
-                            <button @click="activeTab = 'themes'" 
+                            <button @click="activeTab = 'themes'"
                                     :class="activeTab === 'themes' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
                                     class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
                                 Thèmes
                             </button>
-                            <button @click="activeTab = 'custom'" 
+                            <button @click="activeTab = 'custom'"
                                     :class="activeTab === 'custom' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
                                     class="whitespace-nowrap py-2 px-1 border-b-2 font-medium text-sm">
                                 Personnalisé
@@ -162,7 +162,7 @@
                     <!-- Theme Preview -->
                     <div class="bg-white rounded-lg shadow-sm border p-6">
                         <h3 class="text-lg font-semibold text-gray-900 mb-4">Preview du Thème</h3>
-                        
+
                         <!-- Component Showcase -->
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                             <!-- Buttons -->
@@ -204,7 +204,7 @@
                     <!-- Color Palette -->
                     <div class="bg-white rounded-lg shadow-sm border p-6">
                         <h3 class="text-lg font-semibold text-gray-900 mb-4">Palette de Couleurs</h3>
-                        
+
                         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                             <div class="text-center">
                                 <div class="w-16 h-16 rounded-lg bg-blue-600 mx-auto mb-2"></div>
@@ -244,15 +244,16 @@
                 <div x-show="activeTab === 'themes'" class="space-y-8">
                     <div class="bg-white rounded-lg shadow-sm border p-6">
                         <h3 class="text-lg font-semibold text-gray-900 mb-4">Thèmes Disponibles</h3>
-                        
+
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <template x-for="theme in themes" :key="theme.key">
                                 <div class="border rounded-lg p-4 cursor-pointer hover:shadow-md transition-shadow"
                                      :class="currentTheme === theme.key ? 'ring-2 ring-blue-500 bg-blue-50' : 'bg-white'"
                                      @click="
                                          currentTheme = theme.key;
-                                         document.documentElement.className = theme.class;
-                                         localStorage.setItem('theme', theme.key);
+                                         if (window.ThemeManager) {
+                                             window.ThemeManager.applyTheme(theme.key);
+                                         }
                                      ">
                                     <div class="flex items-center justify-between mb-3">
                                         <h4 class="font-medium text-gray-900" x-text="theme.name"></h4>
@@ -263,7 +264,7 @@
                                         </div>
                                     </div>
                                     <p class="text-sm text-gray-600 mb-3" x-text="theme.description"></p>
-                                    
+
                                     <!-- Color Preview -->
                                     <div class="flex space-x-2">
                                         <div class="w-4 h-4 rounded-full bg-blue-600"></div>
@@ -281,12 +282,12 @@
                 <div x-show="activeTab === 'custom'" class="space-y-8">
                     <div class="bg-white rounded-lg shadow-sm border p-6">
                         <h3 class="text-lg font-semibold text-gray-900 mb-4">Thème Personnalisé</h3>
-                        
+
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <!-- Color Controls -->
                             <div>
                                 <h4 class="font-medium text-gray-900 mb-4">Couleurs</h4>
-                                
+
                                 <div class="space-y-4">
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700 mb-2">Primary</label>
@@ -295,7 +296,7 @@
                                             <input type="text" x-model="customTheme.primary" class="flex-1 px-3 py-2 border border-gray-300 rounded-lg">
                                         </div>
                                     </div>
-                                    
+
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700 mb-2">Secondary</label>
                                         <div class="flex items-center space-x-2">
@@ -303,7 +304,7 @@
                                             <input type="text" x-model="customTheme.secondary" class="flex-1 px-3 py-2 border border-gray-300 rounded-lg">
                                         </div>
                                     </div>
-                                    
+
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700 mb-2">Success</label>
                                         <div class="flex items-center space-x-2">
@@ -311,7 +312,7 @@
                                             <input type="text" x-model="customTheme.success" class="flex-1 px-3 py-2 border border-gray-300 rounded-lg">
                                         </div>
                                     </div>
-                                    
+
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700 mb-2">Warning</label>
                                         <div class="flex items-center space-x-2">
@@ -319,7 +320,7 @@
                                             <input type="text" x-model="customTheme.warning" class="flex-1 px-3 py-2 border border-gray-300 rounded-lg">
                                         </div>
                                     </div>
-                                    
+
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700 mb-2">Danger</label>
                                         <div class="flex items-center space-x-2">
@@ -327,7 +328,7 @@
                                             <input type="text" x-model="customTheme.danger" class="flex-1 px-3 py-2 border border-gray-300 rounded-lg">
                                         </div>
                                     </div>
-                                    
+
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700 mb-2">Info</label>
                                         <div class="flex items-center space-x-2">
@@ -341,7 +342,7 @@
                             <!-- Background Controls -->
                             <div>
                                 <h4 class="font-medium text-gray-900 mb-4">Arrière-plans</h4>
-                                
+
                                 <div class="space-y-4">
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700 mb-2">Background</label>
@@ -350,7 +351,7 @@
                                             <input type="text" x-model="customTheme.background" class="flex-1 px-3 py-2 border border-gray-300 rounded-lg">
                                         </div>
                                     </div>
-                                    
+
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700 mb-2">Surface</label>
                                         <div class="flex items-center space-x-2">
@@ -358,7 +359,7 @@
                                             <input type="text" x-model="customTheme.surface" class="flex-1 px-3 py-2 border border-gray-300 rounded-lg">
                                         </div>
                                     </div>
-                                    
+
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700 mb-2">Text</label>
                                         <div class="flex items-center space-x-2">
@@ -366,7 +367,7 @@
                                             <input type="text" x-model="customTheme.text" class="flex-1 px-3 py-2 border border-gray-300 rounded-lg">
                                         </div>
                                     </div>
-                                    
+
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700 mb-2">Text Secondary</label>
                                         <div class="flex items-center space-x-2">
@@ -374,7 +375,7 @@
                                             <input type="text" x-model="customTheme.textSecondary" class="flex-1 px-3 py-2 border border-gray-300 rounded-lg">
                                         </div>
                                     </div>
-                                    
+
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700 mb-2">Border</label>
                                         <div class="flex items-center space-x-2">
@@ -382,7 +383,7 @@
                                             <input type="text" x-model="customTheme.border" class="flex-1 px-3 py-2 border border-gray-300 rounded-lg">
                                         </div>
                                     </div>
-                                    
+
                                     <div>
                                         <label class="block text-sm font-medium text-gray-700 mb-2">Accent</label>
                                         <div class="flex items-center space-x-2">
@@ -413,7 +414,7 @@
     </div>
 
     <!-- Overlay for mobile -->
-    <div x-show="sidebarOpen" 
+    <div x-show="sidebarOpen"
          x-transition:enter="transition-opacity ease-linear duration-300"
          x-transition:enter-start="opacity-0"
          x-transition:enter-end="opacity-100"
