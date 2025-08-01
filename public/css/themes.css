@@ -3,48 +3,135 @@
 :root {
     /* Variables par défaut (thème light) */
     --color-primary: #3b82f6;
+    --color-primary-hover: #2563eb;
     --color-secondary: #6b7280;
+    --color-secondary-hover: #4b5563;
     --color-success: #10b981;
+    --color-success-hover: #059669;
     --color-warning: #f59e0b;
+    --color-warning-hover: #d97706;
     --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
     --color-info: #06b6d4;
+    --color-info-hover: #0891b2;
     --color-background: #ffffff;
     --color-surface: #f9fafb;
     --color-text: #111827;
     --color-textSecondary: #6b7280;
     --color-border: #e5e7eb;
     --color-accent: #f59e42;
+    
+    /* Variables d'état */
+    --hover-bg: #f7f7f7;
+    --active-bg: #ededed;
+    --disabled-bg: #f7f7f7;
+    --disabled-text: #bbb;
+    --selected-bg: #ededed;
+    --selected-text: #111;
+    --focus-bg: #ededed;
+    --focus-border: #bbb;
+    
+    /* Variables de design system */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 9999px;
+    --shadow: 0 1px 2px 0 rgba(0,0,0,0.02);
+    --muted: #f7f7f7;
+    --highlight: #ededed;
+    --scrollbar: #eaeaea;
+    --selection-bg: #bbb;
 }
 
 /* Classes utilitaires pour les thèmes */
 .theme-light {
     --color-primary: #3b82f6;
+    --color-primary-hover: #2563eb;
     --color-secondary: #6b7280;
+    --color-secondary-hover: #4b5563;
     --color-success: #10b981;
+    --color-success-hover: #059669;
     --color-warning: #f59e0b;
+    --color-warning-hover: #d97706;
     --color-danger: #ef4444;
+    --color-danger-hover: #dc2626;
     --color-info: #06b6d4;
+    --color-info-hover: #0891b2;
     --color-background: #ffffff;
     --color-surface: #f9fafb;
     --color-text: #111827;
     --color-textSecondary: #6b7280;
     --color-border: #e5e7eb;
     --color-accent: #f59e42;
+    
+    /* Variables d'état */
+    --hover-bg: #f7f7f7;
+    --active-bg: #ededed;
+    --disabled-bg: #f7f7f7;
+    --disabled-text: #bbb;
+    --selected-bg: #ededed;
+    --selected-text: #111;
+    --focus-bg: #ededed;
+    --focus-border: #bbb;
+    
+    /* Variables de design system */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 9999px;
+    --shadow: 0 1px 2px 0 rgba(0,0,0,0.02);
+    --muted: #f7f7f7;
+    --highlight: #ededed;
+    --scrollbar: #eaeaea;
+    --selection-bg: #bbb;
 }
 
 .theme-dark {
     --color-primary: #60a5fa;
+    --color-primary-hover: #3b82f6;
     --color-secondary: #9ca3af;
+    --color-secondary-hover: #6b7280;
     --color-success: #34d399;
+    --color-success-hover: #10b981;
     --color-warning: #fbbf24;
+    --color-warning-hover: #f59e0b;
     --color-danger: #f87171;
+    --color-danger-hover: #ef4444;
     --color-info: #22d3ee;
+    --color-info-hover: #06b6d4;
     --color-background: #111827;
     --color-surface: #1f2937;
     --color-text: #f9fafb;
     --color-textSecondary: #d1d5db;
     --color-border: #374151;
     --color-accent: #fb923c;
+    
+    /* Variables d'état */
+    --hover-bg: #181818;
+    --active-bg: #222;
+    --disabled-bg: #111;
+    --disabled-text: #555;
+    --selected-bg: #222;
+    --selected-text: #fff;
+    --focus-bg: #181818;
+    --focus-border: #333;
+    
+    /* Variables de design system */
+    --radius-xs: 2px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+    --radius-xl: 12px;
+    --radius-full: 9999px;
+    --shadow: 0 1px 2px 0 rgba(0,0,0,0.7);
+    --muted: #111;
+    --highlight: #222;
+    --scrollbar: #181818;
+    --selection-bg: #222;
 }
 
 .theme-pro {
