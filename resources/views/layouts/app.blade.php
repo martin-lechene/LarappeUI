@@ -120,10 +120,11 @@
                                     window.ThemeManager.applyTheme(currentTheme);
                                 }
                             "
+                            data-theme-selector
                             class="px-3 py-2 border border-border rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-surface text-text">
                         <option value="light">Light</option>
                         <option value="dark">Dark</option>
-                        <option value="pro">Pro</option>
+                        <option value="pro">Pro (FrappeUI)</option>
                         <option value="enterprise">Enterprise</option>
                         <option value="glass">Glass</option>
                         <option value="neon">Neon</option>
@@ -136,14 +137,6 @@
                         <option value="retro">Retro</option>
                         <option value="cyberpunk">Cyberpunk</option>
                         <option value="pastel">Pastel</option>
-                        <option value="midnight">Midnight</option>
-                        <option value="aurora">Aurora</option>
-                        <option value="cosmic">Cosmic</option>
-                        <option value="ocean">Ocean</option>
-                        <option value="fire">Fire</option>
-                        <option value="earth">Earth</option>
-                        <option value="lavender">Lavender</option>
-                        <option value="mint">Mint</option>
                     </select>
                     
                     <!-- Menu mobile -->

@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="{{ asset('js/themes-manager.js') }}"></script>
 </head>
 <body class="h-full bg-gray-50" x-data="{ 
     currentTheme: 'light',
@@ -50,7 +51,9 @@
     // Load theme from localStorage
     const savedTheme = localStorage.getItem('theme') || 'light';
     currentTheme = savedTheme;
-    document.documentElement.className = themes.find(t => t.key === currentTheme)?.class || 'theme-light';
+    if (window.ThemeManager) {
+        window.ThemeManager.applyTheme(currentTheme);
+    }
 ">
     <!-- Sidebar -->
     <div class="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transform transition-transform duration-300"
@@ -91,9 +94,11 @@
                 <h3 class="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">Thème Actuel</h3>
                 <select x-model="currentTheme" 
                         @change="
-                            document.documentElement.className = themes.find(t => t.key === currentTheme)?.class || 'theme-light';
-                            localStorage.setItem('theme', currentTheme);
+                            if (window.ThemeManager) {
+                                window.ThemeManager.applyTheme(currentTheme);
+                            }
                         "
+                        data-theme-selector
                         class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <template x-for="theme in themes" :key="theme.key">
                         <option :value="theme.key" x-text="theme.name"></option>
