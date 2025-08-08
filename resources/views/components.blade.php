@@ -141,6 +141,10 @@
                              <template x-if="block.key === 'extra-breadcrumbs-overflow'"><div><x-extra.breadcrumbs-overflow /></div></template>
                              <template x-if="block.key === 'extra-select-async'"><div><x-extra.select-async endpoint="/api/cities" /></div></template>
                              <template x-if="block.key === 'extra-combobox-virtual'"><div><x-extra.combobox-virtual /></div></template>
+                             <template x-if="block.key === 'extra-data-table-pro'"><div><x-extra.data-table-pro :columns="[['key'=>'name','label'=>'Nom'],['key'=>'email','label'=>'Email']]" :rows="[['name'=>'Alice','email'=>'alice@ex.com'],['name'=>'Bob','email'=>'bob@ex.com']]" /></div></template>
+                             <template x-if="block.key === 'extra-context-menu'"><div><x-extra.context-menu><div class='p-4 border rounded bg-white'>Zone clic droit</div></x-extra.context-menu></div></template>
+                             <template x-if="block.key === 'extra-tooltip-arrow'"><div><x-extra.tooltip-arrow text="Info">?</x-extra.tooltip-arrow></div></template>
+                             <template x-if="block.key === 'extra-popover-arrow'"><div><x-extra.popover-arrow title="Plus">Contenu du popover</x-extra.popover-arrow></div></template>
                         </div>
 
                         <div x-show="block.activeTab === 'variants'" class="space-y-3">
@@ -370,6 +374,17 @@ function componentsPage() {
          'extra-combobox-virtual': [{ title: 'Props', items: [
             { name: 'name', type: 'string', desc: 'Nom du champ' },
          ]}],
+         'extra-data-table-pro': [{ title: 'Props', items: [
+            { name: 'columns', type: 'array', desc: "[{key,label}]" },
+            { name: 'rows', type: 'array', desc: 'Données' },
+         ]}],
+         'extra-context-menu': [{ title: 'Props', items: [] }],
+         'extra-tooltip-arrow': [{ title: 'Props', items: [
+            { name: 'text', type: 'string', desc: 'Contenu du tooltip' },
+         ]}],
+         'extra-popover-arrow': [{ title: 'Props', items: [
+            { name: 'title', type: 'string', desc: 'Titre du bouton' },
+         ]}],
     };
 
     return {
@@ -450,6 +465,10 @@ function componentsPage() {
             { key: 'extra-breadcrumbs-overflow', category: 'Navigation', title: 'Breadcrumbs Overflow', activeTab: 'preview', code: `<x-extra.breadcrumbs-overflow />` },
             { key: 'extra-select-async', category: 'Form', title: 'Select Async', activeTab: 'preview', code: `<x-extra.select-async endpoint="/api/cities" />` },
             { key: 'extra-combobox-virtual', category: 'Form', title: 'Combobox Virtual', activeTab: 'preview', code: `<x-extra.combobox-virtual />` },
+            { key: 'extra-data-table-pro', category: 'Data', title: 'Data Table Pro', activeTab: 'preview', code: `<x-extra.data-table-pro :columns="[['key'=>'name','label'=>'Nom'],['key'=>'email','label'=>'Email']]" :rows="[['name'=>'Alice','email'=>'alice@ex.com'],['name'=>'Bob','email'=>'bob@ex.com']]" />` },
+            { key: 'extra-context-menu', category: 'Navigation', title: 'Context Menu', activeTab: 'preview', code: `<x-extra.context-menu><div class='p-4 border rounded bg-white'>Zone clic droit</div></x-extra.context-menu>` },
+            { key: 'extra-tooltip-arrow', category: 'Feedback', title: 'Tooltip Arrow', activeTab: 'preview', code: `<x-extra.tooltip-arrow text="Info">?</x-extra.tooltip-arrow>` },
+            { key: 'extra-popover-arrow', category: 'Feedback', title: 'Popover Arrow', activeTab: 'preview', code: `<x-extra.popover-arrow title="Plus">Contenu du popover</x-extra.popover-arrow>` },
         ],
         get currentParams() {
             const active = this.componentBlocks.find(b => b.activeTab && b.activeTab !== undefined);
