@@ -118,6 +118,18 @@
                              <template x-if="block.key === 'extra-rating'"><div><x-extra.rating :value="3" :max="5" /></div></template>
                              <template x-if="block.key === 'extra-progress-circular'"><div><x-extra.progress-circular :value="50" /></div></template>
                              <template x-if="block.key === 'extra-skeleton'"><div><x-extra.skeleton :lines="3" /></div></template>
+                             <template x-if="block.key === 'extra-data-table'"><div><x-extra.data-table :columns="[['key'=>'name','label'=>'Nom'],['key'=>'email','label'=>'Email']]" :rows="[['name'=>'Alice','email'=>'alice@ex.com'],['name'=>'Bob','email'=>'bob@ex.com']]" /></div></template>
+                             <template x-if="block.key === 'extra-date-range'"><div><x-extra.date-range /></div></template>
+                             <template x-if="block.key === 'extra-time-picker'"><div><x-extra.time-picker /></div></template>
+                             <template x-if="block.key === 'extra-dropzone'"><div><x-extra.dropzone /></div></template>
+                             <template x-if="block.key === 'extra-tag-input'"><div><x-extra.tag-input /></div></template>
+                             <template x-if="block.key === 'extra-phone-input'"><div><x-extra.phone-input /></div></template>
+                             <template x-if="block.key === 'extra-slider-range'"><div><x-extra.slider-range :min="0" :max="100" :start="20" :end="80" /></div></template>
+                             <template x-if="block.key === 'extra-avatar-group'"><div><x-extra.avatar-group /></div></template>
+                             <template x-if="block.key === 'extra-gallery'"><div><x-extra.gallery /></div></template>
+                             <template x-if="block.key === 'extra-json-viewer'"><div><x-extra.json-viewer :data="['a'=>1,'b'=>['c'=>2]]" /></div></template>
+                             <template x-if="block.key === 'extra-tree-view'"><div><x-extra.tree-view /></div></template>
+                             <template x-if="block.key === 'extra-kanban'"><div><x-extra.kanban /></div></template>
                         </div>
 
                         <div x-show="block.activeTab === 'variants'" class="space-y-3">
@@ -274,6 +286,48 @@ function componentsPage() {
          'extra-skeleton': [{ title: 'Props', items: [
             { name: 'lines', type: 'number', desc: 'Nombre de lignes' },
          ]}],
+         'extra-data-table': [{ title: 'Props', items: [
+            { name: 'columns', type: 'array', desc: "[{key,label}]" },
+            { name: 'rows', type: 'array', desc: 'Données' },
+         ]}],
+         'extra-date-range': [{ title: 'Props', items: [
+            { name: 'startName', type: 'string', desc: 'Nom champ début' },
+            { name: 'endName', type: 'string', desc: 'Nom champ fin' },
+         ]}],
+         'extra-time-picker': [{ title: 'Props', items: [
+            { name: 'name', type: 'string', desc: 'Nom du champ' },
+         ]}],
+         'extra-dropzone': [{ title: 'Props', items: [
+            { name: 'name', type: 'string', desc: 'Nom du champ (input file)' },
+         ]}],
+         'extra-tag-input': [{ title: 'Props', items: [
+            { name: 'name', type: 'string', desc: 'Nom du champ' },
+         ]}],
+         'extra-phone-input': [{ title: 'Props', items: [
+            { name: 'name', type: 'string', desc: 'Nom du champ' },
+         ]}],
+         'extra-slider-range': [{ title: 'Props', items: [
+            { name: 'min', type: 'number', desc: 'Valeur min' },
+            { name: 'max', type: 'number', desc: 'Valeur max' },
+            { name: 'start', type: 'number', desc: 'Début' },
+            { name: 'end', type: 'number', desc: 'Fin' },
+            { name: 'name', type: 'string', desc: 'Nom du champ' },
+         ]}],
+         'extra-avatar-group': [{ title: 'Props', items: [
+            { name: 'users', type: 'array', desc: "[{name}]" },
+         ]}],
+         'extra-gallery': [{ title: 'Props', items: [
+            { name: 'images', type: 'array', desc: 'URLs des images' },
+         ]}],
+         'extra-json-viewer': [{ title: 'Props', items: [
+            { name: 'data', type: 'array|object', desc: 'Données JSON' },
+         ]}],
+         'extra-tree-view': [{ title: 'Props', items: [
+            { name: 'items', type: 'array', desc: "[{label,children?}]" },
+         ]}],
+         'extra-kanban': [{ title: 'Props', items: [
+            { name: 'columns', type: 'array', desc: "[{title,items}]" },
+         ]}],
     };
 
     return {
@@ -331,6 +385,18 @@ function componentsPage() {
             { key: 'extra-rating', category: 'Form', title: 'Rating', activeTab: 'preview', code: `<x-extra.rating :value="3" :max="5" />` },
             { key: 'extra-progress-circular', category: 'Feedback', title: 'Progress Circular', activeTab: 'preview', code: `<x-extra.progress-circular :value="50" />` },
             { key: 'extra-skeleton', category: 'Feedback', title: 'Skeleton', activeTab: 'preview', code: `<x-extra.skeleton :lines="3" />` },
+            { key: 'extra-data-table', category: 'Data', title: 'Data Table', activeTab: 'preview', code: `<x-extra.data-table :columns="[['key'=>'name','label'=>'Nom'],['key'=>'email','label'=>'Email']]" :rows="[['name'=>'Alice','email'=>'alice@ex.com'],['name'=>'Bob','email'=>'bob@ex.com']]" />` },
+            { key: 'extra-date-range', category: 'Form', title: 'Date Range', activeTab: 'preview', code: `<x-extra.date-range />` },
+            { key: 'extra-time-picker', category: 'Form', title: 'Time Picker', activeTab: 'preview', code: `<x-extra.time-picker />` },
+            { key: 'extra-dropzone', category: 'Form', title: 'Dropzone', activeTab: 'preview', code: `<x-extra.dropzone />` },
+            { key: 'extra-tag-input', category: 'Form', title: 'Tag Input', activeTab: 'preview', code: `<x-extra.tag-input />` },
+            { key: 'extra-phone-input', category: 'Form', title: 'Phone Input', activeTab: 'preview', code: `<x-extra.phone-input />` },
+            { key: 'extra-slider-range', category: 'Form', title: 'Slider Range', activeTab: 'preview', code: `<x-extra.slider-range :min="0" :max="100" :start="20" :end="80" />` },
+            { key: 'extra-avatar-group', category: 'Media', title: 'Avatar Group', activeTab: 'preview', code: `<x-extra.avatar-group />` },
+            { key: 'extra-gallery', category: 'Media', title: 'Gallery', activeTab: 'preview', code: `<x-extra.gallery />` },
+            { key: 'extra-json-viewer', category: 'Data', title: 'JSON Viewer', activeTab: 'preview', code: `<x-extra.json-viewer :data="['a'=>1,'b'=>['c'=>2]]" />` },
+            { key: 'extra-tree-view', category: 'Navigation', title: 'Tree View', activeTab: 'preview', code: `<x-extra.tree-view />` },
+            { key: 'extra-kanban', category: 'Data', title: 'Kanban', activeTab: 'preview', code: `<x-extra.kanban />` },
         ],
         get currentParams() {
             const active = this.componentBlocks.find(b => b.activeTab && b.activeTab !== undefined);
