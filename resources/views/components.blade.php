@@ -97,6 +97,14 @@
                             </template>
                             <template x-if="block.key === 'charts-charts'"><div><x-charts.charts /></div></template>
                             <template x-if="block.key === 'tag'"><div><x-tag>Tag</x-tag></div></template>
+                            <template x-if="block.key === 'extra-section-header'"><div><x-extra.section-header title="Titre" subtitle="Description" /></div></template>
+                            <template x-if="block.key === 'extra-tabs'"><div><x-extra.tabs :tabs="['Tab 1','Tab 2','Tab 3']">Contenu</x-extra.tabs></div></template>
+                            <template x-if="block.key === 'extra-modal'"><div><x-extra.modal title="Demo"><div class='p-2'>Contenu modal</div></x-extra.modal></div></template>
+                            <template x-if="block.key === 'extra-command-palette'"><div><x-extra.command-palette /></div></template>
+                            <template x-if="block.key === 'extra-toast'"><div>
+                                <x-extra.toast />
+                                <x-button size="sm" @click="window.dispatchEvent(new CustomEvent('show-toast',{detail:{message:'Action effectuée'}}))">Show Toast</x-button>
+                             </div></template>
                         </div>
 
                         <div x-show="block.activeTab === 'variants'" class="space-y-3">
@@ -208,6 +216,23 @@ function componentsPage() {
             { name: 'steps', type: 'array', desc: 'Liste des étapes' },
             { name: 'current', type: 'number', desc: 'Étape courante (1-based)' },
         ]}],
+        'extra-section-header': [{ title: 'Props', items: [
+            { name: 'title', type: 'string', desc: 'Titre de section' },
+            { name: 'subtitle', type: 'string', desc: 'Description facultative' },
+         ]}],
+         'extra-tabs': [{ title: 'Props', items: [
+            { name: 'tabs', type: 'array', desc: 'Liste des onglets' },
+            { name: 'active', type: 'number', desc: 'Index actif' },
+         ]}],
+         'extra-modal': [{ title: 'Props', items: [
+            { name: 'title', type: 'string', desc: 'Titre du modal' },
+         ]}],
+         'extra-command-palette': [{ title: 'Props', items: [
+            { name: 'placeholder', type: 'string', desc: 'Texte indicatif' },
+         ]}],
+         'extra-toast': [{ title: 'Props', items: [
+            { name: 'position', type: 'string', desc: 'top-right|top-left|bottom-right|bottom-left' },
+         ]}],
     };
 
     return {
@@ -253,6 +278,11 @@ function componentsPage() {
             { key: 'media-image', category: 'Media', title: 'Media: Image', activeTab: 'preview', code: `<x-media.image src="https://picsum.photos/300/180" alt="Demo" />` },
             { key: 'charts-charts', category: 'Charts', title: 'Charts', activeTab: 'preview', code: `<x-charts.charts />` },
             { key: 'tag', category: 'Basic', title: 'Tag', activeTab: 'preview', code: `<x-tag>Tag</x-tag>` },
+            { key: 'extra-section-header', category: 'Layout', title: 'Section Header', activeTab: 'preview', code: `<x-extra.section-header title="Titre" subtitle="Description" />` },
+            { key: 'extra-tabs', category: 'Navigation', title: 'Tabs', activeTab: 'preview', code: `<x-extra.tabs :tabs="['Tab 1','Tab 2','Tab 3']">Contenu</x-extra.tabs>` },
+            { key: 'extra-modal', category: 'Layout', title: 'Modal', activeTab: 'preview', code: `<x-extra.modal title="Demo"><div class='p-2'>Contenu modal</div></x-extra.modal>` },
+            { key: 'extra-command-palette', category: 'Navigation', title: 'Command Palette', activeTab: 'preview', code: `<x-extra.command-palette />` },
+            { key: 'extra-toast', category: 'Feedback', title: 'Toast', activeTab: 'preview', code: `<x-extra.toast />` },
         ],
         get currentParams() {
             const active = this.componentBlocks.find(b => b.activeTab && b.activeTab !== undefined);
