@@ -154,7 +154,7 @@ function contactForm() {
     </div>
 
     <!-- Multi-step Form -->
-    <div class="bg-white border rounded-lg shadow-sm">
+    <div class="bg-white border rounded-lg shadow-sm" x-data="multiStepForm()">
         <div class="flex items-center justify-between px-4 py-3 border-b">
             <div class="font-semibold">Formulaire multi-étapes</div>
             <div class="flex items-center gap-2 text-sm">
@@ -163,9 +163,24 @@ function contactForm() {
                 <button @click="msTab = 'code'" :class="msTab === 'code' ? 'text-primary' : 'text-gray-500'">Code</button>
             </div>
         </div>
-        <div class="p-6" x-data="multiStepForm()">
+        <div class="p-6">
             <div x-show="msTab === 'preview'">
-                <x-data.stepper :steps="[['label' => 'Infos'], ['label' => 'Adresse'], ['label' => 'Confirmation']]" :current="step + 1"></x-data.stepper>
+                <!-- Step indicator piloté par Alpine -->
+                <div class="flex items-center gap-4">
+                    <template x-for="(s, i) in ['Infos','Adresse','Confirmation']" :key="i">
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center justify-center rounded-full border-2 w-8 h-8 font-bold"
+                                 :class="i <= step ? 'border-blue-600 bg-blue-600 text-white' : 'border-gray-300 bg-white text-gray-400'">
+                                <span x-text="i + 1"></span>
+                            </div>
+                            <span class="text-sm" :class="i <= step ? 'text-blue-600' : 'text-gray-500'" x-text="s"></span>
+                            <template x-if="i < 2">
+                                <div class="w-12 h-0.5 bg-gray-200 mx-2"></div>
+                            </template>
+                        </div>
+                    </template>
+                </div>
+
                 <div class="mt-4" x-show="step === 0">
                     <x-form.input label="Nom" x-model="data.name" />
                     <x-form.input label="Email" type="email" x-model="data.email" class="mt-3" />
@@ -183,9 +198,24 @@ function contactForm() {
                 </div>
             </div>
             <div x-show="msTab === 'code'">
-<pre class="language-html"><code>&lt;x-data.stepper :steps=&quot;[['label' =&gt; 'Infos'], ['label' =&gt; 'Adresse'], ['label' =&gt; 'Confirmation']]&quot; :current=&quot;step + 1&quot; /&gt;
- // JS (Alpine)
- function multiStepForm(){ return { step: 0, data: { name:'', email:'', address:'', city:'' }, next(){ if(this.step&lt;2) this.step++; }, prev(){ if(this.step&gt;0) this.step--; } } }</code></pre>
+<pre class="language-html"><code>&lt;!-- Indicateur d'étapes en Alpine --&gt;
+&lt;div class=&quot;flex items-center gap-4&quot;&gt;
+  &lt;template x-for=&quot;(s, i) in ['Infos','Adresse','Confirmation']&quot; :key=&quot;i&quot;&gt;
+    &lt;div class=&quot;flex items-center gap-2&quot;&gt;
+      &lt;div class=&quot;flex items-center justify-center rounded-full border-2 w-8 h-8 font-bold&quot;
+           :class=&quot;i &lt;= step ? 'border-blue-600 bg-blue-600 text-white' : 'border-gray-300 bg-white text-gray-400'&quot;&gt;
+        &lt;span x-text=&quot;i + 1&quot;&gt;&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;span class=&quot;text-sm&quot; :class=&quot;i &lt;= step ? 'text-blue-600' : 'text-gray-500'&quot; x-text=&quot;s&quot;&gt;&lt;/span&gt;
+      &lt;template x-if=&quot;i &lt; 2&quot;&gt;
+        &lt;div class=&quot;w-12 h-0.5 bg-gray-200 mx-2&quot;&gt;&lt;/div&gt;
+      &lt;/template&gt;
+    &lt;/div&gt;
+  &lt;/template&gt;
+&lt;/div&gt;
+
+// JS (Alpine)
+function multiStepForm(){ return { step: 0, data: { name:'', email:'', address:'', city:'' }, next(){ if(this.step&lt;2) this.step++; else alert('Formulaire soumis!'); }, prev(){ if(this.step&gt;0) this.step--; } } }</code></pre>
             </div>
         </div>
     </div>
