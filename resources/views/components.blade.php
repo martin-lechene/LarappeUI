@@ -145,6 +145,13 @@
                              <template x-if="block.key === 'extra-context-menu'"><div><x-extra.context-menu><div class='p-4 border rounded bg-white'>Zone clic droit</div></x-extra.context-menu></div></template>
                              <template x-if="block.key === 'extra-tooltip-arrow'"><div><x-extra.tooltip-arrow text="Info">?</x-extra.tooltip-arrow></div></template>
                              <template x-if="block.key === 'extra-popover-arrow'"><div><x-extra.popover-arrow title="Plus">Contenu du popover</x-extra.popover-arrow></div></template>
+                             <template x-if="block.key === 'extra-select-tags'"><div><x-extra.select-tags /></div></template>
+                             <template x-if="block.key === 'extra-coachmarks'"><div><x-extra.coachmarks /></div></template>
+                             <template x-if="block.key === 'extra-empty-premium'"><div><x-extra.empty-premium /></div></template>
+                             <template x-if="block.key === 'extra-sparkline'"><div><x-extra.sparkline :data="[1,3,2,5,4,6]" /></div></template>
+                             <template x-if="block.key === 'extra-radial-gauge'"><div><x-extra.radial-gauge :value="65" /></div></template>
+                             <template x-if="block.key === 'extra-heatmap'"><div><x-extra.heatmap :data="[[1,2,3],[2,3,4],[3,4,5]]" /></div></template>
+                             <template x-if="block.key === 'extra-map-markers'"><div><x-extra.map-markers :markers="[['lat'=>48.85,'lng'=>2.35,'label'=>'Paris']]" /></div></template>
                         </div>
 
                         <div x-show="block.activeTab === 'variants'" class="space-y-3">
@@ -385,6 +392,31 @@ function componentsPage() {
          'extra-popover-arrow': [{ title: 'Props', items: [
             { name: 'title', type: 'string', desc: 'Titre du bouton' },
          ]}],
+         'extra-select-tags': [{ title: 'Props', items: [
+            { name: 'name', type: 'string', desc: 'Nom du champ' },
+            { name: 'options', type: 'array', desc: 'Suggestions' },
+         ]}],
+         'extra-coachmarks': [{ title: 'Props', items: [] }],
+         'extra-empty-premium': [{ title: 'Props', items: [
+            { name: 'title', type: 'string' },
+            { name: 'description', type: 'string' },
+            { name: 'action', type: 'string' },
+         ]}],
+         'extra-sparkline': [{ title: 'Props', items: [
+            { name: 'data', type: 'array<number>' },
+            { name: 'width', type: 'number' },
+            { name: 'height', type: 'number' },
+         ]}],
+         'extra-radial-gauge': [{ title: 'Props', items: [
+            { name: 'value', type: 'number' },
+            { name: 'size', type: 'number' },
+         ]}],
+         'extra-heatmap': [{ title: 'Props', items: [
+            { name: 'data', type: 'array<array<number>>' },
+         ]}],
+         'extra-map-markers': [{ title: 'Props', items: [
+            { name: 'markers', type: 'array<{lat,lng,label}>' },
+         ]}],
     };
 
     return {
@@ -469,6 +501,13 @@ function componentsPage() {
             { key: 'extra-context-menu', category: 'Navigation', title: 'Context Menu', activeTab: 'preview', code: `<x-extra.context-menu><div class='p-4 border rounded bg-white'>Zone clic droit</div></x-extra.context-menu>` },
             { key: 'extra-tooltip-arrow', category: 'Feedback', title: 'Tooltip Arrow', activeTab: 'preview', code: `<x-extra.tooltip-arrow text="Info">?</x-extra.tooltip-arrow>` },
             { key: 'extra-popover-arrow', category: 'Feedback', title: 'Popover Arrow', activeTab: 'preview', code: `<x-extra.popover-arrow title="Plus">Contenu du popover</x-extra.popover-arrow>` },
+            { key: 'extra-select-tags', category: 'Form', title: 'Select Tags', activeTab: 'preview', code: `<x-extra.select-tags />` },
+            { key: 'extra-coachmarks', category: 'Navigation', title: 'Coachmarks', activeTab: 'preview', code: `<x-extra.coachmarks />` },
+            { key: 'extra-empty-premium', category: 'Feedback', title: 'Empty Premium', activeTab: 'preview', code: `<x-extra.empty-premium />` },
+            { key: 'extra-sparkline', category: 'Data', title: 'Sparkline', activeTab: 'preview', code: `<x-extra.sparkline :data="[1,3,2,5,4,6]" />` },
+            { key: 'extra-radial-gauge', category: 'Data', title: 'Radial Gauge', activeTab: 'preview', code: `<x-extra.radial-gauge :value="65" />` },
+            { key: 'extra-heatmap', category: 'Data', title: 'Heatmap', activeTab: 'preview', code: `<x-extra.heatmap :data="[[1,2,3],[2,3,4],[3,4,5]]" />` },
+            { key: 'extra-map-markers', category: 'Data', title: 'Map Markers', activeTab: 'preview', code: `<x-extra.map-markers :markers="[['lat'=>48.85,'lng'=>2.35,'label'=>'Paris']]" />` },
         ],
         get currentParams() {
             const active = this.componentBlocks.find(b => b.activeTab && b.activeTab !== undefined);
