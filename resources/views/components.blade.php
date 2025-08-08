@@ -130,6 +130,15 @@
                              <template x-if="block.key === 'extra-json-viewer'"><div><x-extra.json-viewer :data="['a'=>1,'b'=>['c'=>2]]" /></div></template>
                              <template x-if="block.key === 'extra-tree-view'"><div><x-extra.tree-view /></div></template>
                              <template x-if="block.key === 'extra-kanban'"><div><x-extra.kanban /></div></template>
+                             <template x-if="block.key === 'extra-segmented-tabs'"><div><x-extra.segmented-tabs :tabs="['A','B','C']" /></div></template>
+                             <template x-if="block.key === 'extra-vertical-tabs'"><div><x-extra.vertical-tabs :tabs="['Profil','Sécurité','Notifications']">Contenu</x-extra.vertical-tabs></div></template>
+                             <template x-if="block.key === 'extra-mega-menu'"><div><x-extra.mega-menu /></div></template>
+                             <template x-if="block.key === 'extra-pagination-compact'"><div><x-extra.pagination-compact :page="1" :pages="10" /></div></template>
+                             <template x-if="block.key === 'extra-markdown-editor'"><div><x-extra.markdown-editor /></div></template>
+                             <template x-if="block.key === 'extra-table-of-contents'"><div><x-extra.table-of-contents /></div></template>
+                             <template x-if="block.key === 'extra-masonry'"><div><x-extra.masonry /></div></template>
+                             <template x-if="block.key === 'extra-split-pane'"><div><x-extra.split-pane /></div></template>
+                             <template x-if="block.key === 'extra-breadcrumbs-overflow'"><div><x-extra.breadcrumbs-overflow /></div></template>
                         </div>
 
                         <div x-show="block.activeTab === 'variants'" class="space-y-3">
@@ -328,6 +337,30 @@ function componentsPage() {
          'extra-kanban': [{ title: 'Props', items: [
             { name: 'columns', type: 'array', desc: "[{title,items}]" },
          ]}],
+         'extra-segmented-tabs': [{ title: 'Props', items: [
+            { name: 'tabs', type: 'array', desc: 'Libellés' },
+            { name: 'active', type: 'number', desc: 'Index actif' },
+         ]}],
+         'extra-vertical-tabs': [{ title: 'Props', items: [
+            { name: 'tabs', type: 'array', desc: 'Libellés' },
+            { name: 'active', type: 'number', desc: 'Index actif' },
+         ]}],
+         'extra-mega-menu': [{ title: 'Props', items: [] }],
+         'extra-pagination-compact': [{ title: 'Props', items: [
+            { name: 'page', type: 'number', desc: 'Page actuelle' },
+            { name: 'pages', type: 'number', desc: 'Nombre de pages' },
+         ]}],
+         'extra-markdown-editor': [{ title: 'Props', items: [
+            { name: 'name', type: 'string', desc: 'Nom du champ' },
+         ]}],
+         'extra-table-of-contents': [{ title: 'Props', items: [
+            { name: 'items', type: 'array', desc: "[{id,label}]" },
+         ]}],
+         'extra-masonry': [{ title: 'Props', items: [
+            { name: 'items', type: 'array', desc: 'Blocs à afficher' },
+         ]}],
+         'extra-split-pane': [{ title: 'Props', items: [] }],
+         'extra-breadcrumbs-overflow': [{ title: 'Props', items: [] }],
     };
 
     return {
@@ -397,6 +430,15 @@ function componentsPage() {
             { key: 'extra-json-viewer', category: 'Data', title: 'JSON Viewer', activeTab: 'preview', code: `<x-extra.json-viewer :data="['a'=>1,'b'=>['c'=>2]]" />` },
             { key: 'extra-tree-view', category: 'Navigation', title: 'Tree View', activeTab: 'preview', code: `<x-extra.tree-view />` },
             { key: 'extra-kanban', category: 'Data', title: 'Kanban', activeTab: 'preview', code: `<x-extra.kanban />` },
+            { key: 'extra-segmented-tabs', category: 'Navigation', title: 'Segmented Tabs', activeTab: 'preview', code: `<x-extra.segmented-tabs :tabs="['A','B','C']" />` },
+            { key: 'extra-vertical-tabs', category: 'Navigation', title: 'Vertical Tabs', activeTab: 'preview', code: `<x-extra.vertical-tabs :tabs="['Profil','Sécurité','Notifications']">Contenu</x-extra.vertical-tabs>` },
+            { key: 'extra-mega-menu', category: 'Navigation', title: 'Mega Menu', activeTab: 'preview', code: `<x-extra.mega-menu />` },
+            { key: 'extra-pagination-compact', category: 'Data', title: 'Pagination Compact', activeTab: 'preview', code: `<x-extra.pagination-compact :page="1" :pages="10" />` },
+            { key: 'extra-markdown-editor', category: 'Form', title: 'Markdown Editor', activeTab: 'preview', code: `<x-extra.markdown-editor />` },
+            { key: 'extra-table-of-contents', category: 'Navigation', title: 'Table of Contents', activeTab: 'preview', code: `<x-extra.table-of-contents />` },
+            { key: 'extra-masonry', category: 'Layout', title: 'Masonry', activeTab: 'preview', code: `<x-extra.masonry />` },
+            { key: 'extra-split-pane', category: 'Layout', title: 'Split Pane', activeTab: 'preview', code: `<x-extra.split-pane />` },
+            { key: 'extra-breadcrumbs-overflow', category: 'Navigation', title: 'Breadcrumbs Overflow', activeTab: 'preview', code: `<x-extra.breadcrumbs-overflow />` },
         ],
         get currentParams() {
             const active = this.componentBlocks.find(b => b.activeTab && b.activeTab !== undefined);
