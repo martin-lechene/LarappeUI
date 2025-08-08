@@ -27,13 +27,15 @@
 
     @stack('styles')
 </head>
-<body class="h-full theme-{{ session('theme', 'light') }}" x-data="{
-    sidebarOpen: false,
-    currentTheme: localStorage.getItem('theme') || 'light',
-}" x-init="
+<body class="h-full theme-{{ session('theme', 'light') }}" x-data="{ sidebarOpen: false, currentTheme: localStorage.getItem('theme') || 'light', get themeOptions(){ return window.ThemeManager ? window.ThemeManager.getAllThemes() : ['light','dark','pro']; },
+    }" x-init="
     const savedTheme = localStorage.getItem('theme') || 'light';
     if (window.ThemeManager) { window.ThemeManager.applyTheme(savedTheme); }
     document.addEventListener('themeChanged', (event) => { currentTheme = event.detail.theme; });
+// Sync select options from ThemeManager when available
+const syncOptions = () => { if (window.ThemeManager) { document.querySelectorAll('[data-theme-selector]').forEach(s => { s.value = window.ThemeManager.currentTheme; }); } };
+document.addEventListener('DOMContentLoaded', syncOptions);
+setTimeout(syncOptions, 0);
 ">
     <!-- Sidebar -->
     <div class="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transition-transform duration-300 transform"
@@ -56,14 +58,17 @@
         <!-- Theme Selector -->
         <div class="p-4 border-b">
             <label class="block mb-2 text-sm font-medium text-gray-700">Thème</label>
-            <select x-model="currentTheme"
-                    @change="if (window.ThemeManager) { window.ThemeManager.applyTheme(currentTheme); }"
-                    data-theme-selector
-                    class="px-3 py-2 w-full rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                <template x-for="theme in (window.ThemeManager?.themes || [])" :key="theme.key">
-                    <option :value="theme.key" x-text="theme.name"></option>
-                </template>
-            </select>
+            <div class="flex items-center gap-2">
+                <select x-model="currentTheme"
+                        @change="if (window.ThemeManager) { window.ThemeManager.applyTheme(currentTheme); }"
+                        data-theme-selector
+                        class="px-3 py-2 w-full rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <template x-for="key in themeOptions" :key="key">
+                        <option :value="key" x-text="key.charAt(0).toUpperCase() + key.slice(1)"></option>
+                    </template>
+                </select>
+                <x-button size="sm" color="secondary" @click="if(window.ThemeManager){window.ThemeManager.applyTheme(currentTheme)}">Appliquer</x-button>
+            </div>
         </div>
 
         <!-- Navigation -->
