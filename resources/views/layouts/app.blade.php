@@ -27,15 +27,36 @@
 
     @stack('styles')
 </head>
-<body class="h-full theme-{{ session('theme', 'light') }}" x-data="{ sidebarOpen: false, currentTheme: localStorage.getItem('theme') || 'light', get themeOptions(){ return window.ThemeManager ? window.ThemeManager.getAllThemes() : ['light','dark','pro']; },
-    }" x-init="
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    if (window.ThemeManager) { window.ThemeManager.applyTheme(savedTheme); }
-    document.addEventListener('themeChanged', (event) => { currentTheme = event.detail.theme; });
-// Sync select options from ThemeManager when available
-const syncOptions = () => { if (window.ThemeManager) { document.querySelectorAll('[data-theme-selector]').forEach(s => { s.value = window.ThemeManager.currentTheme; }); } };
-document.addEventListener('DOMContentLoaded', syncOptions);
-setTimeout(syncOptions, 0);
+<body class="h-full theme-{{ session('theme', 'light') }}" x-data="{
+    sidebarOpen: false,
+    currentTheme: (localStorage.getItem('theme') || 'pro').replace(/-dark$/,'').replace(/-light$/,''),
+    isDark: (localStorage.getItem('theme') || '').endsWith('-dark'),
+    get themeOptions(){
+        const list = window.ThemeManager ? window.ThemeManager.getAllThemes() : ['pro','dark','light'];
+        const bases = [...new Set(list.map(k => k.replace(/-dark$/,'').replace(/-light$/,'')))];
+        // Limiter aux thèmes demandés si présents
+        const wanted = ['pro','2d','oldschool','ocean','summer','winter','autone'];
+        return wanted.filter(w => bases.includes(w));
+    },
+    applyCurrent(){
+        const name = this.isDark ? `${this.currentTheme}-dark` : this.currentTheme;
+        localStorage.setItem('theme', name);
+        localStorage.setItem('themeMode', this.isDark ? 'dark' : 'light');
+        if (window.ThemeManager) { window.ThemeManager.applyTheme(name); }
+    }
+}" x-init="
+    // Applique à l'init
+    this.applyCurrent();
+    // Suit les changements externes
+    document.addEventListener('themeChanged', (event) => {
+        const t = event.detail.theme || '';
+        currentTheme = t.replace(/-dark$/,'').replace(/-light$/,'');
+        isDark = /-dark$/.test(t);
+    });
+    // Sync select options when ready
+    const sync = () => { if (window.ThemeManager) { document.querySelectorAll('[data-theme-selector]').forEach(s => s.value = currentTheme); } };
+    document.addEventListener('DOMContentLoaded', sync);
+    setTimeout(sync, 0);
 ">
     <!-- Sidebar -->
     <div class="fixed inset-y-0 left-0 z-50 w-64 bg-white shadow-lg transition-transform duration-300 transform"
@@ -60,14 +81,22 @@ setTimeout(syncOptions, 0);
             <label class="block mb-2 text-sm font-medium text-gray-700">Thème</label>
             <div class="flex items-center gap-2">
                 <select x-model="currentTheme"
-                        @change="if (window.ThemeManager) { window.ThemeManager.applyTheme(currentTheme); }"
+                        @change="applyCurrent()"
                         data-theme-selector
                         class="px-3 py-2 w-full rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent">
                     <template x-for="key in themeOptions" :key="key">
                         <option :value="key" x-text="key.charAt(0).toUpperCase() + key.slice(1)"></option>
                     </template>
                 </select>
-                <x-button size="sm" color="secondary" @click="if(window.ThemeManager){window.ThemeManager.applyTheme(currentTheme)}">Appliquer</x-button>
+                <div class="flex items-center gap-2">
+                    <span class="text-xs text-gray-500">Light</span>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" class="sr-only peer" x-model="isDark" @change="applyCurrent()">
+                        <div class="w-10 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:bg-gray-700 transition-all"></div>
+                        <div class="absolute left-0.5 top-0.5 w-4 h-4 bg-white rounded-full transition-all peer-checked:translate-x-5"></div>
+                    </label>
+                    <span class="text-xs text-gray-700">Dark</span>
+                </div>
             </div>
         </div>
 
