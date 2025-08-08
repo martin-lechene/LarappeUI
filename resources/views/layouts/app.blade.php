@@ -35,7 +35,7 @@
         const list = window.ThemeManager ? window.ThemeManager.getAllThemes() : ['pro','dark','light'];
         const bases = [...new Set(list.map(k => k.replace(/-dark$/,'').replace(/-light$/,'')))];
         // Limiter aux thèmes demandés si présents
-        const wanted = ['pro','2d','oldschool','ocean','summer','winter','autone'];
+        const wanted = ['pro','2d','oldschool','ocean','summer','winter','glass'];
         return wanted.filter(w => bases.includes(w));
     },
     applyCurrent(){
