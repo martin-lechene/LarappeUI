@@ -105,6 +105,19 @@
                                 <x-extra.toast />
                                 <x-button size="sm" @click="window.dispatchEvent(new CustomEvent('show-toast',{detail:{message:'Action effectuée'}}))">Show Toast</x-button>
                              </div></template>
+                             <template x-if="block.key === 'extra-alert'"><div><x-extra.alert type="info" title="Information">Message</x-extra.alert></div></template>
+                             <template x-if="block.key === 'extra-snackbar'"><div>
+                                <x-extra.snackbar />
+                                <x-button size="sm" @click="window.dispatchEvent(new CustomEvent('show-snackbar',{detail:{message:'Enregistré',timeout:2000}}))">Show</x-button>
+                             </div></template>
+                             <template x-if="block.key === 'extra-confirm-dialog'"><div>
+                                <x-extra.confirm-dialog title="Confirmer">Êtes-vous sûr ?</x-extra.confirm-dialog>
+                                <x-button size="sm" color="danger" @click="window.dispatchEvent(new CustomEvent('open-confirm',{detail:{onConfirm:()=>alert('OK')}}))">Supprimer</x-button>
+                             </div></template>
+                             <template x-if="block.key === 'extra-otp-input'"><div><x-extra.otp-input :length="6" /></div></template>
+                             <template x-if="block.key === 'extra-rating'"><div><x-extra.rating :value="3" :max="5" /></div></template>
+                             <template x-if="block.key === 'extra-progress-circular'"><div><x-extra.progress-circular :value="50" /></div></template>
+                             <template x-if="block.key === 'extra-skeleton'"><div><x-extra.skeleton :lines="3" /></div></template>
                         </div>
 
                         <div x-show="block.activeTab === 'variants'" class="space-y-3">
@@ -233,6 +246,34 @@ function componentsPage() {
          'extra-toast': [{ title: 'Props', items: [
             { name: 'position', type: 'string', desc: 'top-right|top-left|bottom-right|bottom-left' },
          ]}],
+         'extra-alert': [{ title: 'Props', items: [
+            { name: 'type', type: 'string', desc: 'info|success|warning|danger' },
+            { name: 'title', type: 'string', desc: 'Titre optionnel' },
+            { name: 'dismissible', type: 'bool', desc: 'Affichage bouton fermer' },
+         ]}],
+         'extra-snackbar': [{ title: 'Props', items: [] }],
+         'extra-confirm-dialog': [{ title: 'Props', items: [
+            { name: 'title', type: 'string', desc: 'Titre du dialogue' },
+            { name: 'confirmText', type: 'string', desc: 'Texte bouton confirmer' },
+            { name: 'cancelText', type: 'string', desc: 'Texte bouton annuler' },
+         ]}],
+         'extra-otp-input': [{ title: 'Props', items: [
+            { name: 'length', type: 'number', desc: 'Nombre de cases OTP' },
+         ]}],
+         'extra-rating': [{ title: 'Props', items: [
+            { name: 'value', type: 'number', desc: 'Valeur initiale' },
+            { name: 'max', type: 'number', desc: 'Nombre d’étoiles' },
+            { name: 'readonly', type: 'bool', desc: 'Lecture seule' },
+            { name: 'name', type: 'string', desc: 'Nom du champ' },
+         ]}],
+         'extra-progress-circular': [{ title: 'Props', items: [
+            { name: 'value', type: 'number', desc: 'Progression 0-100' },
+            { name: 'size', type: 'number', desc: 'Taille en px' },
+            { name: 'stroke', type: 'number', desc: 'Épaisseur du trait' },
+         ]}],
+         'extra-skeleton': [{ title: 'Props', items: [
+            { name: 'lines', type: 'number', desc: 'Nombre de lignes' },
+         ]}],
     };
 
     return {
@@ -283,6 +324,13 @@ function componentsPage() {
             { key: 'extra-modal', category: 'Layout', title: 'Modal', activeTab: 'preview', code: `<x-extra.modal title="Demo"><div class='p-2'>Contenu modal</div></x-extra.modal>` },
             { key: 'extra-command-palette', category: 'Navigation', title: 'Command Palette', activeTab: 'preview', code: `<x-extra.command-palette />` },
             { key: 'extra-toast', category: 'Feedback', title: 'Toast', activeTab: 'preview', code: `<x-extra.toast />` },
+            { key: 'extra-alert', category: 'Feedback', title: 'Alert', activeTab: 'preview', code: `<x-extra.alert type="info" title="Information">Message</x-extra.alert>` },
+            { key: 'extra-snackbar', category: 'Feedback', title: 'Snackbar', activeTab: 'preview', code: `<x-extra.snackbar />` },
+            { key: 'extra-confirm-dialog', category: 'Feedback', title: 'Confirm Dialog', activeTab: 'preview', code: `<x-extra.confirm-dialog title="Confirmer">Êtes-vous sûr ?</x-extra.confirm-dialog>` },
+            { key: 'extra-otp-input', category: 'Form', title: 'OTP Input', activeTab: 'preview', code: `<x-extra.otp-input :length="6" />` },
+            { key: 'extra-rating', category: 'Form', title: 'Rating', activeTab: 'preview', code: `<x-extra.rating :value="3" :max="5" />` },
+            { key: 'extra-progress-circular', category: 'Feedback', title: 'Progress Circular', activeTab: 'preview', code: `<x-extra.progress-circular :value="50" />` },
+            { key: 'extra-skeleton', category: 'Feedback', title: 'Skeleton', activeTab: 'preview', code: `<x-extra.skeleton :lines="3" />` },
         ],
         get currentParams() {
             const active = this.componentBlocks.find(b => b.activeTab && b.activeTab !== undefined);
