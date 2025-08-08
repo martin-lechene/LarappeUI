@@ -139,6 +139,8 @@
                              <template x-if="block.key === 'extra-masonry'"><div><x-extra.masonry /></div></template>
                              <template x-if="block.key === 'extra-split-pane'"><div><x-extra.split-pane /></div></template>
                              <template x-if="block.key === 'extra-breadcrumbs-overflow'"><div><x-extra.breadcrumbs-overflow /></div></template>
+                             <template x-if="block.key === 'extra-select-async'"><div><x-extra.select-async endpoint="/api/cities" /></div></template>
+                             <template x-if="block.key === 'extra-combobox-virtual'"><div><x-extra.combobox-virtual /></div></template>
                         </div>
 
                         <div x-show="block.activeTab === 'variants'" class="space-y-3">
@@ -361,6 +363,13 @@ function componentsPage() {
          ]}],
          'extra-split-pane': [{ title: 'Props', items: [] }],
          'extra-breadcrumbs-overflow': [{ title: 'Props', items: [] }],
+         'extra-select-async': [{ title: 'Props', items: [
+            { name: 'endpoint', type: 'string', desc: 'URL de récupération' },
+            { name: 'name', type: 'string', desc: 'Nom du champ' },
+         ]}],
+         'extra-combobox-virtual': [{ title: 'Props', items: [
+            { name: 'name', type: 'string', desc: 'Nom du champ' },
+         ]}],
     };
 
     return {
@@ -439,6 +448,8 @@ function componentsPage() {
             { key: 'extra-masonry', category: 'Layout', title: 'Masonry', activeTab: 'preview', code: `<x-extra.masonry />` },
             { key: 'extra-split-pane', category: 'Layout', title: 'Split Pane', activeTab: 'preview', code: `<x-extra.split-pane />` },
             { key: 'extra-breadcrumbs-overflow', category: 'Navigation', title: 'Breadcrumbs Overflow', activeTab: 'preview', code: `<x-extra.breadcrumbs-overflow />` },
+            { key: 'extra-select-async', category: 'Form', title: 'Select Async', activeTab: 'preview', code: `<x-extra.select-async endpoint="/api/cities" />` },
+            { key: 'extra-combobox-virtual', category: 'Form', title: 'Combobox Virtual', activeTab: 'preview', code: `<x-extra.combobox-virtual />` },
         ],
         get currentParams() {
             const active = this.componentBlocks.find(b => b.activeTab && b.activeTab !== undefined);
