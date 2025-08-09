@@ -1,6 +1,6 @@
 @props([
-    'title' => null,
-    'value' => null,
+    'title' => null, // Titre affiché au-dessus
+    'value' => null, // Valeur principale
     'prefix' => null,
     'suffix' => null,
     'precision' => 0,

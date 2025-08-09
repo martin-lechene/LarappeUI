@@ -82,5 +82,11 @@
 @endphp
 
 <div class="{{ implode(' ', $cardClasses) }}">
-    {{ $slot }}
+    @if(isset($header))
+        <div class="mb-4 flex items-center justify-between">{{ $header }}</div>
+    @endif
+    <div>{{ $slot }}</div>
+    @if(isset($footer))
+        <div class="mt-4">{{ $footer }}</div>
+    @endif
 </div>

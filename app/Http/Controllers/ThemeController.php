@@ -15,8 +15,8 @@ class ThemeController extends Controller
         $theme = $request->input('theme', 'light');
 
         // Valider le thème
-        // Récupérer dynamiquement les thèmes disponibles depuis le fichier CSS
-        $themeCssPath = public_path('css/themes-complete.css');
+        // Récupérer dynamiquement les thèmes disponibles depuis le fichier CSS compilé
+        $themeCssPath = public_path('css/themes.css');
         $validThemes = [];
 
         if (file_exists($themeCssPath)) {
