@@ -15,7 +15,7 @@ jobs:
     - uses: shivammathur/setup-php@0ac4874a143196d74f30423c89f1864a161ba10e
       with:
         php-version: '8.0'
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Install Dependencies
