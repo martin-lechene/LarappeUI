@@ -1,28 +1,44 @@
 @props([
     'label' => null,
-    'color' => 'primary', // primary, secondary, danger, etc.
-    'size' => 'md', // sm, md, lg
+    'color' => 'primary', // primary, secondary, success, warning, danger, info
+    'size' => 'md', // xs, sm, md, lg
+    'variant' => 'solid', // solid, outline, ghost, soft, link, icon
     'icon' => null,
     'loading' => false,
     'disabled' => false,
-    'outline' => false,
     'block' => false,
     'type' => 'button',
 ])
 
 @php
     $base = 'inline-flex items-center justify-center font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none';
-    $colors = [
-        'primary' => $outline ? 'border border-blue-600 text-blue-600 bg-white hover:bg-blue-50 focus:ring-blue-500' : 'bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500',
-        'secondary' => $outline ? 'border border-gray-400 text-gray-700 bg-white hover:bg-gray-50 focus:ring-gray-400' : 'bg-gray-100 text-gray-900 hover:bg-gray-200 focus:ring-gray-400',
-        'danger' => $outline ? 'border border-red-600 text-red-600 bg-white hover:bg-red-50 focus:ring-red-500' : 'bg-red-600 text-white hover:bg-red-700 focus:ring-red-500',
-    ];
     $sizes = [
+        'xs' => 'px-2 py-1 text-xs rounded',
         'sm' => 'px-3 py-1.5 text-xs rounded',
         'md' => 'px-4 py-2 text-sm rounded-md',
         'lg' => 'px-6 py-3 text-base rounded-lg',
     ];
-    $classes = $base . ' ' . ($colors[$color] ?? $colors['primary']) . ' ' . ($sizes[$size] ?? $sizes['md']) . ($block ? ' w-full' : '');
+    $palette = [
+        'primary' => ['bg' => 'blue', 'text' => 'white'],
+        'secondary' => ['bg' => 'gray', 'text' => 'gray-900'],
+        'success' => ['bg' => 'green', 'text' => 'white'],
+        'warning' => ['bg' => 'yellow', 'text' => 'white'],
+        'danger' => ['bg' => 'red', 'text' => 'white'],
+        'info' => ['bg' => 'cyan', 'text' => 'white'],
+    ];
+    $p = $palette[$color] ?? $palette['primary'];
+
+    $variants = [
+        'solid' => "bg-{$p['bg']}-600 text-{$p['text']} hover:bg-{$p['bg']}-700 focus:ring-{$p['bg']}-500",
+        'outline' => "border border-{$p['bg']}-600 text-{$p['bg']}-600 bg-white hover:bg-{$p['bg']}-50 focus:ring-{$p['bg']}-500",
+        'ghost' => "bg-transparent text-{$p['bg']}-600 hover:bg-{$p['bg']}-50 focus:ring-{$p['bg']}-500",
+        'soft' => "bg-{$p['bg']}-50 text-{$p['bg']}-700 hover:bg-{$p['bg']}-100 focus:ring-{$p['bg']}-500",
+        'link' => "bg-transparent text-{$p['bg']}-600 underline underline-offset-2 hover:text-{$p['bg']}-700 focus:ring-{$p['bg']}-500",
+        'icon' => "p-2 rounded-full bg-{$p['bg']}-600 text-{$p['text']} hover:bg-{$p['bg']}-700 focus:ring-{$p['bg']}-500",
+    ];
+
+    $variantClasses = $variants[$variant] ?? $variants['solid'];
+    $classes = $base . ' ' . $variantClasses . ' ' . ($sizes[$size] ?? $sizes['md']) . ($block ? ' w-full' : '');
 @endphp
 
 <button type="{{ $type }}" {{ $attributes->merge(['class' => $classes, 'disabled' => $disabled || $loading]) }}>

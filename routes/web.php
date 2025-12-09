@@ -2,45 +2,32 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ThemeController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
 */
 
-// Appliquer le middleware de thèmes à toutes les routes
+// Pages principales avec middleware de thème
 Route::middleware(['theme'])->group(function () {
     Route::get('/', function () {
-        return view('welcome');
+        return view('components');
     })->name('home');
 
-    Route::get('/components-docs', function () {
-        return view('components-docs');
-    })->name('components-docs');
+    Route::get('/components', function () {
+        return view('components');
+    })->name('components');
 
-    Route::get('/components-docs/{component}', function ($component) {
-        return view('components-docs', compact('component'));
-    })->name('components-docs.show');
-
-    Route::get('/themes-manager', function () {
-        return view('themes-manager');
-    })->name('themes-manager');
-
-    Route::get('/themes-showcase', function () {
-        return view('themes-showcase');
-    })->name('themes-showcase');
-
-    Route::get('/test-themes', function () {
-        return view('test-themes');
-    })->name('test-themes');
+    Route::get('/examples', function () {
+        return view('examples');
+    })->name('examples');
 });
 
-// Routes pour la gestion des thèmes
+// Endpoints API pour le système de thème
 Route::post('/theme/set', [ThemeController::class, 'setTheme'])->name('theme.set');
 Route::get('/theme/get', [ThemeController::class, 'getTheme'])->name('theme.get');
+
+// Endpoints nécessaires aux démos fonctionnelles
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');

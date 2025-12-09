@@ -75,47 +75,149 @@ class ThemeManager {
                 border: "rgba(229, 231, 235, 0.3)",
                 accent: "rgba(245, 158, 66, 0.8)",
             },
-            neon: {
-                primary: "#00ff88",
-                secondary: "#ff00ff",
-                success: "#00ff00",
-                warning: "#ffff00",
-                danger: "#ff0080",
-                info: "#00ffff",
-                background: "#000000",
-                surface: "#1a1a1a",
-                text: "#ffffff",
-                textSecondary: "#cccccc",
-                border: "#333333",
-                accent: "#ff6600",
+            "glass-dark": {
+                primary: "rgba(96, 165, 250, 0.8)",
+                secondary: "rgba(156, 163, 175, 0.8)",
+                success: "rgba(52, 211, 153, 0.8)",
+                warning: "rgba(251, 191, 36, 0.8)",
+                danger: "rgba(248, 113, 113, 0.8)",
+                info: "rgba(34, 211, 238, 0.8)",
+                background: "rgba(15, 23, 42, 0.7)",
+                surface: "rgba(17, 24, 39, 0.55)",
+                text: "#e2e8f0",
+                textSecondary: "#94a3b8",
+                border: "rgba(55, 65, 81, 0.6)",
+                accent: "rgba(34, 197, 94, 0.8)",
             },
-            forest: {
-                primary: "#059669",
-                secondary: "#6b7280",
+            "2d": {
+                primary: "#ff6b6b",
+                secondary: "#4ecdc4",
+                success: "#2ecc71",
+                warning: "#f1c40f",
+                danger: "#e74c3c",
+                info: "#3498db",
+                background: "#ffffff",
+                surface: "#f8f9fb",
+                text: "#1f2937",
+                textSecondary: "#6b7280",
+                border: "#e5e7eb",
+            },
+            "2d-dark": {
+                primary: "#ff8787",
+                secondary: "#6fe3da",
+                success: "#34d399",
+                warning: "#facc15",
+                danger: "#fb7185",
+                info: "#60a5fa",
+                background: "#0f172a",
+                surface: "#111827",
+                text: "#e5e7eb",
+                textSecondary: "#9ca3af",
+                border: "#374151",
+            },
+            oldschool: {
+                primary: "#2d3436",
+                secondary: "#636e72",
+                success: "#00b894",
+                warning: "#fdcb6e",
+                danger: "#d63031",
+                info: "#0984e3",
+                background: "#ffffff",
+                surface: "#f8f9fa",
+                text: "#2d3436",
+                textSecondary: "#636e72",
+                border: "#dddddd",
+            },
+            "oldschool-dark": {
+                primary: "#dfe6e9",
+                secondary: "#b2bec3",
+                success: "#55efc4",
+                warning: "#ffeaa7",
+                danger: "#ff7675",
+                info: "#74b9ff",
+                background: "#1a1a1a",
+                surface: "#222222",
+                text: "#ecf0f1",
+                textSecondary: "#bdc3c7",
+                border: "#333333",
+            },
+            ocean: {
+                primary: "#0ea5e9",
+                secondary: "#38bdf8",
                 success: "#10b981",
                 warning: "#f59e0b",
                 danger: "#ef4444",
                 info: "#06b6d4",
-                background: "#f0fdf4",
-                surface: "#ecfdf5",
-                text: "#064e3b",
-                textSecondary: "#065f46",
-                border: "#bbf7d0",
-                accent: "#16a34a",
+                background: "#f0f9ff",
+                surface: "#e0f2fe",
+                text: "#0c4a6e",
+                textSecondary: "#0f766e",
+                border: "#bae6fd",
             },
-            "forest-night": {
-                primary: "#10b981",
-                secondary: "#6b7280",
+            "ocean-dark": {
+                primary: "#38bdf8",
+                secondary: "#7dd3fc",
                 success: "#34d399",
                 warning: "#fbbf24",
                 danger: "#f87171",
                 info: "#22d3ee",
-                background: "#0f172a",
-                surface: "#1e293b",
-                text: "#f1f5f9",
-                textSecondary: "#cbd5e1",
-                border: "#334155",
-                accent: "#059669",
+                background: "#0b1020",
+                surface: "#0f172a",
+                text: "#e2e8f0",
+                textSecondary: "#94a3b8",
+                border: "#1f2a44",
+            },
+            summer: {
+                primary: "#f59e0b",
+                secondary: "#fbbf24",
+                success: "#10b981",
+                warning: "#f59e0b",
+                danger: "#ef4444",
+                info: "#06b6d4",
+                background: "#fffbeb",
+                surface: "#fef3c7",
+                text: "#92400e",
+                textSecondary: "#b45309",
+                border: "#fed7aa",
+            },
+            "summer-dark": {
+                primary: "#fbbf24",
+                secondary: "#fde68a",
+                success: "#34d399",
+                warning: "#f59e0b",
+                danger: "#f87171",
+                info: "#22d3ee",
+                background: "#181204",
+                surface: "#1f1403",
+                text: "#fde68a",
+                textSecondary: "#fcd34d",
+                border: "#3b2f12",
+            },
+            winter: {
+                primary: "#60a5fa",
+                secondary: "#93c5fd",
+                success: "#22c55e",
+                warning: "#f59e0b",
+                danger: "#f87171",
+                info: "#0ea5e9",
+                background: "#f8fafc",
+                surface: "#f1f5f9",
+                text: "#0f172a",
+                textSecondary: "#475569",
+                border: "#e2e8f0",
+            },
+            "winter-dark": {
+                primary: "#93c5fd",
+                secondary: "#bfdbfe",
+                success: "#34d399",
+                warning: "#fbbf24",
+                danger: "#fb7185",
+                info: "#38bdf8",
+                background: "#0b1220",
+                surface: "#0f172a",
+                text: "#e2e8f0",
+                textSecondary: "#94a3b8",
+                border: "#1f2a44",
             },
             sea: {
                 primary: "#0ea5e9",
@@ -157,7 +259,6 @@ class ThemeManager {
                 text: "#92400e",
                 textSecondary: "#b45309",
                 border: "#fed7aa",
-                accent: "#d97706",
             },
             sunset: {
                 primary: "#f97316",
@@ -200,20 +301,6 @@ class ThemeManager {
                 textSecondary: "#6b7280",
                 border: "#e5e7eb",
                 accent: "#000000",
-            },
-            "2d": {
-                primary: "#ff6b6b",
-                secondary: "#4ecdc4",
-                success: "#45b7d1",
-                warning: "#f7b731",
-                danger: "#ee5a24",
-                info: "#a55eea",
-                background: "#ffffff",
-                surface: "#f8f9fa",
-                text: "#2d3436",
-                textSecondary: "#636e72",
-                border: "#ddd",
-                accent: "#ffa502",
             },
             retro: {
                 primary: "#ff6b35",
@@ -356,40 +443,46 @@ class ThemeManager {
                 accent: "#cb4b16",
             },
         };
-
         this.init();
     }
 
+    ensureThemeCss(themeName) {
+        const base = themeName.replace(/-(dark|light)$/,'');
+        const isDark = /-dark$/.test(themeName);
+        const mode = isDark ? 'dark' : 'light';
+        const href = `/css/themes-${base}-${mode}.css`;
+        let link = document.getElementById('theme-variables');
+        if (!link) {
+            link = document.createElement('link');
+            link.id = 'theme-variables';
+            link.rel = 'stylesheet';
+            document.head.appendChild(link);
+        }
+        if (link.getAttribute('href') !== href) {
+            link.setAttribute('href', href);
+        }
+    }
+
     async init() {
-        // Charger le thème depuis le serveur d'abord, puis localStorage
         try {
             const response = await fetch("/theme/get");
             if (response.ok) {
                 const data = await response.json();
                 this.currentTheme = data.theme;
             } else {
-                // Fallback vers localStorage
                 this.currentTheme = localStorage.getItem("theme") || "light";
             }
         } catch (error) {
-            console.warn(
-                "Impossible de charger le thème depuis le serveur, utilisation du localStorage"
-            );
             this.currentTheme = localStorage.getItem("theme") || "light";
         }
 
-        // Appliquer le thème
         this.applyTheme(this.currentTheme);
 
-        // Exposer la classe globalement
         window.ThemeManager = this;
-
-        // Initialiser les sélecteurs de thème
         this.initThemeSelectors();
     }
 
     initThemeSelectors() {
-        // Initialiser tous les sélecteurs de thème sur la page
         const themeSelectors = document.querySelectorAll(
             "[data-theme-selector], select[data-theme-selector]"
         );
@@ -403,16 +496,14 @@ class ThemeManager {
 
     async applyTheme(themeName) {
         if (!this.themes[themeName]) {
-            console.warn(
-                `Thème "${themeName}" non trouvé, utilisation du thème light`
-            );
-            themeName = "light";
+            const base = themeName.replace(/-(dark|light)$/,'');
+            const fallback = base || 'light';
+            themeName = this.themes[fallback] ? fallback : 'light';
         }
 
         this.currentTheme = themeName;
         const theme = this.themes[themeName];
 
-        // Synchroniser avec le serveur
         try {
             await fetch("/theme/set", {
                 method: "POST",
@@ -425,24 +516,19 @@ class ThemeManager {
                 },
                 body: JSON.stringify({ theme: themeName }),
             });
-        } catch (error) {
-            console.warn("Impossible de synchroniser le thème avec le serveur");
-        }
+        } catch (error) {}
 
-        // Appliquer l'attribut theme sur l'élément HTML
         const html = document.documentElement;
         html.setAttribute("theme", themeName);
 
-        // Supprimer toutes les classes de thème existantes du body
         document.body.className = document.body.className.replace(
-            /theme-\w+/g,
+            /theme-[\w-]+/g,
             ""
         );
-
-        // Ajouter la classe du thème au body
         document.body.classList.add(`theme-${themeName}`);
 
-        // Mettre à jour tous les sélecteurs de thème
+        this.ensureThemeCss(themeName);
+
         const themeSelectors = document.querySelectorAll(
             "[data-theme-selector], select[data-theme-selector]"
         );
@@ -450,13 +536,10 @@ class ThemeManager {
             selector.value = themeName;
         });
 
-        // Déclencher un événement personnalisé
         const event = new CustomEvent("themeChanged", {
             detail: { theme: themeName, colors: theme },
         });
         document.dispatchEvent(event);
-
-        console.log(`Thème appliqué: ${themeName}`);
     }
 
     getCurrentTheme() {
@@ -472,21 +555,17 @@ class ThemeManager {
         return Object.keys(this.themes);
     }
 
-    // Méthode pour créer un thème personnalisé
     createCustomTheme(colors) {
         const customTheme = {
-            ...this.themes.light, // Base sur le thème light
-            ...colors, // Remplacer avec les couleurs personnalisées
+            ...this.themes.light,
+            ...colors,
         };
 
         return customTheme;
     }
 
-    // Méthode pour appliquer un thème personnalisé
     applyCustomTheme(colors) {
         const customTheme = this.createCustomTheme(colors);
-
-        // Créer une classe CSS temporaire pour le thème personnalisé
         const styleId = "custom-theme-style";
         let styleElement = document.getElementById(styleId);
 
@@ -496,7 +575,6 @@ class ThemeManager {
             document.head.appendChild(styleElement);
         }
 
-        // Générer le CSS pour le thème personnalisé
         const cssRules = Object.entries(customTheme)
             .map(([key, value]) => `--color-${key}: ${value};`)
             .join("\n    ");
@@ -507,21 +585,18 @@ class ThemeManager {
             }
         `;
 
-        // Appliquer la classe custom au body
         document.body.className = document.body.className.replace(
-            /theme-\w+/g,
+            /theme-[\w-]+/g,
             ""
         );
         document.body.classList.add("theme-custom");
     }
 }
 
-// Initialiser le gestionnaire de thèmes quand le DOM est prêt
 document.addEventListener("DOMContentLoaded", () => {
     new ThemeManager();
 });
 
-// Initialiser immédiatement si le DOM est déjà chargé
 if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", () => {
         new ThemeManager();
