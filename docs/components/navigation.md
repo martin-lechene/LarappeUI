@@ -189,13 +189,13 @@ Fil d'Ariane avec troncature automatique pour longs chemins.
 
 ## Command Palette (`x-extra.command-palette`)
 
-Palette de commande rapide (style ⌘K).
+Palette de commande rapide (Ctrl+K / Cmd+K).
 
 | Paramètre | Type | Défaut | Description |
 |-----------|------|--------|-------------|
 | `placeholder` | `string` | `Rechercher...` | Texte indicatif |
 | `commands` | `array` | — | Liste de commandes `[['label'=>'...','action'=>'...'], ...]` |
-| `shortcut` | `string` | `Ctrl+K` | Raccourci clavier |
+| `shortcut` | `string` | `Ctrl+K` | Raccourci clavier (Ctrl+K / Cmd+K) |
 
 **Exemple :**
 ```blade
