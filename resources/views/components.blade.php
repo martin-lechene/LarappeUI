@@ -3,22 +3,33 @@
 @section('title', 'Components')
 
 @section('content')
-<div x-data="componentsPage()" class="[&_h3]:text-sm [&_h3]:font-semibold [&_h3]:text-gray-600">
+<div x-data="componentsPage()" class="[&_h3]:text-sm [&_h3]:font-semibold [&_h3]:text-[var(--color-textSecondary)]">
+    <header class="mb-8">
+        <h1 class="text-3xl font-bold tracking-tight text-[var(--color-text)]">Composants</h1>
+        <p class="mt-2 max-w-2xl text-[var(--color-textSecondary)]">Galerie interactive des blocs LarappeUI. Cliquez une carte pour afficher ses paramètres dans le panneau de droite.</p>
+    </header>
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div class="lg:col-span-2 space-y-6">
             <template x-for="block in componentBlocks" :key="block.key">
-                <div class="bg-white border rounded-xl shadow-sm">
-                    <div class="flex items-center justify-between px-4 py-3 border-b">
+                <div
+                    class="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm transition-shadow scroll-mt-24"
+                    :class="{ 'ring-2 ring-primary ring-offset-2 ring-offset-[var(--color-background)]': activeKey === block.key }"
+                    :data-component-block="block.key"
+                    @click="activeKey = block.key"
+                    role="article"
+                    :aria-label="block.title"
+                >
+                    <div class="flex items-center justify-between px-4 py-3 border-b border-[var(--color-border)]">
                         <div>
                             <div class="text-sm uppercase tracking-wide text-gray-400" x-text="block.category"></div>
                             <div class="font-semibold text-lg" x-text="block.title"></div>
                         </div>
                         <div class="flex items-center gap-3 text-sm">
-                            <button @click="block.activeTab = 'preview'" :class="block.activeTab === 'preview' ? 'text-primary' : 'text-gray-500'">Aperçu</button>
-                            <span class="text-gray-300">|</span>
-                            <button @click="block.activeTab = 'variants'" :class="block.activeTab === 'variants' ? 'text-primary' : 'text-gray-500'">Variantes</button>
-                            <span class="text-gray-300">|</span>
-                            <button @click="block.activeTab = 'code'" :class="block.activeTab === 'code' ? 'text-primary' : 'text-gray-500'">Code</button>
+                            <button type="button" @click.stop="block.activeTab = 'preview'" :class="block.activeTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
+                            <span class="text-[var(--color-border)]" aria-hidden="true">|</span>
+                            <button type="button" @click.stop="block.activeTab = 'variants'" :class="block.activeTab === 'variants' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Variantes</button>
+                            <span class="text-[var(--color-border)]" aria-hidden="true">|</span>
+                            <button type="button" @click.stop="block.activeTab = 'code'" :class="block.activeTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
                         </div>
                     </div>
                     <div class="p-5">
@@ -191,16 +202,22 @@
         </div>
 
         <aside class="lg:col-span-1">
-            <div class="bg-white border rounded-xl shadow-sm p-4 sticky top-6">
-                <h3 class="font-semibold mb-3">Paramètres du composant</h3>
-                <template x-if="!currentParams.length"><p class="text-sm text-gray-500">Sélectionnez un bloc pour voir ses paramètres.</p></template>
+            <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm p-4 sticky top-6">
+                <h2 class="font-semibold mb-1 text-[var(--color-text)]">Paramètres du composant</h2>
+                <p class="text-xs text-[var(--color-textSecondary)] mb-3" x-text="'Bloc : ' + activeKey"></p>
+                <template x-if="!currentParams.length">
+                    <div class="text-sm text-[var(--color-textSecondary)] space-y-2">
+                        <p>Aucune fiche props pour ce bloc.</p>
+                        <p class="text-xs">Consultez l’onglet <strong class="text-[var(--color-text)]">Code</strong> sur la carte ou le source du composant dans <code class="text-xs bg-[var(--color-background)] px-1 rounded">resources/views/components</code>.</p>
+                    </div>
+                </template>
                 <div class="space-y-4" x-show="currentParams.length">
                     <template x-for="section in currentParams" :key="section.title">
                         <div>
-                            <div class="text-sm font-semibold text-gray-700" x-text="section.title"></div>
+                            <div class="text-sm font-semibold text-[var(--color-text)]" x-text="section.title"></div>
                             <table class="mt-2 w-full text-sm">
                                 <thead>
-                                    <tr class="text-left text-gray-400">
+                                    <tr class="text-left text-[var(--color-textSecondary)]">
                                         <th class="py-1 pr-2">Prop</th>
                                         <th class="py-1 pr-2">Type</th>
                                         <th class="py-1">Description</th>
@@ -208,10 +225,10 @@
                                 </thead>
                                 <tbody>
                                     <template x-for="param in section.items" :key="param.name">
-                                        <tr class="border-t">
-                                            <td class="py-1 pr-2 font-medium" x-text="param.name"></td>
-                                            <td class="py-1 pr-2 text-gray-500" x-text="param.type || ''"></td>
-                                            <td class="py-1 text-gray-600" x-text="param.desc"></td>
+                                        <tr class="border-t border-[var(--color-border)]">
+                                            <td class="py-1 pr-2 font-medium text-[var(--color-text)]" x-text="param.name"></td>
+                                            <td class="py-1 pr-2 text-[var(--color-textSecondary)]" x-text="param.type || ''"></td>
+                                            <td class="py-1 text-[var(--color-textSecondary)]" x-text="param.desc"></td>
                                         </tr>
                                     </template>
                                 </tbody>
@@ -236,6 +253,119 @@ function componentsPage() {
             { name: 'outline', type: 'bool', desc: 'Style contour' },
             { name: 'block', type: 'bool', desc: 'Prend toute la largeur' },
             { name: 'type', type: 'string', desc: 'button | submit | reset' },
+        ]}],
+        'base-inputs': [{ title: 'Props', items: [
+            { name: 'placeholder', type: 'string', desc: 'Texte indicatif (composant x-input)' },
+            { name: 'type', type: 'string', desc: 'Type HTML du champ' },
+        ]}],
+        calendar: [{ title: 'Props', items: [
+            { name: 'value, min, max', type: 'mixed', desc: 'Voir le Blade du calendrier' },
+        ]}],
+        card: [{ title: 'Props', items: [
+            { name: 'title', type: 'string', desc: 'Titre optionnel de la carte' },
+        ]}],
+        dropdown: [{ title: 'Slots', items: [
+            { name: 'trigger', type: 'slot', desc: 'Élément qui ouvre le menu' },
+            { name: 'default', type: 'slot', desc: 'Entrées du menu' },
+        ]}],
+        tag: [{ title: 'Props', items: [
+            { name: 'slot', type: '—', desc: 'Libellé affiché dans le tag' },
+        ]}],
+        'charts-charts': [{ title: 'Props', items: [
+            { name: 'data-*, type', type: 'string', desc: 'Attributs data pour Chart.js (voir composant)' },
+        ]}],
+        'form-checkbox': [{ title: 'Props', items: [
+            { name: 'label', type: 'string', desc: 'Libellé' },
+            { name: 'name', type: 'string', desc: 'Nom du champ' },
+        ]}],
+        'form-switch': [{ title: 'Props', items: [
+            { name: 'label', type: 'string', desc: 'Libellé' },
+        ]}],
+        'form-textarea': [{ title: 'Props', items: [
+            { name: 'label', type: 'string', desc: 'Libellé' },
+            { name: 'rows', type: 'number', desc: 'Nombre de lignes' },
+        ]}],
+        'form-radio': [{ title: 'Props', items: [
+            { name: 'options', type: 'array', desc: 'Liste { label, value }' },
+            { name: 'name', type: 'string', desc: 'Nom du groupe radio' },
+        ]}],
+        'form-slider': [{ title: 'Props', items: [
+            { name: 'min / max', type: 'number', desc: 'Bornes de la glissière' },
+        ]}],
+        'form-upload': [{ title: 'Props', items: [
+            { name: 'label', type: 'string', desc: 'Libellé' },
+            { name: 'name', type: 'string', desc: 'Nom de l’input file' },
+        ]}],
+        'form-texteditor': [{ title: 'Props', items: [
+            { name: 'name', type: 'string', desc: 'Nom du champ' },
+        ]}],
+        'form-autocomplete': [{ title: 'Props', items: [
+            { name: 'options', type: 'array', desc: 'Suggestions' },
+        ]}],
+        'form-combobox': [{ title: 'Props', items: [
+            { name: 'options', type: 'array', desc: 'Liste des choix' },
+        ]}],
+        'form-mentions': [{ title: 'Props', items: [
+            { name: 'options', type: 'array', desc: 'Handles ou utilisateurs' },
+        ]}],
+        'data-statistic': [{ title: 'Props', items: [
+            { name: 'title', type: 'string', desc: 'Intitulé' },
+            { name: 'value', type: 'string', desc: 'Valeur principale' },
+            { name: 'suffix', type: 'string', desc: 'Suffixe (€, %, …)' },
+        ]}],
+        'data-timeline': [{ title: 'Props', items: [
+            { name: 'items', type: 'array', desc: '[{ label, content }]' },
+        ]}],
+        'data-descriptions': [{ title: 'Props', items: [
+            { name: 'items', type: 'array', desc: '[{ label, content }]' },
+        ]}],
+        'layout-card': [{ title: 'Slots', items: [
+            { name: 'default', type: 'slot', desc: 'Contenu de la carte' },
+        ]}],
+        'layout-collapse': [{ title: 'Props', items: [
+            { name: 'title', type: 'string', desc: 'Titre du panneau repliable' },
+        ]}],
+        'layout-divider': [{ title: 'Props', items: [
+            { name: '—', type: '—', desc: 'Séparateur horizontal' },
+        ]}],
+        'layout-drawer': [{ title: 'Props', items: [
+            { name: 'title', type: 'string', desc: 'Titre du tiroir' },
+        ]}],
+        'layout-popover': [{ title: 'Props', items: [
+            { name: 'text', type: 'string', desc: 'Texte du déclencheur' },
+        ]}],
+        'layout-tooltip': [{ title: 'Props', items: [
+            { name: 'text', type: 'string', desc: 'Infobulle' },
+        ]}],
+        'navigation-affix': [{ title: 'Slots', items: [
+            { name: 'default', type: 'slot', desc: 'Contenu ancré au scroll' },
+        ]}],
+        'navigation-anchor': [{ title: 'Props', items: [
+            { name: 'href', type: 'string', desc: 'URL ou ancre' },
+        ]}],
+        'navigation-breadcrumbs': [{ title: 'Props', items: [
+            { name: 'items', type: 'array', desc: '[{ label, href? }]' },
+        ]}],
+        'navigation-sidebar': [{ title: 'Props', items: [
+            { name: 'items', type: 'array', desc: 'Structure de navigation' },
+        ]}],
+        'feedback-badge': [{ title: 'Props', items: [
+            { name: 'color', type: 'string', desc: 'Couleur sémantique' },
+        ]}],
+        'feedback-empty': [{ title: 'Props', items: [
+            { name: 'title', type: 'string', desc: 'Titre état vide' },
+            { name: 'description', type: 'string', desc: 'Message d’aide' },
+        ]}],
+        'feedback-spinner': [{ title: 'Props', items: [
+            { name: 'class', type: 'string', desc: 'Classes Tailwind optionnelles' },
+        ]}],
+        'media-avatar': [{ title: 'Props', items: [
+            { name: 'name', type: 'string', desc: 'Nom pour initiales' },
+            { name: 'src', type: 'string', desc: 'Image optionnelle' },
+        ]}],
+        'media-image': [{ title: 'Props', items: [
+            { name: 'src', type: 'string', desc: 'URL de l’image' },
+            { name: 'alt', type: 'string', desc: 'Texte alternatif' },
         ]}],
         'form-input': [{ title: 'Props', items: [
             { name: 'label', type: 'string' , desc: 'Label du champ' },
@@ -285,7 +415,9 @@ function componentsPage() {
             { name: 'title', type: 'string', desc: 'Titre optionnel' },
             { name: 'dismissible', type: 'bool', desc: 'Affichage bouton fermer' },
          ]}],
-         'extra-snackbar': [{ title: 'Props', items: [] }],
+         'extra-snackbar': [{ title: 'Props', items: [
+            { name: 'position', type: 'string', desc: 'Position des toasts (voir composant)' },
+         ]}],
          'extra-confirm-dialog': [{ title: 'Props', items: [
             { name: 'title', type: 'string', desc: 'Titre du dialogue' },
             { name: 'confirmText', type: 'string', desc: 'Texte bouton confirmer' },
@@ -358,7 +490,9 @@ function componentsPage() {
             { name: 'tabs', type: 'array', desc: 'Libellés' },
             { name: 'active', type: 'number', desc: 'Index actif' },
          ]}],
-         'extra-mega-menu': [{ title: 'Props', items: [] }],
+         'extra-mega-menu': [{ title: 'Props', items: [
+            { name: 'items', type: 'array', desc: 'Structure du méga-menu (voir Blade)' },
+         ]}],
          'extra-pagination-compact': [{ title: 'Props', items: [
             { name: 'page', type: 'number', desc: 'Page actuelle' },
             { name: 'pages', type: 'number', desc: 'Nombre de pages' },
@@ -372,8 +506,12 @@ function componentsPage() {
          'extra-masonry': [{ title: 'Props', items: [
             { name: 'items', type: 'array', desc: 'Blocs à afficher' },
          ]}],
-         'extra-split-pane': [{ title: 'Props', items: [] }],
-         'extra-breadcrumbs-overflow': [{ title: 'Props', items: [] }],
+         'extra-split-pane': [{ title: 'Props', items: [
+            { name: 'slot', type: 'slot', desc: 'Panneaux redimensionnables' },
+         ]}],
+         'extra-breadcrumbs-overflow': [{ title: 'Props', items: [
+            { name: 'items', type: 'array', desc: 'Fil d’Ariane avec repli' },
+         ]}],
          'extra-select-async': [{ title: 'Props', items: [
             { name: 'endpoint', type: 'string', desc: 'URL de récupération' },
             { name: 'name', type: 'string', desc: 'Nom du champ' },
@@ -396,7 +534,9 @@ function componentsPage() {
             { name: 'name', type: 'string', desc: 'Nom du champ' },
             { name: 'options', type: 'array', desc: 'Suggestions' },
          ]}],
-         'extra-coachmarks': [{ title: 'Props', items: [] }],
+         'extra-coachmarks': [{ title: 'Props', items: [
+            { name: 'steps', type: 'array', desc: 'Étapes du tutoriel (voir composant)' },
+         ]}],
          'extra-empty-premium': [{ title: 'Props', items: [
             { name: 'title', type: 'string' },
             { name: 'description', type: 'string' },
@@ -421,6 +561,21 @@ function componentsPage() {
 
     return {
         activeKey: 'button',
+        init() {
+            this.$nextTick(() => {
+                const nodes = document.querySelectorAll('[data-component-block]');
+                if (!nodes.length || typeof IntersectionObserver === 'undefined') return;
+                const obs = new IntersectionObserver((entries) => {
+                    const visible = entries
+                        .filter(e => e.isIntersecting && e.intersectionRatio >= 0.2)
+                        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+                    if (!visible || !visible.target) return;
+                    const key = visible.target.getAttribute('data-component-block');
+                    if (key) this.activeKey = key;
+                }, { threshold: [0, 0.2, 0.45], rootMargin: '-12% 0px -48% 0px' });
+                nodes.forEach(el => obs.observe(el));
+            });
+        },
         componentBlocks: [
             { key: 'button', category: 'Basic', title: 'Button', activeTab: 'preview', code: `<x-button>Primary</x-button>\n<x-button color="secondary">Secondary</x-button>\n<x-button color="success">Success</x-button>\n<x-button color="warning">Warning</x-button>\n<x-button color="danger">Danger</x-button>\n<x-button color="info">Info</x-button>` },
             { key: 'base-inputs', category: 'Basic', title: 'Base Inputs', activeTab: 'preview', code: `<x-input placeholder="Global input" />\n<x-input type="password" placeholder="Password" />` },
@@ -510,9 +665,7 @@ function componentsPage() {
             { key: 'extra-map-markers', category: 'Data', title: 'Map Markers', activeTab: 'preview', code: `<x-extra.map-markers :markers="[['lat'=>48.85,'lng'=>2.35,'label'=>'Paris']]" />` },
         ],
         get currentParams() {
-            const active = this.componentBlocks.find(b => b.activeTab && b.activeTab !== undefined);
-            const key = (active && active.key) || this.activeKey;
-            return params[key] || [];
+            return params[this.activeKey] || [];
         },
     };
 }
