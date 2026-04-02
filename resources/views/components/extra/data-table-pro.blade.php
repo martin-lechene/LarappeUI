@@ -18,7 +18,7 @@
         </div>
       </x-dropdown>
       <x-dropdown>
-        <x-slot name="trigger"><x-button size="sm" :disabled="selected.size===0">Actions ( <span x-text="selected.size"></span> )</x-button></x-slot>
+        <x-slot name="trigger"><x-button size="sm" x-bind:disabled="selected.size === 0">Actions ( <span x-text="selected.size"></span> )</x-button></x-slot>
         <a class="block px-4 py-2 hover:bg-gray-50" href="#" @click.prevent="bulk('export')">Exporter</a>
         <a class="block px-4 py-2 hover:bg-gray-50 text-red-600" href="#" @click.prevent="bulk('delete')">Supprimer</a>
       </x-dropdown>

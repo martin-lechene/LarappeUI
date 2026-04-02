@@ -1,0 +1,14 @@
+/node_modules
+/vendor
+.git
+.gitignore
+.env
+.env.backup
+*.md
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+bootstrap/cache/*
+.phpunit.result.cache
+docker-compose.override.yml
