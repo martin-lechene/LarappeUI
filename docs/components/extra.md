@@ -23,16 +23,16 @@ Composants avancés couvrant des cas d'usage spécialisés.
 
 | Composant | Usage | Doc complète |
 |-----------|-------|-------------|
-| `x-extra.tabs` | Onglets horizontaux | [navigation.md](navigation.md#tabs) |
-| `x-extra.segmented-tabs` | Sélecteur segmenté | [navigation.md](navigation.md#segmented-tabs) |
-| `x-extra.vertical-tabs` | Onglets verticaux | [navigation.md](navigation.md#vertical-tabs) |
-| `x-extra.mega-menu` | Menu multi-colonnes | [navigation.md](navigation.md#mega-menu) |
-| `x-extra.breadcrumbs-overflow` | Fil d'Ariane tronqué | [navigation.md](navigation.md#breadcrumbs-overflow) |
-| `x-extra.command-palette` | Palette de commandes ⌘K | [navigation.md](navigation.md#command-palette) |
-| `x-extra.context-menu` | Menu clic droit | [navigation.md](navigation.md#context-menu) |
-| `x-extra.tree-view` | Arborescence | [navigation.md](navigation.md#tree-view) |
-| `x-extra.table-of-contents` | Sommaire automatique | [navigation.md](navigation.md#table-of-contents) |
-| `x-extra.coachmarks` | Guide d'onboarding | [navigation.md](navigation.md#coachmarks) |
+| `x-extra.tabs` | Onglets horizontaux | [navigation.md](navigation.md#tabs-x-extra-tabs) |
+| `x-extra.segmented-tabs` | Sélecteur segmenté | [navigation.md](navigation.md#segmented-tabs-x-extra-segmented-tabs) |
+| `x-extra.vertical-tabs` | Onglets verticaux | [navigation.md](navigation.md#vertical-tabs-x-extra-vertical-tabs) |
+| `x-extra.mega-menu` | Menu multi-colonnes | [navigation.md](navigation.md#mega-menu-x-extra-mega-menu) |
+| `x-extra.breadcrumbs-overflow` | Fil d'Ariane tronqué | [navigation.md](navigation.md#breadcrumbs-overflow-x-extra-breadcrumbs-overflow) |
+| `x-extra.command-palette` | Palette de commandes ⌘K | [navigation.md](navigation.md#command-palette-x-extra-command-palette) |
+| `x-extra.context-menu` | Menu clic droit | [navigation.md](navigation.md#context-menu-x-extra-context-menu) |
+| `x-extra.tree-view` | Arborescence | [navigation.md](navigation.md#tree-view-x-extra-tree-view) |
+| `x-extra.table-of-contents` | Sommaire automatique | [navigation.md](navigation.md#table-of-contents-x-extra-table-of-contents) |
+| `x-extra.coachmarks` | Guide d'onboarding | [navigation.md](navigation.md#coachmarks-x-extra-coachmarks) |
 
 ## Layout avancé
 
