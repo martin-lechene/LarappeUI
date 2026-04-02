@@ -6,18 +6,18 @@ Composants avancés couvrant des cas d'usage spécialisés.
 
 | Composant | Usage | Doc complète |
 |-----------|-------|-------------|
-| `x-extra.otp-input` | Saisie de code OTP | [form.md](form.md#otp-input) |
-| `x-extra.rating` | Évaluation par étoiles | [form.md](form.md#rating) |
-| `x-extra.date-range` | Sélection de plage de dates | [form.md](form.md#date-range) |
-| `x-extra.time-picker` | Sélection d'heure | [form.md](form.md#time-picker) |
-| `x-extra.dropzone` | Zone de dépôt de fichiers | [form.md](form.md#dropzone) |
-| `x-extra.tag-input` | Saisie de tags | [form.md](form.md#tag-input) |
-| `x-extra.phone-input` | Saisie de numéro de téléphone | [form.md](form.md#phone-input) |
-| `x-extra.slider-range` | Curseur double (plage) | [form.md](form.md#slider-range) |
-| `x-extra.markdown-editor` | Éditeur Markdown | [form.md](form.md#markdown-editor) |
-| `x-extra.select-async` | Select avec chargement asynchrone | [form.md](form.md#select-async) |
-| `x-extra.combobox-virtual` | Combobox virtualisée (grandes listes) | [form.md](form.md#combobox-virtual) |
-| `x-extra.select-tags` | Select multi avec tags | [form.md](form.md#select-tags) |
+| `x-extra.otp-input` | Saisie de code OTP | [form.md](form.md) |
+| `x-extra.rating` | Évaluation par étoiles | [form.md](form.md) |
+| `x-extra.date-range` | Sélection de plage de dates | [form.md](form.md) |
+| `x-extra.time-picker` | Sélection d'heure | [form.md](form.md) |
+| `x-extra.dropzone` | Zone de dépôt de fichiers | [form.md](form.md) |
+| `x-extra.tag-input` | Saisie de tags | [form.md](form.md) |
+| `x-extra.phone-input` | Saisie de numéro de téléphone | [form.md](form.md) |
+| `x-extra.slider-range` | Curseur double (plage) | [form.md](form.md) |
+| `x-extra.markdown-editor` | Éditeur Markdown | [form.md](form.md) |
+| `x-extra.select-async` | Select avec chargement asynchrone | [form.md](form.md) |
+| `x-extra.combobox-virtual` | Combobox virtualisée (grandes listes) | [form.md](form.md) |
+| `x-extra.select-tags` | Select multi avec tags | [form.md](form.md) |
 
 ## Navigation avancée
 
