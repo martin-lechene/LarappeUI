@@ -58,7 +58,7 @@ Composant de graphiques polyvalent basé sur Chart.js ou une librairie similaire
 
 Mini-graphique intégrable dans des tableaux ou cartes de statistiques.
 
-> Voir aussi la documentation dans [data.md](data.md#sparkline-xextrasparkline).
+> Voir aussi la documentation dans [data.md](data.md#sparkline-x-extrasparkline).
 
 **Exemple d'utilisation combinée avec Statistic :**
 ```blade
