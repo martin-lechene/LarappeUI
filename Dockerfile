@@ -36,5 +36,8 @@ RUN chown -R www-data:www-data storage bootstrap/cache \
 COPY docker/entrypoint.sh /entrypoint.sh
 RUN sed -i 's/\r$//' /entrypoint.sh && chmod +x /entrypoint.sh
 
+HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
+    CMD curl -f http://localhost/up || exit 1
+
 EXPOSE 80
 ENTRYPOINT ["/entrypoint.sh"]

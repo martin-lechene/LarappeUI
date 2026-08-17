@@ -4,15 +4,27 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "lint": "eslint resources/js/",
+        "lint:fix": "eslint resources/js/ --fix",
+        "format": "prettier --write resources/js/",
+        "format:check": "prettier --check resources/js/"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.2.0",
         "axios": "^1.8.2",
         "concurrently": "^9.0.1",
+        "eslint": "^10.8.1",
+        "eslint-config-prettier": "^10.1.8",
+        "globals": "^17.11.0",
         "laravel-vite-plugin": "^3.0.0",
+        "prettier": "^3.9.6",
         "tailwindcss": "^4.2.0",
         "vite": "^8.0.0",
         "vite-plugin-static-copy": "^4.0.0"
+    },
+    "dependencies": {
+        "@alpinejs/persist": "^3.14.3",
+        "alpinejs": "^3.14.3"
     }
 }

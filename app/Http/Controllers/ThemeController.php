@@ -23,7 +23,7 @@ class ThemeController extends Controller
             $cssContent = file_get_contents($themeCssPath);
             // Cherche les classes .theme-xxxx { ... }
             preg_match_all('/\.theme-([a-zA-Z0-9_-]+)\s*\{/', $cssContent, $matches);
-            if (!empty($matches[1])) {
+            if (! empty($matches[1])) {
                 $validThemes = $matches[1];
             }
         }
@@ -33,7 +33,7 @@ class ThemeController extends Controller
             $validThemes = ['light'];
         }
 
-        if (!in_array($theme, $validThemes)) {
+        if (! in_array($theme, $validThemes)) {
             $theme = 'light';
         }
 
@@ -44,7 +44,7 @@ class ThemeController extends Controller
             'success' => true,
             'theme' => $theme,
             'message' => 'Thème mis à jour avec succès',
-            'validThemes' => $validThemes
+            'validThemes' => $validThemes,
         ]);
     }
 
@@ -56,7 +56,7 @@ class ThemeController extends Controller
         $theme = Session::get('theme', 'light');
 
         return response()->json([
-            'theme' => $theme
+            'theme' => $theme,
         ]);
     }
 }

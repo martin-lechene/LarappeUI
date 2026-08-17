@@ -17,15 +17,24 @@
     'min' => null,
     'max' => null,
 ])
+@php
+    $inputId = $attributes->get('id', 'input-' . uniqid());
+    $helpId = $inputId . '-help';
+    $errorId = $inputId . '-error';
+    $describedBy = collect();
+    if ($helpText) $describedBy->push($helpId);
+    if ($error) $describedBy->push($errorId);
+@endphp
 <div class="w-full">
     @if($label)
-        <label class="block text-sm font-medium text-gray-700 mb-1">{{ $label }}</label>
+        <label for="{{ $inputId }}" class="block text-sm font-medium text-gray-700 mb-1">{{ $label }}</label>
     @endif
     <div class="relative flex items-center">
         @if($prefix)
             <span class="mr-2 text-gray-400">{!! $prefix !!}</span>
         @endif
         <input
+            id="{{ $inputId }}"
             type="{{ $type }}"
             @if($placeholder) placeholder="{{ $placeholder }}" @endif
             @if(!is_null($value)) value="{{ $value }}" @endif
@@ -37,18 +46,20 @@
             @if($step) step="{{ $step }}" @endif
             @if($min) min="{{ $min }}" @endif
             @if($max) max="{{ $max }}" @endif
+            @if($error) aria-invalid="true" @endif
+            @if($describedBy->isNotEmpty()) aria-describedby="{{ $describedBy->implode(' ') }}" @endif
             {{ $attributes->merge(['class' => 'block w-full px-3 py-2 border '.($error ? 'border-red-500' : 'border-gray-300').' rounded-sm shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-sm']) }}
         />
         @if($clearable && !$disabled && !$readonly)
-            <button type="button" class="absolute right-2 text-gray-400 hover:text-gray-600 focus:outline-none" onclick="this.previousElementSibling.value='';this.previousElementSibling.dispatchEvent(new Event('input'))">&times;</button>
+            <button type="button" class="absolute right-2 text-gray-400 hover:text-gray-600 focus:outline-none" aria-label="Effacer le champ" onclick="this.previousElementSibling.value='';this.previousElementSibling.dispatchEvent(new Event('input'))">&times;</button>
         @elseif($suffix)
             <span class="ml-2 text-gray-400">{!! $suffix !!}</span>
         @endif
     </div>
     @if($helpText)
-        <p class="mt-1 text-xs text-gray-500">{{ $helpText }}</p>
+        <p id="{{ $helpId }}" class="mt-1 text-xs text-gray-500">{{ $helpText }}</p>
     @endif
     @if($error)
-        <p class="mt-1 text-xs text-red-600">{{ $error }}</p>
+        <p id="{{ $errorId }}" class="mt-1 text-xs text-red-600" role="alert">{{ $error }}</p>
     @endif
-</div> 
+</div>

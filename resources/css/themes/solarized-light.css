@@ -308,7 +308,7 @@ contextmenu menuitem:hover {
 }
 
 /* Variables CSS pour le thème Solarized */
-[theme="solarized"] {
+[theme="solarized-light"] {
   /* Couleurs de base Solarized */
   --solarized-base03: #002b36;
   --solarized-base02: #073642;

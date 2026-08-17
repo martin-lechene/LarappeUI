@@ -20,7 +20,7 @@ class ContactController extends Controller
 
         return response()->json([
             'success' => true,
-            'message' => 'Merci, votre message a bien été envoyé.'
+            'message' => 'Merci, votre message a bien été envoyé.',
         ]);
     }
 }

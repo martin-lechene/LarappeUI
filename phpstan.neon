@@ -1,0 +1,13 @@
+includes:
+    - app/*
+    - config/*
+    - database/*
+    - routes/*
+    - tests/*
+
+paths:
+    - vendor/*
+
+level: 5
+
+tmpDir: build/phpstan

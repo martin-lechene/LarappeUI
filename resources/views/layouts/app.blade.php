@@ -7,69 +7,20 @@
 
     <title>@yield('title', 'LarappeUI')</title>
 
-    <!-- Tailwind CSS (CDN) — couleurs alignées sur themes.css -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: 'var(--color-primary)',
-                        surface: 'var(--color-surface)',
-                        success: 'var(--color-success)',
-                    },
-                },
-            },
-        };
-    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Alpine.js -->
-    <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-    <script src="https://unpkg.com/@alpinejs/persist@3.x.x/dist/cdn.min.js" defer></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+    <!-- Thèmes CSS (compilé) -->
+    <link rel="stylesheet" href="{{ asset('css/themes.css') }}">
 
     <!-- Prism.js pour la coloration syntaxique -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 
-    <!-- Thèmes CSS (compilé) -->
-    <link rel="stylesheet" href="{{ asset('css/themes.css') }}">
-
-    <!-- Thèmes JavaScript -->
-    <script src="{{ asset('js/themes-manager.js') }}" defer></script>
-
-    <style>[x-cloak]{display:none!important}</style>
-    <style>
-        .skip-to-content {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-        .skip-to-content:focus {
-            position: fixed;
-            left: 0.75rem;
-            top: 0.75rem;
-            z-index: 100;
-            width: auto;
-            height: auto;
-            margin: 0;
-            padding: 0.5rem 1rem;
-            overflow: visible;
-            clip: auto;
-            white-space: normal;
-            border-radius: 0.375rem;
-            background: var(--color-primary);
-            color: #fff;
-            outline: 2px solid var(--color-primary);
-            outline-offset: 2px;
-        }
-    </style>
     @stack('styles')
 </head>
 <body class="h-full theme-{{ session('theme', 'light') }}" x-data="{
@@ -79,9 +30,7 @@
     get themeOptions(){
         const list = window.ThemeManager ? window.ThemeManager.getAllThemes() : ['pro','dark','light'];
         const bases = [...new Set(list.map(k => k.replace(/-dark$/,'').replace(/-light$/,'')))];
-        // Limiter aux thèmes demandés si présents
-        const wanted = ['pro','2d','oldschool','ocean','summer','winter','glass'];
-        return wanted.filter(w => bases.includes(w));
+        return bases;
     },
     applyCurrent(){
         const name = this.isDark ? `${this.currentTheme}-dark` : this.currentTheme;

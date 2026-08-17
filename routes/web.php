@@ -1,14 +1,18 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ThemeController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ThemeController;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\RateLimiter;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
 */
+
+RateLimiter::for('contact', fn (Request $request) => \Illuminate\Support\RateLimiting\Limit::perMinute(5));
 
 // Pages principales avec middleware de thème
 Route::middleware(['theme'])->group(function () {
@@ -30,4 +34,6 @@ Route::post('/theme/set', [ThemeController::class, 'setTheme'])->name('theme.set
 Route::get('/theme/get', [ThemeController::class, 'getTheme'])->name('theme.get');
 
 // Endpoints nécessaires aux démos fonctionnelles
-Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
+Route::post('/contact', [ContactController::class, 'store'])
+    ->middleware('throttle:contact')
+    ->name('contact.store');

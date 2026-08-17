@@ -18,7 +18,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: {
+        primary: 'var(--color-primary)',
+        surface: 'var(--color-surface)',
+        success: 'var(--color-success)',
+        'primary-scale': {
           DEFAULT: '#2563eb',
           light: '#3b82f6',
           dark: '#1e40af',
@@ -28,7 +31,6 @@ module.exports = {
           light: '#94a3b8',
           dark: '#334155',
         },
-        success: '#22c55e',
         warning: '#f59e42',
         danger: '#ef4444',
         info: '#0ea5e9',
