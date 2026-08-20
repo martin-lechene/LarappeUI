@@ -31,9 +31,14 @@
 
     html,
     body {
-        background: var(--background);
+        /*
+         * `background-color` (et non le raccourci `background`) : la transition
+         * doit porter sur une propriété animable, sans quoi Chrome conserve la
+         * couleur peinte au chargement lorsque la variable change au runtime.
+         */
+        background-color: var(--background);
         color: var(--text);
-        transition: background 0.3s, color 0.3s;
+        transition: background-color 0.3s, color 0.3s;
     }
 }
 

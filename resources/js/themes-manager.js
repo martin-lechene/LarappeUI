@@ -86,6 +86,8 @@ class ThemeManager {
     document.body.className = document.body.className.replace(/\btheme-[\w-]+\b/g, '').trim();
     document.body.classList.add(`theme-${themeName}`);
 
+    this.forceStyleRecalculation();
+
     // Mettre à jour tous les sélecteurs de thème
     const themeSelectors = document.querySelectorAll(
       '[data-theme-selector], select[data-theme-selector]'
@@ -99,6 +101,25 @@ class ThemeManager {
       detail: { theme: themeName, colors: theme },
     });
     document.dispatchEvent(event);
+  }
+
+  /**
+   * Force le recalcul du style après un changement de thème.
+   *
+   * Les éléments dont la couleur ne dépend que d'une custom property héritée
+   * (`bg-[var(--color-background)]` sur le conteneur principal, fond du body…)
+   * ne sont pas systématiquement réévalués par Chrome quand seule la valeur de
+   * la variable change : leur fond restait figé sur celui du chargement initial
+   * jusqu'au prochain repaint. Les éléments pilotés par Alpine, eux, étaient
+   * bien rafraîchis — d'où une page mi-thémée.
+   */
+  forceStyleRecalculation() {
+    const root = document.documentElement;
+    const previous = root.style.display;
+
+    root.style.display = 'none';
+    void root.offsetHeight; // provoque le reflow
+    root.style.display = previous;
   }
 
   getCurrentTheme() {

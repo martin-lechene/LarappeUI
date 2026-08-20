@@ -8,12 +8,14 @@
     'loading' => false,
     'onInput' => null,
     'onSelect' => null,
+    'label' => 'Sélection',
 ])
 <div {{ $attributes->merge(['class' => 'relative w-full']) }}>
     <input type="text"
         class="w-full border rounded px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
         value="{{ $value }}"
         placeholder="{{ $placeholder }}"
+        aria-label="{{ $label }}"
         @if($disabled) disabled @endif
         oninput="{{ $onInput }}"
     >

@@ -1,2 +1,2 @@
-@props(['name' => 'time'])
-<x-form.input type="time" name="{{ $name }}" />
+@props(['name' => 'time', 'label' => 'Heure'])
+<x-form.input type="time" name="{{ $name }}" aria-label="{{ $label }}" />

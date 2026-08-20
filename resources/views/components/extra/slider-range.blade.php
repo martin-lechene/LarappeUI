@@ -1,4 +1,4 @@
-@props(['min' => 0, 'max' => 100, 'start' => 20, 'end' => 80, 'name' => 'range'])
+@props(['min' => 0, 'max' => 100, 'start' => 20, 'end' => 80, 'name' => 'range', 'label' => 'Plage de valeurs'])
 <div x-data="{ min: {{ (int)$min }}, max: {{ (int)$max }}, a: {{ (int)$start }}, b: {{ (int)$end }} }" class="space-y-2">
   <div class="flex items-center gap-3 text-sm text-gray-600">
     <span x-text="a"></span>
@@ -7,9 +7,9 @@
     </div>
     <span x-text="b"></span>
   </div>
-  <div class="relative flex items-center gap-2">
-    <input type="range" :min="min" :max="max" x-model.number="a" class="w-full">
-    <input type="range" :min="min" :max="max" x-model.number="b" class="w-full">
+  <div class="relative flex items-center gap-2" role="group" aria-label="{{ $label }}">
+    <input type="range" :min="min" :max="max" x-model.number="a" class="w-full" aria-label="Valeur minimale">
+    <input type="range" :min="min" :max="max" x-model.number="b" class="w-full" aria-label="Valeur maximale">
   </div>
   <input type="hidden" name="{{ $name }}" :value="JSON.stringify([a,b])">
 </div>

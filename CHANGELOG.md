@@ -59,6 +59,13 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/).
 - Thèmes : la liste sidebar affiche tous les thèmes disponibles (plus de filtre hardcodé)
 
 ### Corrigé
+- La galerie de composants ne s'affichait pas : Blade interprétait les balises de composant écrites dans les exemples de code JS et un accent grave dans le rendu fermait le template literal, cassant tout le script (bloc protégé par `@verbatim`)
+- Le fond de page ne suivait pas le changement de thème à chaud : chaque thème peint désormais lui-même `background-color`/`color`, et `ThemeManager` force un recalcul de style
+- `prism-php` était importé sans `markup-templating` : la coloration syntaxique levait une TypeError
+- Plugin `@alpinejs/collapse` installé : `x-collapse` déclenchait un avertissement et restait inopérant
+- `tree-view` : `isset($item['children'])` était évalué en JavaScript (ReferenceError) ; la condition est résolue par Blade et le composant expose `role="tree"` et `aria-expanded`
+- Deux `alert()` bloquants remplacés par le snackbar dans les démos
+- Libellés accessibles ajoutés à `form.select` (label non relié au champ), `form.slider`, `form.autocomplete`, `form.combobox`, `extra.date-range`, `extra.time-picker`, `extra.slider-range` et `navigation.sidebar`
 - `routes/web.php` référençait `Illuminate\Support\RateLimiting\Limit`, classe inexistante : toute requête passant par le rate limiter renvoyait une erreur 500
 - Variables CSS désynchronisées : chaque thème expose désormais la palette `--color-*` **et** les alias sémantiques attendus par `app.css`, sur `.theme-<nom>` comme sur `[theme='<nom>']`
 - `ThemeManager` n'était instancié qu'une fois (deux instances étaient créées quand le document était encore en chargement)

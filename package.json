@@ -28,6 +28,7 @@
         "vitest": "^4.1.11"
     },
     "dependencies": {
+        "@alpinejs/collapse": "^3.16.2",
         "@alpinejs/persist": "^3.14.3",
         "alpinejs": "^3.14.3",
         "marked": "^16.4.2",

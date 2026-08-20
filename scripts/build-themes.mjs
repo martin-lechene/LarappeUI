@@ -88,10 +88,22 @@ function semanticVars(theme) {
  *
  * @param {Record<string, string|boolean>} theme
  */
-function declarations(theme) {
+function declarations(theme, { paint = true } = {}) {
   const lines = PALETTE_KEYS.map((key) => `  --color-${key}: ${theme[key]};`);
   lines.push('');
   lines.push(...semanticVars(theme).map(([name, value]) => `  ${name}: ${value};`));
+
+  if (paint) {
+    // Le fond et la couleur de texte sont peints par le bloc du thème lui-même,
+    // et non par une règle `body { … var(--color-background) }` séparée : quand
+    // la classe (ou l'attribut) change, le sélecteur qui matche change avec lui.
+    // Une règle unique dépendant seulement d'une variable héritée n'est pas
+    // réévaluée par Chrome au changement de thème — le fond restait figé sur la
+    // valeur du chargement initial.
+    lines.push('');
+    lines.push('  background-color: var(--color-background);');
+    lines.push('  color: var(--color-text);');
+  }
 
   return lines.join('\n');
 }
@@ -145,17 +157,13 @@ function build() {
  * Régénération        : npm run themes:build
  */`);
 
-  // Valeurs par défaut sur :root, alignées sur le thème par défaut.
-  chunks.push(`:root {\n${declarations(themes[DEFAULT_THEME])}\n}`);
+  // Valeurs par défaut sur :root, alignées sur le thème par défaut. `:root` ne
+  // peint rien : seul le bloc du thème actif s'en charge.
+  chunks.push(`:root {\n${declarations(themes[DEFAULT_THEME], { paint: false })}\n}`);
 
   for (const [name, theme] of Object.entries(themes)) {
     chunks.push(`.theme-${name},\n[theme='${name}'] {\n${declarations(theme)}\n}`);
   }
-
-  chunks.push(`body {
-  background-color: var(--color-background);
-  color: var(--color-text);
-}`);
 
   chunks.push(readPartial('_utilities.css'));
 

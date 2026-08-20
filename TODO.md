@@ -186,6 +186,45 @@ Sans reste servie par Google Fonts).
 
 ---
 
+## Vérification navigateur (Chrome)
+
+Les pages ont été pilotées dans Chrome, thème par thème et composant par composant.
+Résultat final : **console vide** (aucune erreur ni avertissement) et **aucun défaut
+d'accessibilité** sur les 86 blocs de la galerie (images sans `alt`, boutons sans nom
+accessible, tables sans `caption`, champs sans libellé, `<nav>` sans label : 0 dans chaque
+catégorie).
+
+Cinq défauts que seul le navigateur pouvait révéler ont été corrigés à cette occasion :
+
+| Défaut | Cause | Correctif |
+|--------|-------|-----------|
+| **La galerie de composants ne s'affichait pas** (page quasi vide) | Blade interprétait les balises de composant écrites dans les exemples de code JS et y injectait le rendu ; un accent grave dans ce rendu fermait le template literal et cassait tout le script | Bloc `componentBlocks` protégé par `@verbatim` |
+| **Le fond de page ne suivait pas le changement de thème** à chaud (sidebar oui, reste non) | Les éléments dont la couleur ne dépend que d'une variable héritée ne sont pas réévalués par Chrome ; ceux pilotés par Alpine l'étaient | Le bloc de chaque thème peint lui-même `background-color`/`color`, et `ThemeManager` force un recalcul de style |
+| `Cannot read properties of undefined (tokenizePlaceholders)` | `prism-php` requiert `markup-templating`, non importé | Import ajouté dans `app.js` |
+| `You can't use [x-collapse] without the Collapse plugin` | Plugin Alpine absent | `@alpinejs/collapse` installé et enregistré |
+| `isset is not defined` sur `tree-view` | Expression PHP (`isset($item['children'])`) placée dans un attribut Alpine, donc évaluée en JavaScript | Condition résolue par Blade ; composant complété (`role="tree"`, `aria-expanded`) |
+
+Deux `alert()` bloquants restaient dans les démos (`components.blade.php`,
+`examples.blade.php`) : remplacés par le snackbar, comme cela avait été fait pour
+`data-table-pro`.
+
+Compléments d'accessibilité au-delà des 17 items listés plus haut, repérés par l'audit du
+DOM rendu : `form.select` (le `<label>` n'était relié à aucun champ), `form.slider`,
+`form.autocomplete`, `form.combobox`, `extra.date-range`, `extra.time-picker`,
+`extra.slider-range`, `navigation.sidebar`, et la table du panneau de paramètres.
+
+Comportements vérifiés en conditions réelles : changement de thème sur les 25 thèmes
+(fond, sidebar, texte, bordures), tri et pagination du `data-table` avec `aria-sort`
+dynamique, dépôt de fichier dans `dropzone` (l'input est réellement alimenté), remontée
+d'erreur de `select-async` sur endpoint injoignable, snackbar, dépliage de `tree-view`, et
+formulaire de contact AJAX (succès et erreurs de validation serveur).
+
+> À noter : les captures d'écran n'ont pas pu être prises, l'extension Chrome n'ayant pas
+> la permission de capture sur ce domaine. Les vérifications ont été faites par inspection
+> du DOM, des styles calculés et de la console.
+
+---
+
 ## À faire côté poste de développement
 
 Le fichier `.env` n'est pas versionné : l'alignement effectué ici ne concerne que la copie

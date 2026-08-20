@@ -237,6 +237,7 @@ function multiStepForm() {
                 </div>
                 <div class="overflow-x-auto rounded-lg border border-[var(--color-border)]">
                     <table class="min-w-full divide-y divide-[var(--color-border)]">
+                        <caption class="sr-only">Liste des membres de l'équipe</caption>
                         <thead>
                             <tr class="bg-[var(--color-background)]">
                                 <th scope="col" class="px-4 py-2 text-left text-sm font-semibold text-[var(--color-text)]">Nom</th>
@@ -342,7 +343,11 @@ function multiStepForm() {
             if (this.step < 2) {
                 this.step++;
             } else {
-                alert('Formulaire soumis (démo).');
+                // `alert()` bloque le thread et casse la navigation clavier :
+                // on passe par le snackbar de la librairie.
+                window.dispatchEvent(new CustomEvent('show-snackbar', {
+                    detail: { message: 'Formulaire soumis (démo).' },
+                }));
             }
         },
         prev() {
