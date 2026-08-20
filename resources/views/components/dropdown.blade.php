@@ -40,7 +40,7 @@
                     role="menuitem"
                     @click="open = false"
                     @if($disabled) disabled aria-disabled="true" @endif
-                    class="block w-full text-left px-4 py-2 text-sm text-[var(--color-text)] hover:bg-[var(--color-background)] hover:text-[var(--color-primary)] focus:bg-[var(--color-background)] focus:outline-none transition-colors">
+                    class="block w-full text-left px-4 py-2 text-sm text-[var(--color-text)] hover:bg-[var(--color-background)] hover:text-[var(--color-primary-readable)] focus:bg-[var(--color-background)] focus:outline-none transition-colors">
                 {{ $optLabel }}
             </button>
         @endforeach

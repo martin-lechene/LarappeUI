@@ -1,0 +1,173 @@
+/*
+ * Surcharges du thème « glass » : glassmorphism (flou d'arrière-plan, bordures
+ * translucides, ombres diffuses). Les sélecteurs sont automatiquement préfixés
+ * par `.theme-glass` lors de la génération (`scripts/build-themes.mjs`).
+ *
+ * Note : la règle `* { image-rendering: pixelated }` présente dans l'ancien
+ * fichier a été retirée — elle provenait du thème « 2d » et dégradait le rendu
+ * des images sans rapport avec le glassmorphism.
+ */
+
+body {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(147, 51, 234, 0.1)) !important;
+  min-height: 100vh !important;
+}
+
+.bg-white,
+.bg-surface {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 16px !important;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.bg-gray-100,
+.bg-gray-200 {
+  background-color: var(--color-surface) !important;
+}
+
+.bg-blue-600,
+.bg-primary {
+  background: rgba(59, 130, 246, 0.8) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 12px !important;
+  box-shadow:
+    0 8px 32px rgba(59, 130, 246, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+.bg-red-600,
+.bg-danger {
+  background: rgba(239, 68, 68, 0.8) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 12px !important;
+  box-shadow:
+    0 8px 32px rgba(239, 68, 68, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+.bg-green-600,
+.bg-success {
+  background: rgba(16, 185, 129, 0.8) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 12px !important;
+  box-shadow:
+    0 8px 32px rgba(16, 185, 129, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+.bg-yellow-600,
+.bg-warning {
+  background: rgba(245, 158, 11, 0.8) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  border-radius: 12px !important;
+  box-shadow:
+    0 8px 32px rgba(245, 158, 11, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.bg-blue-100,
+.bg-red-100,
+.bg-green-100 {
+  background-color: var(--color-warning) !important;
+  opacity: 0.1;
+}
+
+.text-gray-900,
+.text-gray-700 {
+  color: var(--color-textSecondary) !important;
+}
+
+.border,
+.border-1,
+.border-2,
+.border-4 {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 16px !important;
+}
+
+input,
+select,
+textarea {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 12px !important;
+  color: var(--color-text) !important;
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  box-shadow:
+    0 8px 32px rgba(59, 130, 246, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2) !important;
+}
+
+.hover\:bg-blue-700:hover {
+  background: rgba(59, 130, 246, 0.9) !important;
+  box-shadow:
+    0 12px 48px rgba(59, 130, 246, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+.hover\:bg-gray-200:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+.hover\:shadow-md:hover {
+  box-shadow:
+    0 16px 64px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+  transform: translateY(-2px) !important;
+}
+.hover\:scale-105:hover {
+  transform: scale(1.02) !important;
+}
+
+.focus\:border-blue-500:focus {
+  border-color: rgba(255, 255, 255, 0.4) !important;
+}
+.focus\:ring-blue-500:focus,
+.focus\:ring-2:focus {
+  --tw-ring-color: rgba(255, 255, 255, 0.4) !important;
+  --tw-ring-opacity: 0.5 !important;
+}
+
+.shadow-sm,
+.shadow-md,
+.shadow-lg {
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+.bg-white::before,
+.bg-gray-50::before,
+.bg-gray-100::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent) !important;
+  border-radius: inherit !important;
+  pointer-events: none !important;
+}

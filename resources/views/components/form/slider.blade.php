@@ -7,6 +7,7 @@
     'vertical' => false,
     'marks' => [], // [valeur => label]
     'tooltip' => false,
+    'label' => 'Valeur',
 ])
 <div class="flex {{ $vertical ? 'flex-col h-32' : 'flex-col' }} items-center w-full">
     <input
@@ -15,6 +16,7 @@
         max="{{ $max }}"
         step="{{ $step }}"
         value="{{ $value }}"
+        aria-label="{{ $label }}"
         @if($disabled) disabled @endif
         {{ $attributes->merge(['class' => 'w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700']) }}
         @if($vertical) style="writing-mode: bt-lr; -webkit-appearance: slider-vertical; height: 100px;" @endif

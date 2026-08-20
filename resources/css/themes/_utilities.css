@@ -1,0 +1,277 @@
+/*
+ * Mappage des utilitaires Tailwind vers les variables de thème.
+ *
+ * Ces règles sont valables pour TOUS les thèmes : elles ne référencent que des
+ * variables CSS, dont la valeur est résolue par le thème actif. Les surcharges
+ * propres à un thème vivent dans `_theme-<nom>.css`.
+ *
+ * Seules les déclarations qui dépendent réellement du thème figurent ici. Les
+ * redites d'utilitaires Tailwind non colorimétriques (padding, font-size,
+ * durées de transition…) ont été retirées : elles dupliquaient Tailwind tout en
+ * ajoutant un `!important` qui empêchait toute surcharge responsive.
+ */
+
+/* === FONDS ===
+ *
+ * Chaque aplat coloré impose sa couleur de texte (`--color-on-*`), calculée
+ * pour respecter le contraste AA quelle que soit la palette : un thème clair
+ * comme « pastel » obtient du texte sombre, un thème saturé du texte clair.
+ * Sans cela, le `text-white` des composants devenait illisible sur la moitié
+ * des thèmes.
+ */
+.bg-white,
+.bg-gray-50 {
+  background-color: var(--color-surface) !important;
+}
+/* `bg-gray-100/200` sont des fonds discrets : les mapper sur `--color-secondary`
+   (une couleur de milieu) écrasait le contraste avec le texte. On les dérive du
+   fond de surface, teinté par la couleur secondaire. */
+.bg-gray-100 {
+  background-color: color-mix(in srgb, var(--color-secondary) 12%, var(--color-surface)) !important;
+}
+.bg-gray-200 {
+  background-color: color-mix(in srgb, var(--color-secondary) 22%, var(--color-surface)) !important;
+}
+/* === TEXTES === */
+.text-gray-900,
+.text-gray-800,
+.text-gray-700 {
+  color: var(--color-text) !important;
+}
+/* Texte secondaire et texte coloré : variantes calculées pour rester
+   lisibles sur le fond du thème (AA), la palette restant inchangée. */
+.text-gray-600,
+.text-gray-500,
+.text-gray-400 {
+  color: var(--color-text-muted-readable) !important;
+}
+.text-blue-500,
+.text-blue-600,
+.text-blue-700,
+.text-blue-800,
+.text-primary {
+  color: var(--color-primary-readable) !important;
+}
+.text-green-500,
+.text-green-600,
+.text-green-700,
+.text-green-800,
+.text-success {
+  color: var(--color-success-readable) !important;
+}
+.text-red-500,
+.text-red-600,
+.text-red-700,
+.text-red-800,
+.text-danger {
+  color: var(--color-danger-readable) !important;
+}
+.text-yellow-500,
+.text-yellow-600,
+.text-yellow-700,
+.text-yellow-800,
+.text-warning {
+  color: var(--color-warning-readable) !important;
+}
+.text-info {
+  color: var(--color-info-readable) !important;
+}
+svg {
+  color: var(--color-text) !important;
+}
+
+/* === APLATS COLORÉS ===
+ *
+ * Placés après les règles de texte : à spécificité et `!important` égaux, c'est
+ * la dernière règle qui gagne. Sans cela, une classe comme `text-gray-900`
+ * posée par le composant écrasait la couleur de premier plan calculée pour
+ * l'aplat, et le bouton « secondary » repassait sous le seuil AA.
+ */
+.bg-blue-600 {
+  background-color: var(--color-primary) !important;
+  color: var(--color-on-primary) !important;
+}
+.bg-red-600 {
+  background-color: var(--color-danger) !important;
+  color: var(--color-on-danger) !important;
+}
+.bg-green-600 {
+  background-color: var(--color-success) !important;
+  color: var(--color-on-success) !important;
+}
+.bg-yellow-600 {
+  background-color: var(--color-warning) !important;
+  color: var(--color-on-warning) !important;
+}
+.bg-primary {
+  background-color: var(--color-primary) !important;
+  color: var(--color-on-primary) !important;
+}
+.bg-danger {
+  background-color: var(--color-danger) !important;
+  color: var(--color-on-danger) !important;
+}
+.bg-success {
+  background-color: var(--color-success) !important;
+  color: var(--color-on-success) !important;
+}
+.bg-warning {
+  background-color: var(--color-warning) !important;
+  color: var(--color-on-warning) !important;
+}
+.bg-info {
+  background-color: var(--color-info) !important;
+  color: var(--color-on-info) !important;
+}
+.bg-cyan-600 {
+  background-color: var(--color-info) !important;
+  color: var(--color-on-info) !important;
+}
+/* `x-button` compose ses classes en PHP (`bg-{$couleur}-600`) : Tailwind ne peut
+   pas les détecter au scan des sources, donc elles n'existent que si le thème
+   les définit. Sans ces règles, les variantes `secondary` et `info` s'affichaient
+   sans fond du tout. */
+.bg-gray-600 {
+  background-color: var(--color-secondary) !important;
+  color: var(--color-on-secondary) !important;
+}
+.hover\:bg-gray-700:hover {
+  background-color: color-mix(in srgb, var(--color-secondary) 85%, #000) !important;
+  color: var(--color-on-secondary) !important;
+}
+.hover\:bg-green-700:hover {
+  background-color: color-mix(in srgb, var(--color-success) 85%, #000) !important;
+  color: var(--color-on-success) !important;
+}
+.hover\:bg-red-700:hover {
+  background-color: color-mix(in srgb, var(--color-danger) 85%, #000) !important;
+  color: var(--color-on-danger) !important;
+}
+.hover\:bg-yellow-700:hover {
+  background-color: color-mix(in srgb, var(--color-warning) 85%, #000) !important;
+  color: var(--color-on-warning) !important;
+}
+.hover\:bg-cyan-700:hover {
+  background-color: color-mix(in srgb, var(--color-info) 85%, #000) !important;
+  color: var(--color-on-info) !important;
+}
+
+/* Variantes `outline`, `ghost`, `soft` et `link` du bouton. */
+.border-blue-600 {
+  border-color: var(--color-primary) !important;
+}
+.border-gray-600 {
+  border-color: var(--color-secondary) !important;
+}
+.border-green-600 {
+  border-color: var(--color-success) !important;
+}
+.border-red-600 {
+  border-color: var(--color-danger) !important;
+}
+.border-yellow-600 {
+  border-color: var(--color-warning) !important;
+}
+.border-cyan-600 {
+  border-color: var(--color-info) !important;
+}
+.text-cyan-600,
+.text-cyan-700 {
+  color: var(--color-info-readable) !important;
+}
+.hover\:bg-blue-50:hover,
+.bg-cyan-50,
+.bg-cyan-100 {
+  background-color: var(--color-primary-tint) !important;
+}
+
+/* === BORDURES === */
+.border,
+.border-gray-200,
+.border-gray-300 {
+  border-color: var(--color-border) !important;
+}
+.border-blue-500 {
+  border-color: var(--color-primary) !important;
+}
+.border-red-500 {
+  border-color: var(--color-danger) !important;
+}
+
+/* === CHAMPS DE FORMULAIRE === */
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='search'],
+select,
+textarea {
+  background-color: var(--color-surface) !important;
+  color: var(--color-text) !important;
+  border-color: var(--color-border) !important;
+}
+
+/* === ÉTATS ===
+   Les survols assombrissent le fond par mélange plutôt que par `opacity`, qui
+   affaiblissait aussi le texte et pouvait faire passer un élément sous le seuil
+   de contraste au survol. */
+.hover\:bg-blue-700:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 85%, #000) !important;
+  color: var(--color-on-primary) !important;
+}
+.hover\:bg-gray-200:hover {
+  background-color: color-mix(in srgb, var(--color-secondary) 28%, var(--color-surface)) !important;
+}
+.hover\:bg-gray-100:hover {
+  background-color: color-mix(in srgb, var(--color-secondary) 15%, var(--color-surface)) !important;
+}
+.hover\:text-gray-700:hover,
+.hover\:text-gray-900:hover {
+  color: var(--color-text) !important;
+}
+.hover\:text-gray-600:hover {
+  color: var(--color-textSecondary) !important;
+}
+.focus\:border-blue-500:focus {
+  border-color: var(--color-primary) !important;
+}
+.focus\:ring-blue-500:focus,
+.ring-blue-500,
+.ring-2 {
+  --tw-ring-color: var(--color-primary) !important;
+}
+
+/* Badges et alertes : fond teinté et texte calculé POUR CETTE TEINTE. L'ancien
+   `opacity: 0.1` affaiblissait aussi le texte, et un texte calculé pour la
+   surface reste trop clair sur un fond teinté. Les descendants héritent de la
+   couleur, ce qui couvre les titres et paragraphes des alertes. */
+.bg-blue-100,
+.bg-blue-50 {
+  background-color: var(--color-primary-tint) !important;
+  color: var(--color-on-primary-tint) !important;
+}
+.bg-red-100,
+.bg-red-50 {
+  background-color: var(--color-danger-tint) !important;
+  color: var(--color-on-danger-tint) !important;
+}
+.bg-green-100,
+.bg-green-50 {
+  background-color: var(--color-success-tint) !important;
+  color: var(--color-on-success-tint) !important;
+}
+.bg-yellow-100,
+.bg-yellow-50 {
+  background-color: var(--color-warning-tint) !important;
+  color: var(--color-on-warning-tint) !important;
+}
+.bg-blue-50 *,
+.bg-red-50 *,
+.bg-green-50 *,
+.bg-yellow-50 *,
+.bg-blue-100 *,
+.bg-red-100 *,
+.bg-green-100 *,
+.bg-yellow-100 * {
+  color: inherit !important;
+}

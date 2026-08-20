@@ -123,7 +123,7 @@
                              </div></template>
                              <template x-if="block.key === 'extra-confirm-dialog'"><div>
                                 <x-extra.confirm-dialog title="Confirmer">Êtes-vous sûr ?</x-extra.confirm-dialog>
-                                <x-button size="sm" color="danger" @click="window.dispatchEvent(new CustomEvent('open-confirm',{detail:{onConfirm:()=>alert('OK')}}))">Supprimer</x-button>
+                                <x-button size="sm" color="danger" @click="window.dispatchEvent(new CustomEvent('open-confirm',{detail:{onConfirm:()=>window.dispatchEvent(new CustomEvent('show-snackbar',{detail:{message:'Action confirmée (démo).'}}))}}))">Supprimer</x-button>
                              </div></template>
                              <template x-if="block.key === 'extra-otp-input'"><div><x-extra.otp-input :length="6" /></div></template>
                              <template x-if="block.key === 'extra-rating'"><div><x-extra.rating :value="3" :max="5" /></div></template>
@@ -216,6 +216,7 @@
                         <div>
                             <div class="text-sm font-semibold text-[var(--color-text)]" x-text="section.title"></div>
                             <table class="mt-2 w-full text-sm">
+                                <caption class="sr-only">Paramètres du composant sélectionné</caption>
                                 <thead>
                                     <tr class="text-left text-[var(--color-textSecondary)]">
                                         <th class="py-1 pr-2">Prop</th>
@@ -576,6 +577,15 @@ function componentsPage() {
                 nodes.forEach(el => obs.observe(el));
             });
         },
+        {{--
+            La directive verbatim ci-dessous est indispensable : sans elle,
+            Blade interprète les balises de composant écrites dans ces exemples
+            de code et les remplace par le rendu du composant. Il suffisait
+            alors qu'un composant rende un accent grave (data-table,
+            context-menu, otp-input…) pour fermer le template literal et casser
+            tout le script — la galerie restait vide.
+        --}}
+        @verbatim
         componentBlocks: [
             { key: 'button', category: 'Basic', title: 'Button', activeTab: 'preview', code: `<x-button>Primary</x-button>\n<x-button color="secondary">Secondary</x-button>\n<x-button color="success">Success</x-button>\n<x-button color="warning">Warning</x-button>\n<x-button color="danger">Danger</x-button>\n<x-button color="info">Info</x-button>` },
             { key: 'base-inputs', category: 'Basic', title: 'Base Inputs', activeTab: 'preview', code: `<x-input placeholder="Global input" />\n<x-input type="password" placeholder="Password" />` },
@@ -664,6 +674,7 @@ function componentsPage() {
             { key: 'extra-heatmap', category: 'Data', title: 'Heatmap', activeTab: 'preview', code: `<x-extra.heatmap :data="[[1,2,3],[2,3,4],[3,4,5]]" />` },
             { key: 'extra-map-markers', category: 'Data', title: 'Map Markers', activeTab: 'preview', code: `<x-extra.map-markers :markers="[['lat'=>48.85,'lng'=>2.35,'label'=>'Paris']]" />` },
         ],
+        @endverbatim
         get currentParams() {
             return params[this.activeKey] || [];
         },

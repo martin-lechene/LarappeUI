@@ -12,15 +12,21 @@
     'minlength' => null,
     'rows' => 3,
 ])
+@php
+    // Un <label> non relié n'est pas exposé aux technologies d'assistance.
+    $textareaId = $attributes->get('id') ?? 'textarea-' . Str::random(6);
+@endphp
 <div class="w-full">
     @if($label)
-        <label class="block text-sm font-medium text-gray-700 mb-1">{{ $label }}</label>
+        <label for="{{ $textareaId }}" class="block text-sm font-medium text-gray-700 mb-1">{{ $label }}</label>
     @endif
     <div class="relative flex items-center">
         @if($prefix)
             <span class="mr-2 text-gray-400">{!! $prefix !!}</span>
         @endif
         <textarea
+            id="{{ $textareaId }}"
+            @if(! $label) aria-label="{{ $placeholder ?: 'Zone de texte' }}" @endif
             rows="{{ $rows }}"
             @if($placeholder) placeholder="{{ $placeholder }}" @endif
             @if($disabled) disabled @endif

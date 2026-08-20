@@ -6,10 +6,12 @@
     'rows' => 4,
     'toolbar' => null,
     'error' => null,
+    'label' => 'Éditeur de texte',
 ])
 <div {{ $attributes->merge(['class' => 'w-full']) }}>
     <textarea
         class="w-full border rounded px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
+        aria-label="{{ $label }}"
         placeholder="{{ $placeholder }}"
         rows="{{ $rows }}"
         @if($disabled) disabled @endif

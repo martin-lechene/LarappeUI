@@ -1,5 +1,10 @@
 # Corrections du Système de Thèmes
 
+> **Document historique.** Il retrace des correctifs passés et cite des fichiers et
+> routes qui n'existent plus (`public/js/themes-manager.js`, `/test-themes`…). Pour le
+> fonctionnement actuel du système de thèmes, voir [README.md](README.md) et
+> [../themes.md](../themes.md).
+
 ## Problèmes identifiés et corrigés
 
 ### 1. Fichier manquant

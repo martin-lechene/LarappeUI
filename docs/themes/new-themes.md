@@ -184,9 +184,10 @@ Tous les nouveaux thèmes sont :
 
 Pour tester les nouveaux thèmes :
 
-1. Visitez `/themes-showcase` pour voir tous les thèmes
-2. Visitez `/test-themes` pour tester les thèmes individuellement
-3. Utilisez le gestionnaire de thèmes pour changer de thème en temps réel
+1. Visitez `/components` et changez de thème depuis la barre latérale
+2. Visitez `/examples` pour valider le rendu sur des mises en situation complètes
+3. Lancez `php artisan test` et `npm test` : la cohérence PHP / JS / CSS est vérifiée
+   automatiquement
 
 ## Migration
 

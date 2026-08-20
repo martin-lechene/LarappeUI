@@ -13,15 +13,22 @@
     'options' => [],
     'taggable' => false,
 ])
+@php
+    // Un <label> non relié au champ n'est pas exposé aux technologies
+    // d'assistance : on génère un identifiant pour les lier.
+    $selectId = $attributes->get('id') ?? 'select-' . Str::random(6);
+@endphp
 <div class="w-full">
     @if($label)
-        <label class="block text-sm font-medium text-gray-700 mb-1">{{ $label }}</label>
+        <label for="{{ $selectId }}" class="block text-sm font-medium text-gray-700 mb-1">{{ $label }}</label>
     @endif
     <div class="relative">
         @if($taggable)
             <input type="text" class="mb-2 block w-full px-3 py-2 border border-gray-300 rounded-sm shadow-sm text-sm" placeholder="Ajouter un tag... (démo visuelle)" />
         @endif
         <select
+            id="{{ $selectId }}"
+            @if(! $label) aria-label="{{ $placeholder ?? 'Sélection' }}" @endif
             @if($multiple) multiple @endif
             @if($disabled) disabled @endif
             {{ $attributes->merge(['class' => 'block w-full px-3 py-2 border '.($error ? 'border-red-500' : 'border-gray-300').' rounded-sm shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-500 focus:ring-opacity-50 text-sm']) }}

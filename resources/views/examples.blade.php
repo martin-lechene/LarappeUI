@@ -237,6 +237,7 @@ function multiStepForm() {
                 </div>
                 <div class="overflow-x-auto rounded-lg border border-[var(--color-border)]">
                     <table class="min-w-full divide-y divide-[var(--color-border)]">
+                        <caption class="sr-only">Liste des membres de l'équipe</caption>
                         <thead>
                             <tr class="bg-[var(--color-background)]">
                                 <th scope="col" class="px-4 py-2 text-left text-sm font-semibold text-[var(--color-text)]">Nom</th>
@@ -303,10 +304,18 @@ function contactForm() {
                     },
                     body: JSON.stringify(this.form),
                 });
+                // La réponse n'est pas garantie JSON (erreur proxy, page 500…) :
+                // on lit le corps brut avant de tenter le décodage.
                 let data = {};
-                try {
-                    data = await res.json();
-                } catch (_) {}
+                const raw = await res.text();
+                if (raw) {
+                    try {
+                        data = JSON.parse(raw);
+                    } catch (parseError) {
+                        console.warn('Réponse non-JSON du serveur', parseError);
+                        data = { message: 'Réponse inattendue du serveur (HTTP ' + res.status + ').' };
+                    }
+                }
                 if (res.ok) {
                     this.success = true;
                     return;
@@ -334,7 +343,11 @@ function multiStepForm() {
             if (this.step < 2) {
                 this.step++;
             } else {
-                alert('Formulaire soumis (démo).');
+                // `alert()` bloque le thread et casse la navigation clavier :
+                // on passe par le snackbar de la librairie.
+                window.dispatchEvent(new CustomEvent('show-snackbar', {
+                    detail: { message: 'Formulaire soumis (démo).' },
+                }));
             }
         },
         prev() {

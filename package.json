@@ -3,28 +3,41 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build",
+        "build": "npm run themes:build && vite build",
         "dev": "vite",
-        "lint": "eslint resources/js/",
-        "lint:fix": "eslint resources/js/ --fix",
-        "format": "prettier --write resources/js/",
-        "format:check": "prettier --check resources/js/"
+        "themes:build": "node scripts/build-themes.mjs",
+        "themes:check": "node scripts/build-themes.mjs --check",
+        "lint": "eslint resources/js/ scripts/ tests/js/",
+        "lint:fix": "eslint resources/js/ scripts/ tests/js/ --fix",
+        "format": "prettier --write resources/js/ scripts/ tests/js/",
+        "format:check": "prettier --check resources/js/ scripts/ tests/js/",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "test:e2e": "playwright test",
+        "test:e2e:ui": "playwright test --ui",
+        "screenshots": "node scripts/screenshots.mjs"
     },
     "devDependencies": {
+        "@axe-core/playwright": "^4.13.0",
+        "@playwright/test": "^1.62.1",
         "@tailwindcss/vite": "^4.2.0",
-        "axios": "^1.8.2",
+        "axe-core": "^4.13.0",
         "concurrently": "^9.0.1",
         "eslint": "^10.8.1",
         "eslint-config-prettier": "^10.1.8",
         "globals": "^17.11.0",
+        "jsdom": "^30.0.1",
         "laravel-vite-plugin": "^3.0.0",
         "prettier": "^3.9.6",
         "tailwindcss": "^4.2.0",
         "vite": "^8.0.0",
-        "vite-plugin-static-copy": "^4.0.0"
+        "vitest": "^4.1.11"
     },
     "dependencies": {
+        "@alpinejs/collapse": "^3.16.2",
         "@alpinejs/persist": "^3.14.3",
-        "alpinejs": "^3.14.3"
+        "alpinejs": "^3.14.3",
+        "marked": "^16.4.2",
+        "prismjs": "^1.30.0"
     }
 }

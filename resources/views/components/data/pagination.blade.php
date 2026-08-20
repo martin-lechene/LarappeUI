@@ -20,7 +20,7 @@
     $totalPages = $total ? (int) ceil($total / $pageSize) : 1;
     $pages = range(1, $totalPages);
 @endphp
-<nav class="flex items-center justify-center gap-2" aria-label="Pagination">
+<nav class="flex flex-wrap items-center justify-center gap-2" aria-label="Pagination">
     @if($simple)
         <button @if($currentPage <= 1) disabled @endif
                 aria-label="Page précédente"

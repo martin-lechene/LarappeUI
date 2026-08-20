@@ -1,5 +1,27 @@
 @import "tailwindcss";
 
+/*
+ * Couleurs sémantiques exposées à Tailwind (`bg-primary`, `text-success`,
+ * `border-primary`, `ring-primary`…).
+ *
+ * Les noms de variables sont volontairement identiques à ceux générés dans
+ * `themes.css` : les utilitaires produits ici pointent sur `var(--color-*)`,
+ * que chaque thème redéfinit. Les classes suivent donc le thème actif sans
+ * `!important` ni règle dupliquée par thème.
+ */
+@theme {
+    --color-primary: #3b82f6;
+    --color-secondary: #6b7280;
+    --color-success: #10b981;
+    --color-warning: #f59e0b;
+    --color-danger: #ef4444;
+    --color-info: #06b6d4;
+    --color-accent: #f59e42;
+    --color-background: #ffffff;
+    --color-surface: #f9fafb;
+    --color-border: #e5e7eb;
+}
+
 @layer base {
     :root {
         --font-sans: "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
@@ -7,11 +29,25 @@
             "Noto Color Emoji";
     }
 
+    /*
+     * `x-cloak` est utilisé dans 13 endroits des vues mais n'était défini nulle
+     * part : les éléments censés rester masqués jusqu'à l'initialisation
+     * d'Alpine s'affichaient au chargement.
+     */
+    [x-cloak] {
+        display: none !important;
+    }
+
     html,
     body {
-        background: var(--background);
+        /*
+         * `background-color` (et non le raccourci `background`) : la transition
+         * doit porter sur une propriété animable, sans quoi Chrome conserve la
+         * couleur peinte au chargement lorsque la variable change au runtime.
+         */
+        background-color: var(--background);
         color: var(--text);
-        transition: background 0.3s, color 0.3s;
+        transition: background-color 0.3s, color 0.3s;
     }
 }
 
@@ -61,52 +97,21 @@
         clip: auto;
         white-space: normal;
         border-radius: 0.375rem;
-        background: var(--color-primary);
-        color: #fff;
-        outline: 2px solid var(--color-primary);
+        background: var(--primary);
+        color: var(--text-inverse);
+        outline: 2px solid var(--primary);
         outline-offset: 2px;
     }
 
-    /* === THEME-AWARE COMPONENT DEFAULTS === */
-    .bg-white,
-    .bg-gray-50,
-    .bg-surface {
-        background: var(--surface) !important;
-    }
-    .bg-gray-100 {
-        background: var(--background) !important;
-    }
-    .text-gray-900,
-    .text-gray-800 {
-        color: var(--text) !important;
-    }
-    .text-gray-500,
-    .text-gray-400,
-    .text-muted {
-        color: var(--text-muted) !important;
-    }
-    .border-gray-100,
-    .border-gray-200,
-    .border {
-        border-color: var(--border) !important;
-    }
-    .bg-primary {
-        background: var(--primary) !important;
-    }
-    .text-primary {
-        color: var(--primary) !important;
-    }
-    .bg-accent {
-        background: var(--accent) !important;
-    }
-    .text-accent {
-        color: var(--accent) !important;
-    }
+    /*
+     * Les utilitaires Tailwind rethémés (.bg-white, .text-gray-900…) sont
+     * définis dans `resources/css/themes.css`, généré depuis les palettes.
+     * Ne pas les dupliquer ici : c'était la source des conflits de `!important`.
+     */
 
     /* === SHARED COMPONENT STYLES === */
     .button,
     .btn,
-    .card,
     .surface {
         background: var(--surface);
         color: var(--text);
@@ -171,7 +176,11 @@
     }
 }
 
-/* === REDUCED MOTION === */
+/*
+ * === REDUCED MOTION ===
+ * Seul bloc conservant `!important` : il doit primer sur toute animation
+ * déclarée par un composant (exigence WCAG 2.3.3).
+ */
 @media (prefers-reduced-motion: reduce) {
     *,
     *::before,

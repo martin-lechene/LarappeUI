@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Support\ThemeRegistry;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -10,34 +12,12 @@ class ThemeController extends Controller
     /**
      * Changer le thème et le sauvegarder en session
      */
-    public function setTheme(Request $request)
+    public function setTheme(Request $request): JsonResponse
     {
-        $theme = $request->input('theme', 'light');
+        $validThemes = ThemeRegistry::available();
 
-        // Valider le thème
-        // Récupérer dynamiquement les thèmes disponibles depuis le fichier CSS compilé
-        $themeCssPath = public_path('css/themes.css');
-        $validThemes = [];
+        $theme = ThemeRegistry::sanitize($request->string('theme')->toString());
 
-        if (file_exists($themeCssPath)) {
-            $cssContent = file_get_contents($themeCssPath);
-            // Cherche les classes .theme-xxxx { ... }
-            preg_match_all('/\.theme-([a-zA-Z0-9_-]+)\s*\{/', $cssContent, $matches);
-            if (! empty($matches[1])) {
-                $validThemes = $matches[1];
-            }
-        }
-
-        // Fallback si aucun thème trouvé
-        if (empty($validThemes)) {
-            $validThemes = ['light'];
-        }
-
-        if (! in_array($theme, $validThemes)) {
-            $theme = 'light';
-        }
-
-        // Sauvegarder en session
         Session::put('theme', $theme);
 
         return response()->json([
@@ -51,12 +31,10 @@ class ThemeController extends Controller
     /**
      * Obtenir le thème actuel
      */
-    public function getTheme()
+    public function getTheme(): JsonResponse
     {
-        $theme = Session::get('theme', 'light');
-
         return response()->json([
-            'theme' => $theme,
+            'theme' => Session::get('theme', ThemeRegistry::default()),
         ]);
     }
 }

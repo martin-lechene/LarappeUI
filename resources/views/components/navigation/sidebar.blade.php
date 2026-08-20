@@ -3,12 +3,13 @@
     'active' => null,
     'collapsed' => false,
     'width' => '56', // Tailwind width (ex: '56' for w-56)
+    'label' => 'Navigation latérale',
 ])
 @php
     $sidebarClass = 'bg-white border-r h-full flex flex-col ' . ($collapsed ? 'w-16' : 'w-' . $width);
 @endphp
 <aside {{ $attributes->merge(['class' => $sidebarClass]) }}>
-    <nav class="flex-1 py-4">
+    <nav class="flex-1 py-4" aria-label="{{ $label }}">
         @if($items)
             <ul class="space-y-1">
                 @foreach($items as $item)
