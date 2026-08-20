@@ -34,7 +34,7 @@ jobs:
     - name: Build assets
       run: npm run build --if-present
     - name: PHP Code Style (Pint)
-      run: php artisan pint --test
+      run: vendor/bin/pint --test
     - name: PHP Static Analysis (PHPStan)
       run: vendor/bin/phpstan analyse --memory-limit=1G
     - name: JavaScript Lint (ESLint)

@@ -60,7 +60,7 @@
             "@php vendor/bin/phpstan analyse --memory-limit=1G"
         ],
         "pint": [
-            "php artisan pint --test"
+            "@php vendor/bin/pint --test"
         ]
     },
     "extra": {
