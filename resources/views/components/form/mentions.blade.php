@@ -6,10 +6,12 @@
     'placeholder' => '',
     'onSearch' => null,
     'onSelect' => null,
+    'label' => 'Message avec mentions',
 ])
 <div {{ $attributes->merge(['class' => 'relative w-full']) }}>
     <textarea
         class="w-full border rounded px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed"
+        aria-label="{{ $label }}"
         placeholder="{{ $placeholder }}"
         @if($disabled) disabled @endif
         oninput="{{ $onSearch }}"

@@ -12,10 +12,16 @@
         "format": "prettier --write resources/js/ scripts/ tests/js/",
         "format:check": "prettier --check resources/js/ scripts/ tests/js/",
         "test": "vitest run",
-        "test:watch": "vitest"
+        "test:watch": "vitest",
+        "test:e2e": "playwright test",
+        "test:e2e:ui": "playwright test --ui",
+        "screenshots": "node scripts/screenshots.mjs"
     },
     "devDependencies": {
+        "@axe-core/playwright": "^4.13.0",
+        "@playwright/test": "^1.62.1",
         "@tailwindcss/vite": "^4.2.0",
+        "axe-core": "^4.13.0",
         "concurrently": "^9.0.1",
         "eslint": "^10.8.1",
         "eslint-config-prettier": "^10.1.8",

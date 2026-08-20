@@ -225,20 +225,57 @@ formulaire de contact AJAX (succès et erreurs de validation serveur).
 
 ---
 
+## Tests automatisés de bout en bout (Playwright + axe-core)
+
+Les limites de la vérification manuelle (pas de capture d'écran, contrastes non
+mesurés, responsive et clavier non testés) sont levées par une suite E2E : `npm run
+test:e2e`, **27 tests**, exécutée en CI.
+
+| Domaine | Couverture |
+|---------|-----------|
+| Accessibilité | audit axe-core WCAG 2.1 A + AA sur les deux pages, **0 violation** |
+| Clavier | lien d'évitement, pilotage du sélecteur de thème, absence de piège au focus |
+| Thèmes | les 25 thèmes repeints à chaud, persistance après rechargement, contraste texte/fond AA |
+| Responsive | 4 largeurs (375 → 1920) × 2 pages, sidebar escamotable |
+| Composants | data-table (tri, `aria-sort`, pagination), dropzone, select-async, combobox, tree-view, snackbar |
+| Formulaire | soumission valide, erreurs de validation serveur, jeton CSRF |
+
+`npm run screenshots` capture les pages dans plusieurs thèmes et formats
+(`storage/screenshots`, non versionné).
+
+### Ce que ces tests ont révélé
+
+- **`coachmarks` démarrait tout seul** et son voile plein écran interceptait tous les
+  clics de la page. La visite est désormais déclenchée par un bouton ou l'évènement
+  `open-coachmarks`.
+- **Le bouton `secondary` (et `info`) n'avait aucun fond** : `x-button` compose ses
+  classes en PHP (`bg-{$couleur}-600`), que Tailwind ne détecte pas au scan des
+  sources. Les nuances correspondantes sont maintenant définies par le thème.
+- **`[x-cloak]` n'était défini nulle part** alors qu'il est utilisé dans 13 endroits :
+  les éléments censés rester masqués s'affichaient au chargement.
+- **23 des 25 thèmes avaient un contraste sous le seuil AA.** Plutôt que d'assombrir
+  les palettes — ce qui aurait dénaturé « pastel », « neon » ou « glass » — le
+  générateur calcule désormais les couleurs de texte : `--color-on-*` pour les aplats,
+  `--color-*-readable` pour le texte coloré, `--color-*-tint` pour les badges et
+  alertes. Les palettes restent intactes.
+- **`opacity` sur les badges** rendait aussi leur texte translucide : remplacé par
+  `color-mix`.
+- **Quatre composants débordaient horizontalement en mobile** (`pagination`,
+  `date-range`, `dropzone`, `data-table-pro`).
+- **Rôles ARIA invalides** introduits lors du premier passage (`role="list"` sur un
+  conteneur contenant aussi un champ) et **trois `textarea` sans libellé**.
+
+---
+
 ## À faire côté poste de développement
 
-Le fichier `.env` n'est pas versionné : l'alignement effectué ici ne concerne que la copie
-de travail. Sur un poste existant, `.env` peut encore pointer vers MySQL
-(`DB_CONNECTION=mysql`, port 3300) — ce qui renvoie une **erreur 500 sur toutes les pages**
-si le serveur n'est pas démarré, la session étant stockée en base. Alignez-le sur
-`.env.example` :
+Le `.env` du poste pointait vers MySQL (`DB_CONNECTION=mysql`, port 3300, fermé), ce qui
+renvoyait une **erreur 500 sur toutes les pages** puisque la session est stockée en base.
+Il a été aligné sur `.env.example` (`DB_CONNECTION=sqlite`, `SESSION_ENCRYPT=true`, options
+MySQL commentées), la base SQLite créée et migrée. Les deux pages répondent désormais 200.
 
-```dotenv
-DB_CONNECTION=sqlite
-SESSION_ENCRYPT=true
-```
-
-puis `touch database/database.sqlite && php artisan migrate`.
+L'ancien fichier est conservé dans `.env.backup-avant-alignement` : pour revenir à MySQL,
+restaurez-le et démarrez le serveur correspondant.
 
 ---
 

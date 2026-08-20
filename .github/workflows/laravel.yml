@@ -55,6 +55,21 @@ jobs:
         DB_DATABASE: database/database.sqlite
       run: php artisan test
 
+    - name: Install Playwright browser
+      run: npx playwright install --with-deps chromium
+    - name: End-to-end tests (accessibility, themes, responsive)
+      env:
+        DB_CONNECTION: sqlite
+        DB_DATABASE: database/database.sqlite
+      run: npm run test:e2e
+    - name: Upload Playwright report on failure
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 7
+
   security-audit:
 
     runs-on: ubuntu-latest

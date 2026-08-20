@@ -13,10 +13,9 @@
         : ['src' => $image, 'alt' => 'Image ' . ($i + 1)])->all();
 @endphp
 <div x-data="{ open: false, current: null, currentAlt: '' }" @keydown.escape.window="open = false">
-  <div class="grid grid-cols-3 gap-2" role="list" aria-label="{{ $label }}">
+  <div class="grid grid-cols-3 gap-2" role="group" aria-label="{{ $label }}">
     @foreach($normalized as $image)
       <button type="button"
-              role="listitem"
               class="block"
               aria-label="Agrandir : {{ $image['alt'] }}"
               @click="open = true; current = @js($image['src']); currentAlt = @js($image['alt'])">

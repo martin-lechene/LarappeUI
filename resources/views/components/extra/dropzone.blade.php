@@ -18,7 +18,7 @@
          name="{{ $multiple ? $name . '[]' : $name }}"
          aria-label="{{ $label }}"
          aria-describedby="{{ $name }}-hint"
-         class="mt-2" />
+         class="mt-2 max-w-full" />
   <ul class="mt-3 space-y-1 text-left text-xs text-gray-600" x-show="files.length" role="status" aria-live="polite">
     <template x-for="(file, index) in files" :key="file.name + index">
       <li class="flex items-center justify-between gap-2">

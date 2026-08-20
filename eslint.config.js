@@ -19,13 +19,15 @@ export default [
         },
     },
     {
-        // Scripts de build : exécutés par Node, pas par le navigateur.
+        // Scripts de build : exécutés par Node. `scripts/screenshots.mjs` pilote
+        // un navigateur, son `page.evaluate()` s'exécute donc côté page.
         files: ["scripts/**/*.mjs", "*.config.js"],
         languageOptions: {
             ecmaVersion: 2022,
             sourceType: "module",
             globals: {
                 ...globals.node,
+                ...globals.browser,
             },
         },
         rules: {

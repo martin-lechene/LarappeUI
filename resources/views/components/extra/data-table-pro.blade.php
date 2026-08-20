@@ -1,12 +1,12 @@
 @props(['columns' => [], 'rows' => [], 'caption' => 'Tableau de données avec sélection multiple'])
 {{-- Composant Alpine `dataTablePro` : resources/js/alpine/data-table.js --}}
 <div x-data="dataTablePro({ columns: @js($columns), rows: @js($rows) })" class="space-y-3">
-  <div class="flex items-center justify-between">
-    <div class="flex items-center gap-2">
+  <div class="flex flex-wrap items-center justify-between gap-3">
+    <div class="flex flex-wrap items-center gap-2">
       <x-form.input placeholder="Rechercher..." aria-label="Rechercher dans le tableau" x-model="q" class="w-64" />
       <x-extra.select-async endpoint="/api/filters" name="table-filter" label="Filtrer les résultats" />
     </div>
-    <div class="flex items-center gap-2">
+    <div class="flex flex-wrap items-center gap-2">
       <x-dropdown>
         <x-slot name="trigger"><x-button size="sm">Colonnes</x-button></x-slot>
         <div class="p-2 min-w-[200px]">

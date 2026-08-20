@@ -28,6 +28,101 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const partialsDir = path.join(root, 'resources/css/themes');
 const outFile = path.join(root, 'resources/css/themes.css');
 
+/* -------------------------------------------------------------------------
+ * Contraste (WCAG 2.1)
+ *
+ * Les palettes sont conservées telles quelles — assombrir un thème « pastel »
+ * ou « neon » pour atteindre le ratio AA lui ferait perdre son identité. Ce
+ * sont les couleurs de TEXTE posées dessus qui sont calculées : couleur de
+ * premier plan sur les aplats colorés, et variante lisible pour le texte
+ * coloré affiché sur le fond de page.
+ * ---------------------------------------------------------------------- */
+
+/**
+ * Composantes RVB d'une couleur `#rgb`, `#rrggbb`, `rgb()` ou `rgba()`.
+ *
+ * Une couleur translucide est composée sur `dessous` : c'est la couleur
+ * réellement perçue qui détermine le contraste. Le thème « glass » repose
+ * entièrement sur des `rgba()`, et ignorer leur alpha conduisait à choisir un
+ * texte illisible sur ses aplats.
+ */
+function toRgb(couleur, dessous = [255, 255, 255]) {
+  if (couleur.startsWith('rgb')) {
+    const valeurs = couleur.match(/[\d.]+/g).map(Number);
+    const [r, g, b] = valeurs;
+    const alpha = valeurs.length > 3 ? valeurs[3] : 1;
+
+    return [r, g, b].map((c, i) => c * alpha + dessous[i] * (1 - alpha));
+  }
+
+  let hex = couleur.replace('#', '');
+  if (hex.length === 3) hex = [...hex].map((c) => c + c).join('');
+
+  return [0, 2, 4].map((i) => parseInt(hex.slice(i, i + 2), 16));
+}
+
+/** Luminance relative WCAG. */
+function luminance(couleur) {
+  const [r, g, b] = toRgb(couleur).map((v) => {
+    const s = v / 255;
+
+    return s <= 0.03928 ? s / 12.92 : ((s + 0.055) / 1.055) ** 2.4;
+  });
+
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+
+/** Rapport de contraste entre deux couleurs (1 à 21). */
+function contrast(a, b) {
+  const [haut, bas] = [luminance(a), luminance(b)].sort((x, y) => y - x);
+
+  return (haut + 0.05) / (bas + 0.05);
+}
+
+const versHex = ([r, g, b]) =>
+  '#' +
+  [r, g, b]
+    .map((v) =>
+      Math.round(Math.max(0, Math.min(255, v)))
+        .toString(16)
+        .padStart(2, '0')
+    )
+    .join('');
+
+/** Mélange deux couleurs (`t` = 0 → couleur, 1 → cible). */
+function melange(couleur, cible, t) {
+  const [r1, g1, b1] = toRgb(couleur);
+  const [r2, g2, b2] = toRgb(cible);
+
+  return versHex([r1 + (r2 - r1) * t, g1 + (g2 - g1) * t, b1 + (b2 - b1) * t]);
+}
+
+/** Noir ou blanc — celui qui contraste le mieux avec le fond donné. */
+function surCouleur(fond) {
+  return contrast('#ffffff', fond) >= contrast('#111111', fond) ? '#ffffff' : '#111111';
+}
+
+/**
+ * Rapproche `couleur` du noir ou du blanc jusqu'à atteindre le ratio visé sur
+ * `fond`, en conservant sa teinte. Retourne la couleur inchangée si elle passe
+ * déjà, et la meilleure approximation trouvée sinon.
+ */
+function lisibleSur(couleur, fond, cible = 4.5) {
+  if (contrast(couleur, fond) >= cible) return couleur;
+
+  // On s'éloigne du fond : vers le noir sur fond clair, vers le blanc sinon.
+  const direction = luminance(fond) > 0.5 ? '#000000' : '#ffffff';
+
+  let meilleur = couleur;
+  for (let t = 0.05; t <= 1; t += 0.05) {
+    const candidat = melange(couleur, direction, t);
+    meilleur = candidat;
+    if (contrast(candidat, fond) >= cible) return candidat;
+  }
+
+  return meilleur;
+}
+
 /** Couleurs de la palette exposées en `--color-<clé>`. */
 const PALETTE_KEYS = [
   'primary',
@@ -53,7 +148,47 @@ const PALETTE_KEYS = [
 function semanticVars(theme) {
   const shadow = theme.dark ? '0 1px 3px 0 rgba(0, 0, 0, 0.4)' : '0 1px 2px 0 rgba(0, 0, 0, 0.06)';
 
+  // Le texte coloré doit rester lisible sur les deux fonds du thème.
+  const fondLePlusExigeant = (couleur) =>
+    contrast(couleur, theme.background) <= contrast(couleur, theme.surface)
+      ? theme.background
+      : theme.surface;
+
+  // Fond « teinté » des badges et alertes : la couleur diluée dans la surface.
+  const teinte = (couleur) => melange(theme.surface, couleur, 0.15);
+
   return [
+    // Fonds teintés et leur couleur de texte, calculée sur la teinte elle-même
+    // (et non sur la surface) : c'est ce décalage qui laissait les badges et
+    // les alertes sous le seuil AA.
+    ['--color-primary-tint', teinte(theme.primary)],
+    ['--color-success-tint', teinte(theme.success)],
+    ['--color-danger-tint', teinte(theme.danger)],
+    ['--color-warning-tint', teinte(theme.warning)],
+    ['--color-info-tint', teinte(theme.info)],
+    ['--color-on-primary-tint', lisibleSur(theme.primary, teinte(theme.primary))],
+    ['--color-on-success-tint', lisibleSur(theme.success, teinte(theme.success))],
+    ['--color-on-danger-tint', lisibleSur(theme.danger, teinte(theme.danger))],
+    ['--color-on-warning-tint', lisibleSur(theme.warning, teinte(theme.warning))],
+    ['--color-on-info-tint', lisibleSur(theme.info, teinte(theme.info))],
+
+    // Couleurs de premier plan garantissant AA sur chaque aplat coloré.
+    ['--color-on-primary', surCouleur(theme.primary)],
+    ['--color-on-secondary', surCouleur(theme.secondary)],
+    ['--color-on-success', surCouleur(theme.success)],
+    ['--color-on-warning', surCouleur(theme.warning)],
+    ['--color-on-danger', surCouleur(theme.danger)],
+    ['--color-on-info', surCouleur(theme.info)],
+    ['--color-on-accent', surCouleur(theme.accent)],
+
+    // Variantes lisibles pour le texte coloré posé sur le fond de page.
+    ['--color-primary-readable', lisibleSur(theme.primary, fondLePlusExigeant(theme.primary))],
+    ['--color-success-readable', lisibleSur(theme.success, fondLePlusExigeant(theme.success))],
+    ['--color-danger-readable', lisibleSur(theme.danger, fondLePlusExigeant(theme.danger))],
+    ['--color-warning-readable', lisibleSur(theme.warning, fondLePlusExigeant(theme.warning))],
+    ['--color-info-readable', lisibleSur(theme.info, fondLePlusExigeant(theme.info))],
+    ['--color-text-muted-readable', 'var(--color-textSecondary)'],
+
     ['--primary', 'var(--color-primary)'],
     ['--secondary', 'var(--color-secondary)'],
     ['--accent', 'var(--color-accent)'],
@@ -89,7 +224,15 @@ function semanticVars(theme) {
  * @param {Record<string, string|boolean>} theme
  */
 function declarations(theme, { paint = true } = {}) {
-  const lines = PALETTE_KEYS.map((key) => `  --color-${key}: ${theme[key]};`);
+  const lines = PALETTE_KEYS.map((key) => {
+    // `--color-textSecondary` est consommée directement par les vues
+    // (`text-[var(--color-textSecondary)]`) : on émet donc une valeur déjà
+    // lisible sur le fond du thème plutôt que la valeur brute de la palette.
+    const valeur =
+      key === 'textSecondary' ? lisibleSur(theme.textSecondary, theme.surface) : theme[key];
+
+    return `  --color-${key}: ${valeur};`;
+  });
   lines.push('');
   lines.push(...semanticVars(theme).map(([name, value]) => `  ${name}: ${value};`));
 

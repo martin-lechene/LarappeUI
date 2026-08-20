@@ -24,7 +24,10 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/).
 - Tests de rendu de **tous** les composants Blade et de leurs attributs d'accessibilité
 - `tests/Feature/ThemeConsistencyTest.php` : échoue si PHP, JS et CSS divergent
 - Documentation : `docs/faq.md`, `docs/contribution.md`, `docs/changelog.md`
-- CI : vérification de la synchronisation des thèmes et exécution des tests JS
+- Suite de tests de bout en bout Playwright + axe-core (`npm run test:e2e`, 27 tests) : audit WCAG 2.1 A/AA, navigation clavier, 25 thèmes, responsive de 375 à 1920 px, composants interactifs et formulaire AJAX
+- `npm run screenshots` : capture des pages dans plusieurs thèmes et formats
+- Couleurs de contraste calculées par le générateur de thèmes (`--color-on-*`, `--color-*-readable`, `--color-*-tint`) : les 25 palettes respectent le niveau AA sans être modifiées
+- CI : vérification de la synchronisation des thèmes, tests JS et tests E2E
 - Alpine.js 3.14.3 intégré dans le build Vite (plus de CDN)
 - 6 thèmes manquants créés : enterprise, neon, retro, cyberpunk, sunset, modern
 - Font loading optimisé avec `preconnect` Google Fonts
@@ -59,6 +62,13 @@ Le format est basé sur [Keep a Changelog](https://keepachangelog.com/).
 - Thèmes : la liste sidebar affiche tous les thèmes disponibles (plus de filtre hardcodé)
 
 ### Corrigé
+- `coachmarks` démarrait automatiquement et son voile plein écran interceptait tous les clics de la page ; la visite est désormais déclenchée explicitement
+- Les variantes `secondary` et `info` de `x-button` s'affichaient sans fond : leurs classes sont composées en PHP et échappaient au scan de Tailwind
+- `[x-cloak]` n'était défini nulle part alors qu'il est utilisé dans 13 endroits : les éléments masqués apparaissaient au chargement
+- Contraste : 23 des 25 thèmes présentaient au moins un rapport sous le seuil AA (texte blanc sur aplat, texte coloré, badges) ; `opacity` sur les badges affaiblissait aussi leur texte
+- Débordement horizontal en mobile sur `pagination`, `date-range`, `dropzone` et `data-table-pro`
+- `role="list"` invalide sur `select-tags`, `tag-input` et `gallery` ; libellés manquants sur `textarea`, `texteditor` et `mentions`
+- `php artisan pint --test` en CI : Pint est un binaire, pas une commande Artisan — l'étape « PHP Code Style » échouait systématiquement
 - La galerie de composants ne s'affichait pas : Blade interprétait les balises de composant écrites dans les exemples de code JS et un accent grave dans le rendu fermait le template literal, cassant tout le script (bloc protégé par `@verbatim`)
 - Le fond de page ne suivait pas le changement de thème à chaud : chaque thème peint désormais lui-même `background-color`/`color`, et `ThemeManager` force un recalcul de style
 - `prism-php` était importé sans `markup-templating` : la coloration syntaxique levait une TypeError

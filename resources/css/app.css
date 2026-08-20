@@ -29,6 +29,15 @@
             "Noto Color Emoji";
     }
 
+    /*
+     * `x-cloak` est utilisé dans 13 endroits des vues mais n'était défini nulle
+     * part : les éléments censés rester masqués jusqu'à l'initialisation
+     * d'Alpine s'affichaient au chargement.
+     */
+    [x-cloak] {
+        display: none !important;
+    }
+
     html,
     body {
         /*

@@ -9,7 +9,7 @@
                     :tabindex="active === {{ $i }} ? 0 : -1"
                     aria-controls="tabpanel-{{ $i }}"
                     class="px-3 py-2 text-sm border-b-2 transition-colors focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:ring-inset rounded-t"
-                    :class="active === {{ $i }} ? 'border-[var(--color-primary)] text-[var(--color-primary)]' : 'border-transparent text-[var(--color-textSecondary)] hover:text-[var(--color-text)]'"
+                    :class="active === {{ $i }} ? 'border-[var(--color-primary)] text-[var(--color-primary-readable)]' : 'border-transparent text-[var(--color-textSecondary)] hover:text-[var(--color-text)]'"
                     @click="active = {{ $i }}"
                     @keydown.arrow-right.prevent="active = Math.min(active + 1, {{ count($tabs) - 1 }})"
                     @keydown.arrow-left.prevent="active = Math.max(active - 1, 0)"
