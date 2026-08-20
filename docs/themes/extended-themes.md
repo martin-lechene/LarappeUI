@@ -154,7 +154,7 @@ Chaque thème définit les variables CSS suivantes :
 }
 ```
 
-2. Ajoutez la configuration dans `resources/js/themes-manager.js` :
+2. Ajoutez la palette dans `resources/js/themes.js` :
 
 ```javascript
 {

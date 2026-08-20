@@ -108,20 +108,28 @@ ThemeManager.applyTheme("forest-night");
 -   ✅ **Responsive** design
 -   ✅ **Documentation** complète
 
-## 📖 Pages de Test
+## 📖 Où tester les thèmes
 
--   **Showcase** : `/themes-showcase` - Aperçu de tous les thèmes
--   **Test** : `/test-themes` - Tests individuels des thèmes
--   **Gestionnaire** : `/themes-manager` - Interface de gestion
+Le sélecteur de thème de la barre latérale s'applique à toutes les pages de la vitrine :
+
+-   **`/components`** — catalogue complet des composants
+-   **`/examples`** — mises en situation (formulaire AJAX, tableaux, sections marketing)
+
+Les vérifications automatiques vivent dans `tests/Feature/ThemeConsistencyTest.php`
+(cohérence PHP / JS / CSS) et `tests/js/themes-manager.test.js` (application au runtime).
 
 ## 🤝 Contribution
 
 Pour ajouter de nouveaux thèmes :
 
-1. Définir les variables CSS dans `public/css/themes.css`
-2. Ajouter la configuration dans `public/js/themes-manager.js`
-3. Mettre à jour les interfaces utilisateur
+1. Ajouter la palette dans `resources/js/themes.js` (12 couleurs + `dark: true|false`)
+2. Déclarer l'identifiant dans `config/themes.php`
+3. Régénérer le CSS : `npm run themes:build`
 4. Documenter dans `docs/themes/new-themes.md`
+
+> `resources/css/themes.css` est **généré** : ne l'éditez pas à la main. Les règles
+> écrites manuellement vivent dans `resources/css/themes/_utilities.css` et
+> `_theme-<nom>.css`.
 
 ## 📝 Notes de Version
 

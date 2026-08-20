@@ -303,10 +303,18 @@ function contactForm() {
                     },
                     body: JSON.stringify(this.form),
                 });
+                // La réponse n'est pas garantie JSON (erreur proxy, page 500…) :
+                // on lit le corps brut avant de tenter le décodage.
                 let data = {};
-                try {
-                    data = await res.json();
-                } catch (_) {}
+                const raw = await res.text();
+                if (raw) {
+                    try {
+                        data = JSON.parse(raw);
+                    } catch (parseError) {
+                        console.warn('Réponse non-JSON du serveur', parseError);
+                        data = { message: 'Réponse inattendue du serveur (HTTP ' + res.status + ').' };
+                    }
+                }
                 if (res.ok) {
                     this.success = true;
                     return;

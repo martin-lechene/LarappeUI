@@ -12,7 +12,7 @@
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
-        "larastan/larastan": "*",
+        "larastan/larastan": "^3.10",
         "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.13",
         "laravel/sail": "^1.41",
@@ -57,7 +57,7 @@
             "@php artisan test"
         ],
         "analyse": [
-            "phpstan analyse"
+            "@php vendor/bin/phpstan analyse --memory-limit=1G"
         ],
         "pint": [
             "php artisan pint --test"

@@ -1,5 +1,11 @@
+@php
+    // `currentTheme` est partagé par ThemeMiddleware ; le fallback couvre les
+    // vues rendues hors du groupe de routes concerné.
+    $theme = $currentTheme ?? \App\Support\ThemeRegistry::sanitize(session('theme'));
+    $themes = \App\Support\ThemeRegistry::available();
+@endphp
 <!DOCTYPE html>
-<html lang="fr" class="h-full" theme="{{ session('theme', 'light') }}">
+<html lang="fr" class="h-full" theme="{{ $theme }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,51 +17,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-    <!-- Thèmes CSS (compilé) -->
-    <link rel="stylesheet" href="{{ asset('css/themes.css') }}">
-
-    <!-- Prism.js pour la coloration syntaxique -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
-
-    @stack('styles')
+    {{-- app.css puis themes.css : les variables de thème doivent gagner sur les valeurs par défaut. --}}
+    @vite(['resources/css/app.css', 'resources/css/themes.css', 'resources/js/app.js'])
 </head>
-<body class="h-full theme-{{ session('theme', 'light') }}" x-data="{
+<body class="h-full theme-{{ $theme }}" x-data="{
     sidebarOpen: false,
-    currentTheme: (localStorage.getItem('theme') || 'pro').replace(/-dark$/,'').replace(/-light$/,''),
-    isDark: (localStorage.getItem('theme') || '').endsWith('-dark'),
-    get themeOptions(){
-        const list = window.ThemeManager ? window.ThemeManager.getAllThemes() : ['pro','dark','light'];
-        const bases = [...new Set(list.map(k => k.replace(/-dark$/,'').replace(/-light$/,'')))];
-        return bases;
-    },
+    themeOptions: @js($themes),
+    currentTheme: @js($theme),
     applyCurrent(){
-        const name = this.isDark ? `${this.currentTheme}-dark` : this.currentTheme;
-        localStorage.setItem('theme', name);
-        localStorage.setItem('themeMode', this.isDark ? 'dark' : 'light');
-        if (window.ThemeManager) { window.ThemeManager.applyTheme(name); }
+        if (window.ThemeManager) { window.ThemeManager.applyTheme(this.currentTheme); }
+    },
+    label(key){
+        return key.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
     }
 }" x-init="
-    this.applyCurrent();
     document.addEventListener('themeChanged', (event) => {
-        const t = (event.detail && event.detail.theme) || '';
-        const d = typeof Alpine !== 'undefined' ? Alpine.$data(document.body) : null;
-        if (d) {
-            d.currentTheme = t.replace(/-dark$/,'').replace(/-light$/,'');
-            d.isDark = /-dark$/.test(t);
-        }
+        currentTheme = (event.detail && event.detail.theme) || currentTheme;
     });
-    const sync = () => {
-        if (!window.ThemeManager) return;
-        const d = typeof Alpine !== 'undefined' ? Alpine.$data(document.body) : null;
-        if (!d) return;
-        document.querySelectorAll('[data-theme-selector]').forEach(s => { s.value = d.currentTheme; });
-    };
-    document.addEventListener('DOMContentLoaded', sync);
-    setTimeout(sync, 0);
 ">
     <a href="#main-content" class="skip-to-content">Aller au contenu</a>
     <!-- Sidebar -->
@@ -78,27 +56,16 @@
 
         <!-- Theme Selector -->
         <div class="flex-shrink-0 p-4 border-b border-[var(--color-border)]">
-            <label for="theme-base-select" class="block mb-2 text-sm font-medium text-[var(--color-textSecondary)]">Thème</label>
-            <div class="flex flex-col gap-3 sm:flex-row sm:items-center">
-                <select id="theme-base-select"
-                        x-model="currentTheme"
-                        @change="applyCurrent()"
-                        data-theme-selector
-                        class="px-3 py-2 w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-text)] focus:ring-2 focus:ring-primary focus:border-transparent">
-                    <template x-for="key in themeOptions" :key="key">
-                        <option :value="key" x-text="key.charAt(0).toUpperCase() + key.slice(1)"></option>
-                    </template>
-                </select>
-                <div class="flex flex-shrink-0 items-center gap-2">
-                    <span class="text-xs text-[var(--color-textSecondary)]">Light</span>
-                    <label class="relative inline-flex items-center cursor-pointer">
-                        <input type="checkbox" class="sr-only peer" x-model="isDark" @change="applyCurrent()" :aria-label="isDark ? 'Mode sombre activé' : 'Activer le mode sombre'">
-                        <div class="w-10 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:bg-gray-700 transition-all"></div>
-                        <div class="absolute left-0.5 top-0.5 w-4 h-4 bg-white rounded-full transition-all peer-checked:translate-x-5"></div>
-                    </label>
-                    <span class="text-xs text-[var(--color-text)]">Dark</span>
-                </div>
-            </div>
+            <label for="theme-select" class="block mb-2 text-sm font-medium text-[var(--color-textSecondary)]">Thème</label>
+            <select id="theme-select"
+                    x-model="currentTheme"
+                    @change="applyCurrent()"
+                    data-theme-selector
+                    class="px-3 py-2 w-full rounded-lg border border-[var(--color-border)] bg-[var(--color-background)] text-[var(--color-text)] focus:ring-2 focus:ring-primary focus:border-transparent">
+                <template x-for="key in themeOptions" :key="key">
+                    <option :value="key" x-text="label(key)"></option>
+                </template>
+            </select>
         </div>
 
         <!-- Navigation -->

@@ -1,13 +1,18 @@
 includes:
-    - app/*
-    - config/*
-    - database/*
-    - routes/*
-    - tests/*
+    - vendor/larastan/larastan/extension.neon
 
-paths:
-    - vendor/*
+parameters:
+    paths:
+        - app
+        - config
+        - database
+        - routes
+        - tests
 
-level: 5
+    excludePaths:
+        - bootstrap/cache/*
+        - vendor/*
 
-tmpDir: build/phpstan
+    level: 5
+
+    tmpDir: build/phpstan

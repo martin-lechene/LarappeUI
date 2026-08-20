@@ -70,11 +70,20 @@ LarappeUI propose **34 thèmes** (classes CSS) organisés en catégories.
 ## Structure des Fichiers
 
 ```
-public/
+resources/
 ├── css/
-│   └── themes.css          # Toutes les variables CSS des thèmes
+│   ├── themes.css              # GÉNÉRÉ — variables de tous les thèmes
+│   └── themes/
+│       ├── _utilities.css      # utilitaires Tailwind rethémés (source)
+│       ├── _theme-2d.css       # surcharges du thème « 2d » (source)
+│       └── _theme-glass.css    # surcharges du thème « glass » (source)
 ├── js/
-│   └── themes-manager.js   # Gestionnaire JavaScript des thèmes
+│   ├── themes.js               # palettes — source de vérité
+│   └── themes-manager.js       # application du thème au runtime
+config/
+└── themes.php                  # liste des thèmes exposée à PHP
+scripts/
+└── build-themes.mjs            # npm run themes:build
 ```
 
 ## Variables CSS
@@ -133,7 +142,7 @@ GET  /theme/get
 
 ## Gestionnaire de Thèmes
 
-Le fichier `themes-manager.js` gère :
+Le fichier `resources/js/themes-manager.js` gère :
 - **Changement de thème** : `applyTheme(themeName)`
 - **Persistance** : Sauvegarde automatique dans `localStorage` et session Laravel
 - **Événements** : Déclenche `themeChanged` lors du changement
@@ -143,7 +152,8 @@ Le fichier `themes-manager.js` gère :
 
 ### Créer un thème personnalisé
 
-1. Ajouter les variables dans `public/css/themes.css` :
+1. Ajouter la palette dans `resources/js/themes.js`, déclarer l'identifiant dans
+   `config/themes.php`, puis lancer `npm run themes:build`. Le générateur produit :
 
 ```css
 .theme-moncustom {
@@ -162,7 +172,7 @@ Le fichier `themes-manager.js` gère :
 }
 ```
 
-2. Enregistrer dans `themes-manager.js` :
+2. La palette déclarée dans `resources/js/themes.js` :
 
 ```javascript
 // Dans la section this.themes = { ... }

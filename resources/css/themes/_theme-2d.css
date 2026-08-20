@@ -1,0 +1,136 @@
+/*
+ * Surcharges du thème « 2d » : bordures épaisses, ombres pleines et rendu
+ * pixelisé. Les sélecteurs sont automatiquement préfixés par `.theme-2d`
+ * lors de la génération (`scripts/build-themes.mjs`).
+ */
+
+* {
+  border-radius: 0 !important;
+  font-family: 'Courier New', monospace !important;
+  image-rendering: pixelated !important;
+  image-rendering: -webkit-optimize-contrast !important;
+}
+
+.bg-blue-600,
+.bg-primary {
+  background-color: var(--color-primary) !important;
+  border: 4px solid var(--color-border) !important;
+  box-shadow:
+    4px 0 0 var(--color-border),
+    0 4px 0 var(--color-border),
+    4px 4px 0 var(--color-border) !important;
+}
+.bg-red-600,
+.bg-danger {
+  background-color: var(--color-danger) !important;
+  border: 4px solid var(--color-border) !important;
+  box-shadow:
+    4px 0 0 var(--color-border),
+    0 4px 0 var(--color-border),
+    4px 4px 0 var(--color-border) !important;
+}
+.bg-green-600,
+.bg-success {
+  background-color: var(--color-success) !important;
+  border: 4px solid var(--color-border) !important;
+  box-shadow:
+    4px 0 0 var(--color-border),
+    0 4px 0 var(--color-border),
+    4px 4px 0 var(--color-border) !important;
+}
+.bg-yellow-600,
+.bg-warning {
+  background-color: var(--color-warning) !important;
+  border: 4px solid var(--color-border) !important;
+  box-shadow:
+    4px 0 0 var(--color-border),
+    0 4px 0 var(--color-border),
+    4px 4px 0 var(--color-border) !important;
+}
+
+.border,
+.border-1,
+.border-2,
+.border-4 {
+  border-width: 4px !important;
+  border-style: solid !important;
+  border-color: var(--color-border) !important;
+  box-shadow:
+    4px 0 0 var(--color-border),
+    0 4px 0 var(--color-border),
+    4px 4px 0 var(--color-border),
+    -4px 0 0 var(--color-border),
+    0 -4px 0 var(--color-border),
+    -4px -4px 0 var(--color-border),
+    4px -4px 0 var(--color-border),
+    -4px 4px 0 var(--color-border) !important;
+}
+
+input,
+select,
+textarea,
+button {
+  border-width: 4px !important;
+  border-style: solid !important;
+  border-color: var(--color-border) !important;
+  background-color: var(--color-surface) !important;
+  color: var(--color-text) !important;
+  padding: 8px !important;
+  box-shadow:
+    4px 0 0 var(--color-border),
+    0 4px 0 var(--color-border),
+    4px 4px 0 var(--color-border) !important;
+}
+
+button:hover,
+input:focus,
+select:focus,
+textarea:focus {
+  transform: translate(2px, 2px) !important;
+  box-shadow:
+    2px 0 0 var(--color-border),
+    0 2px 0 var(--color-border),
+    2px 2px 0 var(--color-border) !important;
+}
+
+button:active {
+  transform: translate(4px, 4px) !important;
+  box-shadow: none !important;
+}
+
+.hover\:shadow-md:hover {
+  box-shadow:
+    6px 0 0 var(--color-border),
+    0 6px 0 var(--color-border),
+    6px 6px 0 var(--color-border) !important;
+}
+
+.shadow-sm,
+.shadow-md,
+.shadow-lg {
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+}
+
+svg {
+  filter: contrast(1.5) brightness(1.2) !important;
+}
+
+.card {
+  background-color: var(--color-surface) !important;
+}
+
+nav {
+  background-color: var(--color-secondary) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: 2px 2px 0 var(--color-border) !important;
+  font-weight: bold !important;
+}

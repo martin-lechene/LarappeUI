@@ -29,16 +29,20 @@ jobs:
       run: php artisan key:generate
     - name: Install Node dependencies
       run: npm ci
+    - name: Themes are in sync with their sources
+      run: npm run themes:check
     - name: Build assets
       run: npm run build --if-present
     - name: PHP Code Style (Pint)
       run: php artisan pint --test
     - name: PHP Static Analysis (PHPStan)
-      run: phpstan analyse
+      run: vendor/bin/phpstan analyse --memory-limit=1G
     - name: JavaScript Lint (ESLint)
       run: npm run lint
     - name: JavaScript Format Check (Prettier)
       run: npm run format:check
+    - name: JavaScript tests (Vitest)
+      run: npm test
     - name: Directory Permissions
       run: chmod -R 775 storage bootstrap/cache
     - name: Create Database
@@ -50,3 +54,24 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: php artisan test
+
+  security-audit:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v6
+    - uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.4.1'
+        coverage: none
+        tools: composer:v2
+    - uses: actions/setup-node@v6
+      with:
+        node-version: '24'
+    - name: Install PHP dependencies
+      run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+    - name: Composer security advisories
+      run: composer audit
+    - name: npm security advisories
+      run: npm audit --audit-level=high

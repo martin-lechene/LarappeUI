@@ -12,6 +12,7 @@
 /.vscode
 /.zed
 /auth.json
+/build
 /node_modules
 /public/build
 /public/hot

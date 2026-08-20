@@ -102,18 +102,22 @@ Le sélecteur de thèmes est disponible dans la sidebar. Les thèmes sont persis
 ```
 resources/
 ├── css/
-│   ├── app.css              # Entry point CSS (Tailwind + overrides)
-│   ├── themes.css           # Toutes les définitions de thèmes
-│   └── themes/              # Fichiers individuels par thème
+│   ├── app.css              # Entry point CSS (Tailwind + styles de base)
+│   ├── themes.css           # GÉNÉRÉ (npm run themes:build)
+│   └── themes/              # Partiels sources : utilitaires + surcharges
 ├── js/
-│   ├── app.js               # Entry point JS (Alpine.js + ThemeManager)
-│   ├── bootstrap.js         # Configuration Axios
-│   └── themes-manager.js    # Gestionnaire de thèmes
+│   ├── app.js               # Entry point JS (Alpine, Prism, marked)
+│   ├── themes.js            # Palettes des thèmes — source de vérité
+│   ├── themes-manager.js    # Application du thème au runtime
+│   └── alpine/              # Composants Alpine (tableaux, combobox, dropzone)
 └── views/
     ├── layouts/app.blade.php
     ├── components.blade.php
     ├── examples.blade.php
     └── components/           # 90+ composants Blade
+config/themes.php            # Liste des thèmes exposée à PHP
+scripts/build-themes.mjs     # Générateur de resources/css/themes.css
+tests/js/                    # Tests Vitest
 ```
 
 ## Contribuer

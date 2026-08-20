@@ -1,0 +1,136 @@
+/*
+ * Mappage des utilitaires Tailwind vers les variables de thème.
+ *
+ * Ces règles sont valables pour TOUS les thèmes : elles ne référencent que des
+ * variables CSS, dont la valeur est résolue par le thème actif. Les surcharges
+ * propres à un thème vivent dans `_theme-<nom>.css`.
+ *
+ * Seules les déclarations qui dépendent réellement du thème figurent ici. Les
+ * redites d'utilitaires Tailwind non colorimétriques (padding, font-size,
+ * durées de transition…) ont été retirées : elles dupliquaient Tailwind tout en
+ * ajoutant un `!important` qui empêchait toute surcharge responsive.
+ */
+
+/* === FONDS === */
+.bg-white,
+.bg-gray-50 {
+  background-color: var(--color-surface) !important;
+}
+.bg-gray-100 {
+  background-color: var(--color-secondary) !important;
+}
+.bg-gray-200 {
+  background-color: var(--color-secondary) !important;
+  opacity: 0.2;
+}
+.bg-blue-600 {
+  background-color: var(--color-primary) !important;
+}
+.bg-red-600 {
+  background-color: var(--color-danger) !important;
+}
+.bg-green-600 {
+  background-color: var(--color-success) !important;
+}
+.bg-blue-100 {
+  background-color: var(--color-primary) !important;
+  opacity: 0.1;
+}
+.bg-red-100 {
+  background-color: var(--color-danger) !important;
+  opacity: 0.1;
+}
+.bg-green-100 {
+  background-color: var(--color-success) !important;
+  opacity: 0.1;
+}
+.bg-yellow-100 {
+  background-color: var(--color-warning) !important;
+  opacity: 0.1;
+}
+
+/* === TEXTES === */
+.text-gray-900,
+.text-gray-800,
+.text-gray-700 {
+  color: var(--color-text) !important;
+}
+.text-gray-600,
+.text-gray-500,
+.text-gray-400 {
+  color: var(--color-textSecondary) !important;
+}
+.text-blue-500,
+.text-blue-800 {
+  color: var(--color-primary) !important;
+}
+.text-green-500,
+.text-green-800 {
+  color: var(--color-success) !important;
+}
+.text-red-500,
+.text-red-800 {
+  color: var(--color-danger) !important;
+}
+.text-yellow-500,
+.text-yellow-800 {
+  color: var(--color-warning) !important;
+}
+svg {
+  color: var(--color-text) !important;
+}
+
+/* === BORDURES === */
+.border,
+.border-gray-200,
+.border-gray-300 {
+  border-color: var(--color-border) !important;
+}
+.border-blue-500 {
+  border-color: var(--color-primary) !important;
+}
+.border-red-500 {
+  border-color: var(--color-danger) !important;
+}
+
+/* === CHAMPS DE FORMULAIRE === */
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='search'],
+select,
+textarea {
+  background-color: var(--color-surface) !important;
+  color: var(--color-text) !important;
+  border-color: var(--color-border) !important;
+}
+
+/* === ÉTATS === */
+.hover\:bg-blue-700:hover {
+  background-color: var(--color-primary) !important;
+  opacity: 0.8;
+}
+.hover\:bg-gray-200:hover {
+  background-color: var(--color-secondary) !important;
+  opacity: 0.8;
+}
+.hover\:bg-gray-100:hover {
+  background-color: var(--color-secondary) !important;
+  opacity: 0.1;
+}
+.hover\:text-gray-700:hover,
+.hover\:text-gray-900:hover {
+  color: var(--color-text) !important;
+}
+.hover\:text-gray-600:hover {
+  color: var(--color-textSecondary) !important;
+}
+.focus\:border-blue-500:focus {
+  border-color: var(--color-primary) !important;
+}
+.focus\:ring-blue-500:focus,
+.ring-blue-500,
+.ring-2 {
+  --tw-ring-color: var(--color-primary) !important;
+}
