@@ -57,6 +57,14 @@ jobs:
 
     - name: Install Playwright browser
       run: npx playwright install --with-deps chromium
+    # Les tests E2E servent l'application pour de vrai : la session étant
+    # stockée en base (SESSION_DRIVER=database), la table `sessions` doit
+    # exister, sinon chaque page répond 500 et le serveur ne devient jamais sain.
+    - name: Run migrations for the end-to-end server
+      env:
+        DB_CONNECTION: sqlite
+        DB_DATABASE: database/database.sqlite
+      run: php artisan migrate --force
     - name: End-to-end tests (accessibility, themes, responsive)
       env:
         DB_CONNECTION: sqlite
