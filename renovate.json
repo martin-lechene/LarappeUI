@@ -1,6 +1,5 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        "config:recommended"
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "enabled": false,
+  "description": "Renovate est desactive : les mises a jour passent par Dependabot groupe (.github/dependabot.yml). Avoir les deux robots produisait des PR en double."
 }
