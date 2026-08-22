@@ -9,18 +9,9 @@ on:
 jobs:
   laravel-tests:
 
-    runs-on: ubuntu-latest
-
+    runs-on: [self-hosted, hetzner]
     steps:
     - uses: actions/checkout@v6
-    - uses: shivammathur/setup-php@v2
-      with:
-        php-version: '8.4.1'
-        coverage: none
-        tools: composer:v2
-    - uses: actions/setup-node@v6
-      with:
-        node-version: '24'
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Install PHP dependencies
