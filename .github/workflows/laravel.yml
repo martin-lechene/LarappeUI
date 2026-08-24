@@ -36,7 +36,9 @@ jobs:
       # echoue sur "Command pint is not defined".
       run: vendor/bin/pint --test
     - name: PHP Static Analysis (PHPStan)
-      run: phpstan analyse
+      # phpstan n est pas dans le PATH du runner : il faut l appeler par
+      # son chemin, sans quoi le job s arrete sur "command not found".
+      run: vendor/bin/phpstan analyse
     - name: JavaScript Lint (ESLint)
       run: npm run lint
     - name: JavaScript Format Check (Prettier)
