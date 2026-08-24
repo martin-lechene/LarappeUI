@@ -2,10 +2,10 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ThemeController;
+use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Cache\RateLimiting\Limit;
 
 /*
 |--------------------------------------------------------------------------
