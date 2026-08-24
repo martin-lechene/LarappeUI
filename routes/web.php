@@ -5,6 +5,7 @@ use App\Http\Controllers\ThemeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\RateLimiting\Limit;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-RateLimiter::for('contact', fn (Request $request) => \Illuminate\Support\RateLimiting\Limit::perMinute(5));
+RateLimiter::for('contact', fn (Request $request) => Limit::perMinute(5));
 
 // Pages principales avec middleware de thème
 Route::middleware(['theme'])->group(function () {
