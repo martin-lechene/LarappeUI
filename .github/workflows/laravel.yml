@@ -23,9 +23,13 @@ jobs:
     - name: Build assets
       run: npm run build --if-present
     - name: PHP Code Style (Pint)
-      run: php artisan pint --test
+      # Pint est un binaire, pas une commande artisan : « php artisan pint »
+      # echoue sur "Command pint is not defined".
+      run: vendor/bin/pint --test
     - name: PHP Static Analysis (PHPStan)
-      run: phpstan analyse
+      # phpstan n est pas dans le PATH du runner : il faut l appeler par
+      # son chemin, sans quoi le job s arrete sur "command not found".
+      run: vendor/bin/phpstan analyse
     - name: JavaScript Lint (ESLint)
       run: npm run lint
     - name: JavaScript Format Check (Prettier)
