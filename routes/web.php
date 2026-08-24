@@ -5,7 +5,7 @@ use App\Http\Controllers\ThemeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\RateLimiting\Limit;
+use Illuminate\Cache\RateLimiting\Limit;
 
 /*
 |--------------------------------------------------------------------------

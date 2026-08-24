@@ -1,13 +1,17 @@
 includes:
-    - app/*
-    - config/*
-    - database/*
-    - routes/*
-    - tests/*
+    # « includes » attend des fichiers de configuration NEON. L ancienne version
+    # y listait des chemins de code, ce qui faisait echouer PHPStan avant meme
+    # d analyser quoi que ce soit.
+    - vendor/larastan/larastan/extension.neon
 
-paths:
-    - vendor/*
+parameters:
+    # Les chemins analyses vont ici. L ancienne version pointait sur vendor/*,
+    # qu il ne faut precisement pas analyser.
+    paths:
+        - app
+        - config
+        - database
+        - routes
 
-level: 5
-
-tmpDir: build/phpstan
+    level: 5
+    tmpDir: build/phpstan
