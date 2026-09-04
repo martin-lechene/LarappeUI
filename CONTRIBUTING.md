@@ -12,8 +12,8 @@ Merci de votre intérêt pour contribuer à LarappeUI !
 ## Setup
 
 ```bash
-git clone https://github.com/your-org/larappeui.git
-cd larappeui
+git clone https://github.com/martin-lechene/LarappeUI.git
+cd LarappeUI
 composer install
 npm install
 cp .env.example .env

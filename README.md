@@ -1,14 +1,14 @@
 # LarappeUI
 
-Une collection complète de composants UI pour **Laravel 12+** & **TailwindCSS 4**, offrant un système de thèmes avancé (clair/sombre & 25+ thèmes custom) et deux pages prêtes à l'emploi : **Components** et **Examples**.
+Une collection complète de composants UI pour **Laravel 13** & **TailwindCSS 4**, offrant un système de thèmes avancé (25 thèmes sélectionnables, 34 palettes clair/sombre) et deux pages prêtes à l'emploi : **Components** et **Examples**.
 
 ---
 
 ## Fonctionnalités principales
 
-- Système de thèmes global (clair, sombre, 25+ custom) avec persistance (`session` et `localStorage`)
+- Système de thèmes global — 25 thèmes sélectionnables, 34 palettes, source unique dans `config/themes.php`, persistance en `session` et `localStorage`
 - Aperçu live des composants avec switch "Aperçu/Code" et liste de paramètres ajustables
-- 90+ composants Blade organisés par catégorie
+- 88 composants Blade organisés par catégorie, tous présentés dans la galerie
 - Exemples UI réels : header, hero, CTA, formulaire AJAX, étapes, tables, etc.
 - CI GitHub Actions : Pint + PHPStan + ESLint + Prettier + PHPUnit
 - Docker multi-stage avec healthcheck
@@ -17,12 +17,12 @@ Une collection complète de composants UI pour **Laravel 12+** & **TailwindCSS 4
 
 | Technologie | Version |
 |---|---|
-| Laravel | 12.x |
-| PHP | >= 8.2 |
+| Laravel | 13.x |
+| PHP | >= 8.4 |
 | TailwindCSS | 4.x |
 | Alpine.js | 3.14.3 |
-| Vite | 7.x |
-| PHPUnit | 12.x |
+| Vite | 8.x |
+| PHPUnit | 13.x |
 
 ## Installation (développement)
 
@@ -93,7 +93,13 @@ docker compose up --build
 
 ## Thèmes
 
-25+ thèmes disponibles : light, dark, pro, enterprise, glass, neon, forest, forest-night, sea, sakura, summer, sunset, modern, minimal, 2d, retro, retro80s, cyberpunk, pastel, space, coffee, vintage, monokai, solarized-light, solarized-dark.
+**25 thèmes sélectionnables**, dont 9 possèdent une variante sombre — soit **34 palettes**. Six noms hérités (`2d-light`, `glass-light`, `ocean-light`, `oldschool-light`, `summer-light`, `winter-light`) restent acceptés comme alias, ce qui porte à **40 le nombre de noms valides**.
+
+Sélectionnables : `2d`, `coffee`, `cyberpunk`, `enterprise`, `forest`, `glass`, `light`, `minimal`, `modern`, `monokai`, `neon`, `ocean`, `oldschool`, `pastel`, `pro`, `retro`, `retro80s`, `sakura`, `sea`, `solarized-light`, `space`, `summer`, `sunset`, `vintage`, `winter`.
+
+Avec variante sombre : `light`, `2d`, `glass`, `ocean`, `oldschool`, `summer`, `winter`, `solarized-light`, `forest`. L'interrupteur Light/Dark de la sidebar est désactivé sur les autres.
+
+> Le catalogue est défini une seule fois, dans `config/themes.php`. `resources/css/themes.css` en est **généré** — ne pas l'éditer à la main. `tests/Feature/ThemeCatalogTest` échoue si les deux divergent.
 
 Le sélecteur de thèmes est disponible dans la sidebar. Les thèmes sont persistés en session côté serveur et en `localStorage` côté client.
 
@@ -113,7 +119,7 @@ resources/
     ├── layouts/app.blade.php
     ├── components.blade.php
     ├── examples.blade.php
-    └── components/           # 90+ composants Blade
+    └── components/           # 88 composants Blade
 ```
 
 ## Contribuer
