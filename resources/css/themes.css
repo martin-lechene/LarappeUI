@@ -38,6 +38,22 @@
     --border: #e5e7eb;
     --color-accent: #f59e42;
     --accent: #f59e42;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #6b7280;
+    --text-inverse: #ffffff;
+    --card-bg: #f9fafb;
+    --sidebar-bg: #f9fafb;
+    --modal-bg: #f9fafb;
+    --tooltip-bg: #111827;
+    --tooltip-text: #ffffff;
+    --divider: #e5e7eb;
+    --focus-ring: #3b82f6;
+    --selection-bg: #3b82f6;
+    --badge-bg-primary: #3b82f6;
+    --badge-text-primary: #ffffff;
+    --progress-bg-green: #10b981;
+    --spinner-color-green: #10b981;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 /* ========================================================================= */
@@ -69,6 +85,22 @@
     --border: #e5e7eb;
     --color-accent: #ffa502;
     --accent: #ffa502;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #6b7280;
+    --text-inverse: #ffffff;
+    --card-bg: #f8f9fb;
+    --sidebar-bg: #f8f9fb;
+    --modal-bg: #f8f9fb;
+    --tooltip-bg: #1f2937;
+    --tooltip-text: #ffffff;
+    --divider: #e5e7eb;
+    --focus-ring: #ff6b6b;
+    --selection-bg: #ff6b6b;
+    --badge-bg-primary: #ff6b6b;
+    --badge-text-primary: #ffffff;
+    --progress-bg-green: #2ecc71;
+    --spinner-color-green: #2ecc71;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-2d-dark {
@@ -96,6 +128,22 @@
     --border: #374151;
     --color-accent: #ffb84d;
     --accent: #ffb84d;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #9ca3af;
+    --text-inverse: #0f172a;
+    --card-bg: #111827;
+    --sidebar-bg: #111827;
+    --modal-bg: #111827;
+    --tooltip-bg: #e5e7eb;
+    --tooltip-text: #0f172a;
+    --divider: #374151;
+    --focus-ring: #ff8787;
+    --selection-bg: #ff8787;
+    --badge-bg-primary: #ff8787;
+    --badge-text-primary: #0f172a;
+    --progress-bg-green: #34d399;
+    --spinner-color-green: #34d399;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-coffee {
@@ -123,6 +171,22 @@
     --border: #fbbf24;
     --color-accent: #b45309;
     --accent: #b45309;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #78350f;
+    --text-inverse: #fef3c7;
+    --card-bg: #fde68a;
+    --sidebar-bg: #fde68a;
+    --modal-bg: #fde68a;
+    --tooltip-bg: #451a03;
+    --tooltip-text: #fef3c7;
+    --divider: #fbbf24;
+    --focus-ring: #92400e;
+    --selection-bg: #92400e;
+    --badge-bg-primary: #92400e;
+    --badge-text-primary: #fef3c7;
+    --progress-bg-green: #059669;
+    --spinner-color-green: #059669;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-cyberpunk {
@@ -150,6 +214,22 @@
     --border: #333333;
     --color-accent: #ff6600;
     --accent: #ff6600;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #cccccc;
+    --text-inverse: #000000;
+    --card-bg: #1a1a1a;
+    --sidebar-bg: #1a1a1a;
+    --modal-bg: #1a1a1a;
+    --tooltip-bg: #ffffff;
+    --tooltip-text: #000000;
+    --divider: #333333;
+    --focus-ring: #00ffff;
+    --selection-bg: #00ffff;
+    --badge-bg-primary: #00ffff;
+    --badge-text-primary: #000000;
+    --progress-bg-green: #00ff00;
+    --spinner-color-green: #00ff00;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-dark {
@@ -177,6 +257,22 @@
     --border: #374151;
     --color-accent: #fb923c;
     --accent: #fb923c;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #d1d5db;
+    --text-inverse: #111827;
+    --card-bg: #1f2937;
+    --sidebar-bg: #1f2937;
+    --modal-bg: #1f2937;
+    --tooltip-bg: #f9fafb;
+    --tooltip-text: #111827;
+    --divider: #374151;
+    --focus-ring: #60a5fa;
+    --selection-bg: #60a5fa;
+    --badge-bg-primary: #60a5fa;
+    --badge-text-primary: #111827;
+    --progress-bg-green: #34d399;
+    --spinner-color-green: #34d399;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-enterprise {
@@ -204,6 +300,22 @@
     --border: #d1d5db;
     --color-accent: #ea580c;
     --accent: #ea580c;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #6b7280;
+    --text-inverse: #ffffff;
+    --card-bg: #f9fafb;
+    --sidebar-bg: #f9fafb;
+    --modal-bg: #f9fafb;
+    --tooltip-bg: #111827;
+    --tooltip-text: #ffffff;
+    --divider: #d1d5db;
+    --focus-ring: #1e40af;
+    --selection-bg: #1e40af;
+    --badge-bg-primary: #1e40af;
+    --badge-text-primary: #ffffff;
+    --progress-bg-green: #047857;
+    --spinner-color-green: #047857;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-forest {
@@ -231,6 +343,22 @@
     --border: #bbf7d0;
     --color-accent: #16a34a;
     --accent: #16a34a;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #065f46;
+    --text-inverse: #f0fdf4;
+    --card-bg: #ecfdf5;
+    --sidebar-bg: #ecfdf5;
+    --modal-bg: #ecfdf5;
+    --tooltip-bg: #064e3b;
+    --tooltip-text: #f0fdf4;
+    --divider: #bbf7d0;
+    --focus-ring: #059669;
+    --selection-bg: #059669;
+    --badge-bg-primary: #059669;
+    --badge-text-primary: #f0fdf4;
+    --progress-bg-green: #10b981;
+    --spinner-color-green: #10b981;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-forest-night {
@@ -258,6 +386,22 @@
     --border: #334155;
     --color-accent: #059669;
     --accent: #059669;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #cbd5e1;
+    --text-inverse: #0f172a;
+    --card-bg: #1e293b;
+    --sidebar-bg: #1e293b;
+    --modal-bg: #1e293b;
+    --tooltip-bg: #f1f5f9;
+    --tooltip-text: #0f172a;
+    --divider: #334155;
+    --focus-ring: #10b981;
+    --selection-bg: #10b981;
+    --badge-bg-primary: #10b981;
+    --badge-text-primary: #0f172a;
+    --progress-bg-green: #34d399;
+    --spinner-color-green: #34d399;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-glass {
@@ -285,6 +429,22 @@
     --border: rgba(229, 231, 235, 0.4);
     --color-accent: rgba(245, 158, 66, 0.8);
     --accent: rgba(245, 158, 66, 0.8);
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #475569;
+    --text-inverse: rgba(255, 255, 255, 0.7);
+    --card-bg: rgba(255, 255, 255, 0.55);
+    --sidebar-bg: rgba(255, 255, 255, 0.55);
+    --modal-bg: rgba(255, 255, 255, 0.55);
+    --tooltip-bg: #0f172a;
+    --tooltip-text: rgba(255, 255, 255, 0.7);
+    --divider: rgba(229, 231, 235, 0.4);
+    --focus-ring: rgba(59, 130, 246, 0.8);
+    --selection-bg: rgba(59, 130, 246, 0.8);
+    --badge-bg-primary: rgba(59, 130, 246, 0.8);
+    --badge-text-primary: rgba(255, 255, 255, 0.7);
+    --progress-bg-green: rgba(16, 185, 129, 0.8);
+    --spinner-color-green: rgba(16, 185, 129, 0.8);
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-glass-dark {
@@ -312,6 +472,22 @@
     --border: rgba(55, 65, 81, 0.6);
     --color-accent: rgba(251, 146, 60, 0.8);
     --accent: rgba(251, 146, 60, 0.8);
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #94a3b8;
+    --text-inverse: rgba(15, 23, 42, 0.7);
+    --card-bg: rgba(17, 24, 39, 0.55);
+    --sidebar-bg: rgba(17, 24, 39, 0.55);
+    --modal-bg: rgba(17, 24, 39, 0.55);
+    --tooltip-bg: #e2e8f0;
+    --tooltip-text: rgba(15, 23, 42, 0.7);
+    --divider: rgba(55, 65, 81, 0.6);
+    --focus-ring: rgba(96, 165, 250, 0.8);
+    --selection-bg: rgba(96, 165, 250, 0.8);
+    --badge-bg-primary: rgba(96, 165, 250, 0.8);
+    --badge-text-primary: rgba(15, 23, 42, 0.7);
+    --progress-bg-green: rgba(52, 211, 153, 0.8);
+    --spinner-color-green: rgba(52, 211, 153, 0.8);
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-light {
@@ -339,6 +515,22 @@
     --border: #e5e7eb;
     --color-accent: #f59e42;
     --accent: #f59e42;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #6b7280;
+    --text-inverse: #ffffff;
+    --card-bg: #f9fafb;
+    --sidebar-bg: #f9fafb;
+    --modal-bg: #f9fafb;
+    --tooltip-bg: #111827;
+    --tooltip-text: #ffffff;
+    --divider: #e5e7eb;
+    --focus-ring: #3b82f6;
+    --selection-bg: #3b82f6;
+    --badge-bg-primary: #3b82f6;
+    --badge-text-primary: #ffffff;
+    --progress-bg-green: #10b981;
+    --spinner-color-green: #10b981;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-minimal {
@@ -366,6 +558,22 @@
     --border: #e5e7eb;
     --color-accent: #000000;
     --accent: #000000;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #6b7280;
+    --text-inverse: #ffffff;
+    --card-bg: #f9fafb;
+    --sidebar-bg: #f9fafb;
+    --modal-bg: #f9fafb;
+    --tooltip-bg: #000000;
+    --tooltip-text: #ffffff;
+    --divider: #e5e7eb;
+    --focus-ring: #000000;
+    --selection-bg: #000000;
+    --badge-bg-primary: #000000;
+    --badge-text-primary: #ffffff;
+    --progress-bg-green: #000000;
+    --spinner-color-green: #000000;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-modern {
@@ -393,6 +601,22 @@
     --border: #e2e8f0;
     --color-accent: #a855f7;
     --accent: #a855f7;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #475569;
+    --text-inverse: #ffffff;
+    --card-bg: #f8fafc;
+    --sidebar-bg: #f8fafc;
+    --modal-bg: #f8fafc;
+    --tooltip-bg: #0f172a;
+    --tooltip-text: #ffffff;
+    --divider: #e2e8f0;
+    --focus-ring: #8b5cf6;
+    --selection-bg: #8b5cf6;
+    --badge-bg-primary: #8b5cf6;
+    --badge-text-primary: #ffffff;
+    --progress-bg-green: #10b981;
+    --spinner-color-green: #10b981;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-monokai {
@@ -420,6 +644,22 @@
     --border: #75715e;
     --color-accent: #ae81ff;
     --accent: #ae81ff;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #b3ae99;
+    --text-inverse: #272822;
+    --card-bg: #3e3d32;
+    --sidebar-bg: #3e3d32;
+    --modal-bg: #3e3d32;
+    --tooltip-bg: #f8f8f2;
+    --tooltip-text: #272822;
+    --divider: #75715e;
+    --focus-ring: #f92672;
+    --selection-bg: #f92672;
+    --badge-bg-primary: #f92672;
+    --badge-text-primary: #272822;
+    --progress-bg-green: #a6e22e;
+    --spinner-color-green: #a6e22e;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-neon {
@@ -447,6 +687,22 @@
     --border: #333333;
     --color-accent: #ff6600;
     --accent: #ff6600;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #cccccc;
+    --text-inverse: #000000;
+    --card-bg: #1a1a1a;
+    --sidebar-bg: #1a1a1a;
+    --modal-bg: #1a1a1a;
+    --tooltip-bg: #ffffff;
+    --tooltip-text: #000000;
+    --divider: #333333;
+    --focus-ring: #00ff88;
+    --selection-bg: #00ff88;
+    --badge-bg-primary: #00ff88;
+    --badge-text-primary: #000000;
+    --progress-bg-green: #00ff00;
+    --spinner-color-green: #00ff00;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-ocean {
@@ -474,6 +730,22 @@
     --border: #bae6fd;
     --color-accent: #0284c7;
     --accent: #0284c7;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #0f766e;
+    --text-inverse: #f0f9ff;
+    --card-bg: #e0f2fe;
+    --sidebar-bg: #e0f2fe;
+    --modal-bg: #e0f2fe;
+    --tooltip-bg: #0c4a6e;
+    --tooltip-text: #f0f9ff;
+    --divider: #bae6fd;
+    --focus-ring: #0ea5e9;
+    --selection-bg: #0ea5e9;
+    --badge-bg-primary: #0ea5e9;
+    --badge-text-primary: #f0f9ff;
+    --progress-bg-green: #10b981;
+    --spinner-color-green: #10b981;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-ocean-dark {
@@ -501,6 +773,22 @@
     --border: #1f2a44;
     --color-accent: #22d3ee;
     --accent: #22d3ee;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #94a3b8;
+    --text-inverse: #0b1020;
+    --card-bg: #0f172a;
+    --sidebar-bg: #0f172a;
+    --modal-bg: #0f172a;
+    --tooltip-bg: #e2e8f0;
+    --tooltip-text: #0b1020;
+    --divider: #1f2a44;
+    --focus-ring: #38bdf8;
+    --selection-bg: #38bdf8;
+    --badge-bg-primary: #38bdf8;
+    --badge-text-primary: #0b1020;
+    --progress-bg-green: #34d399;
+    --spinner-color-green: #34d399;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-oldschool {
@@ -528,6 +816,22 @@
     --border: #dddddd;
     --color-accent: #0984e3;
     --accent: #0984e3;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #636e72;
+    --text-inverse: #ffffff;
+    --card-bg: #f8f9fa;
+    --sidebar-bg: #f8f9fa;
+    --modal-bg: #f8f9fa;
+    --tooltip-bg: #2d3436;
+    --tooltip-text: #ffffff;
+    --divider: #dddddd;
+    --focus-ring: #2d3436;
+    --selection-bg: #2d3436;
+    --badge-bg-primary: #2d3436;
+    --badge-text-primary: #ffffff;
+    --progress-bg-green: #00b894;
+    --spinner-color-green: #00b894;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-oldschool-dark {
@@ -555,6 +859,22 @@
     --border: #333333;
     --color-accent: #74b9ff;
     --accent: #74b9ff;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #bdc3c7;
+    --text-inverse: #1a1a1a;
+    --card-bg: #222222;
+    --sidebar-bg: #222222;
+    --modal-bg: #222222;
+    --tooltip-bg: #ecf0f1;
+    --tooltip-text: #1a1a1a;
+    --divider: #333333;
+    --focus-ring: #dfe6e9;
+    --selection-bg: #dfe6e9;
+    --badge-bg-primary: #dfe6e9;
+    --badge-text-primary: #1a1a1a;
+    --progress-bg-green: #55efc4;
+    --spinner-color-green: #55efc4;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-pastel {
@@ -582,6 +902,22 @@
     --border: #ddd;
     --color-accent: #ffcccb;
     --accent: #ffcccb;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #636e72;
+    --text-inverse: #ffffff;
+    --card-bg: #f8f9fa;
+    --sidebar-bg: #f8f9fa;
+    --modal-bg: #f8f9fa;
+    --tooltip-bg: #2d3436;
+    --tooltip-text: #ffffff;
+    --divider: #ddd;
+    --focus-ring: #ffb3ba;
+    --selection-bg: #ffb3ba;
+    --badge-bg-primary: #ffb3ba;
+    --badge-text-primary: #ffffff;
+    --progress-bg-green: #bae1ff;
+    --spinner-color-green: #bae1ff;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-pro {
@@ -609,6 +945,22 @@
     --border: #e2e8f0;
     --color-accent: #f97316;
     --accent: #f97316;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #475569;
+    --text-inverse: #ffffff;
+    --card-bg: #f8fafc;
+    --sidebar-bg: #f8fafc;
+    --modal-bg: #f8fafc;
+    --tooltip-bg: #0f172a;
+    --tooltip-text: #ffffff;
+    --divider: #e2e8f0;
+    --focus-ring: #6366f1;
+    --selection-bg: #6366f1;
+    --badge-bg-primary: #6366f1;
+    --badge-text-primary: #ffffff;
+    --progress-bg-green: #059669;
+    --spinner-color-green: #059669;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-retro {
@@ -636,6 +988,22 @@
     --border: #ddd;
     --color-accent: #ffa502;
     --accent: #ffa502;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #4f585b;
+    --text-inverse: #f7f1e3;
+    --card-bg: #e8d5c4;
+    --sidebar-bg: #e8d5c4;
+    --modal-bg: #e8d5c4;
+    --tooltip-bg: #2d3436;
+    --tooltip-text: #f7f1e3;
+    --divider: #ddd;
+    --focus-ring: #ff6b35;
+    --selection-bg: #ff6b35;
+    --badge-bg-primary: #ff6b35;
+    --badge-text-primary: #f7f1e3;
+    --progress-bg-green: #4ecdc4;
+    --spinner-color-green: #4ecdc4;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-retro80s {
@@ -663,6 +1031,22 @@
     --border: #333333;
     --color-accent: #ff6600;
     --accent: #ff6600;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #cccccc;
+    --text-inverse: #000000;
+    --card-bg: #1a1a1a;
+    --sidebar-bg: #1a1a1a;
+    --modal-bg: #1a1a1a;
+    --tooltip-bg: #ffffff;
+    --tooltip-text: #000000;
+    --divider: #333333;
+    --focus-ring: #ff0080;
+    --selection-bg: #ff0080;
+    --badge-bg-primary: #ff0080;
+    --badge-text-primary: #000000;
+    --progress-bg-green: #00ff00;
+    --spinner-color-green: #00ff00;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-sakura {
@@ -690,6 +1074,22 @@
     --border: #fbcfe8;
     --color-accent: #db2777;
     --accent: #db2777;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #be185d;
+    --text-inverse: #fdf2f8;
+    --card-bg: #fce7f3;
+    --sidebar-bg: #fce7f3;
+    --modal-bg: #fce7f3;
+    --tooltip-bg: #831843;
+    --tooltip-text: #fdf2f8;
+    --divider: #fbcfe8;
+    --focus-ring: #ec4899;
+    --selection-bg: #ec4899;
+    --badge-bg-primary: #ec4899;
+    --badge-text-primary: #fdf2f8;
+    --progress-bg-green: #10b981;
+    --spinner-color-green: #10b981;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-sea {
@@ -717,6 +1117,22 @@
     --border: #bae6fd;
     --color-accent: #0284c7;
     --accent: #0284c7;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #0f766e;
+    --text-inverse: #f0f9ff;
+    --card-bg: #e0f2fe;
+    --sidebar-bg: #e0f2fe;
+    --modal-bg: #e0f2fe;
+    --tooltip-bg: #0c4a6e;
+    --tooltip-text: #f0f9ff;
+    --divider: #bae6fd;
+    --focus-ring: #0ea5e9;
+    --selection-bg: #0ea5e9;
+    --badge-bg-primary: #0ea5e9;
+    --badge-text-primary: #f0f9ff;
+    --progress-bg-green: #10b981;
+    --spinner-color-green: #10b981;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-solarized-dark {
@@ -744,6 +1160,22 @@
     --border: #586e75;
     --color-accent: #cb4b16;
     --accent: #cb4b16;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #93a1a1;
+    --text-inverse: #002b36;
+    --card-bg: #073642;
+    --sidebar-bg: #073642;
+    --modal-bg: #073642;
+    --tooltip-bg: #839496;
+    --tooltip-text: #002b36;
+    --divider: #586e75;
+    --focus-ring: #268bd2;
+    --selection-bg: #268bd2;
+    --badge-bg-primary: #268bd2;
+    --badge-text-primary: #002b36;
+    --progress-bg-green: #859900;
+    --spinner-color-green: #859900;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-solarized-light {
@@ -771,6 +1203,22 @@
     --border: #93a1a1;
     --color-accent: #cb4b16;
     --accent: #cb4b16;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #657b83;
+    --text-inverse: #fdf6e3;
+    --card-bg: #eee8d5;
+    --sidebar-bg: #eee8d5;
+    --modal-bg: #eee8d5;
+    --tooltip-bg: #586e75;
+    --tooltip-text: #fdf6e3;
+    --divider: #93a1a1;
+    --focus-ring: #268bd2;
+    --selection-bg: #268bd2;
+    --badge-bg-primary: #268bd2;
+    --badge-text-primary: #fdf6e3;
+    --progress-bg-green: #859900;
+    --spinner-color-green: #859900;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-space {
@@ -798,6 +1246,22 @@
     --border: #334155;
     --color-accent: #a855f7;
     --accent: #a855f7;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #cbd5e1;
+    --text-inverse: #0f172a;
+    --card-bg: #1e293b;
+    --sidebar-bg: #1e293b;
+    --modal-bg: #1e293b;
+    --tooltip-bg: #f1f5f9;
+    --tooltip-text: #0f172a;
+    --divider: #334155;
+    --focus-ring: #6366f1;
+    --selection-bg: #6366f1;
+    --badge-bg-primary: #6366f1;
+    --badge-text-primary: #0f172a;
+    --progress-bg-green: #10b981;
+    --spinner-color-green: #10b981;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-summer {
@@ -825,6 +1289,22 @@
     --border: #fed7aa;
     --color-accent: #d97706;
     --accent: #d97706;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #b45309;
+    --text-inverse: #fffbeb;
+    --card-bg: #fef3c7;
+    --sidebar-bg: #fef3c7;
+    --modal-bg: #fef3c7;
+    --tooltip-bg: #92400e;
+    --tooltip-text: #fffbeb;
+    --divider: #fed7aa;
+    --focus-ring: #f59e0b;
+    --selection-bg: #f59e0b;
+    --badge-bg-primary: #f59e0b;
+    --badge-text-primary: #fffbeb;
+    --progress-bg-green: #10b981;
+    --spinner-color-green: #10b981;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-summer-dark {
@@ -852,6 +1332,22 @@
     --border: #3b2f12;
     --color-accent: #f59e0b;
     --accent: #f59e0b;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #fcd34d;
+    --text-inverse: #181204;
+    --card-bg: #1f1403;
+    --sidebar-bg: #1f1403;
+    --modal-bg: #1f1403;
+    --tooltip-bg: #fde68a;
+    --tooltip-text: #181204;
+    --divider: #3b2f12;
+    --focus-ring: #fbbf24;
+    --selection-bg: #fbbf24;
+    --badge-bg-primary: #fbbf24;
+    --badge-text-primary: #181204;
+    --progress-bg-green: #34d399;
+    --spinner-color-green: #34d399;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-sunset {
@@ -879,6 +1375,22 @@
     --border: #fdba74;
     --color-accent: #ea580c;
     --accent: #ea580c;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #9a3412;
+    --text-inverse: #fff7ed;
+    --card-bg: #fed7aa;
+    --sidebar-bg: #fed7aa;
+    --modal-bg: #fed7aa;
+    --tooltip-bg: #7c2d12;
+    --tooltip-text: #fff7ed;
+    --divider: #fdba74;
+    --focus-ring: #f97316;
+    --selection-bg: #f97316;
+    --badge-bg-primary: #f97316;
+    --badge-text-primary: #fff7ed;
+    --progress-bg-green: #10b981;
+    --spinner-color-green: #10b981;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-vintage {
@@ -906,6 +1418,22 @@
     --border: #deb887;
     --color-accent: #d2691e;
     --accent: #d2691e;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #654321;
+    --text-inverse: #f5f5dc;
+    --card-bg: #faf0e6;
+    --sidebar-bg: #faf0e6;
+    --modal-bg: #faf0e6;
+    --tooltip-bg: #2f1b14;
+    --tooltip-text: #f5f5dc;
+    --divider: #deb887;
+    --focus-ring: #8b4513;
+    --selection-bg: #8b4513;
+    --badge-bg-primary: #8b4513;
+    --badge-text-primary: #f5f5dc;
+    --progress-bg-green: #228b22;
+    --spinner-color-green: #228b22;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-winter {
@@ -933,6 +1461,22 @@
     --border: #e2e8f0;
     --color-accent: #2563eb;
     --accent: #2563eb;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #475569;
+    --text-inverse: #f8fafc;
+    --card-bg: #f1f5f9;
+    --sidebar-bg: #f1f5f9;
+    --modal-bg: #f1f5f9;
+    --tooltip-bg: #0f172a;
+    --tooltip-text: #f8fafc;
+    --divider: #e2e8f0;
+    --focus-ring: #60a5fa;
+    --selection-bg: #60a5fa;
+    --badge-bg-primary: #60a5fa;
+    --badge-text-primary: #f8fafc;
+    --progress-bg-green: #22c55e;
+    --spinner-color-green: #22c55e;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 .theme-winter-dark {
@@ -960,6 +1504,22 @@
     --border: #1f2a44;
     --color-accent: #a5b4fc;
     --accent: #a5b4fc;
+    /* Roles derives, consommes par app.css. */
+    --text-muted: #94a3b8;
+    --text-inverse: #0b1220;
+    --card-bg: #0f172a;
+    --sidebar-bg: #0f172a;
+    --modal-bg: #0f172a;
+    --tooltip-bg: #e2e8f0;
+    --tooltip-text: #0b1220;
+    --divider: #1f2a44;
+    --focus-ring: #93c5fd;
+    --selection-bg: #93c5fd;
+    --badge-bg-primary: #93c5fd;
+    --badge-text-primary: #0b1220;
+    --progress-bg-green: #34d399;
+    --spinner-color-green: #34d399;
+    --shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 /* ========================================================================= */

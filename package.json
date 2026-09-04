@@ -20,8 +20,7 @@
         "laravel-vite-plugin": "^3.0.0",
         "prettier": "^3.9.6",
         "tailwindcss": "^4.2.0",
-        "vite": "^8.0.0",
-        "vite-plugin-static-copy": "^4.0.0"
+        "vite": "^8.0.0"
     },
     "dependencies": {
         "@alpinejs/collapse": "^3.17.1",
