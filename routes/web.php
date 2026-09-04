@@ -30,9 +30,13 @@ Route::middleware(['theme'])->group(function () {
     })->name('examples');
 });
 
-// Endpoints API pour le système de thème
-Route::post('/theme/set', [ThemeController::class, 'setTheme'])->name('theme.set');
-Route::get('/theme/get', [ThemeController::class, 'getTheme'])->name('theme.get');
+// Endpoints API pour le système de thème.
+// Le middleware 'theme' garantit qu'une valeur est presente en session avant
+// que le controleur ne la lise ou ne l'ecrive.
+Route::middleware(['theme'])->group(function () {
+    Route::post('/theme/set', [ThemeController::class, 'setTheme'])->name('theme.set');
+    Route::get('/theme/get', [ThemeController::class, 'getTheme'])->name('theme.get');
+});
 
 // Endpoints nécessaires aux démos fonctionnelles
 Route::post('/contact', [ContactController::class, 'store'])
