@@ -11,52 +11,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{--
+        Catalogue de themes injecte AVANT le bundle. themes-manager.js le lit a
+        l'evaluation du module et Alpine evalue ses expressions dans la foulee :
+        plus de course avec l'ancien `window.ThemeManager`, qui n'etait affecte
+        qu'apres un await et laissait le selecteur sur trois entrees.
+    --}}
+    @php
+        $themeCatalog = [
+            'themes' => config('themes.palettes'),
+            'aliases' => config('themes.aliases'),
+            'darkOf' => config('themes.dark_of'),
+            'selectable' => config('themes.selectable'),
+            'default' => config('themes.default'),
+            'current' => session('theme', config('themes.default')),
+        ];
+    @endphp
+    <script nonce="{{ request()->attributes->get('csp_nonce') }}">
+        window.LarappeUI = @json($themeCatalog);
+    </script>
 
-    <!-- Thèmes CSS (compilé) -->
-    <link rel="stylesheet" href="{{ asset('css/themes.css') }}">
+    @vite(['resources/css/app.css', 'resources/css/themes.css', 'resources/js/app.js'])
 
     <!-- Prism.js pour la coloration syntaxique -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script nonce="{{ request()->attributes->get('csp_nonce') }}" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script nonce="{{ request()->attributes->get('csp_nonce') }}" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
 
     @stack('styles')
 </head>
-<body class="h-full theme-{{ session('theme', 'light') }}" x-data="{
-    sidebarOpen: false,
-    currentTheme: (localStorage.getItem('theme') || 'pro').replace(/-dark$/,'').replace(/-light$/,''),
-    isDark: (localStorage.getItem('theme') || '').endsWith('-dark'),
-    get themeOptions(){
-        const list = window.ThemeManager ? window.ThemeManager.getAllThemes() : ['pro','dark','light'];
-        const bases = [...new Set(list.map(k => k.replace(/-dark$/,'').replace(/-light$/,'')))];
-        return bases;
-    },
-    applyCurrent(){
-        const name = this.isDark ? `${this.currentTheme}-dark` : this.currentTheme;
-        localStorage.setItem('theme', name);
-        localStorage.setItem('themeMode', this.isDark ? 'dark' : 'light');
-        if (window.ThemeManager) { window.ThemeManager.applyTheme(name); }
-    }
-}" x-init="
-    this.applyCurrent();
-    document.addEventListener('themeChanged', (event) => {
-        const t = (event.detail && event.detail.theme) || '';
-        const d = typeof Alpine !== 'undefined' ? Alpine.$data(document.body) : null;
-        if (d) {
-            d.currentTheme = t.replace(/-dark$/,'').replace(/-light$/,'');
-            d.isDark = /-dark$/.test(t);
-        }
-    });
-    const sync = () => {
-        if (!window.ThemeManager) return;
-        const d = typeof Alpine !== 'undefined' ? Alpine.$data(document.body) : null;
-        if (!d) return;
-        document.querySelectorAll('[data-theme-selector]').forEach(s => { s.value = d.currentTheme; });
-    };
-    document.addEventListener('DOMContentLoaded', sync);
-    setTimeout(sync, 0);
-">
+<body class="h-full theme-{{ session('theme', 'light') }}" x-data="themeShell" x-init="listen()">
     <a href="#main-content" class="skip-to-content">Aller au contenu</a>
     <!-- Sidebar -->
     <div class="fixed inset-y-0 left-0 z-50 flex flex-col w-64 border-r border-[var(--color-border)] bg-[var(--color-surface)] shadow-lg transition-transform duration-300 transform text-[var(--color-text)]"
@@ -89,10 +73,11 @@
                         <option :value="key" x-text="key.charAt(0).toUpperCase() + key.slice(1)"></option>
                     </template>
                 </select>
-                <div class="flex flex-shrink-0 items-center gap-2">
+                <div class="flex flex-shrink-0 items-center gap-2" :class="hasDark ? '' : 'opacity-40'"
+                     :title="hasDark ? '' : 'Ce thème n\'a pas de variante sombre'">
                     <span class="text-xs text-[var(--color-textSecondary)]">Light</span>
-                    <label class="relative inline-flex items-center cursor-pointer">
-                        <input type="checkbox" class="sr-only peer" x-model="isDark" @change="applyCurrent()" :aria-label="isDark ? 'Mode sombre activé' : 'Activer le mode sombre'">
+                    <label class="relative inline-flex items-center" :class="hasDark ? 'cursor-pointer' : 'cursor-not-allowed'">
+                        <input type="checkbox" class="sr-only peer" x-model="isDark" @change="applyCurrent()" :disabled="!hasDark" :aria-label="isDark ? 'Mode sombre activé' : 'Activer le mode sombre'">
                         <div class="w-10 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:bg-gray-700 transition-all"></div>
                         <div class="absolute left-0.5 top-0.5 w-4 h-4 bg-white rounded-full transition-all peer-checked:translate-x-5"></div>
                     </label>

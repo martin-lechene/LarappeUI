@@ -108,11 +108,10 @@ ThemeManager.applyTheme("forest-night");
 -   ✅ **Responsive** design
 -   ✅ **Documentation** complète
 
-## 📖 Pages de Test
+## 📖 Pages de démonstration
 
--   **Showcase** : `/themes-showcase` - Aperçu de tous les thèmes
--   **Test** : `/test-themes` - Tests individuels des thèmes
--   **Gestionnaire** : `/themes-manager` - Interface de gestion
+-   **Composants** : `/components` — galerie des composants, sélecteur de thème dans la sidebar
+-   **Exemples** : `/examples` — mises en page complètes
 
 ## 🤝 Contribution
 

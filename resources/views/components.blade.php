@@ -11,29 +11,47 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div class="lg:col-span-2 space-y-6">
             <template x-for="block in componentBlocks" :key="block.key">
-                <div
+                {{--
+                    Carte non interactive : c'est une section, pas un controle.
+                    L'ancien role="article" etait pose sur un <div @click>, un
+                    role non interactif sur une cible cliquable, sans tabindex ni
+                    activation clavier. La selection du bloc passe desormais par
+                    les onglets, qui sont de vrais boutons focusables, et par
+                    l'IntersectionObserver au defilement.
+                --}}
+                <section
                     class="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm transition-shadow scroll-mt-24"
                     :class="{ 'ring-2 ring-primary ring-offset-2 ring-offset-[var(--color-background)]': activeKey === block.key }"
                     :data-component-block="block.key"
-                    @click="activeKey = block.key"
-                    role="article"
-                    :aria-label="block.title"
+                    :aria-labelledby="'titre-' + block.key"
                 >
                     <div class="flex items-center justify-between px-4 py-3 border-b border-[var(--color-border)]">
                         <div>
                             <div class="text-sm uppercase tracking-wide text-gray-400" x-text="block.category"></div>
-                            <div class="font-semibold text-lg" x-text="block.title"></div>
+                            <div class="font-semibold text-lg" :id="'titre-' + block.key" x-text="block.title"></div>
                         </div>
-                        <div class="flex items-center gap-3 text-sm">
-                            <button type="button" @click.stop="block.activeTab = 'preview'" :class="block.activeTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
-                            <span class="text-[var(--color-border)]" aria-hidden="true">|</span>
-                            <button type="button" @click.stop="block.activeTab = 'variants'" :class="block.activeTab === 'variants' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Variantes</button>
-                            <span class="text-[var(--color-border)]" aria-hidden="true">|</span>
-                            <button type="button" @click.stop="block.activeTab = 'code'" :class="block.activeTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
+                        <div class="flex items-center gap-3 text-sm" role="tablist" :aria-label="'Vues de ' + block.title"
+                             @keydown.arrow-right.prevent="$focus.next()" @keydown.arrow-left.prevent="$focus.previous()">
+                            {{-- Les boutons doivent etre enfants directs du tablist :
+                                 un element intermediaire romprait la relation ARIA.
+                                 Les anciens separateurs « | » sont donc remplaces par
+                                 l'espacement du conteneur. --}}
+                            <template x-for="vue in [{ cle: 'preview', libelle: 'Aperçu' }, { cle: 'variants', libelle: 'Variantes' }, { cle: 'code', libelle: 'Code' }]" :key="vue.cle">
+                                <button type="button"
+                                        role="tab"
+                                        :id="'onglet-' + block.key + '-' + vue.cle"
+                                        :aria-controls="'panneau-' + block.key + '-' + vue.cle"
+                                        :aria-selected="block.activeTab === vue.cle"
+                                        :tabindex="block.activeTab === vue.cle ? 0 : -1"
+                                        @click="block.activeTab = vue.cle; activeKey = block.key"
+                                        :class="block.activeTab === vue.cle ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'"
+                                        class="px-1 rounded focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                                        x-text="vue.libelle"></button>
+                            </template>
                         </div>
                     </div>
                     <div class="p-5">
-                        <div x-show="block.activeTab === 'preview'" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div x-show="block.activeTab === 'preview'" role="tabpanel" :id="'panneau-' + block.key + '-preview'" :aria-labelledby="'onglet-' + block.key + '-preview'" tabindex="0" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <template x-if="block.key === 'button'"><div class="flex gap-3 flex-wrap items-center">
                                 <x-button>Primary</x-button>
                                 <x-button color="secondary">Secondary</x-button>
@@ -63,6 +81,8 @@
                                     <template x-if="block.key === 'form-autocomplete'"><div><x-form.autocomplete :options="['Paris','Lyon','Lille']" /></div></template>
                                     <template x-if="block.key === 'form-combobox'"><div><x-form.combobox :options="['Vue','React','Alpine']" /></div></template>
                                     <template x-if="block.key === 'form-mentions'"><div><x-form.mentions :options="['@john','@jane','@jack']" /></div></template>
+                                    <template x-if="block.key === 'form-form'"><div><x-form.form layout="vertical"><x-form.input label="Nom" placeholder="John Doe" /><x-form.input label="E-mail" type="email" placeholder="john@exemple.fr" /></x-form.form></div></template>
+                                    <template x-if="block.key === 'form-formcontrol'"><div><x-form.formcontrol label="Nom d'utilisateur" help="Trois caractères minimum." required><x-input placeholder="johndoe" /></x-form.formcontrol></div></template>
                                 </div>
                             </template>
                             <template x-if="block.key.startsWith('data-')">
@@ -165,7 +185,7 @@
                              <template x-if="block.key === 'extra-map-markers'"><div><x-extra.map-markers :markers="[['lat'=>48.85,'lng'=>2.35,'label'=>'Paris']]" /></div></template>
                         </div>
 
-                        <div x-show="block.activeTab === 'variants'" class="space-y-3">
+                        <div x-show="block.activeTab === 'variants'" role="tabpanel" :id="'panneau-' + block.key + '-variants'" :aria-labelledby="'onglet-' + block.key + '-variants'" tabindex="0" class="space-y-3">
                             <h3>États</h3>
                             <div class="flex flex-wrap items-center gap-3">
                                 <template x-if="block.key === 'button'">
@@ -193,11 +213,11 @@
                             </div>
                         </div>
 
-                        <div x-show="block.activeTab === 'code'">
+                        <div x-show="block.activeTab === 'code'" role="tabpanel" :id="'panneau-' + block.key + '-code'" :aria-labelledby="'onglet-' + block.key + '-code'" tabindex="0">
 <pre class="language-html"><code x-text="block.code"></code></pre>
                         </div>
                     </div>
-                </div>
+                </section>
             </template>
         </div>
 
@@ -241,8 +261,19 @@
     </div>
 </div>
 
+{{--
+    Le bloc ci-dessous est volontairement non compile par Blade.
+    Blade compile les balises de composants meme a l'interieur d'un <script nonce="{{ request()->attributes->get('csp_nonce') }}"> :
+    sans cette protection, les 86 entrees `code:` voient leur balise remplacee
+    par le HTML rendu du composant, et le rendu de x-extra.data-table contient
+    un backtick qui ferme le template literal, ce qui casse tout le script.
+    Ne pas ecrire le nom de la directive dans un commentaire Blade : il serait
+    interprete comme la vraie directive (storeVerbatimBlocks passe avant
+    compileComments).
+--}}
 @push('scripts')
-<script>
+<script nonce="{{ request()->attributes->get('csp_nonce') }}">
+@verbatim
 function componentsPage() {
     const params = {
         button: [{ title: 'Props', items: [
@@ -307,6 +338,19 @@ function componentsPage() {
         ]}],
         'form-mentions': [{ title: 'Props', items: [
             { name: 'options', type: 'array', desc: 'Handles ou utilisateurs' },
+        ]}],
+        'form-form': [{ title: 'Props', items: [
+            { name: 'layout', type: 'string', desc: 'vertical | horizontal | inline' },
+            { name: 'columns', type: 'number', desc: 'Nombre de colonnes' },
+            { name: 'size', type: 'string', desc: 'sm | md | lg' },
+            { name: 'disabled', type: 'bool', desc: 'Désactive tous les champs' },
+        ]}],
+        'form-formcontrol': [{ title: 'Props', items: [
+            { name: 'label', type: 'string', desc: 'Libellé du champ' },
+            { name: 'help', type: 'string', desc: 'Texte d’aide' },
+            { name: 'error', type: 'string', desc: 'Message d’erreur' },
+            { name: 'required', type: 'bool', desc: 'Marque le champ obligatoire' },
+            { name: 'for', type: 'string', desc: 'id du champ associé' },
         ]}],
         'data-statistic': [{ title: 'Props', items: [
             { name: 'title', type: 'string', desc: 'Intitulé' },
@@ -594,6 +638,8 @@ function componentsPage() {
             { key: 'form-autocomplete', category: 'Form', title: 'Form: Autocomplete', activeTab: 'preview', code: `<x-form.autocomplete :options="['Paris','Lyon','Lille']" />` },
             { key: 'form-combobox', category: 'Form', title: 'Form: Combobox', activeTab: 'preview', code: `<x-form.combobox :options="['Vue','React','Alpine']" />` },
             { key: 'form-mentions', category: 'Form', title: 'Form: Mentions', activeTab: 'preview', code: `<x-form.mentions :options="['@john','@jane','@jack']" />` },
+            { key: 'form-form', category: 'Form', title: 'Form: Form', activeTab: 'preview', code: `<x-form.form layout="vertical">\n  <x-form.input label="Nom" placeholder="John Doe" />\n  <x-form.input label="E-mail" type="email" placeholder="john@exemple.fr" />\n</x-form.form>` },
+            { key: 'form-formcontrol', category: 'Form', title: 'Form: FormControl', activeTab: 'preview', code: `<x-form.formcontrol label="Nom d'utilisateur" help="Trois caractères minimum." required>\n  <x-input placeholder="johndoe" />\n</x-form.formcontrol>` },
             { key: 'data-pagination', category: 'Data', title: 'Data: Pagination', activeTab: 'preview', code: `<x-data.pagination :total="200" :pageSize="10" :currentPage="3" />` },
             { key: 'data-statistic', category: 'Data', title: 'Data: Statistic', activeTab: 'preview', code: `<x-data.statistic title="CA" value="3490" suffix="€" />` },
             { key: 'data-stepper', category: 'Data', title: 'Data: Stepper', activeTab: 'preview', code: `<x-data.stepper :steps="[['label'=>'Étape 1'],['label'=>'Étape 2'],['label'=>'Étape 3']]" :current="2" />` },
@@ -669,6 +715,7 @@ function componentsPage() {
         },
     };
 }
+@endverbatim
 </script>
 @endpush
 @endsection

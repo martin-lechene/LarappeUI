@@ -26,11 +26,12 @@
   </div>
   <div class="overflow-x-auto border rounded-lg">
     <table class="min-w-full divide-y divide-gray-200">
+      <caption class="sr-only">Tableau de données avancé</caption>
       <thead class="bg-surface">
         <tr>
-          <th class="px-3 py-2 w-10"><input type="checkbox" @change="toggleAll($event)" :checked="isAllChecked"></th>
+          <th class="px-3 py-2 w-10"><input type="checkbox" aria-label="Tout sélectionner" @change="toggleAll($event)" :checked="isAllChecked"></th>
           <template x-for="col in columns" :key="col.key">
-            <th class="px-4 py-2 text-left text-sm font-semibold cursor-pointer select-none" @click="sortBy(col.key)">
+            <th class="px-4 py-2 text-left text-sm font-semibold cursor-pointer select-none" scope="col" :aria-sort="sort === col.key ? (dir === 1 ? 'ascending' : 'descending') : 'none'" @click="sortBy(col.key)">
               <span x-text="col.label"></span>
               <span x-show="sort.key===col.key" class="ml-1 text-gray-400" x-text="sort.dir==='asc' ? '▲' : '▼'"></span>
             </th>
@@ -57,13 +58,13 @@
       <span x-text="pages"></span>
     </div>
     <div class="flex items-center gap-2">
-      <button class="px-2 py-1 border rounded" @click="prev" :disabled="page<=1">Préc.</button>
-      <button class="px-2 py-1 border rounded" @click="next" :disabled="page>=pages">Suiv.</button>
+      <button type="button" aria-label="Page précédente" class="px-2 py-1 border rounded" @click="prev" :disabled="page<=1">Préc.</button>
+      <button type="button" aria-label="Page suivante" class="px-2 py-1 border rounded" @click="next" :disabled="page>=pages">Suiv.</button>
     </div>
   </div>
 </div>
 
-<script>
+<script nonce="{{ request()->attributes->get('csp_nonce') }}">
 function dataTablePro({ columns, rows }){
   return {
     allColumns: columns,

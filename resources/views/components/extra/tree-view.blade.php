@@ -5,7 +5,13 @@
 <ul class="text-sm">
   @foreach($items as $item)
     <li x-data="{ open:false }" class="mb-1">
-      <button class="mr-1 text-gray-600" @click="open=!open" x-show="isset($item['children'])">▸</button>
+      @if(isset($item['children']))
+        <button type="button"
+                class="mr-1 text-gray-600"
+                @click="open=!open"
+                :aria-expanded="open ? 'true' : 'false'"
+                aria-label="Déplier {{ $item['label'] }}">▸</button>
+      @endif
       <span>{{ $item['label'] }}</span>
       @if(isset($item['children']))
         <ul x-show="open" class="ml-5 mt-1">

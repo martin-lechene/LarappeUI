@@ -2,61 +2,83 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
 class ThemeController extends Controller
 {
     /**
-     * Changer le thème et le sauvegarder en session
+     * Changer le thème et le sauvegarder en session.
      */
-    public function setTheme(Request $request)
+    public function setTheme(Request $request): JsonResponse
     {
-        $theme = $request->input('theme', 'light');
+        $theme = $this->resolve($request->input('theme'));
 
-        // Valider le thème
-        // Récupérer dynamiquement les thèmes disponibles depuis le fichier CSS compilé
-        $themeCssPath = public_path('css/themes.css');
-        $validThemes = [];
-
-        if (file_exists($themeCssPath)) {
-            $cssContent = file_get_contents($themeCssPath);
-            // Cherche les classes .theme-xxxx { ... }
-            preg_match_all('/\.theme-([a-zA-Z0-9_-]+)\s*\{/', $cssContent, $matches);
-            if (! empty($matches[1])) {
-                $validThemes = $matches[1];
-            }
-        }
-
-        // Fallback si aucun thème trouvé
-        if (empty($validThemes)) {
-            $validThemes = ['light'];
-        }
-
-        if (! in_array($theme, $validThemes)) {
-            $theme = 'light';
-        }
-
-        // Sauvegarder en session
         Session::put('theme', $theme);
 
         return response()->json([
             'success' => true,
             'theme' => $theme,
             'message' => 'Thème mis à jour avec succès',
-            'validThemes' => $validThemes,
+            'validThemes' => $this->validThemes(),
         ]);
     }
 
     /**
-     * Obtenir le thème actuel
+     * Obtenir le thème actuel.
      */
-    public function getTheme()
+    public function getTheme(): JsonResponse
     {
-        $theme = Session::get('theme', 'light');
-
         return response()->json([
-            'theme' => $theme,
+            'theme' => Session::get('theme', $this->defaultTheme()),
         ]);
+    }
+
+    /**
+     * Normaliser un nom de thème vers une palette existante.
+     *
+     * Le catalogue vit dans config/themes.php. La version precedente extrayait
+     * la liste par regex depuis public/css/themes.css : elle ratait les
+     * selecteurs groupes, ce qui faisait rejeter a tort les six alias
+     * `*-light`, et elle acceptait des themes sans definition cote client.
+     */
+    private function resolve(mixed $theme): string
+    {
+        if (! is_string($theme) || $theme === '') {
+            return $this->defaultTheme();
+        }
+
+        /** @var array<string, string> $aliases */
+        $aliases = config('themes.aliases', []);
+        $theme = $aliases[$theme] ?? $theme;
+
+        /** @var array<string, mixed> $palettes */
+        $palettes = config('themes.palettes', []);
+
+        return isset($palettes[$theme]) ? $theme : $this->defaultTheme();
+    }
+
+    /**
+     * Tous les noms de thème acceptés : palettes et alias.
+     *
+     * @return list<string>
+     */
+    private function validThemes(): array
+    {
+        /** @var array<string, mixed> $palettes */
+        $palettes = config('themes.palettes', []);
+        /** @var array<string, string> $aliases */
+        $aliases = config('themes.aliases', []);
+
+        return array_merge(array_keys($palettes), array_keys($aliases));
+    }
+
+    private function defaultTheme(): string
+    {
+        /** @var string $default */
+        $default = config('themes.default', 'light');
+
+        return $default;
     }
 }
