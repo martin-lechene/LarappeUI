@@ -7,14 +7,19 @@
     'danger' => 'bg-red-50 text-red-800 border-red-200',
   ];
   $cls = $map[$type] ?? $map['info'];
+  // Une alerte d'erreur interrompt, les autres attendent une pause : role
+  // "alert" est assertif, role "status" ne l'est pas.
+  $role = $type === 'danger' ? 'alert' : 'status';
 @endphp
-<div x-data="{ open: true }" x-show="open" {{ $attributes->merge(['class' => "flex items-start gap-3 border rounded-md px-3 py-2 $cls"]) }}>
-  <div class="mt-0.5">⚑</div>
+<div x-data="{ open: true }" x-show="open" role="{{ $role }}" {{ $attributes->merge(['class' => "flex items-start gap-3 border rounded-md px-3 py-2 $cls"]) }}>
+  <div class="mt-0.5" aria-hidden="true">⚑</div>
   <div class="flex-1">
     @if($title)<div class="font-medium">{{ $title }}</div>@endif
     <div class="text-sm">{{ $slot }}</div>
   </div>
   @if($dismissible)
-    <button class="text-current/50 hover:text-current" @click="open = false">✕</button>
+    <button type="button" class="text-current/50 hover:text-current" aria-label="Fermer l’alerte" @click="open = false">
+      <span aria-hidden="true">✕</span>
+    </button>
   @endif
 </div>

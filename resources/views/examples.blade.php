@@ -13,21 +13,21 @@
     <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm">
         <div class="flex items-center justify-between px-4 py-3 border-b border-[var(--color-border)]">
             <div class="font-semibold text-[var(--color-text)]">Barre d’en-tête</div>
-            <div class="flex items-center gap-2 text-sm" role="tablist" aria-label="Barre d’en-tête">
-                <button type="button" role="tab" :aria-selected="headerTab === 'preview'" @click="headerTab = 'preview'" :class="headerTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
-                <span class="text-[var(--color-border)]" aria-hidden="true">|</span>
-                <button type="button" role="tab" :aria-selected="headerTab === 'code'" @click="headerTab = 'code'" :class="headerTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
+            <div class="flex items-center gap-2 text-sm" role="tablist" aria-label="Barre d’en-tête"
+                 @keydown.arrow-right.prevent="$focus.next()" @keydown.arrow-left.prevent="$focus.previous()">
+                <button type="button" role="tab" id="tab-headerTab-preview" aria-controls="panel-headerTab-preview" :aria-selected="headerTab === 'preview'" :tabindex="headerTab === 'preview' ? 0 : -1" @click="headerTab = 'preview'" :class="headerTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
+                <button type="button" role="tab" id="tab-headerTab-code" aria-controls="panel-headerTab-code" :aria-selected="headerTab === 'code'" :tabindex="headerTab === 'code' ? 0 : -1" @click="headerTab = 'code'" :class="headerTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
             </div>
         </div>
         <div class="p-6">
-            <div x-show="headerTab === 'preview'" class="flex items-center justify-between" x-cloak>
+            <div x-show="headerTab === 'preview'" role="tabpanel" id="panel-headerTab-preview" aria-labelledby="tab-headerTab-preview" tabindex="0" class="flex items-center justify-between" x-cloak>
                 <div class="text-xl font-bold text-[var(--color-text)]">LarappeUI</div>
                 <div class="flex items-center gap-2">
                     <x-button color="secondary">Login</x-button>
                     <x-button>Sign Up</x-button>
                 </div>
             </div>
-            <div x-show="headerTab === 'code'" x-cloak>
+            <div x-show="headerTab === 'code'" role="tabpanel" id="panel-headerTab-code" aria-labelledby="tab-headerTab-code" tabindex="0" x-cloak>
 <pre class="language-html rounded-lg border border-[var(--color-border)] bg-[var(--color-background)] p-4 text-sm overflow-x-auto"><code>&lt;div class=&quot;flex items-center justify-between&quot;&gt;
   &lt;div class=&quot;text-xl font-bold&quot;&gt;LarappeUI&lt;/div&gt;
   &lt;div class=&quot;flex items-center gap-2&quot;&gt;
@@ -43,14 +43,14 @@
     <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm">
         <div class="flex items-center justify-between px-4 py-3 border-b border-[var(--color-border)]">
             <div class="font-semibold text-[var(--color-text)]">Hero</div>
-            <div class="flex items-center gap-2 text-sm" role="tablist" aria-label="Hero">
-                <button type="button" role="tab" :aria-selected="heroTab === 'preview'" @click="heroTab = 'preview'" :class="heroTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
-                <span class="text-[var(--color-border)]" aria-hidden="true">|</span>
-                <button type="button" role="tab" :aria-selected="heroTab === 'code'" @click="heroTab = 'code'" :class="heroTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
+            <div class="flex items-center gap-2 text-sm" role="tablist" aria-label="Hero"
+                 @keydown.arrow-right.prevent="$focus.next()" @keydown.arrow-left.prevent="$focus.previous()">
+                <button type="button" role="tab" id="tab-heroTab-preview" aria-controls="panel-heroTab-preview" :aria-selected="heroTab === 'preview'" :tabindex="heroTab === 'preview' ? 0 : -1" @click="heroTab = 'preview'" :class="heroTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
+                <button type="button" role="tab" id="tab-heroTab-code" aria-controls="panel-heroTab-code" :aria-selected="heroTab === 'code'" :tabindex="heroTab === 'code' ? 0 : -1" @click="heroTab = 'code'" :class="heroTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
             </div>
         </div>
         <div class="p-6 text-center">
-            <div x-show="heroTab === 'preview'" class="space-y-4" x-cloak>
+            <div x-show="heroTab === 'preview'" role="tabpanel" id="panel-heroTab-preview" aria-labelledby="tab-heroTab-preview" tabindex="0" class="space-y-4" x-cloak>
                 <h2 class="text-3xl font-bold text-[var(--color-text)]">Construisez des UI élégantes en quelques minutes</h2>
                 <p class="text-[var(--color-textSecondary)]">Une collection de composants modernes, themés et réutilisables pour Laravel 12.</p>
                 <div class="flex items-center justify-center gap-3">
@@ -58,7 +58,7 @@
                     <x-button color="secondary">Documentation</x-button>
                 </div>
             </div>
-            <div x-show="heroTab === 'code'" x-cloak>
+            <div x-show="heroTab === 'code'" role="tabpanel" id="panel-heroTab-code" aria-labelledby="tab-heroTab-code" tabindex="0" x-cloak>
 <pre class="language-html rounded-lg border border-[var(--color-border)] bg-[var(--color-background)] p-4 text-sm overflow-x-auto"><code>&lt;h2 class=&quot;text-3xl font-bold&quot;&gt;Construisez des UI élégantes en quelques minutes&lt;/h2&gt;
 &lt;p class=&quot;text-[var(--color-textSecondary)]&quot;&gt;Une collection de composants modernes, themés et réutilisables pour Laravel 12.&lt;/p&gt;
 &lt;div class=&quot;flex items-center justify-center gap-3&quot;&gt;
@@ -73,14 +73,14 @@
     <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm">
         <div class="flex items-center justify-between px-4 py-3 border-b border-[var(--color-border)]">
             <div class="font-semibold text-[var(--color-text)]">Call to action</div>
-            <div class="flex items-center gap-2 text-sm" role="tablist" aria-label="Call to action">
-                <button type="button" role="tab" :aria-selected="ctaTab === 'preview'" @click="ctaTab = 'preview'" :class="ctaTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
-                <span class="text-[var(--color-border)]" aria-hidden="true">|</span>
-                <button type="button" role="tab" :aria-selected="ctaTab === 'code'" @click="ctaTab = 'code'" :class="ctaTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
+            <div class="flex items-center gap-2 text-sm" role="tablist" aria-label="Call to action"
+                 @keydown.arrow-right.prevent="$focus.next()" @keydown.arrow-left.prevent="$focus.previous()">
+                <button type="button" role="tab" id="tab-ctaTab-preview" aria-controls="panel-ctaTab-preview" :aria-selected="ctaTab === 'preview'" :tabindex="ctaTab === 'preview' ? 0 : -1" @click="ctaTab = 'preview'" :class="ctaTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
+                <button type="button" role="tab" id="tab-ctaTab-code" aria-controls="panel-ctaTab-code" :aria-selected="ctaTab === 'code'" :tabindex="ctaTab === 'code' ? 0 : -1" @click="ctaTab = 'code'" :class="ctaTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
             </div>
         </div>
         <div class="p-6">
-            <div x-show="ctaTab === 'preview'" class="flex flex-col md:flex-row items-center justify-between gap-4" x-cloak>
+            <div x-show="ctaTab === 'preview'" role="tabpanel" id="panel-ctaTab-preview" aria-labelledby="tab-ctaTab-preview" tabindex="0" class="flex flex-col md:flex-row items-center justify-between gap-4" x-cloak>
                 <div>
                     <div class="text-xl font-semibold text-[var(--color-text)]">Prêt à démarrer ?</div>
                     <div class="text-[var(--color-textSecondary)]">Installez LarappeUI et gagnez du temps.</div>
@@ -90,7 +90,7 @@
                     <x-button color="secondary">En savoir plus</x-button>
                 </div>
             </div>
-            <div x-show="ctaTab === 'code'" x-cloak>
+            <div x-show="ctaTab === 'code'" role="tabpanel" id="panel-ctaTab-code" aria-labelledby="tab-ctaTab-code" tabindex="0" x-cloak>
 <pre class="language-html rounded-lg border border-[var(--color-border)] bg-[var(--color-background)] p-4 text-sm overflow-x-auto"><code>&lt;div class=&quot;flex flex-col md:flex-row items-center justify-between gap-4&quot;&gt;
   &lt;div&gt;
     &lt;div class=&quot;text-xl font-semibold&quot;&gt;Prêt à démarrer ?&lt;/div&gt;
@@ -109,14 +109,14 @@
     <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm">
         <div class="flex items-center justify-between px-4 py-3 border-b border-[var(--color-border)]">
             <div class="font-semibold text-[var(--color-text)]">Formulaire de contact (AJAX)</div>
-            <div class="flex items-center gap-2 text-sm" role="tablist" aria-label="Formulaire de contact">
-                <button type="button" role="tab" :aria-selected="contactTab === 'preview'" @click="contactTab = 'preview'" :class="contactTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
-                <span class="text-[var(--color-border)]" aria-hidden="true">|</span>
-                <button type="button" role="tab" :aria-selected="contactTab === 'code'" @click="contactTab = 'code'" :class="contactTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
+            <div class="flex items-center gap-2 text-sm" role="tablist" aria-label="Formulaire de contact"
+                 @keydown.arrow-right.prevent="$focus.next()" @keydown.arrow-left.prevent="$focus.previous()">
+                <button type="button" role="tab" id="tab-contactTab-preview" aria-controls="panel-contactTab-preview" :aria-selected="contactTab === 'preview'" :tabindex="contactTab === 'preview' ? 0 : -1" @click="contactTab = 'preview'" :class="contactTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
+                <button type="button" role="tab" id="tab-contactTab-code" aria-controls="panel-contactTab-code" :aria-selected="contactTab === 'code'" :tabindex="contactTab === 'code' ? 0 : -1" @click="contactTab = 'code'" :class="contactTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
             </div>
         </div>
         <div class="p-6" x-data="contactForm()">
-            <div x-show="contactTab === 'preview'" x-cloak>
+            <div x-show="contactTab === 'preview'" role="tabpanel" id="panel-contactTab-preview" aria-labelledby="tab-contactTab-preview" tabindex="0" x-cloak>
                 <form @submit.prevent="submit" class="grid grid-cols-1 md:grid-cols-2 gap-4" novalidate>
                     <div>
                         <x-form.input label="Nom" x-model="form.name" placeholder="John Doe" />
@@ -138,7 +138,7 @@
                     </div>
                 </form>
             </div>
-            <div x-show="contactTab === 'code'" x-cloak>
+            <div x-show="contactTab === 'code'" role="tabpanel" id="panel-contactTab-code" aria-labelledby="tab-contactTab-code" tabindex="0" x-cloak>
 <pre class="language-html rounded-lg border border-[var(--color-border)] bg-[var(--color-background)] p-4 text-sm overflow-x-auto"><code>&lt;form @submit.prevent=&quot;submit&quot; class=&quot;grid grid-cols-1 md:grid-cols-2 gap-4&quot;&gt;
   ...
 &lt;/form&gt;
@@ -161,14 +161,14 @@ function contactForm() {
     <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm" x-data="multiStepForm()">
         <div class="flex items-center justify-between px-4 py-3 border-b border-[var(--color-border)]">
             <div class="font-semibold text-[var(--color-text)]">Formulaire multi-étapes</div>
-            <div class="flex items-center gap-2 text-sm" role="tablist" aria-label="Formulaire multi-étapes">
-                <button type="button" role="tab" :aria-selected="msTab === 'preview'" @click="msTab = 'preview'" :class="msTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
-                <span class="text-[var(--color-border)]" aria-hidden="true">|</span>
-                <button type="button" role="tab" :aria-selected="msTab === 'code'" @click="msTab = 'code'" :class="msTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
+            <div class="flex items-center gap-2 text-sm" role="tablist" aria-label="Formulaire multi-étapes"
+                 @keydown.arrow-right.prevent="$focus.next()" @keydown.arrow-left.prevent="$focus.previous()">
+                <button type="button" role="tab" id="tab-msTab-preview" aria-controls="panel-msTab-preview" :aria-selected="msTab === 'preview'" :tabindex="msTab === 'preview' ? 0 : -1" @click="msTab = 'preview'" :class="msTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
+                <button type="button" role="tab" id="tab-msTab-code" aria-controls="panel-msTab-code" :aria-selected="msTab === 'code'" :tabindex="msTab === 'code' ? 0 : -1" @click="msTab = 'code'" :class="msTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
             </div>
         </div>
         <div class="p-6">
-            <div x-show="msTab === 'preview'" x-cloak>
+            <div x-show="msTab === 'preview'" role="tabpanel" id="panel-msTab-preview" aria-labelledby="tab-msTab-preview" tabindex="0" x-cloak>
                 <div class="flex flex-wrap items-center gap-4" aria-label="Progression du formulaire">
                     <template x-for="(s, i) in ['Infos','Adresse','Confirmation']" :key="i">
                         <div class="flex items-center gap-2">
@@ -200,7 +200,7 @@ function contactForm() {
                     <x-button type="button" @click="next" x-text="step === 2 ? 'Valider' : 'Suivant'"></x-button>
                 </div>
             </div>
-            <div x-show="msTab === 'code'" x-cloak>
+            <div x-show="msTab === 'code'" role="tabpanel" id="panel-msTab-code" aria-labelledby="tab-msTab-code" tabindex="0" x-cloak>
 <pre class="language-html rounded-lg border border-[var(--color-border)] bg-[var(--color-background)] p-4 text-sm overflow-x-auto"><code>&lt;!-- Étapes pilotées par Alpine --&gt;
 &lt;div class=&quot;flex flex-wrap items-center gap-4&quot;&gt;
   &lt;template x-for=&quot;(s, i) in ['Infos','Adresse','Confirmation']&quot; :key=&quot;i&quot;&gt;
@@ -224,14 +224,14 @@ function multiStepForm() {
     <div class="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] shadow-sm">
         <div class="flex items-center justify-between px-4 py-3 border-b border-[var(--color-border)]">
             <div class="font-semibold text-[var(--color-text)]">Table avec recherche</div>
-            <div class="flex items-center gap-2 text-sm" role="tablist" aria-label="Table avec recherche">
-                <button type="button" role="tab" :aria-selected="tableTab === 'preview'" @click="tableTab = 'preview'" :class="tableTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
-                <span class="text-[var(--color-border)]" aria-hidden="true">|</span>
-                <button type="button" role="tab" :aria-selected="tableTab === 'code'" @click="tableTab = 'code'" :class="tableTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
+            <div class="flex items-center gap-2 text-sm" role="tablist" aria-label="Table avec recherche"
+                 @keydown.arrow-right.prevent="$focus.next()" @keydown.arrow-left.prevent="$focus.previous()">
+                <button type="button" role="tab" id="tab-tableTab-preview" aria-controls="panel-tableTab-preview" :aria-selected="tableTab === 'preview'" :tabindex="tableTab === 'preview' ? 0 : -1" @click="tableTab = 'preview'" :class="tableTab === 'preview' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Aperçu</button>
+                <button type="button" role="tab" id="tab-tableTab-code" aria-controls="panel-tableTab-code" :aria-selected="tableTab === 'code'" :tabindex="tableTab === 'code' ? 0 : -1" @click="tableTab = 'code'" :class="tableTab === 'code' ? 'text-primary font-medium' : 'text-[var(--color-textSecondary)]'">Code</button>
             </div>
         </div>
         <div class="p-6" x-data="tableDemo()">
-            <div x-show="tableTab === 'preview'" x-cloak>
+            <div x-show="tableTab === 'preview'" role="tabpanel" id="panel-tableTab-preview" aria-labelledby="tab-tableTab-preview" tabindex="0" x-cloak>
                 <div class="mb-3">
                     <x-form.input placeholder="Rechercher..." x-model="q" />
                 </div>
@@ -256,7 +256,7 @@ function multiStepForm() {
                     </table>
                 </div>
             </div>
-            <div x-show="tableTab === 'code'" x-cloak>
+            <div x-show="tableTab === 'code'" role="tabpanel" id="panel-tableTab-code" aria-labelledby="tab-tableTab-code" tabindex="0" x-cloak>
 <pre class="language-html rounded-lg border border-[var(--color-border)] bg-[var(--color-background)] p-4 text-sm overflow-x-auto"><code>&lt;table class=&quot;min-w-full divide-y divide-[var(--color-border)]&quot;&gt;...&lt;/table&gt;
 function tableDemo() {
   return {
@@ -271,7 +271,7 @@ function tableDemo() {
 </div>
 
 @push('scripts')
-<script>
+<script nonce="{{ request()->attributes->get('csp_nonce') }}">
 function examplesPage() {
     return {
         headerTab: 'preview',
