@@ -11,7 +11,7 @@ jobs:
 
     runs-on: [self-hosted, hetzner]
     steps:
-    - uses: actions/checkout@v6
+    - uses: actions/checkout@v7
     - name: Copy .env
       run: php -r "file_exists('.env') || copy('.env.example', '.env');"
     - name: Install PHP dependencies
